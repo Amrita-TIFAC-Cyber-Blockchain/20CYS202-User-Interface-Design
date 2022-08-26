@@ -19,8 +19,50 @@
 
 | Unit # | Lecture No. | Topic | Methodology | No. of Hours |
 |:------:|:-----------:|-------|-------------|:------------:|
-| | | | | |
+| # | | Course Introduction | | |
+| # | | Introduction to User Interface Design | | |
+| 1 | | Introduction to Web | | |
+| 1 | | Client-Server Architecture of Web | | |
+| 1 | | Web Server | | |
+| 1 | | Application Server | | |
+| 1 | | Evolution of Web | | |
+| 1 | | Web 1.0, Web 2.0, Web 3.0 | | |
+| 1 | | Introduction to HTML | | |
+| 1 | | HTML Tags | | |
+| 1 | | HTML: Adding Buttons, Links, Images | | |
+| 1 | | HTML: Creating Tabs, Tables | | |
+| 1 | | HTML: Creating Forms | | |
+| 1 | | HTML: Media and Graphics | | |
+| 1 | | HTML5 Elements | | |
+| 1 | | HTML: Simple Web Page - Personal Website | | |
+| 2 | | Introduction to CSS | | |
+| 2 | | Features to CSS | | |
+| 2 | | CSS: Borders | | |
+| 2 | | CSS: Backgrounds | | |
+| 2 | | CSS: Text Effects | | |
+| 2 | | CSS: Page Layouts | | |
+| 2 | | Responsive Web Design | | |
+| 3 | | Introduction to Java Script | | |
+| 3 | | JS: Form Validation | | |
+| 3 | | JS: Event Handling | | |
+| 3 | | JS: Document Object Model | | |
+| 3 | | JS: Application Deployment | | |
 
+### Evaluation Criteria
+
+| Components | Marks |
+|:----------|:-----:|
+| **[Internal][CA-T]** Monthly Quiz (2 Nos) | 10 |
+| **[Internal][CA-L]** Assignments (3 Nos) | 30 |
+| **[Internal][CA-L]** Mini-Project | 10 |
+| **[Internal]** Periodical I | 10 |
+| **[Internal]** Periodical II | 10 |
+| **[External]** End-Semester Exam | 30 |
+
+### Dates and Deadlines
+
+| Course Start | 14 - Sept - 2022 |
+|--------------|-----------------|
 
 ### :green_book: Text and Reference Books
  - **Text:** DT Editorial Services. HTML 5 Black Book (Covers CSS3, JavaScript, XML, XHTML, AJAX, PHP, jQuery). Second Edition, Dreamtech Press; 2016.
