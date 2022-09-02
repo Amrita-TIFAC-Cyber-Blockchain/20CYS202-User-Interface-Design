@@ -28,11 +28,13 @@
 | 1 | | Evolution of Web | | |
 | 1 | | Web 1.0, Web 2.0, Web 3.0 | | |
 | 1 | | Introduction to HTML | | |
-| 1 | | HTML Tags | | |
-| 1 | | HTML: Adding Buttons, Links, Images | | |
-| 1 | | HTML: Creating Tabs, Tables | | |
-| 1 | | HTML: Creating Forms | | |
-| 1 | | HTML: Media and Graphics | | |
+| 1 | | HTML: \<html\>, \<body\>, \<head\>, \<title\>  | | |
+| 1 | | HTML Formatting: \<b\>, \<strong\>, \<i\>, \<mark\>, \<del\>, \<sub\>, \<sup\>, \<p\> and Styles | | |
+| 1 | | HTML Links: \<a\> | | |
+| 1 | | HTML Lists: \<ul\>, \<ol\>, \<dl\>, \<li\> | | |
+| 1 | | HTML Creating Tables: \<table\>, \<th\>, \<tr\>, \<td\> | | |
+| 1 | | HTML Creating Forms: \<form\>, \<input\>, \<label\> | | |
+| 1 | | HTML Media and Graphics: \<canvas\>, \<svg\>, \<video\>, \<audio\>, \<source\>, \<iframe\> | | |
 | 1 | | HTML5 Elements | | |
 | 1 | | HTML: Simple Web Page - Personal Website | | |
 | 2 | | Introduction to CSS | | |
@@ -47,6 +49,9 @@
 | 3 | | JS: Event Handling | | |
 | 3 | | JS: Document Object Model | | |
 | 3 | | JS: Application Deployment | | |
+
+### Mini-Project Topics
+
 
 ### Evaluation Criteria
 
