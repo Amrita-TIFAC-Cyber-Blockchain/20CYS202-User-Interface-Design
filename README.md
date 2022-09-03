@@ -39,10 +39,11 @@
 | 1 | | HTML: Simple Web Page - Personal Website | | |
 | 2 | | Introduction to CSS | | |
 | 2 | | Features to CSS | | |
-| 2 | | CSS: Borders | | |
-| 2 | | CSS: Backgrounds | | |
-| 2 | | CSS: Text Effects | | |
-| 2 | | CSS: Page Layouts | | |
+| 2 | | CSS Borders: border-style, border-width, border-color, border-radius, <br/> border-top-style, border-right-style, border-bottom-style, border-left-style | | |
+| 2 | | CSS Backgrounds: background-color, background-image, background-repeat, background-attachment, background-position | | |
+| 2 | | CSS Text Effects: color, text-align, text-align-last, direction, unicode-bidi, vertical-align <br/> text-transform, text-indent, letter-spacing, line-height, word-spacing <br/> | | |
+| 2 | | CSS Text Effects: color, text-align, text-align-last, direction, unicode-bidi, vertical-align <br/> text-transform, text-indent, letter-spacing, line-height, word-spacing <br/> font-family, font-style, font-size, font-variant, font-weight | | |
+| 2 | | CSS Page Layouts: margin, margin-top, margin-right, margin-bottom, margin-left <br/> padding-top, padding-right, padding-bottom, padding-left, height, width | | |
 | 2 | | Responsive Web Design | | |
 | 3 | | Introduction to Java Script | | |
 | 3 | | JS: Form Validation | | |
