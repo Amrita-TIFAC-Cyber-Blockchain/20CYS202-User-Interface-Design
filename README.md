@@ -19,15 +19,15 @@
 
 | Unit # | Lecture No. | Topic | Methodology | No. of Hours |
 |:------:|:-----------:|-------|-------------|:------------:|
-| # | | Course Introduction | | |
-| # | | Introduction to User Interface Design | | |
-| 1 | | Introduction to Web | | |
-| 1 | | Client-Server Architecture of Web | | |
-| 1 | | Web Server | | |
-| 1 | | Application Server | | |
-| 1 | | Evolution of Web | | |
-| 1 | | Web 1.0, Web 2.0, Web 3.0 | | |
-| 1 | | Introduction to HTML | | |
+| # | 1 | Course Introduction ![](https://img.shields.io/badge/-Completed-brightgreen) | | |
+| # | 1 | Introduction to User Interface Design ![](https://img.shields.io/badge/-Completed-brightgreen) | | |
+| 1 | 2 | Introduction to Web | | |
+| 1 | 2 | Client-Server Architecture of Web | | |
+| 1 | 2| Web Server | | |
+| 1 | 2 | Application Server | | |
+| 1 | 3 | Evolution of Web | | |
+| 1 | 3 | Web 1.0, Web 2.0, Web 3.0 | | |
+| 1 | 4 | Introduction to HTML | | |
 | 1 | | HTML: \<html\>, \<body\>, \<head\>, \<title\>  | | |
 | 1 | | HTML Formatting: \<b\>, \<strong\>, \<i\>, \<mark\>, \<del\>, \<sub\>, \<sup\>, \<p\> and Styles | | |
 | 1 | | HTML Links: \<a\> | | |
@@ -69,6 +69,13 @@
 
 | Course Start | 14 - Sept - 2022 |
 |--------------|-----------------|
+| Mini-Project Topic Finalization | 06 - Oct - 2022 |
+| Periodicals I | TBD |
+| Lab Evaluation I | TBD |
+| Periodicals II | TBD |
+| Lab Evaluation II | TBD |
+| End Semester | TBD |
+| Mini-Project Evaluation | TBD |
 
 ### :green_book: Text and Reference Books
  - **Text:** DT Editorial Services. HTML 5 Black Book (Covers CSS3, JavaScript, XML, XHTML, AJAX, PHP, jQuery). Second Edition, Dreamtech Press; 2016.
