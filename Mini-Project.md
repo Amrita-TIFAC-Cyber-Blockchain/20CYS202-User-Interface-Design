@@ -6,7 +6,7 @@
 | Team Number # | Team Members(s) | Topics |
 |:-------------:|:---------------:|:------:|
 | 1 | Ashwin Anand <br> Dyanesh S <br> Rajendraprasad S |  ![](https://img.shields.io/badge/Dept-blue) Alumni Portal |
-| 2 | Alooysius Vitalian J <br> Sudeep V <br> Mittul R <br> ![](https://img.shields.io/badge/BRIG-purple) Climate Alert System |
+| 2 | Alooysius Vitalian J <br> Sudeep V <br> Mittul R | ![](https://img.shields.io/badge/BRIG-purple) Climate Alert System |
 | 3 | HEM SAGAR G H <br> SANTHOSSH K S <br> GOKULACHSELVAN C D | ![](https://img.shields.io/badge/Dept-blue) Alumni Portal|
 | 4 | LAKSHMI NARAYAN P <br> SERAN PANDIYAN I P <br> VINOTH KUMAR C| Job Search Portal |
 | 5 | Nithin S <br> Nishanth S <br> Ram Surya | Amrita Social Website |
