@@ -17,7 +17,7 @@
 | 10 | T Pavan Kumar Reddy <br> B Rohith Reddy <br> Sudipt Kumar | Leave Management System |
 | 11 | U K V Dinesh Reddy <br> M K Ganesh <br> N Vihal Roy | Metaverse |
 | 12 | Saranesh E S <br> Venkata Revan Nagireddy <br> Yuvraj Kumar G P | ![](https://img.shields.io/badge/Univ-darkblue) Amrita Event Promoting portal |
-| 13 | K Manoj Ram <br> G.Kushal Bhavani Reddy | P Pushpanth Reddy | ![](https://img.shields.io/badge/Univ-darkblue) E-Wallet |
+| 13 | K Manoj Ram <br> G.Kushal Bhavani Reddy <br> P Pushpanth Reddy | ![](https://img.shields.io/badge/Univ-darkblue) E-Wallet |
 | 14 | M Ravi Chandra <br> S Dharmik <br> P Gana Sekhar| E-Local shopping |
 | 15 | Suganth Sarvesh S <br> Gokul <br> G R Nitin | ![](https://img.shields.io/badge/Univ-darkblue) Student Club Management Portal |
 | 16 | Manomithran G <br> Vinayak R <br> Kishore M | ![](https://img.shields.io/badge/BRIG-purple) Media Tracking Platform to Tackle Online Piracy |
