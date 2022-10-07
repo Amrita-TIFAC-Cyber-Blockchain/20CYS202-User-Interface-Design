@@ -4,7 +4,7 @@
 ## Mini-Project Teams and Topics
 
 | Team Number # | Team Members(s) | Topics |
-|:-------------:|:---------------:|:------:|
+|:-------------:|:---------------:|:------|
 | 1 | Ashwin Anand <br> Dyanesh S <br> Rajendraprasad S |  ![](https://img.shields.io/badge/Dept-blue) Alumni Portal |
 | 2 | Alooysius Vitalian J <br> Sudeep V <br> Mittul R | ![](https://img.shields.io/badge/BRIG-purple) Climate Alert System |
 | 3 | Hem Sagar G H <br> Santhossh K S <br> Gokulachselvan C D | ![](https://img.shields.io/badge/Dept-blue) Alumni Portal|
