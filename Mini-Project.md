@@ -7,9 +7,9 @@
 |:-------------:|:---------------:|:------:|
 | 1 | Ashwin Anand <br> Dyanesh S <br> Rajendraprasad S |  ![](https://img.shields.io/badge/Dept-blue) Alumni Portal |
 | 2 | Alooysius Vitalian J <br> Sudeep V <br> Mittul R | ![](https://img.shields.io/badge/BRIG-purple) Climate Alert System |
-| 3 | HEM SAGAR G H <br> SANTHOSSH K S <br> GOKULACHSELVAN C D | ![](https://img.shields.io/badge/Dept-blue) Alumni Portal|
-| 4 | LAKSHMI NARAYAN P <br> SERAN PANDIYAN I P <br> VINOTH KUMAR C| Job Search Portal |
-| 5 | Nithin S <br> Nishanth S <br> Ram Surya | Amrita Social Website |
+| 3 | Hem Sagar G H <br> Santhossh K S <br> Gokulachselvan C D | ![](https://img.shields.io/badge/Dept-blue) Alumni Portal|
+| 4 | Lakshmi Narayanan P <br> Seran Pandiyan I P <br> Vinoth Kumar C| ![](https://img.shields.io/badge/Dept-blue) Job Search Portal |
+| 5 | Nithin S <br> Nishanth S <br> Ram Surya | ![](https://img.shields.io/badge/Univ-darkblue) Amrita Social Website |
 | 6 | Arjun C Santhosh <br> Madhav Harikumar <br> Mukesh SA | Flight Ticket Booking System |
 | 7 | Nived Dineshan <br> K Sri Sai Nitin <br> Achyuth | ![](https://img.shields.io/badge/BRIG-purple) Stamp Purchase |
 | 8 | Aravind S <br> Kishanth K <br> Karnam Hitesh Manjunath | ![](https://img.shields.io/badge/BRIG-purple) Inventory System|
@@ -30,7 +30,7 @@
 | 23 | Nishant V <br> Monish T <br> Mohamed Jasir | Privacy enabled Friend Finder |
 | 24 | Umashankar Kavya <br> Kavali Sai Suvarchala <br> Golla Hemesh Sai | ![](https://img.shields.io/badge/Univ-darkblue) Gatepass Management System |
 | 25 | Harshitha Ranjith <br> Sushmanth.V.M | ![](https://img.shields.io/badge/Univ-darkblue) Amrita Parcel Management System |
-| 26 | Abinesh G <br> Anu Priya P | Blockchain Forensics |
+| 26 | Abinesh G <br> Anu Priya P | ![](https://img.shields.io/badge/BRIG-purple) Blockchain Forensics |
 | 27 | M C Vivek Veera <br> Ashwatha Prasad |  Novel Neighbour |
 | 28 | Jivan Prasadd P <br> Sudhir R T | Self-Service Kiosk at Bank |
 | 29 | Swetha V | Bank Management System |
