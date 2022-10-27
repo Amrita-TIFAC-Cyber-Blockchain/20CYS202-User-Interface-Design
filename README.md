@@ -27,11 +27,11 @@
 | 1 | 2 | Application Server | | |
 | 1 | 3 | Evolution of Web | | |
 | 1 | 3 | Web 1.0, Web 2.0, Web 3.0 | | |
-| 1 | 4 | Introduction to HTML | | |
-| 1 | | HTML: \<html\>, \<body\>, \<head\>, \<title\>  | | |
+| 1 | 4 | Introduction to HTML ![](https://img.shields.io/badge/-Completed-brightgreen) | | |
+| 1 | | HTML: \<html\>, \<body\>, \<head\>, \<title\> ![](https://img.shields.io/badge/-Completed-brightgreen) | | |
 | 1 | | HTML Formatting: \<b\>, \<strong\>, \<i\>, \<mark\>, \<del\>, \<sub\>, \<sup\>, \<p\> and Styles | | |
-| 1 | | HTML Links: \<a\> | | |
-| 1 | | HTML Lists: \<ul\>, \<ol\>, \<dl\>, \<li\> | | |
+| 1 | | HTML Links: \<a\> ![](https://img.shields.io/badge/-Completed-brightgreen) | | |
+| 1 | | HTML Lists: \<ul\>, \<ol\>, \<dl\>, \<li\> ![](https://img.shields.io/badge/-Completed-brightgreen) | | |
 | 1 | | HTML Creating Tables: \<table\>, \<th\>, \<tr\>, \<td\> | | |
 | 1 | | HTML Creating Forms: \<form\>, \<input\>, \<label\> | | |
 | 1 | | HTML Media and Graphics: \<canvas\>, \<svg\>, \<video\>, \<audio\>, \<source\>, \<iframe\> | | |
@@ -70,7 +70,7 @@
 | Course Start | 14 - Sept - 2022 |
 |--------------|-----------------|
 | Mini-Project Topic Finalization | 06 - Oct - 2022 |
-| Periodicals I | TBD |
+| Periodicals I | 28 - Oct - 2022 |
 | Lab Evaluation I | TBD |
 | Periodicals II | TBD |
 | Lab Evaluation II | TBD |
