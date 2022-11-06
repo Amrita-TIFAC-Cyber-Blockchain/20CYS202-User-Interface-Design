@@ -29,7 +29,7 @@
 | 1 | 3 | Web 1.0, Web 2.0, Web 3.0 | | |
 | 1 | 4 | Introduction to HTML ![](https://img.shields.io/badge/-Completed-brightgreen) | | |
 | 1 | | HTML: \<html\>, \<body\>, \<head\>, \<title\> ![](https://img.shields.io/badge/-Completed-brightgreen) | | |
-| 1 | | HTML Formatting: \<b\>, \<strong\>, \<i\>, \<mark\>, \<del\>, \<sub\>, \<sup\>, \<p\> and Styles | | |
+| 1 | | HTML Formatting: \<b\>, \<strong\>, \<i\>, \<mark\>, \<del\>, \<sub\>, \<sup\>, \<p\> and Styles  ![](https://img.shields.io/badge/-Completed-brightgreen) | | |
 | 1 | | HTML Links: \<a\> ![](https://img.shields.io/badge/-Completed-brightgreen) | | |
 | 1 | | HTML Lists: \<ul\>, \<ol\>, \<dl\>, \<li\> ![](https://img.shields.io/badge/-Completed-brightgreen) | | |
 | 1 | | HTML Creating Tables: \<table\>, \<th\>, \<tr\>, \<td\> | | |
@@ -53,6 +53,7 @@
 
 ### Mini-Project Topics
 
+[Click Here](https://github.com/Amrita-TIFAC-Cyber-Blockchain/20CYS202-User-Interface-Design/blob/main/Mini-Project.md) to view Mini-Project Topics and Teams
 
 ### Evaluation Criteria
 
@@ -71,11 +72,11 @@
 |--------------|-----------------|
 | Mini-Project Topic Finalization | 06 - Oct - 2022 |
 | Periodicals I | 28 - Oct - 2022 |
-| Lab Evaluation I | TBD |
-| Periodicals II | TBD |
-| Lab Evaluation II | TBD |
+| Lab Evaluation I | 14 - Nov - 2022 |
+| Periodicals II | 07 - Dec - 2022  |
+| Lab Evaluation II | 19 - Dec - 2022 |
 | End Semester | TBD |
-| Mini-Project Evaluation | TBD |
+| Mini-Project Evaluation | 05 - Jan - 2022 |
 
 ### :green_book: Text and Reference Books
  - **Text:** DT Editorial Services. HTML 5 Black Book (Covers CSS3, JavaScript, XML, XHTML, AJAX, PHP, jQuery). Second Edition, Dreamtech Press; 2016.
