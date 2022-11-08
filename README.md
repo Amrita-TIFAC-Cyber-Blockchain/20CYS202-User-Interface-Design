@@ -53,7 +53,7 @@
 
 ### Mini-Project Topics
 
-[Click Here](https://github.com/Amrita-TIFAC-Cyber-Blockchain/20CYS202-User-Interface-Design/blob/main/Mini-Project.md) to view Mini-Project Topics and Teams
+[Click Here](Mini-Project) to view Mini-Project Topics and Teams
 
 ### Evaluation Criteria
 
