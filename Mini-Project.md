@@ -3,18 +3,18 @@
 
 ## Mini-Project Teams and Topics
 
-| Team Number # | Team Members(s) | Topics |
-|:-------------:|:---------------:|:------|
+| Team Number # | Team Members(s) | Topics | Reviewed and Accepted | 
+|:-------------:|:---------------:|:------|:-----------------------:|
 | 1 | Ashwin Anand <br> Dyanesh S <br> Rajendraprasad S |  ![](https://img.shields.io/badge/Dept-blue) [Alumni Portal](Mini-Project/1) |
 | 2 | Alooysius Vitalian J <br> Sudeep V <br> Mittul R | ![](https://img.shields.io/badge/BRIG-purple) [Climate Alert System](Mini-Project/2) |
-| 3 | Hem Sagar G H <br> Santhossh K S <br> Gokulachselvan C D | ![](https://img.shields.io/badge/Dept-blue) [Alumni Portal]](Mini-Project/3) |
-| 4 | Lakshmi Narayanan P <br> Seran Pandiyan I P <br> Vinoth Kumar C| ![](https://img.shields.io/badge/Dept-blue) [Job Search Portal]](Mini-Project/4) |
-| 5 | Nithin S <br> Nishanth S <br> Ram Surya | ![](https://img.shields.io/badge/Univ-darkblue) [Amrita Social Website]](Mini-Project/5) |
-| 6 | Arjun C Santhosh <br> Madhav Harikumar <br> Mukesh SA | [Flight Ticket Booking System]](Mini-Project/6) |
-| 7 | Nived Dineshan <br> K Sri Sai Nitin <br> Achyuth | ![](https://img.shields.io/badge/BRIG-purple) [Stamp Purchase]](Mini-Project/7) |
-| 8 | Aravind S <br> Kishanth K <br> Karnam Hitesh Manjunath | ![](https://img.shields.io/badge/BRIG-purple) [Inventory System]](Mini-Project/8) |
+| 3 | Hem Sagar G H <br> Santhossh K S <br> Gokulachselvan C D | ![](https://img.shields.io/badge/Dept-blue) [Alumni Portal](Mini-Project/3) |
+| 4 | Lakshmi Narayanan P <br> Seran Pandiyan I P <br> Vinoth Kumar C| ![](https://img.shields.io/badge/Dept-blue) [Job Search Portal](Mini-Project/4) |
+| 5 | Nithin S <br> Nishanth S <br> Ram Surya | ![](https://img.shields.io/badge/Univ-darkblue) [Amrita Social Website](Mini-Project/5) |
+| 6 | Arjun C Santhosh <br> Madhav Harikumar <br> Mukesh SA | [Flight Ticket Booking System](Mini-Project/6) |
+| 7 | Nived Dineshan <br> K Sri Sai Nitin <br> Achyuth | ![](https://img.shields.io/badge/BRIG-purple) [Stamp Purchase](Mini-Project/7) |
+| 8 | Aravind S <br> Kishanth K <br> Karnam Hitesh Manjunath | ![](https://img.shields.io/badge/BRIG-purple) [Inventory System](Mini-Project/8) |
 | 9 | Pranav S R <br> Iniyan R <br> Niran  R | ![](https://img.shields.io/badge/BRIG-purple) [Hospital Management System](Mini-Project/9) |
-| 10 | T Pavan Kumar Reddy <br> B Rohith Reddy <br> Sudipt Kumar | ![](https://img.shields.io/badge/BRIG-purple) [Leave Management System]](Mini-Project/10) |
+| 10 | T Pavan Kumar Reddy <br> B Rohith Reddy <br> Sudipt Kumar | ![](https://img.shields.io/badge/BRIG-purple) [Leave Management System](Mini-Project/10) |
 | 11 | U K V Dinesh Reddy <br> M K Ganesh <br> N Vihal Roy | [Metaverse](Mini-Project/11) |
 | 12 | Saranesh E S <br> Venkata Revan Nagireddy <br> Yuvraj Kumar G P | ![](https://img.shields.io/badge/Univ-darkblue) [Amrita Event Promoting portal](Mini-Project/12) |
 | 13 | K Manoj Ram <br> G.Kushal Bhavani Reddy <br> P Pushpanth Reddy | ![](https://img.shields.io/badge/Univ-darkblue) [E-Wallet](Mini-Project/13) |
