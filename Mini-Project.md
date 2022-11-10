@@ -23,7 +23,7 @@
 | 16 | Manomithran G <br> Vinayak R <br> Kishore M | ![](https://img.shields.io/badge/BRIG-purple) [Media Tracking Platform to Tackle Online Piracy](Mini-Project/16) |
 | 17 | A S Deepan <br> Vishnu K <br> Vinoth Kumar D | ![](https://img.shields.io/badge/BRIG-purple) [Amrita Cryptocurrency Faucet](Mini-Project/17) | 
 | 18 | K Rakshan <br> Nithya Pranav S <br> Charan kumar Reddy M | [Time analyser](Mini-Project/18) |
-| 19 | Yaswanth G <br> Deepthi J <br> Aishwarya G S | ![](https://img.shields.io/badge/BRIG-purple) [Pharma Supply Chain Management](Mini-Project/19) |
+| 19 | Yaswanth G <br> Deepthi J <br> Aishwarya G S | ![](https://img.shields.io/badge/BRIG-purple) [Pharma Supply Chain Management](Mini-Project/19) | ![](https://img.shields.io/badge/Accepted-green) <br/>  ![](https://img.shields.io/badge/Minor_Corrections-purple) | 
 | 20 | Suhitha K <br> Tanvi Sonti <br> Anuvarshini M K | [Task Notifier](Mini-Project/20) |
 | 21 | Aishwarya G <br> Alagu Soundarya G <br> Suvetha D P | ![](https://img.shields.io/badge/BRIG-purple) [Hospital Management System](Mini-Project/21) | ![](https://img.shields.io/badge/Accepted-green) <br/>  ![](https://img.shields.io/badge/Minor_Corrections-purple) |
 | 22 | Siddharth Krishna R <br> S Adhwaith <br> Sanjai Prashad | [E-Local shopping](Mini-Project/22) |
