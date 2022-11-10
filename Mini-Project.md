@@ -16,9 +16,9 @@
 | 9 | Pranav S R <br> Iniyan R <br> Niran  R | ![](https://img.shields.io/badge/BRIG-purple) [Hospital Management System](Mini-Project/9) |
 | 10 | T Pavan Kumar Reddy <br> B Rohith Reddy <br> Sudipt Kumar | ![](https://img.shields.io/badge/BRIG-purple) [Leave Management System](Mini-Project/10) | ![](https://img.shields.io/badge/Accepted-green) <br/>  ![](https://img.shields.io/badge/Major_Corrections-purple) 
 | 11 | U K V Dinesh Reddy <br> M K Ganesh <br> N Vihal Roy | [Metaverse](Mini-Project/11) |
-| 12 | Saranesh E S <br> Venkata Revan Nagireddy <br> Yuvraj Kumar G P | ![](https://img.shields.io/badge/Univ-darkblue) [Amrita Event Promoting portal](Mini-Project/12) |
+| 12 | Saranesh E S <br> Venkata Revan Nagireddy <br> Yuvraj Kumar G P | ![](https://img.shields.io/badge/Univ-darkblue) [Amrita E-Boost Portal](Mini-Project/12) | ![](https://img.shields.io/badge/Accepted-green) <br/>  ![](https://img.shields.io/badge/Minor_Corrections-purple) |
 | 13 | K Manoj Ram <br> G.Kushal Bhavani Reddy <br> P Pushpanth Reddy | ![](https://img.shields.io/badge/Univ-darkblue) [E-Wallet](Mini-Project/13) |
-| 14 | M Ravi Chandra <br> S Dharmik <br> P Gana Sekhar| [E-Local shopping](Mini-Project/14) |
+| 14 | M Ravi Chandra <br> S Dharmik <br> P Gana Sekhar| [E-Local shopping](Mini-Project/14) | ![](https://img.shields.io/badge/Accepted-green) <br/>  ![](https://img.shields.io/badge/Minor_Corrections-purple)
 | 15 | Suganth Sarvesh S <br> Gokul <br> G R Nitin | ![](https://img.shields.io/badge/Univ-darkblue) [Student Club Management Portal](Mini-Project/15) | ![](https://img.shields.io/badge/Accepted-green) <br/>  ![](https://img.shields.io/badge/Minor_Corrections-purple) |
 | 16 | Manomithran G <br> Vinayak R <br> Kishore M | ![](https://img.shields.io/badge/BRIG-purple) [Media Tracking Platform to Tackle Online Piracy](Mini-Project/16) |
 | 17 | A S Deepan <br> Vishnu K <br> Vinoth Kumar D | ![](https://img.shields.io/badge/BRIG-purple) [Amrita Cryptocurrency Faucet](Mini-Project/17) | 
