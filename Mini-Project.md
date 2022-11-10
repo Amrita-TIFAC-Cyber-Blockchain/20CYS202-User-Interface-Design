@@ -19,7 +19,7 @@
 | 12 | Saranesh E S <br> Venkata Revan Nagireddy <br> Yuvraj Kumar G P | ![](https://img.shields.io/badge/Univ-darkblue) [Amrita Event Promoting portal](Mini-Project/12) |
 | 13 | K Manoj Ram <br> G.Kushal Bhavani Reddy <br> P Pushpanth Reddy | ![](https://img.shields.io/badge/Univ-darkblue) [E-Wallet](Mini-Project/13) |
 | 14 | M Ravi Chandra <br> S Dharmik <br> P Gana Sekhar| [E-Local shopping](Mini-Project/14) |
-| 15 | Suganth Sarvesh S <br> Gokul <br> G R Nitin | ![](https://img.shields.io/badge/Univ-darkblue) [Student Club Management Portal](Mini-Project/15) |
+| 15 | Suganth Sarvesh S <br> Gokul <br> G R Nitin | ![](https://img.shields.io/badge/Univ-darkblue) [Student Club Management Portal](Mini-Project/15) | ![](https://img.shields.io/badge/Accepted-green) <br/>  ![](https://img.shields.io/badge/Minor_Corrections-purple) |
 | 16 | Manomithran G <br> Vinayak R <br> Kishore M | ![](https://img.shields.io/badge/BRIG-purple) [Media Tracking Platform to Tackle Online Piracy](Mini-Project/16) |
 | 17 | A S Deepan <br> Vishnu K <br> Vinoth Kumar D | ![](https://img.shields.io/badge/BRIG-purple) [Amrita Cryptocurrency Faucet](Mini-Project/17) | 
 | 18 | K Rakshan <br> Nithya Pranav S <br> Charan kumar Reddy M | [Time analyser](Mini-Project/18) |
