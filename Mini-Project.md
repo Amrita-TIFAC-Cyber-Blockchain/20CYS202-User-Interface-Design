@@ -35,7 +35,7 @@
 | 28 | Jivan Prasadd P <br> Sudhir R T | [Self-Service Kiosk at Bank](Mini-Project/28) |
 | 29 | Swetha V | [Bank Management System](Mini-Project/29) |
 | 30 | Shree Om Sharma | [Career Counseling](Mini-Project/30) |
-| 31 | Manbendra Satpathy | ![](https://img.shields.io/badge/BRIG-purple) [Hospital Management System (Smart Home)](Mini-Project/31) |
+| 31 | Manbendra Satpathy | ![](https://img.shields.io/badge/BRIG-purple) [Hospital Management System (Smart Home)](Mini-Project/31) | ![](https://img.shields.io/badge/Accepted-green) <br/> ![](https://img.shields.io/badge/Minor_Corrections-purple) | 
 | 32 | Sourabh Sasikanthan | ![](https://img.shields.io/badge/Dept-blue) [Cyber Security Forum](Mini-Project/32) |
-| 33 | Ruthwik Krishna Bandreddy | ![](https://img.shields.io/badge/BRIG-purple) [Smart Contract Security Informative Dashboard](Mini-Project/33) |
-| 34 | Roshni V | ![](https://img.shields.io/badge/BRIG-purple) [Amrita Smart Cycle Ally](Mini-Project/34) |
+| 33 | Ruthwik Krishna Bandreddy | ![](https://img.shields.io/badge/BRIG-purple) [Smart Contract Security Informative Dashboard](Mini-Project/33) | ![](https://img.shields.io/badge/Accepted-green) <br/>  ![](https://img.shields.io/badge/Minor_Corrections-purple) | 
+| 34 | Roshni V | ![](https://img.shields.io/badge/BRIG-purple) [Amrita Smart Cycle Ally](Mini-Project/34) | ![](https://img.shields.io/badge/Accepted-green) <br/>  ![](https://img.shields.io/badge/Minor_Corrections-purple) | 
