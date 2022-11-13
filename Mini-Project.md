@@ -30,7 +30,7 @@
 | 23 | Nishant V <br> Monish T <br> Mohamed Jasir | [Privacy enabled Friend Finder](Mini-Project/23) | ![](https://img.shields.io/badge/Revision_Suggested-orange) |
 | 24 | Umashankar Kavya <br> Kavali Sai Suvarchala <br> Golla Hemesh Sai | ![](https://img.shields.io/badge/Univ-darkblue) [Gatepass Management System](Mini-Project/24) | ![](https://img.shields.io/badge/Accepted-green) <br/>  ![](https://img.shields.io/badge/Major_Corrections-tomato) |
 | 25 | Harshitha Ranjith <br> Sushmanth.V.M | ![](https://img.shields.io/badge/Univ-darkblue) [Amrita Parcel Management System](Mini-Project/25) |  ![](https://img.shields.io/badge/Accepted-green) <br/>  ![](https://img.shields.io/badge/Minor_Corrections-purple) |
-| 26 | Abinesh G <br> Anu Priya P | ![](https://img.shields.io/badge/BRIG-purple) [Blockchain Forensics](Mini-Project/26) |
+| 26 | Abinesh G <br> Anu Priya P | ![](https://img.shields.io/badge/BRIG-purple) [Blockchain Forensics](Mini-Project/26) | ![](https://img.shields.io/badge/Accepted-green) <br/>  ![](https://img.shields.io/badge/Major_Corrections-tomato) | 
 | 27 | M C Vivek Veera <br> Ashwatha Prasad | [Novel Neighbour](Mini-Project/27) |
 | 28 | Jivan Prasadd P <br> Sudhir R T | [Self-Service Kiosk at Bank](Mini-Project/28) | ![](https://img.shields.io/badge/Accepted-green) <br/>  ![](https://img.shields.io/badge/Major_Corrections-tomato) |
 | 29 | Swetha V | [Business Ledger Tool](Mini-Project/29) | ![](https://img.shields.io/badge/Accepted-green) <br/>  ![](https://img.shields.io/badge/Major_Corrections-tomato) |
