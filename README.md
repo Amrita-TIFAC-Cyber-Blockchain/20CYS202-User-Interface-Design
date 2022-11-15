@@ -66,6 +66,8 @@
 | **[Internal]** Periodical II | 10 |
 | **[External]** End-Semester Exam | 30 |
 
+[Click Here](Evaluation_Pages) to view Evaluation Pages of the Students
+
 ### Dates and Deadlines
 
 | Course Start | 14 - Sept - 2022 |
