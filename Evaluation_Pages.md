@@ -44,7 +44,7 @@
  | Madari Kuruba Ganesh | [Link](https:\\ganesh20039.github.io/20CYS202-UID/personal_website) | [Link](https:\\ganesh20039.github.io/20CYS202-UID/anokha) | 
  | Madhav Harikumar | [Link](https:\\madhavh10.github.io/20CYS202-UID/personal_website) | [Link](https:\\madhavh10.github.io/20CYS202-UID/anokha) | 
  | Manbendra Satpathy | [Link](https:\\manbendra2014.github.io/20CYS202-UID/personal_website) | [Link](https:\\manbendra2014.github.io/20CYS202-UID/anokha) | 
- | G Manomithran | [Link](https:\\.github.io/20CYS202-UID/personal_website) | [Link](https:\\.github.io/20CYS202-UID/anokha) | 
+ | G Manomithran | [Link](https:\\0xaL4te.github.io/20CYS202-UID/personal_website) | [Link](https:\\0xaL4te.github.io/20CYS202-UID/anokha) | 
  | Middivari Charan Kumar Reddy | [Link](https:\\charankumar3009.github.io/20CYS202-UID/personal_website) | [Link](https:\\charankumar3009.github.io/20CYS202-UID/anokha) | 
  | Mittul R | [Link](https:\\mittul31.github.io/20CYS202-UID/personal_website) | [Link](https:\\mittul31.github.io/20CYS202-UID/anokha) | 
  | Mohamed Jasir Faiez M M | [Link](https:\\jasir66.github.io/20CYS202-UID/personal_website) | [Link](https:\\jasir66.github.io/20CYS202-UID/anokha) | 
@@ -74,7 +74,7 @@
  | Saranesh E S | [Link](https:\\saranesh296.github.io/20CYS202-UID/personal_website) | [Link](https:\\saranesh296.github.io/20CYS202-UID/anokha) | 
  | Seran Pandiyan I P | [Link](https:\\seranpandiyan.github.io/20CYS202-UID/personal_website) | [Link](https:\\seranpandiyan.github.io/20CYS202-UID/anokha) | 
  | Shree Om Sharma | [Link](https:\\shreeom03.github.io/20CYS202-UID/personal_website) | [Link](https:\\shreeom03.github.io/20CYS202-UID/anokha) | 
- | Sourabh Sasikanthan | [Link](https:\\.github.io/20CYS202-UID/personal_website) | [Link](https:\\.github.io/20CYS202-UID/anokha) | 
+ | Sourabh Sasikanthan | [Link](https:\\CYS20212025.github.io/20CYS202-UID/personal_website) | [Link](https:\\CYS20212025.github.io/20CYS202-UID/anokha) | 
  | Sri Sai Tanvi Sonti | [Link](https:\\saitanvi.github.io/20CYS202-UID/personal_website) | [Link](https:\\saitanvi.github.io/20CYS202-UID/anokha) | 
  | Sudeep V | [Link](https:\\sudeepvijayakumar.github.io/20CYS202-UID/personal_website) | [Link](https:\\sudeepvijayakumar.github.io/20CYS202-UID/anokha) | 
  | Sudhir R T | [Link](https:\\sudhir04666.github.io/20CYS202-UID/personal_website) | [Link](https:\\sudhir04666.github.io/20CYS202-UID/anokha) | 
