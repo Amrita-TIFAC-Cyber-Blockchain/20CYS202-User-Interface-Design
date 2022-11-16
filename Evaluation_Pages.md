@@ -5,7 +5,7 @@
 
 ## Evaluation Pages
 
- | Name | ![](https://img.shields.io/badge/-Personal_Website-purple) | ![](https://img.shields.io/badge/-Anokha-blueviolet)  | E1: 16-Nov-2022 <br/> ![](https://img.shields.io/badge/-Personal_Website-purple) |      E2 <br/> ![](https://img.shields.io/badge/-Anokha-blueviolet) |    E3 <br/> ![](https://img.shields.io/badge/-Anokha-blueviolet) |  
+ | Name | ![](https://img.shields.io/badge/-Personal_Website-purple) | ![](https://img.shields.io/badge/-Anokha_Website-blueviolet)  | E1 <br/> 16-Nov-2022 <br/> 17-Nov-2022 <br/> ![](https://img.shields.io/badge/-Personal_Website-purple) |      E2 <br/> ![](https://img.shields.io/badge/-Anokha_Website-blueviolet)  |    E3 <br/> ![](https://img.shields.io/badge/-Anokha_Website-blueviolet)  |  
  |:----:|:----------------:|:------:|:---------------:|:---------:|:--------:|
  | Abinesh G | [Link](https:\\abi-008.github.io/20CYS202-UID/personal_website) | [Link](https:\\abi-008.github.io/20CYS202-UID/anokha) |  |  | |
  | Achyuth Anand | [Link](https:\\achyuth03.github.io/20CYS202-UID/personal_website) | [Link](https:\\achyuth03.github.io/20CYS202-UID/anokha) |  |  | |
