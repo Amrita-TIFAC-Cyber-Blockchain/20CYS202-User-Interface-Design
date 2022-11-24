@@ -6,6 +6,7 @@
 ## Assignments
 
 ### UI01 - User Analysis of Mini-Project Topic ![](https://img.shields.io/badge/-In_Progress-brightgreen)
+![](https://img.shields.io/badge/Start_Date-26_Sept-purple) ![](https://img.shields.io/badge/First_Submission-22_Oct-purple) ![](https://img.shields.io/badge/Second_Submission-18_Dec-purple)
 
 ### UI02 - Basic HTML Form and Validation using JavaScript ![](https://img.shields.io/badge/-In_Progress-brightgreen)
 ![](https://img.shields.io/badge/Start_Date-25_Nov-purple) ![](https://img.shields.io/badge/End_Data-30_Nov-purple)
@@ -14,7 +15,7 @@
 #### Instructions
 
 - Create a HTML Form for **Anokha Registration** Page with following HTML Elements.
-  - Label
+  - Label 
   - Textbox
   - Textarea
   - Radio Button
