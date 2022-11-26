@@ -45,8 +45,8 @@
 | 2 | | CSS Text Effects: color, text-align, text-align-last, direction, unicode-bidi, vertical-align <br/> text-transform, text-indent, letter-spacing, line-height, word-spacing <br/> font-family, font-style, font-size, font-variant, font-weight | | |
 | 2 | | CSS Page Layouts: margin, margin-top, margin-right, margin-bottom, margin-left <br/> padding-top, padding-right, padding-bottom, padding-left, height, width | | |
 | 2 | | Responsive Web Design | | |
-| 3 | | Introduction to Java Script | | |
-| 3 | | JS: Form Validation | | |
+| 3 | | [Introduction to Java Script](Examples/Scripts) ![](https://img.shields.io/badge/-Completed-brightgreen) | | |
+| 3 | | [Introduction to Java Script](Examples/Scripts) JS: Form Validation ![](https://img.shields.io/badge/-Completed-brightgreen) | | |
 | 3 | | JS: Event Handling | | |
 | 3 | | JS: Document Object Model | | |
 | 3 | | JS: Application Deployment | | |
