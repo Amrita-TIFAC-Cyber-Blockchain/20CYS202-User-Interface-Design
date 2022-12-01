@@ -6,9 +6,9 @@
 ## Assignments
 
 ### UI01 - User Analysis of Mini-Project Topic ![](https://img.shields.io/badge/-In_Progress-brightgreen)
-![](https://img.shields.io/badge/Start_Date-26_Sept-purple) ![](https://img.shields.io/badge/First_Submission-22_Oct-purple) ![](https://img.shields.io/badge/Second_Submission-18_Dec-purple)
+![](https://img.shields.io/badge/Start_Date-26_Sept-purple) ![](https://img.shields.io/badge/First_Submission-22_Oct-purple) ![](https://img.shields.io/badge/Second_Submission-18_Dec-purple) ![](https://img.shields.io/badge/Final_Submission-5_Jan-purple)
 
-### UI02 - Basic HTML Form and Validation using JavaScript ![](https://img.shields.io/badge/-In_Progress-brightgreen)
+### UI02 - Basic HTML Form and Validation using JavaScript ![](https://img.shields.io/badge/-Completed-darkgreen)
 ![](https://img.shields.io/badge/Start_Date-25_Nov-purple) ![](https://img.shields.io/badge/End_Data-30_Nov-purple)
 
 
@@ -38,4 +38,12 @@
 - Always end a statement with a semicolon
 - Lines should not be longer than 80 characters
 
-### UI03 - Exploration
+### UI03 - Interface Evaluation of AUMS ![](https://img.shields.io/badge/-In_Progress-brightgreen)
+![](https://img.shields.io/badge/Start_Date-13_Dec-purple) ![](https://img.shields.io/badge/End_Data-30_Dec-purple)
+
+#### Instructions
+- Document your User Evaluation for Student View of AUMS
+  - Each Observation should have a unique ID (Example. AUMS-UIE-001)
+  - Please mention which **Design Principle is violated** with **suitable screenshots** and **supportive link.**
+  - Suggestions for improvements can be mentioned.
+  
