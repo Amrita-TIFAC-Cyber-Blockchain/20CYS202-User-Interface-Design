@@ -1,5 +1,6 @@
 # 20CYS202 - User Interface Design ![](https://img.shields.io/badge/-Live-brightgreen)
-![](https://img.shields.io/badge/Batch-21CYS-lightgreen) ![](https://img.shields.io/badge/UG-blue) ![](https://img.shields.io/badge/Subject-UID-blue)
+![](https://img.shields.io/badge/Batch-21CYS-lightgreen) ![](https://img.shields.io/badge/UG-blue) ![](https://img.shields.io/badge/Subject-UID-blue) <br/>
+![](https://img.shields.io/badge/Lecture-1-orange) ![](https://img.shields.io/badge/Practical-3-orange) ![](https://img.shields.io/badge/Credits-2-orange)
 
 20CYS202  - User Interface Design - 3rd Sem - B.E. CSE(CYS) - ASE, CBE
 
@@ -77,8 +78,8 @@
 | Lab Evaluation I | 14 - Nov - 2022 |
 | Periodicals II | 07 - Dec - 2022  |
 | Lab Evaluation II | 19 - Dec - 2022 |
-| End Semester | TBD |
-| Mini-Project Evaluation | 05 - Jan - 2022 |
+| Mini-Project Evaluation | 05 - Jan - 2023 |
+| End Semester | 23 - Jan - 2023 |
 
 ### :green_book: Text and Reference Books
  - **Text:** DT Editorial Services. HTML 5 Black Book (Covers CSS3, JavaScript, XML, XHTML, AJAX, PHP, jQuery). Second Edition, Dreamtech Press; 2016.
