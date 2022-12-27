@@ -3,6 +3,8 @@
 
 20CYS202  - User Interface Design - 3rd Sem - B.E. CSE(CYS) - ASE, CBE
 
+## Quick Pointers
+
 ### Valid Script 
 
 - **Within Head**
