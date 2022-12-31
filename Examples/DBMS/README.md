@@ -4,11 +4,17 @@
 
 #### Table Description
 
+Please create a table as shown in the below schema. Two tables
+- cys
+- wicys
+
 <p align="center">
   <img src="images/table_description.png" width="600">  
 </p>
 
 #### Table Values
+
+We have entered the values into both these tables as seen (example values).
 
 <p align="center">
   <img src="images/tables.png" width="400">  
