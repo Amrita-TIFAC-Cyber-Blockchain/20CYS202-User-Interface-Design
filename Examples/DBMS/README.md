@@ -22,11 +22,19 @@ We have entered the values into both these tables as seen (example values).
 
 #### Join
 
+```
+select cys.roll_no, cys.name, cys.cgpa, wicys.designation from wicys join cys ON cys.roll_no=wicys.roll_no;
+```
+
 <p align="center">
   <img src="images/join.png" width="800">  
 </p>
 
 #### Left Outer Join
+
+```
+select cys.roll_no, cys.name, cys.cgpa, wicys.designation from cys left outer join wicys ON cys.roll_no=wicys.roll_no;
+```
 
 <p align="center">
   <img src="images/left_outer_join.png" width="800">  
@@ -34,17 +42,29 @@ We have entered the values into both these tables as seen (example values).
 
 #### Right Outer Join
 
+```
+select cys.roll_no, cys.name, cys.cgpa, wicys.designation from wicys right outer join cys ON cys.roll_no=wicys.roll_no;
+```
+
 <p align="center">
   <img src="images/right_outer_join.png" width="800">  
 </p>
 
 #### Inner Join
 
+```
+select cys.roll_no, cys.name, cys.cgpa, wicys.designation from wicys inner join cys ON cys.roll_no=wicys.roll_no;
+```
+
 <p align="center">
   <img src="images/inner_join.png" width="800">  
 </p>
 
 #### Full Join
+
+```
+select * from wicys full join cys;
+```
 
 <p align="center">
   <img src="images/full_join.png" width="600">  
