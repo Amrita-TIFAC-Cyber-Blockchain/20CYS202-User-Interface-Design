@@ -48,7 +48,7 @@
 | 2 | | Responsive Web Design | | |
 | 3 | | [Introduction to Java Script](Examples/Scripts) ![](https://img.shields.io/badge/-Completed-brightgreen) | | |
 | 3 | | [Introduction to Java Script](Examples/Scripts) JS: Form Validation ![](https://img.shields.io/badge/-Completed-brightgreen) | | |
-| 3 | | JS: Event Handling | | |
+| 3 | | JS: Event Handling ![](https://img.shields.io/badge/-Completed-brightgreen) | | |
 | 3 | | JS: Document Object Model | | |
 | 3 | | JS: Application Deployment | | |
 
@@ -60,8 +60,9 @@
 
 | Components | Marks |
 |:----------|:-----:|
-| **[Internal][CA-T]** Monthly Quiz (2 Nos) | 10 |
-| **[Internal][CA-L]** Assignments (3 Nos) | 30 |
+| **[Internal][CA-T]** Monthly Quiz (2 Nos) | 5 + 5 |
+| **[Internal][CA-L]** Assignments (3 Nos) | 5 + 5 + 5 |
+| **[Internal][CA-L]** Lab Evaluation (3 Nos) | 5 + 5 + 5 |
 | **[Internal][CA-L]** Mini-Project | 10 |
 | **[Internal]** Periodical I | 10 |
 | **[Internal]** Periodical II | 10 |
@@ -78,6 +79,7 @@
 | Lab Evaluation I | 14 - Nov - 2022 |
 | Periodicals II | 07 - Dec - 2022  |
 | Lab Evaluation II | 19 - Dec - 2022 |
+| Missed Periodicals | 02 - Jan - 2023 |
 | Mini-Project Evaluation | 05 - Jan - 2023 |
 | End Semester | 23 - Jan - 2023 |
 
