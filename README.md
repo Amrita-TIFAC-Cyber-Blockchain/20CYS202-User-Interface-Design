@@ -50,7 +50,7 @@
 | 3 | | [Introduction to Java Script](Examples/Scripts) JS: Form Validation ![](https://img.shields.io/badge/-Completed-brightgreen) | | |
 | 3 | | JS: Event Handling ![](https://img.shields.io/badge/-Completed-brightgreen) | | |
 | 3 | | JS: Document Object Model ![](https://img.shields.io/badge/-Completed-brightgreen)  | | |
-| 3 | | JS: Application Deployment | | |
+| 3 | | JS: Application Deployment ![](https://img.shields.io/badge/-Completed-brightgreen) | | |
 
 ### Mini-Project Topics
 
@@ -60,15 +60,17 @@
 
 | Components | Marks |
 |:----------|:-----:|
-| **[Internal][CA-T]** Monthly Quiz (2 Nos) | 5 + 5 |
+| **[Internal][CA-T]** Quiz (1 Nos) | 5 |
 | **[Internal][CA-L]** Assignments (3 Nos) | 5 + 5 + 5 |
-| **[Internal][CA-L]** Lab Evaluation (3 Nos) | 5 + 5 + 5 |
+| **[Internal][CA-L]** Lab Evaluation (2 Nos) + Record | 5 + 5 + 5 |
+| **[Internal][CA-L]** Viva | 5 |
 | **[Internal][CA-L]** Mini-Project | 10 |
 | **[Internal]** Periodical I | 10 |
 | **[Internal]** Periodical II | 10 |
 | **[External]** End-Semester Exam | 30 |
 
 [Click Here](Evaluation_Pages) to view Evaluation Pages of the Students
+[Click Here](Assignments) to view Assignments of the Students
 
 ### Dates and Deadlines
 
