@@ -37,7 +37,7 @@
 | 1 | | HTML Creating Forms: \<form\>, \<input\>, \<label\> | | |
 | 1 | | HTML Media and Graphics: \<canvas\>, \<svg\>, \<video\>, \<audio\>, \<source\>, \<iframe\> | | |
 | 1 | | HTML5 Elements | | |
-| 1 | | HTML: Simple Web Page - Personal Website | | |
+| 1 | | HTML: Simple Web Page - Personal Website ![](https://img.shields.io/badge/-Completed-brightgreen) | | |
 | 2 | | Introduction to CSS | | |
 | 2 | | Features to CSS | | |
 | 2 | | CSS Borders: border-style, border-width, border-color, border-radius, <br/> border-top-style, border-right-style, border-bottom-style, border-left-style | | |
@@ -52,6 +52,12 @@
 | 3 | | JS: Document Object Model ![](https://img.shields.io/badge/-Completed-brightgreen)  | | |
 | 3 | | JS: Application Deployment ![](https://img.shields.io/badge/-Completed-brightgreen) | | |
 
+#### Quick Refreshers
+
+- [Scripts](https://amrita-tifac-cyber-blockchain.github.io/20CYS202-User-Interface-Design/Examples/Scripts/)
+- [HTTP Codes](https://amrita-tifac-cyber-blockchain.github.io/20CYS202-User-Interface-Design/Examples/Web/HTTP_Codes)
+- [Common Ports](https://amrita-tifac-cyber-blockchain.github.io/20CYS202-User-Interface-Design/Examples/Web/Ports)
+
 ### Mini-Project Topics
 
 [Click Here](Mini-Project) to view Mini-Project Topics and Teams
@@ -62,14 +68,14 @@
 |:----------|:-----:|
 | **[Internal][CA-T]** Quiz (1 Nos) | 5 |
 | **[Internal][CA-L]** Assignments (3 Nos) | 5 + 5 + 5 |
-| **[Internal][CA-L]** Lab Evaluation (2 Nos) + Record | 5 + 5 + 5 |
-| **[Internal][CA-L]** Viva | 5 |
+| **[Internal][CA-L]** Lab Evaluation (2 Nos)  | 5 + 5 |
+| **[Internal][CA-L]** Viva + Record | 5 + 5 |
 | **[Internal][CA-L]** Mini-Project | 10 |
 | **[Internal]** Periodical I | 10 |
 | **[Internal]** Periodical II | 10 |
 | **[External]** End-Semester Exam | 30 |
 
-[Click Here](Evaluation_Pages) to view Evaluation Pages of the Students
+[Click Here](Evaluation_Pages) to view Evaluation Pages of the Students <br/>
 [Click Here](Assignments) to view Assignments of the Students
 
 ### Dates and Deadlines
