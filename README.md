@@ -90,6 +90,7 @@
 | Missed Periodicals | 02 - Jan - 2023 |
 | Mini-Project Evaluation | 05 - Jan - 2023 |
 | End Semester | 23 - Jan - 2023 |
+| Publication of Results | 17 - Feb - 2023 |
 
 ### :green_book: Text and Reference Books
  - **Text:** DT Editorial Services. HTML 5 Black Book (Covers CSS3, JavaScript, XML, XHTML, AJAX, PHP, jQuery). Second Edition, Dreamtech Press; 2016.
