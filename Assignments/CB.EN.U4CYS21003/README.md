@@ -9,10 +9,10 @@
 |:--------------------:|:-------------:|:--------------------------------:|:------------------------:|:-----------------------:|:-----:|
 |         4            |       3.5    |                 3.5             |             2.5            |           3.3           |    17 |
 
-## Assignment & Lab Evaluation 02 - Anokha Website with Registration Page
+## Assignment & Lab Evaluation 02 - Anokha Website with Registration Page 
 
 | Template Used | First Evaluation on |  Registration Page | Gallery Page | Contact Page | Java Script | Style Guide | Best Practices | 
 |:-------------:|:-------------------:|:------------------:|:------------:|:------------:|:-----------:|:-----------:|:--------------:|
-|             |      |                |        |       |    |         |             |
+|    No        |   10- Jan - 2023     |       Yes          |      No      |     No       |   Internal  |     No     |     No         |
 
 ## Assignment 03 - AUMS User Interface Evaluation
