@@ -13,6 +13,6 @@
 
 | Template Used | First Evaluation on |  Registration Page | Gallery Page | Contact Page | Java Script | Style Guide | Best Practices | 
 |:-------------:|:-------------------:|:------------------:|:------------:|:------------:|:-----------:|:-----------:|:--------------:|
-|             |    |              |         |         |    |        |             |
+|       No      |  04 - Jan - 2023    |        Yes         |      Yes     |    No        |   Internal  |     Yes     |       No       |
 
 ## Assignment 03 - AUMS User Interface Evaluation
