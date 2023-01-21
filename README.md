@@ -1,4 +1,4 @@
-# 20CYS202 - User Interface Design ![](https://img.shields.io/badge/-Live-brightgreen)
+# 20CYS202 - User Interface Design ![](https://img.shields.io/badge/-Completed-darkgreen)
 ![](https://img.shields.io/badge/Batch-21CYS-lightgreen) ![](https://img.shields.io/badge/UG-blue) ![](https://img.shields.io/badge/Subject-UID-blue) <br/>
 ![](https://img.shields.io/badge/Lecture-1-orange) ![](https://img.shields.io/badge/Practical-3-orange) ![](https://img.shields.io/badge/Credits-2-orange)
 
@@ -33,19 +33,11 @@
 | 1 | | HTML Formatting: \<b\>, \<strong\>, \<i\>, \<mark\>, \<del\>, \<sub\>, \<sup\>, \<p\> and Styles  ![](https://img.shields.io/badge/-Completed-brightgreen) | | |
 | 1 | | HTML Links: \<a\> ![](https://img.shields.io/badge/-Completed-brightgreen) | | |
 | 1 | | HTML Lists: \<ul\>, \<ol\>, \<dl\>, \<li\> ![](https://img.shields.io/badge/-Completed-brightgreen) | | |
-| 1 | | HTML Creating Tables: \<table\>, \<th\>, \<tr\>, \<td\> | | |
-| 1 | | HTML Creating Forms: \<form\>, \<input\>, \<label\> | | |
-| 1 | | HTML Media and Graphics: \<canvas\>, \<svg\>, \<video\>, \<audio\>, \<source\>, \<iframe\> | | |
-| 1 | | HTML5 Elements | | |
+| 1 | | HTML Creating Forms: \<form\>, \<input\>, \<label\> ![](https://img.shields.io/badge/-Completed-brightgreen) | | |
 | 1 | | HTML: Simple Web Page - Personal Website ![](https://img.shields.io/badge/-Completed-brightgreen) | | |
-| 2 | | Introduction to CSS | | |
-| 2 | | Features to CSS | | |
-| 2 | | CSS Borders: border-style, border-width, border-color, border-radius, <br/> border-top-style, border-right-style, border-bottom-style, border-left-style | | |
-| 2 | | CSS Backgrounds: background-color, background-image, background-repeat, background-attachment, background-position | | |
-| 2 | | CSS Text Effects: color, text-align, text-align-last, direction, unicode-bidi, vertical-align <br/> text-transform, text-indent, letter-spacing, line-height, word-spacing <br/> | | |
-| 2 | | CSS Text Effects: color, text-align, text-align-last, direction, unicode-bidi, vertical-align <br/> text-transform, text-indent, letter-spacing, line-height, word-spacing <br/> font-family, font-style, font-size, font-variant, font-weight | | |
-| 2 | | CSS Page Layouts: margin, margin-top, margin-right, margin-bottom, margin-left <br/> padding-top, padding-right, padding-bottom, padding-left, height, width | | |
-| 2 | | Responsive Web Design | | |
+| 2 | | Introduction to CSS ![](https://img.shields.io/badge/-Completed-brightgreen) | | |
+| 2 | | Features to CSS ![](https://img.shields.io/badge/-Completed-brightgreen) | | |
+| 2 | | CSS Box Layout ![](https://img.shields.io/badge/-Completed-brightgreen) | | | 
 | 3 | | [Introduction to Java Script](Examples/Scripts) ![](https://img.shields.io/badge/-Completed-brightgreen) | | |
 | 3 | | [Introduction to Java Script](Examples/Scripts) JS: Form Validation ![](https://img.shields.io/badge/-Completed-brightgreen) | | |
 | 3 | | JS: Event Handling ![](https://img.shields.io/badge/-Completed-brightgreen) | | |
