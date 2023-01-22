@@ -9,7 +9,7 @@ the Server. The high level classification is as below:
 - Client error responses (400 – 499)
 - Server error responses (500 – 599)
 
-## Common Ports
+## Common Response Codes
 
 | Code |      Description     | 
 |:----:|:--------------------:|
