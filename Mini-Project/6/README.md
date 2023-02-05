@@ -12,6 +12,7 @@
 ### Deliverable 
 - [User Analysis Document](UID-DBMS-06_UAD.pdf)
 - [ER Diagram](UID-DBMS-06_ER_Diagram.png)
+- [SQL WorkBench](UID-DBMS-06_SQL.png)
 - [User Interface](UI/)
 
 
