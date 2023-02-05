@@ -9,10 +9,10 @@
 |:--------------------:|:-------------:|:--------------------------------:|:------------------------:|:-----------------------:|:-----:|
 |                |          |                       |                       |                       |     |
 
-## Assignment & Lab Evaluation 02 - Anokha Website with Registration Page
+## Assignment & Lab Evaluation 02 - Anokha Website with Registration Page ![](https://img.shields.io/badge/-Completed-brightgreen)
 
 | Template Used | First Evaluation on |  Registration Page | Gallery Page | Events Page | Contact Page | Java Script | Style Guide | Best Practices | 
 |:-------------:|:-------------------:|:------------------:|:------------:|:-----------:|:------------:|:-----------:|:-----------:|:--------------:|
-|      No       |   07 - Jan - 2023   |         Yes        |      No      |      No     |    No        |  Internal   |     Yes     |       Yes      |
+|      No       |   07 - Jan - 2023   |         Yes        |      Yes     |      Yes    |    Yes       |  Internal   |     Yes     |       Yes      |
 
 ## Assignment 03 - AUMS User Interface Evaluation
