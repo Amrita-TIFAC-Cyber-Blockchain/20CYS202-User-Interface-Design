@@ -2,7 +2,7 @@
 ![](https://img.shields.io/badge/Batch-21CYS-lightgreen) ![](https://img.shields.io/badge/UG-blue) ![](https://img.shields.io/badge/Subject-UID-blue) <br/>
 ![](https://img.shields.io/badge/Category-Dept-blue)
 
-### UID-DBMS-01 - [Alumni Portal](https://lakshminarayan-p.github.io/20CYS202-UID/Mini-Project)
+### UID-DBMS-01 - [Alumni Portal](https://ashuvwxyz.github.io/20CYS202-UID/Mini-Project/)
 
 #### Team Members
 - [Ashwin Anand]()
