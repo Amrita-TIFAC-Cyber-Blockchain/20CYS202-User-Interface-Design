@@ -11,7 +11,7 @@
 
 ### Deliverable 
 - [User Analysis Document](UID-DBMS-14_UAD.pdf)
-- [ER Diagram](UID-DBMS-14_ER_Diagram.pdf)
+- [ER Diagram](UID-DBMS-14_ER_Diagram.png)
 - [User Interface](UI/)
 
 
