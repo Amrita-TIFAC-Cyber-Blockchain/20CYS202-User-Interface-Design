@@ -16,5 +16,9 @@
 - [User Interface](UI/)
 
 ### Credentials
-- No Credentials - Just Click **Login**
-
+- **User-1**
+  - **username:** ramaguru
+  - **password:** ramaguru
+- **User-2**  
+  - **username:** student
+  - **password:** student
