@@ -61,8 +61,7 @@
 | **[Internal][CA-T]** Quiz (1 Nos) | 5 |
 | **[Internal][CA-L]** Assignments (3 Nos) | 5 + 5 + 5 |
 | **[Internal][CA-L]** Lab Evaluation (2 Nos)  | 5 + 5 |
-| **[Internal][CA-L]** Viva + Record | 5 + 5 |
-| **[Internal][CA-L]** Mini-Project | 10 |
+| **[Internal][CA-L]** Mini-Project | 20 |
 | **[Internal]** Periodical I | 10 |
 | **[Internal]** Periodical II | 10 |
 | **[External]** End-Semester Exam | 30 |
