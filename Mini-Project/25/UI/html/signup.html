@@ -1,0 +1,278 @@
+<!--
+Authors: Harshitha Ranjith
+Created Date:  16 Dec 2022
+Updated Date: 10 Jan 2023
+Description: signup  -->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <!--<link href="data:image/png;base64,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" rel="icon">-->
+    <style>
+        html {
+  height: 100%;
+}
+.button1 {
+  position: relative;
+  left: 115px;
+  background-color: #4CAF50;
+  border-radius: 20px;
+  height: 35px;
+  width: 80px;
+}
+body {
+  color: #fff;
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+  background: linear-gradient(#141e30, #243b55);
+  background-image: url('../images/parcel3.jpg');
+  background-repeat: no-repeat;
+  background-image: contain;
+  background-attachment: fixed;
+        background-size: cover;
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.login-box a:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+.login-box a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.login-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.login-box a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.login-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <script>  
+        function validateform(){  
+        var name=document.myform.name.value;  
+        var password=document.myform.password.value;
+        var password2 = document.myform.password2.value;  
+        var num = document.myform.phnumber.value;
+        var x=document.myform.email.value;  
+        var atposition=x.indexOf("@");  
+        var dotposition=x.lastIndexOf(".");  
+        
+        if (name==null || name==""){  
+          alert("Name can't be blank");  
+          return false;  
+        }else if(password.length<8){  
+          alert("Password must be at least 8 characters long.");  
+          return false;  
+          }
+          else if(password!=password2){
+            alert("Both passwords do not match");
+            return false;
+          }
+          else if(isNaN(num)){  
+            document.getElementById("numloc").innerHTML="Enter Numeric value only";  
+            return false;  
+        } else if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+            alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+            return false;  
+        }
+        else {
+            return true;
+        }  
+
+    }
+    </script>  
+        <body>  
+        <div class="login-box">
+            <h2></h2>
+        <form name="myform" method="post" action="abc.jsp" onsubmit="return validateform()" >  
+        <div class="user-box">
+        Name: <input type="text" name="name"><br/> 
+    </div>
+    <div class="user-box"> 
+        Phone Number: <input type="number" name = "phnumber"><br/>
+        </div>
+        <div class="user-box">
+        Email: <input type="email" name="email"><br/>
+    </div>
+    <div class="user-box">
+        New Password: <input type="password" name="password2"><br/>
+        </div>
+
+        <div class="user-box">
+        Upload photo: <input type="file" name="file"><br/>
+        </div>
+
+        <input type="submit" class="button1" value="Register"  <a href ="html/index.html" style=" color: red;">  
+        </form>  
+    </div>
+
+<footer style="top:700px;">
+	<div class=”footer-content” style="margin-left:500px;">
+		<div class=”footer-content”>
+			<br>Copyright © 2022 - 2023 Parcel Management System<br>
+          V.M.Sushmanth, Harshith Ranjith<br>
+          &nbsp; II B.Tech CSE (CYS)<br>
+          Part of 20CYS202 - User Interface Design<br>
+          Amrita Vishwa Vidyapeetham,&nbsp;Coimbatore<br><br>
+		</div>
+	</div>
+</footer>
+</body>
+</html>
