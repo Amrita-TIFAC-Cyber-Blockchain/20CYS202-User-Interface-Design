@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+
+<a class="sus" href="home.htm"><button>Back</button></a>
+<div id="container">
+	<aside>
+		<header>
+			<input type="text" placeholder="search">
+		</header>
+		<ul>
+			<li>
+				<img src="../img/ram.jpeg" alt="" width="55" height="50">
+				<div>
+					<h2>Ram Surya</h2>
+					<h3>
+						<span class="status green"></span>
+						Online
+					</h3>
+				</div>
+			</li>
+			<li>
+				<img src="../img/niran.jpeg" alt="" width="55" height="50">
+				<div>
+					<h2>Niran</h2>
+					<h3>
+						<span class="status green"></span>
+						Online
+					</h3>
+				</div>
+			</li>
+			<li>
+				<img src="../img/vitalian.jpeg" alt="" width="60" height="50">
+				<div>
+					<h2>Vitalian</h2>
+					<h3>
+						<span class="status orange"></span>
+						Offline
+					</h3>
+				</div>
+			</li>
+			<li>
+				<img src="../img/siddh.jpeg" alt="" width="60" height="50">
+				<div>
+					<h2>Siddharth Krishna</h2>
+					<h3>
+						<span class="status green"></span>
+						Online
+					</h3>
+				</div>
+			</li>
+			
+	</aside>
+	<main>
+		<header>
+			<img src="../img/siddh.jpeg" alt="" width="65" height="55">
+			<div>
+				<h2>Siddharth Krishna</h2>
+                <h3>
+                    <span class="status green"></span>
+                    Online
+                </h3>
+			</div>
+		</header>
+		<ul id="chat">
+			<li class="you">
+				<div class="entete">
+					<span class="status green"></span>
+					<h2>Siddharth</h2>
+					<h3>10:12AM, Today</h3>
+				</div>
+					<img src="../img/siddh2.jpeg" width="165" height="240">
+			</li>
+            <li class="you">
+				<div class="entete">
+					<span class="status green"></span>
+					<h2>Siddharth</h2>
+					<h3>10:13AM, Today</h3>
+				</div>
+				<div class="triangle"></div>
+				<div class="message">
+					Photo epdi?😎
+				</div>
+			</li>
+            <li class="you">
+				<div class="entete">
+					<span class="status green"></span>
+					<h2>Siddharth</h2>
+					<h3>10:13AM, Today</h3>
+				</div>
+				<div class="triangle"></div>
+				<div class="message">
+					En forearms theriyutha?👉🏽👈🏽💗
+				</div>
+			</li>
+
+			<li class="me">
+				<div class="entete">
+					<h3>10:15AM, Today</h3>
+					<h2>Nisha</h2>
+					<span class="status blue"></span>
+				</div>
+				<div class="triangle"></div>
+				<div class="message">
+					Dei Poda Loosu🤡
+				</div>
+			</li>
+            <li class="you">
+				<div class="entete">
+					<span class="status green"></span>
+					<h2>Siddharth</h2>
+					<h3>10:21AM, Today</h3>
+				</div>
+				<div class="triangle"></div>
+				<div class="message">
+					Why chellam?😩
+				</div>
+			</li>
+            <li class="you">
+				<div class="entete">
+					<span class="status green"></span>
+					<h2>Siddharth</h2>
+					<h3>10:22AM, Today</h3>
+				</div>
+				<div class="triangle"></div>
+				<div class="message">
+					Namba rendu perum gym polaama?
+				</div>
+			</li>
+			
+		</ul>
+		<footer>
+			<textarea placeholder="Type your message"></textarea>
+			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/ico_picture.png" alt="">
+			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/ico_file.png" alt="">
+			<a href="#">Send</a>
+            <div class="report">
+            <a  class="open-button" onclick="openForm()">Report</a>
+            </div>
+		</footer>
+
+	</main>
+	<div class= "down">
+		&copy; Copyright <strong><span>FriendFinder</span></strong>. All Rights Reserved
+		</div>
+</div>
+
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Report</h1>
+
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1">Sexual Content</label><br>
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <label for="vehicle2">Spam or Misleading</label><br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3">Violent or Repulsive Content</label><br>
+    <input type="checkbox" id="vehicle4" name="vehicle4" value="Bruh">
+    <label for="vehicle4">Harrasment or Bullying</label><br><br><br>
+    <label for="filename">Add Your Photo:</label>
+      <input type="file" id="myFile" name="filename" class = ok><br><br>
+    <label for="vehicle5">Other:</label>
+    <textarea name="" id="" cols="30" rows="7"></textarea>
+    
+
+    <a href="msg2.htm"><button type="submit" class="btn" >Report</button></a>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button><br><br>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+</html>
+
+<style>
+    *{
+	box-sizing:border-box;
+}
+body{
+	background-color: black;
+	font-family:Arial;
+}
+.down{
+  background-color: peru;
+  position: absolute;
+  bottom: -140%;
+  left: 1%;
+  text-align: center;
+  color: black;
+  margin-top: 100px;
+  width: 100%;
+  padding: 100px 40%;
+  display: flex;
+}
+#container{
+	width:750px;
+	height:800px;
+	background:#eff3f7;
+	margin:0 auto;
+	font-size:0;
+	border-radius:5px;
+	overflow:hidden;
+}
+aside{
+	width:260px;
+	height:800px;
+	background-color:#3b3e49;
+	display:inline-block;
+	font-size:15px;
+	vertical-align:top;
+}
+
+
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: peru;
+  text-align: center;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  position: absolute;
+  top: 7%;
+  right: 16%;
+  cursor: pointer;
+  opacity: 0.8;
+
+}
+#footer {
+  background: white;
+  padding: 0 0 30px 0;
+  color: black;
+  font-size: 14px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 9px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+main{
+	width:490px;
+	height:800px;
+	display:inline-block;
+	font-size:15px;
+	vertical-align:top;
+}
+
+aside header{
+	padding:30px 20px;
+}
+aside input{
+	width:100%;
+	height:50px;
+	line-height:50px;
+	padding:0 50px 0 20px;
+	background-color:#5e616a;
+	border:none;
+	border-radius:3px;
+	color:#fff;
+	background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/ico_search.png);
+	background-repeat:no-repeat;
+	background-position:170px;
+	background-size:40px;
+}
+aside input::placeholder{
+	color:#fff;
+}
+aside ul{
+	padding-left:0;
+	margin:0;
+	list-style-type:none;
+	overflow-y:scroll;
+	height:690px;
+}
+aside li{
+	padding:10px 0;
+}
+aside li:hover{
+	background-color:#5e616a;
+}
+h2,h3{
+	margin:0;
+}
+aside li img{
+	border-radius:50%;
+	margin-left:20px;
+	margin-right:8px;
+}
+aside li div{
+	display:inline-block;
+	vertical-align:top;
+	margin-top:12px;
+}
+aside li h2{
+	font-size:14px;
+	color:#fff;
+	font-weight:normal;
+	margin-bottom:5px;
+}
+aside li h3{
+	font-size:12px;
+	color:#7e818a;
+	font-weight:normal;
+}
+
+.status{
+	width:8px;
+	height:8px;
+	border-radius:50%;
+	display:inline-block;
+	margin-right:7px;
+}
+.green{
+	background-color:#58b666;
+}
+.orange{
+	background-color:#ff725d;
+}
+.blue{
+	background-color:#6fbced;
+	margin-right:0;
+	margin-left:7px;
+}
+
+.report{
+    position: absolute;
+    right: 26%;
+    top: 6%;
+}
+
+main header{
+	height:110px;
+	padding:30px 20px 30px 40px;
+}
+main header > *{
+	display:inline-block;
+	vertical-align:top;
+}
+main header img:first-child{
+	border-radius:50%;
+}
+main header img:last-child{
+	width:24px;
+	margin-top:8px;
+}
+main header div{
+	margin-left:10px;
+	margin-right:145px;
+}
+main header h2{
+	font-size:16px;
+	margin-bottom:5px;
+}
+main header h3{
+	font-size:14px;
+	font-weight:normal;
+	color:#7e818a;
+}
+
+#chat{
+	padding-left:0;
+	margin:0;
+	list-style-type:none;
+	overflow-y:scroll;
+	height:535px;
+	border-top:2px solid #fff;
+	border-bottom:2px solid #fff;
+}
+#chat li{
+	padding:10px 30px;
+}
+#chat h2,#chat h3{
+	display:inline-block;
+	font-size:13px;
+	font-weight:normal;
+}
+#chat h3{
+	color:#bbb;
+}
+#chat .entete{
+	margin-bottom:5px;
+}
+#chat .message{
+	padding:20px;
+	color:#fff;
+	line-height:25px;
+	max-width:90%;
+	display:inline-block;
+	text-align:left;
+	border-radius:5px;
+}
+#chat .me{
+	text-align:right;
+}
+#chat .you .message{
+	background-color: green;
+}
+#chat .me .message{
+	background-color: #ffcb37;
+}
+#chat .triangle{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 10px 10px 10px;
+}
+#chat .you .triangle{
+		border-color: transparent transparent #58b666 transparent;
+		margin-left:15px;
+}
+#chat .me .triangle{
+		border-color: transparent transparent #ffcb37;
+		margin-left:375px;
+}
+
+main footer{
+	height:155px;
+	padding:20px 30px 10px 20px;
+}
+main footer textarea{
+	resize:none;
+	border:none;
+	display:block;
+	width:100%;
+	height:80px;
+	border-radius:3px;
+	padding:20px;
+	font-size:13px;
+	margin-bottom:13px;
+}
+main footer textarea::placeholder{
+	color:#ddd;
+}
+main footer img{
+	height:30px;
+	cursor:pointer;
+}
+main footer a{
+	text-decoration:none;
+	text-transform:uppercase;
+	font-weight:bold;
+	color:peru;
+	vertical-align:top;
+	margin-left:333px;
+	margin-top:5px;
+	display:inline-block;
+}
+.sus{
+	position: absolute;
+	left: 1%;
+}
+</style>
