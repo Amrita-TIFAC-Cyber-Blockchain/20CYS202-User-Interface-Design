@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A-Faucet</title>
+        <link style="border-radius: 50%" rel="icon" 
+href="./imgs/icon.png">
+        <link rel="stylesheet" href="./css/index.css">
+    </head>
+    <header class="header" style="margin-left:-60px;">
+      <div class="nav">
+
+
+<!--Function to send ether-->
+	      <script 
+src="https://cdn.jsdelivr.net/npm/web3/dist/web3.js"></script>
+<script>
+window.addEventListener('load', async () => {
+
+		if (typeof window.ethereum !== 'undefined') { 
+			console.log("MetaMask is Available :) !"); 
+		}
+			
+		// Modern DApp browsers
+		if (window.ethereum) {
+			window.web3 = new Web3(ethereum);
+			
+			// To prevent the page reloading when the MetaMask network changes
+			ethereum.autoRefreshOnNetworkChange = false;
+			
+			// To Capture the account details from MetaMask
+			const accounts = await ethereum.enable();
+			account = accounts[0];
+			
+		}
+		// Legacy DApp browsers
+		else if (window.web3) {
+			//window.web3 = new Web3(web3.currentProvider);
+			window.web3 = new Web3(new 
+Web3.providers.HttpProvider("https://ropsten.infura.io/v3/cbd9dc11b30147e9a2cc974be655ef7c")); 
+		}
+		// Non-DApp browsers
+		else {
+			console.log('Non-Ethereum browser detected. Please install MetaMask');
+			alert('Non-Ethereum browser detected. Please install MetaMask');
+		}
+
+	});
+      
+
+
+      function CallingSendEther(){
+        var checkbox = document.getElementById("terms");
+        if (!checkbox.checked) {
+              alert("Please accept Terms and conditions");
+        }
+        else{
+          sendEther();
+        }
+      }
+      function test(){
+        tes=document.ufrom.input.value;
+        document.getElementById("value").innerHTML = tes;
+      }
+
+      function sendEther(){
+        document.getElementById("value").style.display = "block";
+      }
+        
+          //
+   </script>
+
+
+
+
+      <!-- <div class="container">
+        </div> -->
+        <img src="./img/icon.png" width="40px" height="40px" 
+style="margin-left: 10px;margin-top: 5px;">
+        <figcaption style="margin-top: 
+-35px;font-size:25px;color:white;margin-left:60px">A - FAUCET</figcaption>
+      <nav style="margin-left:200px">
+              <ul class="navlink" >
+                 <li class="li"><a class="a 
+a1"href="./index.html">Home</a></li>
+                  <li class="li"><a class="a 
+a1"href="./html/login.html">Login</a></li>
+                  <li class="li"><a class="a a1" 
+href="./html/faq.html">FAQ</a></li>
+
+              </ul>
+          </nav>
+          </div>
+          <a class="cta" href="html/contact.html" style="margin-top:10px"><button 
+class="button">Contact</button></a>
+        </div>
+      </header>
+    <body>
+      <center><h1 class="h1">AMRITA FAUCET</h1></center>
+      <center><p style="color:white">Fast and reliable. 0.00001 Gorelli 
+Eth/day.</p></center>
+      <center><div class="box"></div></center>
+      <center>
+        <div class="container" style="margin-top: -350px;">
+            <form name="uform">
+
+                <input type="text" placeholder="Enter your wallet address" 
+class="searchbar" id="EtherWallet" name="input">
+                <input type="checkbox" id = "terms">Do you agree with our <a href = "html/terms.html" target = "_blank"> Terms and Conditions</a>
+                <br> 
+                <button class ="button" type = "button" onclick = "CallingSendEther()" value = "Send Ether" style="margin-top: 20px; margin-left: 20px;">Send Ether</button>
+            </form>
+        </div>
+            <p style="color:white"><a href="./html/login.html" 
+style="text-decoration:none;color:black">Please signup or login</a> with 
+Amrita Faucet to request ETH. It's free!</p>
+    </center>
+    <center>
+      <div class="box1"></div>
+      <p 
+style="color:white;font-size:20px;margin-left:-400px;margin-top:-50px">Transcation</p>
+      <p 
+style="color:white;font-size:20px;margin-left:450px;margin-top:-45px">Time</p>
+      <div class="box2"></div>
+      <p id="value" style="color:white;font-size:20px;margin-left:-80px;margin-top:-75px;display: none;">1Lbcfr7sAHTD9CgdQo3HTMTkV8LK4ZnX71 &emsp;&emsp;&emsp;&emsp;&emsp;18:50</p>
+
+    </center>
+    </body>
+    <center><footer style="margin-top:150px">
+                    <p>© 2022-2023. A-Faucet Insights, Inc. -Deepan , Vishnu , Vinoth • <a href="html/terms.html" target="_blank" 
+style="color: black;">Terms of Service</a></p>
+	    <p>II B.Tech CSE(CYS) </p>
+	    <p>Part of 20CYS202 - User Interface Design </p>
+	    <p>Amrita Vishwa Vidyapeetham, Coimbatore </p>
+		  
+    </footer></center>
+</html>

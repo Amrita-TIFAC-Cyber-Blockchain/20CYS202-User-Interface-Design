@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>A-Faucet - Login</title>
+        <meta name="viewport" 
+contect="width=device-width,initial-scale=1">
+        <link style="border-radius: 50%" rel="icon" 
+href="./imgs/icon.png">
+    </head>
+
+    <!-- This header contains the nav bar -->
+    <header class="header" style="margin-left:-60px;">
+      <!-- header style css for nav bar -->
+      <style>
+        .nav{
+            width: 100%;
+            height: 60px;
+            background:rgba(255, 255, 255, 0.296);
+            margin:0px;
+            border-radius: 10px;
+            
+        }
+        .li, .a, .button{
+            font-family: "Montserrat",sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            color:white;
+            text-decoration: none;
+          }
+        .header{
+            display:flex;
+            justify-content: space-between;
+            align-items:center;
+            padding: 30px 10%;
+        }
+        .navlink{
+            list-style: none;
+            margin-left: 54px;
+            margin-top: 21px;
+            margin-left: 250px;
+            margin-top: -25px;
+
+        }
+        .navlink .li{
+            display: inline-block;
+            padding: 0px 20px;
+        }
+        .a1 {
+            overflow: hidden;
+            position: relative;
+            display: inline-block;
+        }
+        .a1::before,
+        .a1::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            left: 0;
+        }
+        .a1::before {
+            background-color: white;
+            height: 2px;
+            bottom: 0;
+            transform-origin: 100% 50%;
+            transform: scaleX(0);
+            transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+        }
+        .a1:hover::before {
+            transform-origin: 0% 50%;
+            transform: scaleX(1);
+        }
+        .a1 {
+            text-decoration: none;
+            font-weight: 700;
+            vertical-align: top;
+        }
+        .button{
+            padding:9px 25px;
+            background: #C24FB6;
+            color:white;
+            border:none;
+            border-radius: 50px;
+            cursor :pointer;
+            transition:all 0.3s ease 0s;
+            margin-left: -200px;
+            margin-top: -10px;
+        }
+        .button:hover{
+            background-color: white;
+            color:black;
+        }
+      </style>
+      <div class="nav">
+      <!-- <div class="container">
+        </div> -->
+        <img src="../img/icon.png" width="40px" height="40px" 
+style="margin-left: 10px;margin-top: 5px;">
+        <figcaption style="margin-top: 
+-35px;font-size:25px;color:white;margin-left:60px">A - FAUCET</figcaption>
+      <nav style="margin-left:200px">
+              <ul class="navlink" >
+                 <li class="li"><a class="a 
+a1"href="../index.html">Home</a></li>
+                  <li class="li"><a class="a a1"href="./login.html">Login</a></li>
+                  <li class="li"><a class="a a1" 
+href="#">FAQ</a></li>
+              </ul>
+          </nav>
+          </div>
+          <a class="cta" href="./contact.html" style="margin-top:10px"><button 
+class="button">Contact</button></a>
+        </div>
+      </header>
+
+
+
+
+
+
+    <!-- This contains the style tag (css) and the content of the page -->
+    <body>
+      <style>
+        body{
+          background-image: linear-gradient(to bottom right, #C24FB6 , #5451B7);
+          font-family: "Montserrat",sans-serif;
+          background-repeat: no-repeat;
+          width:100%;
+          height: 100%;
+          }
+
+      *{
+        margin: 0;
+        padding: 0;
+      }
+        
+      @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+      *{
+        font-family: "Montserrat",sans-serif;
+      }
+
+      a {
+        text-decoration: none;
+      }
+      body {
+        background: -webkit-linear-gradient(bottom, #C24FB6, #5451B7);
+        background-repeat: no-repeat;
+      }
+
+      </style>
+
+
+
+<!-- Body (content)starts from here -->
+      <center><h1>F A Q</h1></center>
+      <br><br><br><br>
+      <div style="margin-left:200px">
+        <h2>1) What is a faucet website?</h2>
+        <p id="demo">A faucet website is a platform that gives out small amounts of cryptocurrency (such as Bitcoin) to its users for<br> completing certain tasks or captcha.</p>
+
+        <br><br>
+        <h2>2) How do I use a faucet website?</h2>
+        <p id="question2">To use a faucet website, you typically need to create an account, solve a captcha, and provide a cryptocurrency<br> wallet address to receive your funds. The amount of cryptocurrency you receive can vary and you may have to<br> wait for a certain period of time before you can claim again.</p>
+
+        <br><br>
+        <h2>3) Is using a faucet website safe?</h2>
+        <p id="question3">The safety of using a faucet website depends on the security measures in place by the website itself. To ensure<br> your funds and personal information are secure, it's important to only use reputable and well-established faucet<br> websites and to keep your cryptocurrency wallet information private.</p>
+
+        <br><br>
+        <h2>4) What should I do if I suspect a faucet website is a scam?</h2>
+        <p id="question4">If you suspect a faucet website is a scam, it's best to stop using it immediately and to report it to the relevant<br> authorities. You should also take steps to secure your personal information and cryptocurrency wallets.</p>
+       
+
+        <br><br>
+        <h2>5) How can I protect my information on a faucet website?</h2>
+        <p id="question5">To protect your information on a faucet website, use strong passwords, enable two-factor authentication if possible,<br> and avoid using public Wi-Fi when accessing your account. Additionally, it's important to only use reputable and<br> well-established faucet websites and to keep your cryptocurrency wallet information private.</p>
+
+        <br><br>
+        <h2>6) Is my cryptocurrency safe on a faucet website?</h2>
+        <p id="question6">The safety of your cryptocurrency on a faucet website depends on the security measures in place by the website<br> itself. While some faucet websites have robust security measures to protect users' funds, others may be vulnerable<br> to hacking or theft. To ensure the safety of your cryptocurrency, it's important to only use reputable and<br> well-established faucet websites and to keep your cryptocurrency wallet information private.</p>
+      
+
+        <br><br>
+        <h2>7) What should I do if I lose access to my faucet website account?</h2>
+        <p id="question7">If you lose access to your faucet website account, you should contact the support team for assistance in retrieving<br> your account. If you do not have access to your account recovery information, it may be difficult or impossible to<br> regain access to your funds.</p>
+
+        <br><br>
+        <h2>8) What is two-factor authentication and why is it important?</h2>
+        <p id="question8">Two-factor authentication (2FA) is an additional layer of security that requires a user to provide two forms of identification<br> when logging in to their account. This can include a password and a one-time code sent to a user's phone or email. 2FA<br> helps protect user accounts from unauthorized access by requiring more than just a password to log in. It's important to<br> enable 2FA on your faucet website account if it's available to provide an extra layer of security for your funds and<br> personal information.</p>
+        
+        <br><br><br>
+        <h4>If you have any other issue's please feel free to <a href="./contact.html">Contact Us!</a></h4>
+      </div>
+    </body>
+
+       <center><footer style="margin-top:150px">
+                    <p>© 2022-2023. A-Faucet Insights, Inc. -Deepan , Vishnu , Vinoth • <a href="html/terms.html" target="_blank" 
+style="color: black;">Terms of Service</a></p>
+	    <p>II B.Tech CSE(CYS) </p>
+	    <p>Part of 20CYS202 - User Interface Design </p>
+	    <p>Amrita Vishwa Vidyapeetham, Coimbatore </p>
+		  
+    </footer>
+	</center>
+
+</html>

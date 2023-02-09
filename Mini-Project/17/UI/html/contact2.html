@@ -1,0 +1,122 @@
+<body>
+    <style>
+        .con
+        {
+            color: #CC005F;
+            margin-left: 685px;
+            font-size: 20px;
+            margin-top: 20px;
+            font-size: 30px;
+
+        }
+        .id
+        {
+            color:#cdc6cf;
+            font-size:40px;
+            text-align: center;
+            margin-top: -20px;
+        }
+        .p1
+        {
+            color:#cdc6cf;
+            font-size:17px;
+            text-align: center;
+            
+           
+        }
+        .p2
+        {
+            color:#cdc6cf;
+            font-size:17px;
+            text-align: center;
+            
+        }
+        .p3
+        {
+            color:#cdc6cf;
+            font-size:17px;
+            text-align: center;
+            
+        }
+        input
+        {
+            border: none;
+            border-radius: .25rem;
+            padding: .75rem 1rem;
+            
+        }
+        .submit
+        {
+            margin-left: 44px;
+            margin-top: 20px;
+        }
+        input[type=submit]
+        {
+            background-color:#CC005F;
+        }
+
+    </style>
+<div>
+    <p class="con"><b>Contact Us</b></p><br><br>
+    <p class="id">We'd like to hear from you</p><br>
+    <p class="p1">While we are good withsmoke signals, there are simpler </p>
+    <p class="p2">ways for us to get in touch and answer </p>
+    <p class="p3">your questions</p><br><br>
+</div>
+<div style="text-align: center;margin-top: 50">
+    <form name="hello" id="hello">
+    <input type="text" name="name" id= "name" placeholder="Name" required><br><br>
+    <input type="email" name="email" id= "email" placeholder="Email" required><br><br>
+    <input type="text" name="sub" id= "sub" placeholder="Subject" required><br><br>
+    <input type="text" name="msg" id= "msg" placeholder="Your message" required><br><br><br>
+    <input type="submit" onclick=demo() placeholder="Submit"> 
+    </form>
+</div>
+<script>
+    function demo(){
+    let a;
+    let b;    
+    let c;
+    let d;
+    a=document.hello.name.value;
+    b=document.hello.email.value;
+    c=document.hello.sub.value;
+    d=document.hello.msg.value;
+    var validmat=/^[a-zA-Z0-9]+@[a-zA-Z]+(\.[com])/;
+    if(a=="")
+            {
+                alert("name must be filled out");
+                return false;
+            }
+    if(b=="")
+        {
+            alert("email must be filled out");
+            return false;
+        }
+    if(c=="")
+    {
+        alert("subject must be filled out");
+        return false;
+    }
+    if(d=="")
+    {
+        alert("message must be filled out");
+    }
+    if (!b.match(validmat))
+            {
+                alert("Invalid email address");
+                return false;
+            }
+    else
+        {
+            alert("Your response has been submitted");
+            return true;
+            window.location.reload();
+        }
+
+    }
+    
+
+</script>
+
+</body>
