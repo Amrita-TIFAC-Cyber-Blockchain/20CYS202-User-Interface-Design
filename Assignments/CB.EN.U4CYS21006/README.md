@@ -7,9 +7,9 @@
 
 | Relevance of Content | Use of Images | Internal and External Navigation | Layout and Text Elements | Overall User Experience | Total | 
 |:--------------------:|:-------------:|:--------------------------------:|:------------------------:|:-----------------------:|:-----:|
-|                    |       |                   |                      |                  |     |
+|       3.25        |  3.25    |        3.5          |          3            |         3.5         |  17   |
 
-## Assignment & Lab Evaluation 02 - Anokha Website with Registration Page
+## Assignment & Lab Evaluation 02 - Anokha Website with Registration Page ![](https://img.shields.io/badge/-Completed-brightgreen)
 
 | Template Used | First Evaluation on |  Registration Page | Gallery Page | Contact Page | Java Script | Style Guide | Best Practices | 
 |:-------------:|:-------------------:|:------------------:|:------------:|:------------:|:-----------:|:-----------:|:--------------:|
