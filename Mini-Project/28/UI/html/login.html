@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="../css/style1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <script src="../js/script.js"></script>
+</head>
+<body>
+  <div class="container">
+  <div class="wrapper">
+    <header>Login Form</header>
+    <form id="form" action="../html/menu.html" onsubmit="return continueOrNot()">
+      <div class="field email">
+        <div class="input-area">
+          <input type="text" placeholder="Email Address" id="eml" name="email" required>
+          <i class="icon fas fa-envelope"></i>
+          <i class="error error-icon fas fa-exclamation-circle"></i>
+        </div>
+        <div class="error error-txt">Email can't be blank</div>
+      </div>
+      <div class="field password">
+        <div class="input-area">
+          <input type="password" placeholder="Password" id="pwd" required>
+          <i class="icon fas fa-lock"></i>
+          <i class="error error-icon fas fa-exclamation-circle"></i>
+        </div>
+        <div class="error error-txt">Password can't be blank</div>
+      </div>
+      <div class="pass-txt"><a href="#">Forgot password?</a></div>
+      <input type="submit">
+      <br>
+    <div class="sign-txt">Not a member? <a href="registration.html">Signup now</a></div>
+    </form>
+    <script>
+        function validateEmail(email) { 
+          var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+          return re.test(email);
+       } 
+      
+      
+       function continueOrNot() {
+          if(validateEmail(document.getElementById('eml').value))
+          {return true;
+          }else{ alert("Email not valid"); return false;}
+       }
+  </script>
+    <br>
+    <footer style="text-align: center;">
+      <p style="color: white;">
+            Copyright © 2022-2023. <br>
+            JS BANK - Jivan Prasadd P, Sudhir RT.<br>
+            II B.Tech CSE (CYS) <br>
+            Part of 20CYS202 - User Interface Design<br>
+            Amrita Vishwa Vidyapeetham, Coimbatore<br></p>
+    </footer>
+</body>
+</html>

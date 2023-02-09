@@ -1,0 +1,203 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800);
+
+::selection
+{
+    color: #f34242;
+    background: #fff;
+}
+
+*
+{
+    box-sizing: border-box;
+    font-family:'Dosis';
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background: #1c2135;
+    font-family: 'Dosis';
+}
+section
+{
+    display: block;
+    padding: 100px 0;
+
+}
+
+.container
+{
+    width: 100%;
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+.sec-title
+{
+    margin-bottom: 60px;
+    text-align: center;
+}
+.sec-title span
+{
+    color: #f34242;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: .1em;
+    font-weight: bold;
+    display: block;
+    line-height: 1em;
+}
+.sec-title h3
+{
+    line-height: 1.1;
+    margin: 0;
+    font-size: 36px;
+    color: #fff;
+    font-weight: 600;
+}
+.content
+{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.service
+{
+    width: 25%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.service-box
+{
+    background: #191d30;
+    display: block;
+    position: relative;
+    padding: 55px 0;
+    margin-bottom: 30px;
+    box-shadow: none;
+    text-align: center;
+    transition: all .4s ease;
+}
+
+.service-box:hover
+{
+    box-shadow: 0px 10px 25px rgba(243,66,66,0.25);
+}
+.service-box::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #f34242;
+    transform: scaleY(0);
+    transition-property: transform;
+    transition-duration: .5s;
+    transition-timing-function: ease-out;
+    transform-origin: 50% 0;
+
+}
+.service-box:hover::before
+{
+    transform: scaleY(1);
+    transition-timing-function: 
+    cubic-bezier(0.52,1.64,.37,.66);
+}
+.icon-box
+{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    text-align: center;
+}
+.service-box .icon-box::before
+{
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background: rgba(243,66,66,0.1);
+    top: -15px;
+    left: -15px;
+    border-radius: 50%;
+    opacity: 1;
+    transition:all .4s ease;
+
+}
+
+.service-box:hover .icon-box::before
+{
+    background: rgba(255,255,255,0.1);
+}
+.service-box h3
+{
+    margin: 0;
+    transition:all .4s ease;
+    color: #f34242;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 28px;
+    line-height: 1.1;
+    text-align: center;
+    position: relative;
+}
+.service-box i
+{
+    color: #f34242;
+    transition:all .4s ease;
+    font-size: 62px;
+    position: relative;
+}
+
+.service-box:hover i,
+.service-box:hover h3
+{
+    color: #fff;
+}
+
+
+
+
+
+/******responsive*************/
+@media (max-width: 768px)
+{
+    .service
+    {
+        width: 50%;
+        float: left;
+    }
+    .sec-title
+    {
+        margin-bottom: 35px;
+    }
+    .service-box
+    {
+        padding: 44px 0;
+    }
+
+}
+
+@media (max-width: 414px)
+{
+    .sec-title h3
+    {
+        font-size: 25px;
+    }
+
+}
+
+
+
+
+
+

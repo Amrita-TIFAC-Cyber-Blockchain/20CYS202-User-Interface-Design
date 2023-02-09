@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Support</title>
+    <link rel="icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+<section id="contact">
+    <div class="contact-box">
+      <div class="contact-links">
+        <h2>CONTACT US</h2>
+        <div class="links">
+          <div class="link">
+            <a><img src="https://i.postimg.cc/m2mg2Hjm/linkedin.png" alt="linkedin"></a>
+          </div>
+          <div class="link">
+            <a><img src="https://i.postimg.cc/YCV2QBJg/github.png" alt="github"></a>
+          </div>
+          <div class="link">
+            <a><img src="https://i.postimg.cc/W4Znvrry/codepen.png" alt="codepen"></a>
+          </div>
+          <div class="link">
+            <a><img src="https://i.postimg.cc/NjLfyjPB/email.png" alt="email"></a>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-wrapper">
+        <form>
+          <div class="form-item">
+            <input type="text" name="sender" required>
+            <label>Name:</label>
+          </div>
+          <div class="form-item">
+            <input type="text" name="email" required>
+            <label>Email:</label>
+          </div>
+          <div class="form-item">
+            <textarea class="" name="message" required></textarea>
+            <label>Message:</label>
+          </div>
+          <button class="submit-btn" onclick="Register()">Send</button>  
+        </form>
+      </div>
+    </div>
+  </section>
+  <script>
+    function Register()
+    {
+      alert("We have received your request.We will get back to you soon.");
+    }
+  </script>
+  <style>
+    footer {
+        position: fixed;
+      bottom: 0;
+      text-align: center;
+      left:0%;
+      right: 0%;
+      padding: 3px;
+      color: white;
+      width: 100%;
+      height: 130px; 
+      background-color: #f34242;
+    }
+    </style>
+    <footer>
+        <p>
+        Copyright © 2022-2023. <br>
+            JS BANK - Jivan Prasadd P, Sudhir RT.<br>
+            II B.Tech CSE (CYS) <br>
+            Part of 20CYS202 - User Interface Design<br>
+            Amrita Vishwa Vidyapeetham, Coimbatore<br></p>
+      </footer>
+
+  </body>
+  </html>
