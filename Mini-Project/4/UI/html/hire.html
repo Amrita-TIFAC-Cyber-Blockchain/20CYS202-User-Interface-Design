@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Firmbee.com - Free Project Management Platform for remote teams">
+  <meta name="author" content="Firmbee.com - Free Project Management Platform for remote teams">
+  <title>Nesamani | Job Post</title>
+  <link href="../img/back1.png" rel="icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/0e035b9984.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/0e035b9984.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/main.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<style>
+  html,
+  body {
+    min-height: 100%;
+  }
+
+  body,
+  div,
+  form,
+  input,
+  select,
+  textarea,
+  p {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    color: #666;
+    line-height: 22px;
+  }
+
+  h1 {
+    position: absolute;
+    margin: 0;
+    font-size: 32px;
+    color: #fff;
+    z-index: 2;
+  }
+
+  h5 {
+    margin: 10px 0;
+  }
+
+  .testbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    padding: 20px;
+  }
+
+  form {
+    width: 100%;
+    padding: 20px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 0 20px 0 #095484;
+  }
+
+  .banner {
+    position: relative;
+    height: 210px;
+    background-color: darkslateblue;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .banner::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  input,
+  select,
+  textarea {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  input {
+    width: calc(100% - 10px);
+    padding: 5px;
+  }
+
+  select {
+    width: 100%;
+    padding: 7px 0;
+    background: transparent;
+  }
+
+  textarea {
+    width: calc(100% - 12px);
+    padding: 5px;
+  }
+
+  .item:hover p,
+  .item:hover i,
+  .question:hover p,
+  .question label:hover,
+  input:hover::placeholder,
+  a {
+    color: #095484;
+  }
+
+  .item input:hover,
+  .item select:hover,
+  .item textarea:hover {
+    border: 1px solid transparent;
+    box-shadow: 0 0 6px 0 darkslateblue;
+    color: darkslateblue;
+  }
+
+  .item {
+    position: relative;
+    margin: 10px 0;
+  }
+
+  input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+  }
+
+  .item i,
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    font-size: 20px;
+    color: darkslateblue;
+  }
+
+  .item i {
+    right: 2%;
+    top: 30px;
+    z-index: 1;
+  }
+
+  [type="date"]::-webkit-calendar-picker-indicator {
+    right: 1%;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  input[type=radio],
+  input[type=checkbox] {
+    display: none;
+  }
+
+  label.radio,
+  label.check {
+    position: relative;
+    display: inline-block;
+    margin: 5px 20px 15px 0;
+    cursor: pointer;
+  }
+
+  .question span {
+    margin-left: 30px;
+  }
+
+  span.required {
+    margin-left: 0;
+    color: red;
+  }
+
+  .checkbox-item label {
+    margin: 5px 20px 10px 0;
+  }
+
+  label.radio:before,
+  label.check:before {
+    content: "";
+    position: absolute;
+    left: 0;
+  }
+
+  label.radio:before {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 2px solid #095484;
+  }
+
+  label.check:before {
+    top: 2px;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid #095484;
+  }
+
+  input[type=checkbox]:checked+.check:before {
+    background: #095484;
+  }
+
+  label.radio:after {
+    left: 5px;
+    border: 3px solid #095484;
+  }
+
+  label.check:after {
+    left: 4px;
+    border: 3px solid #fff;
+  }
+
+  label.radio:after,
+  label.check:after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    width: 8px;
+    height: 4px;
+    background: transparent;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+    opacity: 0;
+  }
+
+  input[type=radio]:checked+label:after,
+  input[type=checkbox]:checked+label:after {
+    opacity: 1;
+  }
+
+  .btn-block {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  button {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #095484;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: #0666a3;
+  }
+
+  @media (min-width: 568px) {
+    .city-item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .city-item input {
+      width: calc(50% - 20px);
+    }
+
+    .city-item select {
+      width: calc(50% - 8px);
+    }
+  }
+</style>
+
+<body>
+
+  <nav class="navbar navbar-expand-xl fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="home.html"><span style="color:white;font-size: 50px;">NE</span><span
+          style="color:#2c255c;font-size: 50px;">samani</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+
+        <ul class="right navbar-nav ms-auto">
+          <li class="nav-card-item-right">
+            <a class="nav-link" href="index.html"><b>Logout</b></a>
+          </li>
+          <li class="nav-card-item-right">
+            <a class="nav-link" href="hire.html"><b>Post a Job</b></a>
+          </li>
+          <li class="nav-card-item-right create-account">
+            <a class="nav-link" href="companyprofile.html">Update Profile</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--form begins-->
+
+  <div class="testbox">
+    <form name="hire">
+      <div class="banner">
+        <h1>JOB POST APPLICATION</h1>
+      </div>
+      <div class="item">
+        <p>Job Title</p>
+        <input type="text" name="name" id="name" required />
+      </div>
+      <div class="item">
+        <p>Date</p>
+        <input type="date" name="bdate" required />
+        <i class="fas fa-calendar-alt"></i>
+      </div>
+      <h5>1. Job Details:</h5>
+      <div class="item">
+        <p>Description<span class="required">*</span></p>
+        <input type="text" name="name" required />
+      </div>
+      <div class="item">
+        <p>Expected salary :</p>
+        <input type="text" name="name" id="salary" required />
+      </div>
+      <div class="item">
+        <p>Number Of Openings<span class="required">*</span></p>
+        <input type="text" name="name" placeholder="Enter Approx Amount" required />
+        <p>Branch Details<span class="required">*</span></p>
+        <div class="city-item">
+          <input type="text" name="name" placeholder="City" required />
+          <input type="text" name="name" placeholder="State" required />
+          <input type="text" name="name" placeholder="Postal / Zip code" required />
+          <select required>
+            <option value="">Country</option>
+            <option value="1">India</option>
+            <option value="2">UK</option>
+            <option value="3">France</option>
+            <option value="4">Australia</option>
+            <option value="5">USA</option>
+          </select>
+        </div>
+      </div>
+      <div class="item">
+        <p>Phone<span class="required">*</span></p>
+        <input type="text" name="name" id="phone" required />
+      </div>
+      <div class="item">
+        <p>Email<span class="required">*</span></p>
+        <input type="Email" name="name" required />
+      </div>
+      <h5>2. Employee Preference</h5>
+      <div class="question">
+        <p>Job Experience:<span class="required">*</span></p>
+        <div class="question-answer">
+          <input type="radio" value="none" id="radio_1" name="investigator" required />
+          <label for="radio_1" class="radio"><span>Fresher(0-6 months)</span></label>
+          <input type="radio" value="none" id="radio_2" name="investigator" required />
+          <label for="radio_2" class="radio"><span>Intermediate(1-2 years)</span></label>
+          <input type="radio" value="none" id="radio_3" name="investigator" required />
+          <label for="radio_3" class="radio"><span>Pro(5+ years)</span></label>
+        </div>
+        <p>Gender:<span class="required">*</span></p>
+        <div class="question-answer">
+          <input type="radio" value="none" id="radio_4" name="investigator" required />
+          <label for="radio_4" class="radio"><span>Male</span></label>
+          <input type="radio" value="none" id="radio_5" name="investigator" required />
+          <label for="radio_5" class="radio"><span>Female</span></label>
+          <input type="radio" value="none" id="radio_6" name="investigator" required />
+          <label for="radio_6" class="radio"><span>Both gender allowed</span></label>
+        </div>
+        <p>Education Qualification:<span class="required">*</span></p>
+        <div class="question-answer">
+          <input type="radio" value="none" id="radio_7" name="investigator" required />
+          <label for="radio_7" class="radio"><span>10<sup>th</sup></span></label>
+          <input type="radio" value="none" id="radio_8" name="investigator" required />
+          <label for="radio_8" class="radio"><span>12<sup>th</sup></span></label>
+          <input type="radio" value="none" id="radio_9" name="investigator" required />
+          <label for="radio_9" class="radio"><span>Degree</span></label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p>Job Application Checklist:<span class="required">*</span></p>
+        <small>Prefered skills</small>
+        <div class="question-answer checkbox-item">
+          <div>
+            <input type="checkbox" value="none" id="check_1" name="checklist" required />
+            <label for="check_1" class="check"><span>Good in coding</span></label>
+          </div>
+          <div>
+            <input type="checkbox" value="none" id="check_2" name="checklist" required />
+            <label for="check_2" class="check"><span>User Interface Design</span></label>
+          </div>
+          <div>
+            <input type="checkbox" value="none" id="check_3" name="checklist" required />
+            <label for="check_3" class="check"><span>Good language Skills</span></label>
+          </div>
+          <div>
+            <input type="checkbox" value="none" id="check_4" name="checklist" required />
+            <label for="check_4" class="check"><span>Good Knowlwdge in CYBER security</span></label>
+          </div>
+        </div>
+      </div>
+      <div class="question">
+        <div class="question-answer checkbox-item">
+          <div>
+            <input type="checkbox" value="none" id="check_9" name="check" required />
+            <label for="check_9" class="check"><span>I agree that all the details are legitimate.</a></span></label>
+          </div>
+        </div>
+      </div>
+      <div class="btn-block">
+        <button type="button" onclick="myFunction()">Post Job</button>
+      </div>
+    </form>
+  </div>
+
+
+  <!--form ends-->
+
+  <div class="footer wow fadeIn" data-wow-delay="0.3s">
+    <div class="container">
+      <div class="footer-info">
+        <br><br>
+        <h3>Copyright 2022 - 2023. P.Lakshmi Narayan, Seran Pandiyan, Vinoth Kumar.C<br>
+          II B.Tech CSE (CYS)<br>
+          Part of 20CYS202 - User Interface Design<br>
+          Amrita Vishwa Vidyapeetham, Coimbatore</h3>
+        <div class="footer-social">
+          <a href=""><i class="fab fa-twitter"></i></a>
+          <a href=""><i class="fab fa-facebook-f"></i></a>
+          <a href=""><i class="fab fa-youtube"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright">
+      <div class="row">
+        <div class="col-md-6">
+          <p>&copy; <a href="#">nesamani.com</a>, All Right Reserved.</p>
+        </div>
+        <div class="col-md-6">
+          <p>Credits to : HTML Codex,W3 schools, Javapoint</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+  <script src="js/nav-bg.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script>
+    function myFunction() {
+      var name = document.getElementById("name");
+      var sal = document.getElementById("salary");
+      var mobileNumber = document.getElementById("phone");
+
+
+      if (name.value == "") {
+        alert("Name is required!");
+        //name.focus();
+        return false;
+      }
+      else {
+        var nameRegex = /^[a-zA-Z ]+$/;
+        if (!nameRegex.test(name.value)) {
+          alert("Name can only contain alphabetical characters and spaces!");
+          //name.focus();
+          return false;
+        }
+
+        if (name.value.length < 5 || name.value.length > 30) {
+          alert("Name must be between 5 and 30 characters long!");
+          //name.focus();
+          return false;
+        }
+      }
+
+      if (sal.value == "") {
+        alert("salary is required!");
+        //mobileNumber.focus();
+        return false;
+      } else {
+        if (sal.value.length != 5) {
+          alert("salary must be 5 digits long!");
+          //mobileNumber.focus();
+          return false;
+        }
+      }
+
+      if (mobileNumber.value == "") {
+        alert("Mobile number is required!");
+        //mobileNumber.focus();
+        return false;
+      } else {
+        if (mobileNumber.value.length != 10) {
+          alert("Mobile number must be 10 digits long!");
+          //mobileNumber.focus();
+          return false;
+        }
+      }
+      window.location.href = "home.html";
+      return true;
+    } 
+  </script>
+
+</body>
+
+</html>

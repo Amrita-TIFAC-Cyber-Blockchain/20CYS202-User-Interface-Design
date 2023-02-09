@@ -1,0 +1,362 @@
+<!--
+    Authors: Lakshmi Narayan P [CB.EN.U4CYS21034]
+             Seran Pandiyan I P [CB.EN.U4CYS21069]
+             Vinoth Kumar C [CB.EN.U4CYS21085]
+    Mentor : Ramaguru
+    Course : User Interface Design [20CYS202]
+    Project Name : Job Search Portal
+    Credits : Codex,W3schools,Javapoint
+    Start date : December 1,2022
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!--  This file has been downloaded from bootdey.com @bootdey on twitter -->
+    <!--  All snippets are MIT license http://bootdey.com/license -->
+    <!--  If you want to help us go here https://www.bootdey.com/help-us -->
+    <title>Company Profile | Nesamani</title>
+    <link href="../img/back1.png" rel="icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="top-bar d-none d-md-block">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="top-bar-left">
+                        <div class="text">
+                            <i class="far fa-clock"></i>
+                            <h2>8:00 - 9:00</h2>
+                            <p>Mon - Fri</p>
+                        </div>
+                        <div class="text">
+                            <i class="fa fa-phone-alt"></i>
+                            <h2>+91-8667761623</h2>
+                            <p>For Appointment</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="top-bar-right">
+                        <div class="social">
+                            <a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://in.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.instagram.com/accounts/login/" target="_blank"><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Top Bar End -->
+
+    <!-- Nav Bar Start -->
+    <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">Ne<span>samani</span></a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto">
+                    <a href="index.html" class="nav-item nav-link active" target="_blank">Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Nav Bar End --><br><br><br><br>
+    <div class="container">
+        <div class="row gutters">
+            <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="account-settings">
+                            <div class="user-profile">
+                                <div class="user-avatar">
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Maxwell Admin">
+                                </div>
+                                <h5 class="user-name">STC & Group</h5>
+                                <h6 class="user-email">STC@Gmail.com</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="row gutters">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <h3 style="color: #2c255c;"><b>Company Details</b></h3>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="fullName">Company Name</label>
+                                    <input type="text" class="form-control" id="Name" placeholder="Enter full name"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="fullName">Size</label><br>
+                                    <input type="text" class="form-control" id="size" placeholder="No.of Employees"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="phone">CIN Number</label>
+                                    <input type="text" class="form-control" id="CIN" placeholder="Enter CIN Number"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="website">CIN Certificate</label><br>
+                                    <input type="file" id="Resume" placeholder="" required>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="website">Type Of Bussiness Entity</label>
+                                    <input type="text" class="form-control" id="Bussiness" placeholder="Experience"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="website">Turnover Certificate</label><br>
+                                    <input type="file" id="Resume" placeholder="" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gutters">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <h3 style="color: #2c255c;"><b>Address</b></h3>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="Street">Street</label>
+                                    <input type="name" class="form-control" id="Street" placeholder="Enter Street"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="ciTy">City</label>
+                                    <input type="name" class="form-control" id="ciTy" placeholder="Enter City" required>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="sTate">State</label>
+                                    <input type="text" class="form-control" id="sTate" placeholder="Enter State"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="zIp">Pin Code</label>
+                                    <input type="text" class="form-control" id="zIp" placeholder="Pin Code" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gutters">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class="text-right">
+                                    <button type="button" id="submit" name="submit"
+                                        class="btn btn-secondary">Cancel</button>
+                                    <button type="button" id="submit" name="submit" class="btn btn-primary"
+                                        onclick="Myfunction()">Update</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding-top: 0px;
+            color: #2e323c;
+            background: #f5f6fa;
+            position: relative;
+            height: 100%;
+        }
+
+        .account-settings .user-profile {
+            margin: 0 0 1rem 0;
+            padding-bottom: 1rem;
+            text-align: center;
+        }
+
+        .account-settings .user-profile .user-avatar {
+            margin: 0 0 1rem 0;
+        }
+
+        .account-settings .user-profile .user-avatar img {
+            width: 90px;
+            height: 90px;
+            -webkit-border-radius: 100px;
+            -moz-border-radius: 100px;
+            border-radius: 100px;
+        }
+
+        .account-settings .user-profile h5.user-name {
+            margin: 0 0 0.5rem 0;
+        }
+
+        .account-settings .user-profile h6.user-email {
+            margin: 0;
+            font-size: 0.8rem;
+            font-weight: 400;
+            color: #9fa8b9;
+        }
+
+        .account-settings .about {
+            margin: 2rem 0 0 0;
+            text-align: center;
+        }
+
+        .account-settings .about h5 {
+            margin: 0 0 15px 0;
+            color: #007ae1;
+        }
+
+        .account-settings .about p {
+            font-size: 0.825rem;
+        }
+
+        .form-control {
+            border: 1px solid #cfd1d8;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            border-radius: 2px;
+            font-size: .825rem;
+            background: #ffffff;
+            color: #2e323c;
+        }
+
+        .card {
+            background: #ffffff;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            border: 0;
+            margin-bottom: 1rem;
+        }
+    </style>
+
+    <script type="text/javascript">
+
+    </script>
+    <script>
+        function Myfunction() {
+            var uname = document.getElementById("Name");
+            var uid = document.getElementById("CIN");
+            var msg = document.getElementById("Bussiness");
+
+            if (allLetter(uname)) {
+                if (phonenumber(uid)) {
+                    if (Letter(msg)) {
+                        alert('Form Succesfully Submitted');
+                        window.location.reload()
+
+                    }
+                }
+            }
+            function allLetter(uname) {
+                var letters = /^[A-Za-z\s]*$/;
+                if (uname.value.match(letters) && uname !== null) {
+                    return true;
+                }
+                else {
+                    alert('Name must have alphabet characters only');
+                    uname.focus();
+                    return false;
+                }
+            }
+
+            function phonenumber(inputtxt) {
+                var phoneno = /^\d{21}$/;
+                if (inputtxt.value.match(phoneno)) {
+                    return true;
+                }
+                else {
+                    alert("CIN number must have 21 digits only! ");
+                    inputtxt.focus();
+                    return false;
+                }
+            }
+
+
+            function Letter(message) {
+                var letters = /^[A-Za-z\s]*$/;
+                if (message.value.match(letters)) {
+                    return true;
+                }
+                else {
+                    alert('Bussiness entity must have alphabet characters only');
+                    uname.focus();
+                    return false;
+                }
+            }
+
+
+
+        }
+    </script>
+    <div class="footer wow fadeIn" data-wow-delay="0.3s">
+        <div class="container">
+            <div class="footer-info">
+                <br><br>
+                <a href="index.html" class="footer-logo">Ne<span>samani</span></a>
+                <h3>Copyright 2022 - 2023. P.Lakshmi Narayan, Seran Pandiyan, Vinoth Kumar.C<br>
+                    II B.Tech CSE (CYS)<br>
+                    Part of 20CYS202 - User Interface Design<br>
+                    Amrita Vishwa Vidyapeetham, Coimbatore</h3>
+                <div class="footer-social">
+                    <a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/accounts/login/" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://in.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container copyright">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; <a href="#">nesamani.com</a>, All Right Reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <p>Credits to : HTML Codex,W3 schools, Javapoint</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
