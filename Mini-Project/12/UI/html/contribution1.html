@@ -1,0 +1,351 @@
+<!--
+Author: Venkata Revan Nagireddy 
+Created On: 30 Dec 2022
+Updated On: 07 Jan 2023
+Description: profile page of User
+-->
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contribution</title>
+<link rel='icon' href='../photos/icon.png'>
+<body>
+<!--top bar -->
+<style>
+* {
+    margin: 0;
+}
+.navbar-top {
+    background-color: black;
+    color: white;
+    box-shadow: 0px 4px 8px 0px grey;
+    height: 80px;
+}
+
+.margin{
+	margin: 30px 0px 0px 200px;
+	}
+</style>
+<!-- title (profile) -->
+<style>
+.title {
+    font-family:Cascadia code semibold;
+	font-size:15px;
+    position: absolute;
+    left: 35%;
+	margin: 24px;
+}
+</style>
+<!-- ul list-->
+<style>
+.navbar-top ul {
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 18px 50px 0 40px;
+}
+.navbar-top ul li {
+    float: left;
+}
+.navbar-top ul li a {
+    color: #333;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+</style>
+
+<!-- notification numbers -->
+<style>
+.icon-count {
+    background-color: #ff0000;
+    color: white;
+    float: right;
+    font-size: 11px;
+    left: -25px;
+    padding: 2px;
+    position: relative;
+}
+</style>
+
+<style>
+.sidenav {
+    background-color:black;
+    color: white;
+    border-bottom-right-radius: 25px;
+    height: 100%;
+    left: 0;
+
+    padding-top: 20px;
+    position: absolute;
+    top: 70px;
+    width: 250px;
+}
+.profile {
+    margin-bottom: 20px;
+    margin-top: -12px;
+    text-align: center;
+}
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.job {
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.url, hr {
+    text-align: center;
+}
+
+.url hr {
+    margin-left: 20%;
+    width: 60%;
+}
+
+.url a {
+    color: #818181;
+    display: block;
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 6px 8px;
+    text-decoration: none;
+}
+
+.url a:hover, .url .active {
+    background-color: #e8f5ff;
+    border-radius: 28px;
+    color: #000;
+    margin-left: 14%;
+    width: 65%;
+}
+</style>
+
+    <div class="navbar-top">
+        <div class="title">
+            <h1>Amrita E-Boost Portal</h1>
+        </div>
+		
+        <ul>
+        <li>
+            <a href="#">
+			<img src="https://static.vecteezy.com/system/resources/previews/000/442/359/original/notification-vector-icon.jpg" width="40px"/>
+            <span class="icon-count">29</span>
+            </a>
+        </li>
+        <li>
+        <a href="#">
+		<img src="https://www.pngitem.com/pimgs/m/11-118725_email-icon-circle-hd-png-download.png" width="38px"/>
+            <span class="icon-count">1</span>
+        </a>
+        </li>
+        <li>
+			<a href="../index.html">
+			<img src="https://www.eliterealty.net/img/demo-agent/demo-avatar.jpg" width="39px"/></a>
+        </li>
+        </ul>
+    </div>
+   
+    <div class="sidenav">
+        <div class="profile">
+            <img src="https://cdn.iconscout.com/icon/free/png-512/avatar-380-456332.png" alt="" width="100" height="100">
+            <div class="name"> Name_of_User </div>
+            <div class="job"> (position)</div>
+        </div>
+        <div class="sidenav-url">
+            <div class="url">
+                <a href="profile_page.html">Profile</a>
+                <hr align="center">
+            </div>
+			<div class="url">
+                <a href="event_list.html">Events List</a>
+                <hr align="center">
+            </div>
+            <div class="url">
+                <a href="post_event.html" >Post a Event</a>
+                <hr align="center">
+            </div>
+			<div class="url">
+                <a href="#" class="active">Contributed</a>
+                <hr align="center">
+            </div>
+			<!--<div class="url">
+                <a href="C:\Users\revan\Documents\AMRITA  SUBJECTS\Sem - 3\User Interface Design\Project\registered.html">Registered</a>
+                <hr align="center">
+            </div>-->
+			<div class="url">
+                <a href="settings.html">Settings</a>
+                <hr align="center">
+            </div>
+        </div>
+    </div>
+	
+<style>
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+body {
+  font-weight: 300;
+  line-height: 1.42em;
+  color:#A7A1AE;
+  background-color:white;
+}
+
+
+.blue { color: #185875; }
+.yellow { color: #FFF842; }
+
+.container th h1 {
+	  font-weight: bold;
+	  font-size: 1em;
+  text-align: left;
+  color: white;
+}
+
+.container td {
+	  font-weight: normal;
+	  font-size: 1em;
+  -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+	   -moz-box-shadow: 0 2px 2px -2px #0E1119;
+	        box-shadow: 0 2px 2px -2px #0E1119;
+}
+
+.container {
+	  text-align: left;
+	  overflow: hidden;
+	  width: 80%;
+	  margin: 0 auto;
+  display: table;
+  padding: 0 0 8em 0;
+}
+
+.container td, .container th {
+	  padding-bottom: 2%;
+	  padding-top: 2%;
+  padding-left:2%;  
+}
+
+/* Background-color of the odd rows */
+.container tr:nth-child(odd) {
+	  background-color: #323C50;
+}
+
+/* Background-color of the even rows */
+.container tr:nth-child(even) {
+	  background-color: #2C3446;
+}
+
+.container th {
+	  background-color: #1F2739;
+}
+
+.container td:first-child { color: #FB667A; }
+
+.container tr:hover {
+   background-color: black;
+-webkit-box-shadow: 0 6px 6px -6px #0E1119;
+	   -moz-box-shadow: 0 6px 6px -6px #0E1119;
+	        box-shadow: 0 6px 6px -6px #0E1119;
+}
+
+.container td:hover {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  
+  box-shadow: #7F7C21 -1px 1px, #7F7C21 -2px 2px, #7F7C21 -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px;
+  transform: translate3d(6px, -6px, 0);
+  
+  transition-delay: 0s;
+	  transition-duration: 0.4s;
+	  transition-property: all;
+  transition-timing-function: line;
+}
+
+
+</style>
+
+<div class="margin"><br>
+<h3 style="margin:0px 250px 0px 150px; color:black; font-size:24px"> Contributed Memebers </h3><br>
+<table class="container">
+	<thead>
+		<tr>
+			<th><h1>Name</h1></th>
+			<th><h1>Department</h1></th>
+			<th><h1>Roll.No</h1></th>
+			<th><h1>Contributed</h1></th>
+			<th><h1>For Event</h1></th>
+			<th><h1>View</h1></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Revan</td>
+			<td>CYS</td>
+			<td>CB.EN.U4CYS21083</td>
+			<td>Photos</td>
+			<td>Cyber-Hardware Seminar</td>
+			<td><a href="#">Click</a></td>
+		</tr>
+		<tr>
+			<td>Sarnesh</td>
+			<td>CYS</td>
+			<td>CB.EN.U4CYS21065</td>
+			<td>Video</td>
+			<td>WiCyS Inaugration</td>
+			<td><a href="#">Click</a></td>
+		</tr>
+		<tr>
+			<td>Yuvaraj</td>
+			<td>CYS</td>
+			<td>CB.EN.U4CYS21090</td>
+			<td>Photos</td>
+			<td>Cyber-Hardware Seminar</td>
+			<td><a href="#">Click</a></td>
+		</tr>
+    <tr>
+			<td>Venkata</td>
+			<td>CYS</td>
+			<td>CB.EN.U4CYS21038</td>
+			<td>Videos</td>
+			<td>Cloud Computing</td>
+			<td><a href="#">Click</a></td>
+		</tr>
+    <tr>
+			<td>UV</td>
+			<td>CYS</td>
+			<td>CB.EN.U4CYS21009</td>
+			<td>Video</td>
+			<td>Cloud Computing</td>
+			<td><a href="#">Click</a></td>
+		</tr>
+    <tr>
+			<td>SSSE</td>
+			<td>AI</td>
+			<td>CB.EN.U4AIE21001</td>
+			<td>Photo</td>
+			<td>Cyber-Hardware Seminar</td>
+			<td><a href="#">Click</a></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+<center>
+       <p style="color:#A7A1AE">Copyright © 2022 - 2023. Amrita E-Boost Portal - Saranesh E S, Venkata Revan Nagireddy, Yuvraj 
+    <br> II year B.Tech CSE (CYS) 
+    <br> Part of 20CYS202 - User Interface Design - Mini Project 
+    <br> Amrita Vishwa Vidyapeetham, Coimbatore</p>
+    </center>
+	
+	
+	
+	
+	
+	
+	
+</body>
+</html>

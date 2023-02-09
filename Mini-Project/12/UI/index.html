@@ -1,0 +1,527 @@
+<!--
+Authors:  Saranesh E S 
+Created Date: Dec 2022
+Updated Date: 07 Jan 2023
+Base Template:  No Base Template
+Description: Home Page
+-->
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script id="rendered-js" >
+        const lang = navigator.language;
+        function setDate() {
+          let date = new Date();
+          // calendar
+          let month = date.getMonth();
+          let num = date.getDate();
+          let day = date.toLocaleString(lang, { weekday: "long" });
+          let monthName = date.toLocaleString(lang, { month: "long" });
+          let year = date.getFullYear();
+          // clock
+          let hour = date.getHours();
+          let minute = date.getMinutes();
+          let second = date.getSeconds();
+          let period = "AM";
+          if (hour >= 12) {
+              period = "PM";
+          }
+          if (hour > 12) {
+              hour = hour - 12;
+          }
+          if (minute < 10) {
+              minute = "0" + minute;
+          }
+          if (second < 10) {
+              second = "0" + second;
+          }
+        
+          document.querySelector("#month").innerHTML = monthName;
+          document.querySelector("#day").innerHTML = day;
+          document.querySelector("#num").innerHTML = num;
+          document.querySelector("#year").innerHTML = year;
+          document.querySelector("#h").innerHTML = `${hour} : ${minute} : ${second} ${period}`;
+        }
+        setInterval(setDate, 1000);
+        setDate();
+        </script>
+        
+        <script language=JavaScript>
+        if (document.layers){
+            document.captureEvents(Event.MOUSEDOWN);
+            document.onmousedown=clickNS4;
+        }
+        else if (document.all&&!document.getElementById){
+            document.onmousedown=clickIE4;
+        }
+        document.oncontextmenu=new Function("alert(message);return false")
+        </script>
+        <script>
+        document.onkeydown = function(e) {
+            if (e.ctrlKey && (e.keyCode === 85 )) {
+                return false;
+            }
+        };
+        </script>
+        <script>
+        document.onkeydown = function(e) {
+            if (e.ctrlKey && (e.keyCode === 85 )) {
+                return false;
+            }
+        };
+        </script> 
+        <script>
+            window.console = window.console || function(t) {};
+        </script>
+        <script>
+            if (document.location.search.match(/type=embed/gi)) {
+                window.parent.postMessage("resize", "*");
+            }
+        </script>
+<head>
+  <meta charset="UTF-8">
+  <title>HOME</title>
+  <link rel='icon' href='photos/icon.png'>
+</head>
+<style>
+  @font-face {
+        font-family: 'font1';
+        src: url('photos/font1.ttf');}
+        .time {
+  font-family: font1;
+  font-size: 20px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 70px;
+  margin-left: 120px;
+  background: transparent;
+  width: 200px;
+  color: whitesmoke;
+  letter-spacing: 5px;
+}
+.slideshow-container {
+  margin-top: -500px;
+  margin-right: 70px;
+  float: right;
+  max-width: 500px;
+  position: relative;
+
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(189, 2, 112);
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0);
+}
+
+/* Caption text */
+.text {
+  color: whitesmoke;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+    body {background-color: rgba(0, 0, 0, 0.8);
+}
+.calendar {
+  font-family: font1;
+  margin-top: 60px;
+  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: rgb(189, 2, 112);
+  border-radius: 10px;
+  width: 300px;
+  height: 350px;
+  overflow: hidden;
+  color: whitesmoke;
+}
+
+.calendar #month {
+  font-family: font1;
+  padding: 20px 0;
+  position: relative;
+  color: black;
+  background-color: whitesmoke;
+  font-size: 1.4em;
+  font-weight: bold;
+  box-shadow: 0 5px 10px rgba(151, 13, 41, 0.534);
+}
+.calendar #day {
+  font-family: font1;
+  line-height: 20px;
+  font-size: 25px;
+}
+.calendar #num {
+  font-family: font1;
+  line-height: 20px;
+  font-size: 25px;
+}
+.calendar #year {
+  font-family: font1;
+  font-size: 30px;
+  line-height: 20px;
+}
+.time {
+  font-family: font1;
+  font-size: 20px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 70px;
+  margin-left: 120px;
+  background: transparent;
+  width: 200px;
+  color: whitesmoke;
+  letter-spacing: 5px;
+}
+
+.time h6 {
+  margin: 0 auto;
+  font-family: font1;
+  color: whitesmoke;
+  background-color: rgb(189, 2, 112);
+  padding: 5px 0;
+  width: 60%;
+  border-radius: 30px;
+}
+.event{
+  margin-top: 0px;
+  font-family: font1;
+  font-size: 25px;
+  color: whitesmoke;
+  background-color: rgb(189, 2, 112);
+  padding: 5px 0;
+  text-align: center;
+  width: 200px;
+  border-radius: 30px;
+}
+.time p {
+  padding: 20px 0;
+}
+.navbar{ overflow: hidden;
+        float: none;
+        margin: 20px;
+      }
+      .navbar ul{
+        list-style: none;
+      }
+      .navbar li a{
+        float:right;
+        color:whitesmoke;
+        text-align: center;
+        font-style: none;
+        font-family: font1;
+        font-size: 25px;
+        text-decoration: none;
+        padding: 14px 16px;
+      }
+      
+    .b{
+      font-family: font1;
+      font-size: 30px;
+      padding: 5px;
+    }
+    .b:hover{
+  background-color: rgb(189, 2, 112);
+  color: whitesmoke;
+}
+      .navbar a:hover{
+        color: black;
+        background-color: aliceblue;
+      }
+      
+      * {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-weight: 400;
+  text-align: center;
+  font-family: font1;
+  color: #555;
+}
+
+.photo-container {
+  background-color: rgb(189, 2, 112);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  grid-area: photo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+span{
+        color:rgb(189, 2, 112);
+        font-family: font1;
+      }
+.card-container {
+  margin-top: 10px;
+  display: grid;
+  grid-template-areas: 
+    'photo info';
+  grid-template-columns: 150px 1fr;
+  width: 500px;
+  background-color: whitesmoke;
+  line-height: 1.75em;
+}
+.info-container {
+  padding: 20px;
+  grid-area: info;
+}
+.event-name {
+  font-family: font1;
+  font-weight: bold;
+  padding-bottom: 5px;
+  color: #2c3e52;
+}
+.event-location {
+  font-family: font1;
+  font-weight: 300;
+  color: #2c3e52;
+}
+.day {
+  font-family: font1;
+  font-weight: 300;
+}
+.month {
+  font-family: font1;
+  font-weight: 600;
+}
+
+@media( max-width: 600px ) {
+  .card-container {
+    width: 90%;
+  }
+}
+.button{
+  margin-top: 20px;
+  font-family: font1;
+  padding: 20px;
+  background-color: rgb(189, 2, 112);
+  color: whitesmoke;
+}
+.button a{
+  font-size: 30px;
+  color: #f2f2f2;
+}
+.credits{
+  margin-top: 100px;
+  font-family: font1;
+  font-size: 15px;
+  color: whitesmoke;
+  text-align: center;
+}
+</style>
+<body class="back">
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="html/contribution.html">Contribute!!</a></li>
+        <li><a href="html/signin.html">signin</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li style="float: left;"><a href="#">AMRITA <span>| E-BOOST PORTAL</span></a></li>
+      </ul>
+    </nav>
+  </header>
+    <div class="calendar">
+      <p id="month"></p>
+      <p id="day"></p>
+      <p id="num"></p>
+      <p id="year"></p>
+    </div>
+    <div class="time">
+      <h6>TIME NOW</h6>
+      <p id="h"></p>
+    </div>
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <img src="./photos/circus.png" style="width:500px;height: 500px;">
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="./photos/new.jpeg" style="width:500px;height: 500px;">
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="./photos/christmas.jpeg" style="width:500px;height: 500px;">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./photos/photo1.png" style="width:500px;height: 500px;">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./photos/pongal.webp" style="width:500px;height: 500px;">
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+      <div style="margin-top:-600px;margin-left:500px;">
+        <div class="event">Ongoing</div>
+        <br>
+<div class="card-container">
+  <div class="photo-container">
+    <div class="date">
+      <div class="day">10</div>
+      <div class="month">JAN</div>
+    </div>
+    <div class="image"></div>
+  </div>
+  <div class="info-container">
+    <div class="event-name">
+      Spot Photography
+    </div>
+    <div class="event-location">
+      ASE, Coimbatore
+    </div>
+  </div>
+</div>
+<br>
+<div class="event">Upcoming</div>
+        <br>
+        <div class="card-container">
+          <div class="photo-container">
+            <div class="date">
+              <div class="day">17</div>
+              <div class="month">jan</div>
+            </div>
+            <div class="image"></div>
+          </div>
+          <div class="info-container">
+            <div class="event-name">
+              Pongal
+            </div>
+            <div class="event-location">
+              Main Hall, ASE, Coimbatore
+            </div>
+          </div>
+        </div>
+<div class="card-container">
+  <div class="photo-container">
+    <div class="date">
+      <div class="day">16</div>
+      <div class="month">JUNE</div>
+    </div>
+    <div class="image"></div>
+  </div>
+  <div class="info-container">
+    <div class="event-name">
+      Circus
+    </div>
+    <div class="event-location">
+      Main Ground, ASE, Coimbatore
+    </div>
+  </div>
+</div>
+<br>
+<div class="event">past</div>
+        <br>
+        <div class="card-container">
+          <div class="photo-container">
+            <div class="date">
+              <div class="day">25</div>
+              <div class="month">Dec</div>
+            </div>
+            <div class="image"></div>
+          </div>
+          <div class="info-container">
+            <div class="event-name">
+              Christmas
+            </div>
+            <div class="event-location">
+              Main Ground, ASE, Coimbatore
+            </div>
+          </div>
+        </div>
+<div class="card-container">
+  <div class="photo-container">
+    <div class="date">
+      <div class="day">1</div>
+      <div class="month">jan</div>
+    </div>
+    <div class="image"></div>
+  </div>
+  <div class="info-container">
+    <div class="event-name">
+      New Year
+    </div>
+    <div class="event-location">
+      Main Hall, ASE, Coimbatore
+    </div>
+  </div>
+</div></div>
+<div class="rr" style="margin-left:1200px; margin-top: -150px;"><br><br><a href="html/contribution.html"><button class="b">Contribute!!!!</button></a></div>
+
+      <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+<footer><div class="credits">
+  <p style="font-family: font1;">Copyright © 2022 - 2023. Amrita E-Boost Portal - Saranesh E S, Venkata Revan Nagireddy, Yuvraj 
+    <br> II year B.Tech CSE (CYS) 
+    <br> Part of 20CYS202 - User Interface Design - Mini Project 
+    <br> Amrita Vishwa Vidyapeetham, Coimbatore</p>
+</div></footer>
+</body>
+</html>

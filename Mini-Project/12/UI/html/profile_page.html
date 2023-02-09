@@ -1,0 +1,857 @@
+<!--
+Author: Venkata Revan Nagireddy 
+Created On: 30 Dec 2022
+Updated On: 07 Jan 2023
+Description: profile page of User
+-->
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile</title>
+<link rel='icon' href='../photos/icon.png'>
+<body>
+<!--top bar -->
+<style>
+* {
+    margin: 0;
+}
+.navbar-top {
+    background-color: black;
+    color: white;
+    box-shadow: 0px 4px 8px 0px grey;
+    height: 80px;
+}
+
+</style>
+<!-- title (profile) -->
+<style>
+.title {
+	font-family:Cascadia code semibold;
+	font-size:15px;
+    position: absolute;
+    left: 35%;
+	margin: 24px;
+}
+</style>
+<!-- ul list-->
+<style>
+.navbar-top ul {
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 19px 10px 0 10px;
+	margin: 0px 40px 0px 0px;
+}
+.navbar-top ul li {
+    float: left;
+}
+.navbar-top ul li a {
+    color: #333;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+</style>
+
+<!-- notification numbers -->
+<style>
+.icon-count {
+    background-color: #ff0000;
+    color: white;
+    float: right;
+    font-size: 11px;
+    left: -25px;
+    padding: 2px;
+    position: relative;
+}
+</style>
+
+<style>
+.sidenav {
+    background-color:black;
+    color: white;
+    border-bottom-right-radius: 25px;
+    height: 100%;
+    left: 0;
+
+    padding-top: 20px;
+    position: absolute;
+    top: 70px;
+    width: 250px;
+}
+.profile {
+    margin-bottom: 20px;
+    margin-top: -12px;
+    text-align: center;
+}
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.job {
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.url, hr {
+    text-align: center;
+}
+
+.url hr {
+    margin-left: 20%;
+    width: 60%;
+}
+
+.url a {
+    color: #818181;
+    display: block;
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 6px 8px;
+    text-decoration: none;
+}
+
+.url a:hover, .url .active {
+    background-color: #e8f5ff;
+    border-radius: 28px;
+    color: #000;
+    margin-left: 14%;
+    width: 65%;
+}
+</style>
+
+<style>
+.main {
+    margin-top: 2%;
+    margin-left: 290px;
+    font-size: 20px;
+    padding: 0 30px;
+    width: 70%;
+}
+.main .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px 0 grey;
+    padding: 10px 0px 10px 50px;
+}
+
+.main .card table {
+    border: none;
+    font-size: 18px;
+    height: 100px;
+    width:80%;
+}
+</style>
+    <div class="navbar-top">
+        <div class="title">
+            <h1>Amrita E-Boost Portal</h1>
+        </div>
+		
+        <ul>
+        <li>
+            <a href="#">
+			<img src="https://static.vecteezy.com/system/resources/previews/000/442/359/original/notification-vector-icon.jpg" width="40px"/>
+            <span class="icon-count">29</span>
+            </a>
+        </li>
+        <li>
+        <a href="#">
+		<img src="https://www.pngitem.com/pimgs/m/11-118725_email-icon-circle-hd-png-download.png" width="38px"/>
+            <span class="icon-count">1</span>
+        </a>
+        </li>
+        <li>
+			<a href="../index.html">
+			<img src="https://www.eliterealty.net/img/demo-agent/demo-avatar.jpg" width="39px"/></a>
+        </li>
+        </ul>
+    </div>
+   
+    <div class="sidenav">
+        <div class="profile">
+            <img src="https://cdn.iconscout.com/icon/free/png-512/avatar-380-456332.png" alt="" width="100" height="100">
+            <div class="name"> Name_of_User </div>
+            <div class="job"> (position)</div>
+        </div>
+        <div class="sidenav-url">
+			<div class="url">
+                <a href="#" class="active">Profile</a>
+                <hr align="center">
+            </div>
+            <div class="url">
+                <a href="event_list.html">Events List</a>
+                <hr align="center">
+            </div>
+            <div class="url">
+                <a href="post_event.html">Post a Event</a>
+                <hr align="center">
+            </div>
+			<div class="url">
+                <a href="contribution1.html">Contributed</a>
+                <hr align="center">
+            </div>
+			<!--<div class="url">
+                <a href="C:\Users\revan\Documents\AMRITA  SUBJECTS\Sem - 3\User Interface Design\Project\registered.html">Registered</a>
+                <hr align="center">
+            </div>-->
+			<div class="url">
+                <a href="settings.html">Settings</a>
+                <hr align="center">
+            </div>
+        </div>
+    </div>
+	
+
+<style>
+/** Inspired by: http://graphicburger.com/flat-design-ui-components/ **/
+/** Line-chart and donut-chart made by @kseso https://codepen.io/Kseso/pen/phiyL **/
+
+
+/************************************ FONTS ************************************/
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700);
+@import url(https://weloveiconfonts.com/api/?family=entypo|fontawesome|zocial);
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+@font-face {
+	font-family: 'icomoon';
+	src:url('https://jlalovi-cv.herokuapp.com/font/icomoon.eot');
+	src:url('https://jlalovi-cv.herokuapp.com/font/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('https://jlalovi-cv.herokuapp.com/font/icomoon.ttf') format('truetype'),
+		url('https://jlalovi-cv.herokuapp.com/font/icomoon.woff') format('woff'),
+		url('https://jlalovi-cv.herokuapp.com/font/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.icon-cloudy:before {
+	content: "\e60f";
+}
+.icon-sun:before {
+	content: "\e610";
+}
+.icon-cloudy2:before {
+	content: "\e611";
+}
+/************************************* END FONTS *************************************/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;  
+}
+
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+h1 {
+	font-size: 23px;
+}
+
+h2 {
+	font-size: 17px;
+}
+
+p {
+	font-size: 15px;
+}
+
+
+h1, h2, p, a, span{
+	color: #fff;
+}
+	.scnd-font-color {
+		color: #9099b7;
+	}
+
+.horizontal-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+	.horizontal-list li {
+		float: left;
+	}
+
+
+.titular {
+	display: block;
+	line-height: 60px;
+	margin: 0;
+	text-align: center;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+
+
+
+/** MAIN CONTAINER **/
+
+.main-container {
+	font-family: 'Ubuntu', sans-serif;
+	width: 950px;
+	height: 500px;
+	margin: 70px 300px 0px 420px;
+}	
+	
+	/** CONTAINERS **/
+	.container {
+		float: left;
+		width: 300px;
+	}
+		.block {
+			margin-bottom: 25px;
+			background: #394264;
+			border-radius: 5px;
+		}
+		/******************************************** LEFT CONTAINER *****************************************/
+		.left-container {}
+			
+			.donut-chart-block {
+				height: 434px;
+			}
+				.donut-chart-block .titular {
+					padding: 10px 0;
+				}
+				.donut-chart {
+					height: 270px;
+				}
+
+					.donut-chart {
+					  position: relative;
+						width: 200px;
+					  height: 200px;
+						margin: 0 auto 2rem;
+						border-radius: 100%
+					 }
+					p.center-date {
+					  background: #394264;
+					  position: absolute;
+					  text-align: center;
+						font-size: 28px;
+					  top:0;left:0;bottom:0;right:0;
+					  width: 130px;
+					  height: 130px;
+					  margin: auto;
+					  border-radius: 50%;
+					  line-height: 35px;
+					  padding: 15% 0 0;
+					}
+					.center-date span.scnd-font-color {
+					 line-height: 0; 
+					}
+					.recorte {
+					    border-radius: 50%;
+					    clip: rect(0px, 200px, 200px, 100px);
+					    height: 100%;
+					    position: absolute;
+					    width: 100%;
+					  }
+					.quesito {
+					    border-radius: 50%;
+					    clip: rect(0px, 100px, 200px, 0px);
+					    height: 100%;
+					    position: absolute;
+					    width: 100%;
+					    font-family: monospace;
+					    font-size: 1.5rem;
+					  }
+					#porcion1 {
+					    -webkit-transform: rotate(0deg);
+					    transform: rotate(0deg);
+					  }
+
+					#porcion1 .quesito {
+					    background-color: #E64C65;
+					    -webkit-transform: rotate(76deg);
+					    transform: rotate(76deg);
+					  }
+					#porcion2 {
+					    -webkit-transform: rotate(76deg);
+					    transform: rotate(76deg);
+					  }
+					#porcion2 .quesito {
+					    background-color: #11A8AB;
+					    -webkit-transform: rotate(140deg);
+					    transform: rotate(140deg);
+					  }
+					#porcion3 {
+					    -webkit-transform: rotate(215deg);
+					    transform: rotate(215deg);
+					  }
+					#porcion3 .quesito {
+					    background-color: #4FC4F6;
+					    -webkit-transform: rotate(113deg);
+					    transform: rotate(113deg);
+					  }
+					#porcionFin {
+					    -webkit-transform: rotate(-32deg);
+					    transform:rotate(-32deg);
+					  }
+					#porcionFin .quesito {
+					    background-color: #FCB150;
+					    -webkit-transform: rotate(32deg);
+					    transform: rotate(32deg);
+					  }
+
+        .os-percentages {
+					padding-top: 36px;
+				}
+        .os-percentages li {
+					width: 75px;
+					border-left: 1px solid #394264;
+					text-align: center;					
+					background: #50597b;
+				}
+					.os {
+						margin: 0;
+						padding: 10px 0 5px;
+						font-size: 15px;		
+					}
+						.os.ios {
+							border-top: 4px solid #e64c65;
+						}
+						.os.mac {
+							border-top: 4px solid #11a8ab;
+						}
+						.os.linux {
+							border-top: 4px solid #fcb150;
+						}
+						.os.win {
+							border-top: 4px solid #4fc4f6;
+						}
+					.os-percentage {
+						margin: 0;
+						padding: 0 0 15px 10px;
+						font-size: 25px;
+					}
+			.line-chart-block {
+				height: 400px;
+			}
+				.line-chart {
+					height: 200px;
+					background: #11a8ab;
+				}
+  
+				.grafico {
+				  padding: 2rem 1rem 1rem;
+				  width: 100%;
+				  height: 100%;
+				  position: relative;
+				  color: #fff;
+				  font-size: 80%;
+				}
+				.grafico span {
+				  display: block;
+				  position: absolute;
+				  bottom: 3rem;
+				  left: 2rem;
+				  height: 0;
+				  border-top: 2px solid;
+				  -webkit-transform-origin: left center;
+				  transform-origin: left center;
+				}
+				.grafico span > span {
+				  left: 100%; bottom: 0;
+				}
+				[data-valor='25'] {width: 75px; -webkit-transform: rotate(-45deg); transform: rotate(-45deg);}
+				[data-valor='8'] {width: 24px; -webkit-transform: rotate(65deg); transform: rotate(65deg);}
+				[data-valor='13'] {width: 39px; -webkit-transform: rotate(-45deg); transform: rotate(-45deg);}
+				[data-valor='5'] {width: 15px; -webkit-transform: rotate(50deg); transform: rotate(50deg);}
+				[data-valor='23'] {width: 69px; -webkit-transform: rotate(-70deg); transform: rotate(-70deg);}
+				[data-valor='12'] {width: 36px; -webkit-transform: rotate(75deg); transform: rotate(75deg);}
+				[data-valor='15'] {width: 45px; -webkit-transform: rotate(-45deg); transform: rotate(-45deg);}
+
+				[data-valor]:before {
+				  content: '';
+				  position: absolute;
+				  display: block;
+				  right: -4px;
+				  bottom: -3px;
+				  padding: 4px;
+				  background: #fff;
+				  border-radius: 50%;
+				}
+				[data-valor='23']:after {
+				  content: '+' attr(data-valor) '%';
+				  position: absolute;
+				  right: -2.7rem;
+				  top: -1.7rem;
+				  padding: .3rem .5rem;
+				  background: #50597B;
+				  border-radius: .5rem;
+				  -webkit-transform: rotate(45deg);
+				  transform: rotate(45deg);  
+				}
+				[class^='eje-'] {
+				  position: absolute;
+				  left: 0;
+				  bottom: 0rem;
+				  width: 100%;
+				  padding: 1rem 1rem 0 2rem;
+				  height: 80%;
+				}
+				.eje-x {
+				  height: 2.5rem;
+				}
+				.eje-y li {
+				  height: 25%;
+				  border-top: 1px solid #777;
+				}
+				[data-ejeY]:before {
+				  content: attr(data-ejeY);
+				  display: inline-block;
+				  width: 2rem;
+				  text-align: right;
+				  line-height: 0;
+				  position: relative;
+				  left: -2.5rem;
+				  top: -.5rem;
+				} 
+				.eje-x li {
+				  width: 33%;
+				  float: left;
+				  text-align: center;
+				}
+				.time-lenght {
+					padding-top: 22px;
+					padding-left: 38px;
+				}
+					.time-lenght-btn {
+						display: block;
+						width: 70px;
+						line-height: 32px;
+						background: #50597b;
+						border-radius: 5px;
+						font-size: 14px;
+						text-align: center;
+						margin-right: 5px;
+						-webkit-transition: background .3s;
+						transition: background .3s;
+					}
+						.time-lenght-btn:hover {
+							text-decoration: none;
+							background: #e64c65;
+						}
+				.month-data {
+					padding-top: 28px;
+				}
+					.month-data p {
+						display: inline-block;
+						margin: 0;
+						padding: 0 25px 15px;            
+						font-size: 16px;
+					}
+						.month-data p:last-child {
+							padding: 0 25px;
+              float: right;
+							font-size: 15px;
+						}
+						.increment {
+							color: #e64c65;
+						}
+			
+			.left-container .social {
+				height: 110px;
+			}
+				.left-container .social li {
+					width: 75px;
+					height: 110px;										
+				}
+					.left-container .social li .icon {
+						text-align: center;
+						font-size: 20px;
+						margin: 0;
+						line-height: 75px;
+					}
+					.left-container .social li .number {
+						text-align: center;
+						margin: 0;
+						line-height: 34px;
+					}
+					.left-container .social .facebook {
+						background: #3468af;
+						border-top-left-radius: 5px;
+						border-bottom-left-radius: 5px;
+					}
+						.left-container .social .facebook .number {
+							background: #1a4e95;
+							border-bottom-left-radius: 5px;
+						}
+					.left-container .social .twitter {
+						background: #4fc4f6;						
+					}
+						.left-container .social .twitter .icon {
+							font-size: 18px;
+						}
+						.left-container .social .twitter .number {
+							background: #35aadc;
+						}
+					.left-container .social .googleplus {
+						background: #e64c65;						
+					}
+						.left-container .social .googleplus .number{
+							background: #cc324b;
+						}
+					.left-container .social .mailbox {
+						background: #E4405F;						
+						border-top-right-radius: 5px;
+						border-bottom-right-radius: 5px;
+					}
+						.left-container .social .mailbox .number {
+							background: #D3154C;
+							border-bottom-right-radius: 5px;
+						}
+		/************************************************** MIDDLE CONTAINER **********************************/
+		.middle-container {
+			margin: 0 25px;			
+		}
+			
+				.middle-container .social .icon {
+					float: left;
+					width: 60px;
+					height: 60px;
+					text-align: center;
+					font-size: 20px;
+					border-bottom-left-radius: 5px;
+					border-top-left-radius: 5px;
+				}
+					.middle-container .social .icon.facebook {
+						background: #1a4e95;						
+					}
+					.middle-container .social .icon.twitter {
+						background: #35aadc;						
+					}
+					.middle-container .social .icon.googleplus {
+						background: #cc324b;						
+					}
+		/********************************************* RIGHT CONTAINER ****************************************/
+		.right-container {}
+.c-dashboardInfo {
+  margin-bottom: 15px;
+}
+.c-dashboardInfo .wrap {
+  background: #ffffff;
+  box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding: 40px 20px 10px;
+  height: 100%;
+  width: 60%;
+}
+.c-dashboardInfo__title,
+.c-dashboardInfo__subInfo {
+  color: #6c6c6c;
+  font-size: 1.18em;
+}
+.c-dashboardInfo span {
+  display: block;
+}
+.c-dashboardInfo__count {
+  font-weight: 600;
+  font-size: 2.5em;
+  line-height: 64px;
+  color: #323c43;
+}
+.c-dashboardInfo .wrap:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  content: "";
+}
+
+.c-dashboardInfo:nth-child(1) .wrap:after {
+  background: linear-gradient(82.59deg, #00c48c 0%, #00a173 100%);
+}
+.c-dashboardInfo:nth-child(2) .wrap:after {
+  background: linear-gradient(81.67deg, #0084f4 0%, #1a4da2 100%);
+}
+.c-dashboardInfo:nth-child(3) .wrap:after {
+  background: linear-gradient(69.83deg, #0084f4 0%, #00c48c 100%);
+}
+.c-dashboardInfo:nth-child(4) .wrap:after {
+  background: linear-gradient(81.67deg, #ff647c 0%, #1f5dc5 100%);
+}
+.c-dashboardInfo__title svg {
+  color: #d7d7d7;
+  margin-left: 80px;
+}
+.MuiSvgIcon-root-19 {
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  font-size: 24px;
+
+
+}
+
+
+</style>
+
+    <body>
+
+        <div class="main-container">
+            <!-- LEFT-CONTAINER -->
+            <div class="left-container container">
+                
+                <div class="line-chart-block block clear"> <!-- LINE CHART BLOCK (LEFT-CONTAINER) -->
+                    <div class="line-chart">
+                      <!-- LINE-CHART by @kseso https://codepen.io/Kseso/pen/phiyL -->
+                        <div class='grafico'>
+                           <ul class='eje-y'>
+                             <li data-ejeY='30'></li>
+                             <li data-ejeY='0'></li>
+                             <li data-ejeY='10'></li>
+                             <li data-ejeY='0'></li>
+                           </ul>
+                           <ul class='eje-x'>
+                             <li>May</li>
+                             <li>Sept</li>
+                             <li>Jan</li>
+                           </ul>
+                             <span data-valor='25'>
+                               <span data-valor='8'>
+                                 <span data-valor='13'>
+                                         </span></span></span>
+                        </div>
+                        <!-- END LINE-CHART by @kseso https://codepen.io/Kseso/pen/phiyL -->
+                    </div>
+                    <ul class="month-data clear">
+                        <li>
+                            <p>MAY<span class="scnd-font-color"> 2022</span></p>
+                            <p><span class="entypo-plus increment"> </span>21<sup>%</sup></p>
+                        </li>
+                        <li>
+                            <p>SEPT<span class="scnd-font-color"> 2013</span></p>
+                            <p><span class="entypo-plus increment"> </span>48<sup>%</sup></p>
+                        </li>
+                        <li>
+                            <p>JAN<span class="scnd-font-color"> 2013</span></p>
+                            <p><span class="entypo-plus increment"> </span>-<sup>%</sup></p>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="social horizontal-list block"> <!-- SOCIAL (LEFT-CONTAINER) -->
+                    <li class="facebook"><p class="icon"><span class="zocial-facebook"></span></p><p class="number">15k</p></li>
+                    <li class="mailbox"><p class="icon"><span class="zocial-instagram"></span></p><p class="number">15k</p></li>
+					<li class="twitter"><p class="icon"><span class="zocial-twitter"></span></p><p class="number">10k</p></li>
+                    <li class="googleplus"><p class="icon"><span class="zocial-googleplus"></span></p><p class="number">9k</p></li>
+                </ul>
+            </div>
+
+            <!-- MIDDLE-CONTAINER -->
+            <div class="middle-container container">
+			
+			<div class="donut-chart-block block"> <!-- DONUT CHART BLOCK (LEFT-CONTAINER) -->
+                    <h2 class="titular">AUDIENCE STATS for EVENTS</h2>
+                    <div class="donut-chart">
+                        <div id="porcion1" class="recorte"><div class="quesito ios" data-rel="21"></div></div>
+                        <div id="porcion2" class="recorte"><div class="quesito mac" data-rel="39"></div></div>
+                        <div id="porcion3" class="recorte"><div class="quesito win" data-rel="31"></div></div>
+                        <div id="porcionFin" class="recorte"><div class="quesito linux" data-rel="9"></div></div>
+
+                     <!--   <p class="center-date"><br><span class="scnd-font-color"></span></p> -->
+                    </div>
+                    <ul class="os-percentages horizontal-list">
+                        <li>
+                            <p class="linux os scnd-font-color">Inaugration</p>
+                            <p class="os-percentage">40<sup>%</sup></p>
+                        </li>
+                        <li>
+                            <p class="mac os scnd-font-color">Seminar</p>
+                            <p class="os-percentage">60<sup>%</sup></p>
+                        </li>
+                        <li>
+                            <p class="ios os scnd-font-color">Workshop</p>
+                            <p class="os-percentage">60<sup>%</sup></p>
+                        </li>
+						<li>
+                            <p class="win os scnd-font-color">Movie</p>
+                            <p class="os-percentage">80<sup>%</sup></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- RIGHT-CONTAINER -->
+            <div class="right-container container">
+                <div class="container pt-5">
+    <div class="row align-items-stretch">
+      <div class="c-dashboardInfo col-lg-3 col-md-6">
+        <div class="wrap">
+          <h4 class="heading heading5 hind-font medium-font-weight c-dashboardInfo__title">Total Events Posted<svg
+              class="MuiSvgIcon-root-19" >
+            </svg></h4><span class="hind-font caption-12 c-dashboardInfo__count">6</span>
+        </div>
+      </div>
+      <div class="c-dashboardInfo col-lg-3 col-md-6">
+        <div class="wrap">
+          <h4 class="heading heading5 hind-font medium-font-weight c-dashboardInfo__title">Events Completed<svg
+              class="MuiSvgIcon-root-19">
+
+            </svg></h4><span class="hind-font caption-12 c-dashboardInfo__count">3</span><span
+            class="hind-font caption-12 c-dashboardInfo__subInfo"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+				
+            </div> <!-- end right-container -->
+        </div> <!-- end main-container -->
+    </body>
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br>
+<center>
+    <p style="color:#A7A1AE">Copyright © 2022 - 2023. Amrita E-Boost Portal - Saranesh E S, Venkata Revan Nagireddy, Yuvraj 
+    <br> II year B.Tech CSE (CYS) 
+    <br> Part of 20CYS202 - User Interface Design - Mini Project 
+    <br> Amrita Vishwa Vidyapeetham, Coimbatore</p>
+    </center>
+<br>
+</body>
+
+</html>

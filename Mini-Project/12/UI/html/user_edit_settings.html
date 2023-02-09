@@ -1,0 +1,282 @@
+<!--
+Author: Venkata Revan Nagireddy 
+Created On: 30 Dec 2022
+Updated On: 07 Jan 2023
+Description: profile page of User
+-->
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Edit Settings</title>
+<link rel='icon' href='../photos/icon.png'>
+<body>
+<!--top bar -->
+<style>
+* {
+    margin: 0;
+}
+.navbar-top {
+    background-color: black;
+    color: white;
+    box-shadow: 0px 4px 8px 0px grey;
+    height: 80px;
+}
+.margin {
+	margin: 10px 40px 0px 300px;
+	}
+</style>
+<!-- title (profile) -->
+<style>
+.title {
+    font-family:Cascadia code semibold;
+	font-size:15px;
+    position: absolute;
+    left: 35%;
+	margin: 24px;
+}
+</style>
+<!-- ul list-->
+<style>
+.navbar-top ul {
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 18px 50px 0 40px;
+}
+.navbar-top ul li {
+    float: left;
+}
+.navbar-top ul li a {
+    color: #333;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+</style>
+
+<!-- notification numbers -->
+<style>
+.icon-count {
+    background-color: #ff0000;
+    color: white;
+    float: right;
+    font-size: 11px;
+    left: -25px;
+    padding: 2px;
+    position: relative;
+}
+</style>
+
+<style>
+.sidenav {
+    background-color:black;
+    color: white;
+    border-bottom-right-radius: 25px;
+    height: 100%;
+    left: 0;
+
+    padding-top: 20px;
+    position: absolute;
+    top: 70px;
+    width: 250px;
+}
+.profile {
+    margin-bottom: 20px;
+    margin-top: -12px;
+    text-align: center;
+}
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.job {
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.url, hr {
+    text-align: center;
+}
+
+.url hr {
+    margin-left: 20%;
+    width: 60%;
+}
+
+.url a {
+    color: #818181;
+    display: block;
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 6px 8px;
+    text-decoration: none;
+}
+
+.url a:hover, .url .active {
+    background-color: #e8f5ff;
+    border-radius: 28px;
+    color: #000;
+    margin-left: 14%;
+    width: 65%;
+}
+</style>
+
+<style>
+.main {
+    margin-top: 4%;
+    margin-left: 290px;
+    font-size: 20px;
+    padding: 0 30px;
+    width: 50%;
+}
+.main .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px 0 grey;
+    padding: 10px 0 10px 50px;
+}
+
+.main .card table {
+    border: none;
+    font-size: 18px;
+    height: 100px;
+    width: 70%;
+}
+</style>
+
+<style>
+.pwd {
+  -webkit-text-security: disc;
+}
+
+.button {
+	background-color: black;
+	font-size: 16px;
+	color: white;
+	border-radius: 80px;
+	padding: 3px 10px;
+	}
+
+.buttondiscard {
+	background-color: white;
+	font-size: 16px;
+	color: black;
+	border-radius: 70px;
+	padding: 3px 10px;
+	}
+</style>
+    <div class="navbar-top">
+        <div class="title">
+            <h1>Amrita E-Boost Portal</h1>
+        </div>
+		
+        <ul>
+        <li>
+            <a href="#">
+			<img src="https://static.vecteezy.com/system/resources/previews/000/442/359/original/notification-vector-icon.jpg" width="40px"/>
+            <span class="icon-count">29</span>
+            </a>
+        </li>
+        <li>
+        <a href="#">
+		<img src="https://www.pngitem.com/pimgs/m/11-118725_email-icon-circle-hd-png-download.png" width="38px"/>
+            <span class="icon-count">1</span>
+        </a>
+        </li>
+        <li>
+			<a href="../index.html">
+			<img src="https://www.eliterealty.net/img/demo-agent/demo-avatar.jpg" width="39px"/></a>
+        </li>
+        </ul>
+    </div>
+   
+    <div class="sidenav">
+        <div class="profile">
+            <img src="https://cdn.iconscout.com/icon/free/png-512/avatar-380-456332.png" alt="" width="100" height="100">
+            <div class="name"> Name_of_User </div>
+            <div class="job"> (position)</div>
+        </div>
+        <div class="sidenav-url">
+            <div class="url">
+                <a href="profile_page.html">Profile</a>
+                <hr align="center">
+            </div>
+			<div class="url">
+                <a href="event_list.html">Events List</a>
+                <hr align="center">
+            </div>
+            <div class="url">
+                <a href="post_event.html" >Post a Event</a>
+                <hr align="center">
+            </div>
+			<div class="url">
+                <a href="contribution1.html" >Contributed</a>
+                <hr align="center">
+            </div>
+			<!-- class="url">
+                <a href="C:\Users\revan\Documents\AMRITA  SUBJECTS\Sem - 3\User Interface Design\Project\registered.html">Registered</a>
+                <hr align="center">
+            </div>-->
+			<div class="url">
+                <a href="#" class="active">Settings</a>
+                <hr align="center">
+            </div>
+        </div>
+    </div>
+	
+	<div class="main" style="font-family:Ubuntu">
+		<div class="margin">
+	<div class="card">
+		<div class="card-body"><br>
+			<h2> Credentials </h2>
+			<br>
+			<table>
+                <tbody>
+                    <tr>
+                       <td>UserName</td>
+                       <td>&nbsp;:&nbsp; &nbsp;</td>
+                       <td contenteditable>Organizer Name</td>
+                    </tr>
+					<tr>
+                       <td>Email</td>
+                       <td>&nbsp;:&nbsp; &nbsp;</td>
+                       <td>email@gmail.com</td>
+                    </tr>
+					<tr>
+                       <td>Password</td>
+                       <td>&nbsp;:&nbsp; &nbsp;</td>
+                       <td class="pwd" contenteditable> passwd </td>
+                    </tr>
+					<tr>
+                       <td>Re-Enter Password</td>
+                       <td>&nbsp;:&nbsp; &nbsp;</td>
+                       <td class="pwd" contenteditable> passwd </td>
+                    </tr>
+                </tbody>
+            </table>
+			<br>
+			<div style="margin:0px 0px 0px 170px">
+			
+			<input class="button" type="button" value="Change"> &nbsp; 
+			<a href="settings.html"> <input class="buttondiscard" type="button" value="Discard"> </a>
+			</div>
+	</div>
+	</div>
+	</div>
+	<center><br><br><br><br><br><br><br><br><br><br><br><br>
+       <p style="color:#A7A1AE">Copyright © 2022 - 2023. Amrita E-Boost Portal - Saranesh E S, Venkata Revan Nagireddy, Yuvraj 
+    <br> II year B.Tech CSE (CYS) 
+    <br> Part of 20CYS202 - User Interface Design - Mini Project 
+    <br> Amrita Vishwa Vidyapeetham, Coimbatore</p>
+    </center>
+			
+
+	
+	
+	
+	
+</body>
+</html>

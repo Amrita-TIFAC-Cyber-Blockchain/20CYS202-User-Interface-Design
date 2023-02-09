@@ -1,0 +1,264 @@
+<!--
+    Authors: yuvaraj kumar 
+    Created Date: dec 2022
+    Updated Date: 15 jan2022
+    Description: This page contains the sign details
+    -->
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>sign in</title>
+    <link rel='icon' href='../photos/icon.png'>
+    <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+        
+        :root{
+            --succes-color: #2ecc71;;
+            --error-color: #e74c3c;
+        }
+        
+        *{
+            box-sizing: border-box;
+        }
+        @font-face {
+        font-family: 'font1';
+        src: url('../photos/font1.ttf');}
+        span{
+        color:rgb(189, 2, 112);
+        font-family: font1;
+      }
+        body{
+        
+            background-color: rgba(0, 0, 0, 0.8);
+            font-family: font1;
+            align-items: center;
+        }
+        
+        .container{
+            margin-top: 100px;
+            margin-left: 700px;
+            background-color:whitesmoke;
+            border-radius: 45px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            width: 400px;
+            height: 400px;
+        }
+        
+        h2{
+            text-align: center;
+            margin: 0 0 20px;
+        }
+        
+        .form{
+            padding: 30px 40px;
+        }
+        
+        .form-control{
+            margin-bottom: 10px;
+            padding-bottom: 20px;
+            position: relative;
+        }
+        
+        .form-control label{
+            color:#777;
+            display: block;
+            margin-bottom: 5px; 
+        }
+         
+        .form-control input
+        {
+            border: 2px solid #777;
+            border-radius: 4px;
+            display: block;
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;   
+        }
+        
+        .form-control input:focus{
+            outline: 0;
+            border-color: #777;
+        
+        }
+        
+        .form-control.success input {
+            border-color: var(--succes-color);
+        }
+        
+        .form-control.error input {
+            border-color: var(--error-color);    
+        }
+        
+        .form-control small{
+            color: var(--error-color);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            visibility: hidden;
+        }
+        
+        .form-control.error small{
+            visibility: visible;
+        }
+        .form button {
+            cursor: pointer;
+            background-color: #3498db;
+            border: 2px solid #3498db;
+            border-radius: 4px;
+            color: #fff;
+            display: block;
+            padding: 10px;
+            font-size: 16px;
+            margin-top:20px;
+            width:100%;
+        }
+        .credits{
+  margin-top: 100px;
+  font-family: font1;
+  font-size: 15px;
+  color: whitesmoke;
+  text-align: center;
+}
+.navbar{ overflow: hidden;
+        float: none;
+        margin: 20px;
+
+      }
+      .navbar ul{
+        list-style: none;
+      }
+      .navbar li a{
+        float:right;
+        color:whitesmoke;
+        text-align: center;
+        font-style: none;
+        font-family: font1;
+        font-size: 25px;
+        text-decoration: none;
+        padding: 14px 16px;
+      }
+.navbar a:hover{
+        color: black;
+        background-color: aliceblue;
+      }
+        </style>
+    </head>
+    <header>
+        <nav class="navbar">
+          <ul>
+            <li><a href="contribution.html">Contribute!!</a></li>
+            <li><a href="signin.html">signin</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li style="float: left;"><a href="#">AMRITA <span>| E-BOOST PORTAL</span></a></li>
+          </ul>
+        </nav>
+      </header>
+    <body>
+        <div class="container">
+            <form id="form" class="form">
+                <h2> Log in</h2>
+                    <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Enter email">
+                    <small>Error Message</small>
+                </div> 
+                <div class="form-control">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter password">
+                    <small>Error Message</small>
+                </div>
+                <button><a href="profile_page.html">Submit</a></button>
+            </form>
+        </div>
+    </body>
+    <footer><div class="credits">
+        <p style="font-family: font1;">Copyright © 2022 - 2023. Amrita E-Boost Portal - Saranesh E S, Venkata Revan Nagireddy, Yuvraj 
+    <br> II year B.Tech CSE (CYS) 
+    <br> Part of 20CYS202 - User Interface Design - Mini Project 
+    <br> Amrita Vishwa Vidyapeetham, Coimbatore</p>
+      </div></footer> 
+    <script>
+    const form = document.getElementById('form');
+    const username = document.getElementById('username');
+    const email = document.getElementById('email');
+    const password = document.getElementById('password');
+    const password2 = document.getElementById('password2');
+    
+    //Show input error messages
+    function showError(input, message) {
+        const formControl = input.parentElement;
+        formControl.className = 'form-control error';
+        const small = formControl.querySelector('small');
+        small.innerText = message;
+    }
+    
+    //show success colour
+    function showSucces(input) {
+        const formControl = input.parentElement;
+        formControl.className = 'form-control success';
+    }
+    
+    //check email is valid
+    function checkEmail(input) {
+        const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if(re.test(input.value.trim())) {
+            showSucces(input)
+        }else {
+            showError(input,'Email is not invalid');
+        }
+    }
+    
+    
+    //checkRequired fields
+    function checkRequired(inputArr) {
+        inputArr.forEach(function(input){
+            if(input.value.trim() === ''){
+                showError(input,`${getFieldName(input)} is required`)
+            }else {
+                showSucces(input);
+            }
+        });
+    }
+    
+    
+    //check input Length
+    function checkLength(input, min ,max) {
+        if(input.value.length < min) {
+            showError(input, `${getFieldName(input)} must be at least ${min} characters`);
+        }else if(input.value.length > max) {
+            showError(input, `${getFieldName(input)} must be les than ${max} characters`);
+        }else {
+            showSucces(input);
+        }
+    }
+    
+    //get FieldName
+    function getFieldName(input) {
+        return input.id.charAt(0).toUpperCase() + input.id.slice(1);
+    }
+    
+    // check passwords match
+    function checkPasswordMatch(input1, input2) {
+        if(input1.value !== input2.value) {
+            showError(input2, 'Passwords do not match');
+        }
+    }
+    
+    
+    //Event Listeners
+    form.addEventListener('submit',function(e) {
+        e.preventDefault();
+    
+        checkRequired([username, email, password, password2]);
+        checkLength(username,3,15);
+        checkLength(password,6,25);
+        checkEmail(email);
+        checkPasswordMatch(password, password2);
+        window.location.reload();
+        return true;
+    });    
+    </script>            
+</html>
+
+
