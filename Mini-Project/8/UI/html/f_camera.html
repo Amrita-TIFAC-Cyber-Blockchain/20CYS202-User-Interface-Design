@@ -1,0 +1,111 @@
+<!--
+Authors: Kishanth K, Aravind S, K Hitesh Manjunath 
+Created Date:  05 Dec 2022
+Updated Date: 19 Jan 2023
+Base Template: -
+Description: This is the camera page of inventory management system (KesarNET)-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Scan QR</title>
+    <meta http-equiv = "refresh" content = "15; url=farmer.html" target="_blank"/>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0" />
+	</head>
+		<body>
+  <center>   <h1>Scan the QR code on the product to view product details</h1></center>
+   </body>
+	<title>Web Cam</title>
+	<script>
+	document.addEventListener("DOMContentLoaded", () => {
+		var but = document.getElementById("but");
+		var video = document.getElementById("vid");
+		var mediaDevices = navigator.mediaDevices;
+		vid.muted = true;
+		but.addEventListener("click", () => {
+
+		// Accessing the user camera and video.
+		mediaDevices
+			.getUserMedia({
+			video: true,
+			audio: true,
+			})
+			.then((stream) => {
+
+			// Changing the source of video to current stream.
+			video.srcObject = stream;
+			video.addEventListener("loadedmetadata", () => {
+				video.play();
+			});
+			})
+			.catch(alert);
+		});
+	});
+	</script>
+</head>
+
+<style>
+	h1 {
+  color: rgb(242, 166, 52);
+  text-shadow: 2px 2px 4px #000000;
+}
+	body {
+  background-image: url('../images/saffron.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+	div {
+	width: 500px;
+	height: 400px;
+	border: 2px solid black;
+	position: relative;
+	}
+	video {
+	width: 500px;
+	height: 400px;
+	object-fit: cover;
+	}
+	.button {
+  background-color: rgb(242, 166, 52);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+footer{
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+    text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.829);
+    }
+</style>
+
+<body>
+	<center>
+	<div>
+		<video id="vid"></video>
+	</div>
+	<br />
+	<button id="but" autoplay class="button">
+		Scan
+	</button>
+	</center>
+</body>
+<footer>
+	<br><br><br><br><br><br><br><br>
+	<p>Copyright © 2022-2023 Inventory Management System -  K Hitesh Manjunath, Kishanth K, Aravind S
+	</br>II B.Tech CSE (CYS)<br> Part of 20CYS202 - User Interface Design,</br>
+	Amrita Vishwa Vidyapeetham, Coimbatore</p>   
+</footer>
+</html>

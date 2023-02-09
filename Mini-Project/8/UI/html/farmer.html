@@ -1,0 +1,417 @@
+<!--
+Authors: K Hitesh Manjunath, Aravind S, Kishanth K 
+Created Date:  05 Dec 2022
+Updated Date: 19 Jan 2023
+Base Template: -
+Description: This is the farmer details view page of inventory management system (KesarNET)-->
+
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Farmer</title>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+    </head>
+    <body>
+   <section class="product">
+	<div class="product__photo">
+		<div class="photo-container">
+			<div class="photo-main">
+				
+				<img src="https://cdn.shopify.com/s/files/1/0245/3785/8100/products/large_square_Coupe_Grade_Spanish_Saffron__close.jpg?v=1581423805" alt="green apple slice" width="500px" height="450px">
+			</div>	
+		</div>
+	</div>
+	<div class="product__info">
+        <img src ="data:image/jpeg;base64,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" style="height:70px; width:70px;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG3wLzNgVJCCmBYGz1WSyewW-vqRuCjfE4kQrM6wiuRw&s" style="height:70px; width:70px">
+        <div class="title">
+			 
+			<span style="font-size: 30px">Harvest date: 03.01.23</span><br>
+            <span style="font-size: 30px">Farmer name: Radha krishnan</span>
+		</div>
+		<div class="price">
+		 <span style="font-size: 28px">Farmer id: 334532</span>
+		</div>
+		<div class="description">
+            <ul><a style="font-size:25px;font-weight:bold">Details</a>
+			<li><a style="font-size:24px">Grade: A</a></li>
+            <li><a style="font-size: 24px">Location:32.7266° N, 74.8570° E</a></li> 
+            <li><a style="font-size:24px">Price :RS 452.9</a></li>
+            <li><a style="font-size:24px">Ph value of farm: 7</a></li> 
+            <li><a style="font-size:24px"> Batch number: 21</a></li>
+         	</ul>
+        </div>
+</section>
+  <style>
+    body {
+      background-image: url('../images/saffron.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;  
+      background-size: cover;
+    }
+    .img-main{
+    width: 1920px;
+    height: 60px;
+    }
+    .img-main{
+    text-align: center;
+    }
+    .Page_2-icon_1{
+     float: left;
+    width: 93px;
+    height: 59px;
+    position: absolute;
+    left: 562px;
+    top: 100px;
+    }
+    img{
+        vertical-align: middle;
+    }
+    .Page_2-icon_2{
+     float: left;
+    width: 93px;
+    height: 59px;
+    position: absolute;
+    left: 800px;
+    top: 100px;
+    }
+    img{
+        vertical-align: middle;
+    }
+    .Page_2-icon_3{
+    float: left;
+    width: 93px;
+    height: 59px;
+    position: absolute;
+    left: 1030px;
+    top: 100px;
+}
+img{
+        vertical-align: middle;
+    }
+    .Heading-main{
+    width: 1920px;
+    text-align: center;
+    height: 60px;}
+        .Heading-main{
+     font-family: myBoschSansLight;
+    font-size: 78px;
+    text-align: center;
+    color: #b90276;
+    margin: 40px 0 0 0;
+    height: 120px;
+        }
+    .page_2-line_1{
+    border-bottom: 3px solid #005691;
+    width: 922px;
+    position: absolute;
+    left: 500px;
+    top: 160px;
+    display:block;
+    }
+    .Page_2-circle_1 { position: absolute;
+    left: 490px;
+    top: 145px;
+    border-radius: 20px;
+    border: 5px solid #ddefc7;
+    background: #78be20;
+    padding: 12px;
+    width: 20px;
+    height: 20px;
+   }
+   element.style{
+    border: 5px solid rgb(237, 192, 221);
+    background: rgb(185, 2, 118);
+   }
+   .Page_2-circle_text_1{
+    width: 200px;
+    position: absolute;
+    left: 407px;
+    top: 190px;
+    font-family: myBoschSansRegular;
+    font-size: 18px;
+    color: #000;
+    display:block;
+   }
+   .Page_2-circle_2{
+    position: absolute;
+    left: 725px;
+    top: 145px;
+    border-radius: 20px;
+    border: 5px solid #ddefc7;
+    background: #78be20;
+    padding: 12px;
+    width: 20px;
+    height: 20px;
+   }
+   .Page_2-circle_3{
+    position: absolute;
+    left: 960px;
+    top: 145px;
+    border-radius: 20px;
+    border: 5px solid #ddefc7;
+    background: #78be20;
+    padding: 12px;
+    width: 20px;
+    height: 20px;
+   }
+   .Page_2-circle_4{position: absolute;
+    left: 1195px;
+    top: 145px;
+    border-radius: 20px;
+    border: 5px solid #ddefc7;
+    background: #78be20;
+    padding: 12px;
+    width: 20px;
+    height: 20px;}
+    .Page_2-circle_text_2{
+        width: 200px;
+    position: absolute;
+    left: 1111px;
+    top: 190px;
+    font-family: myBoschSansRegular;
+    font-size: 18px;
+    color: #000;
+    }
+    .Page_2-circle_5{
+        position: absolute;
+    left: 1420px;
+    top: 145px;
+    border-radius: 20px;
+    border: 5px solid #edc0dd;
+    background: #b90276;
+    padding: 12px;
+    width: 20px;
+    height: 20px;
+    }
+    .Page_2-circle_text_3{
+        width: 200px;
+    position: absolute;
+    left: 1336px;
+    top: 190px;
+    font-family: myBoschSansRegular;
+    font-size: 18px;
+    color: #000;
+    }
+    /* ----- Variables ----- */
+$color-primary: #4c4c4c;
+$color-secondary: #a6a6a6;
+$color-highlight: #ff3f40;
+
+/* ----- Global ----- */
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	display: grid;
+	grid-template-rows: 1fr;
+	font-family: "Raleway", sans-serif;
+	background-color: #01e37f;
+}
+
+h3 {
+	font-size: 0.7em;
+	letter-spacing: 1.2px;
+	color: $color-secondary;
+}
+
+img {
+			max-width: 100%;
+			filter: drop-shadow(1px 1px 3px $color-secondary);
+		}
+
+/* ----- Product Section ----- */
+.product {
+	display: grid;
+	grid-template-columns: 0.9fr 1fr;
+	padding: 2 em 0;
+	min-width: 1000px;
+    min-height: 200px;
+	background-color: white;
+	border-radius: 5px;
+    margin-top: -50px ;
+    margin-right: 350px ;
+    margin-left: 350px;
+    margin-bottom: 90px;
+}
+
+/* ----- Photo Section ----- */
+.product__photo {
+	position: relative;
+
+}
+
+.photo-container {
+	position: absolute;
+	
+	
+}
+
+.photo-main {
+	border-radius: 6px 6px 0 0;
+	
+
+
+	.controls {
+		display: flex;
+		justify-content: space-between;
+		padding: 0.8em;
+		color: #fff;
+
+		i {
+			cursor: pointer;
+		}
+	}
+
+	img {
+		position: absolute;
+		left: -3.5em;
+		top: 2em;
+		max-width: 110%;
+		filter: saturate(150%) contrast(120%) hue-rotate(10deg)
+			drop-shadow(1px 20px 10px rgba(0, 0, 0, 0.3));
+	}
+}
+
+.photo-album {
+	padding: 0.7em 1em;
+	border-radius: 0 0 6px 6px;
+	background-color: #fff;
+
+	ul {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	li {
+		float: left;
+		width: 55px;
+		height: 55px;
+		padding: 7px;
+		border: 1px solid $color-secondary;
+		border-radius: 3px;
+	}
+}
+
+/* ----- Informations Section ----- */
+.product__info {
+	padding: 1.5 em 0;
+}
+
+.title {
+	h1 {
+		margin-bottom: 0.1em;
+		color: $color-primary;
+		font-size: 1.5em;
+		font-weight: 900;
+	}
+
+	span {
+		font-size: 0.7em;
+		color: $color-secondary;
+	}
+}
+
+.price {
+    clear: left;
+	margin: 2em 0;
+	color: $color-highlight;
+	font-size: 1.2em;
+
+	span {
+		padding-left: 0.15em;
+		font-size: 2.9em;
+	}
+}
+
+.variant {
+	overflow: auto;
+
+	h3 {
+		margin-bottom: 1.1em;
+	}
+
+	li {
+		float: left;
+		width: 35px;
+		height: 35px;
+		padding: 3px;
+		border: 1px solid transparent;
+		border-radius: 3px;
+		cursor: pointer;
+
+		&:first-child,
+		&:hover {
+			border: 1px solid $color-secondary;
+		}
+	}
+
+	li:not(:first-child) {
+		margin-left: 0.1em;
+	}
+}
+
+.description {
+	clear: left;
+	margin: 2em 0;
+
+	h3 {
+		margin-bottom: 1em;
+	}
+
+	ul {
+		font-size: 0.8em;
+		list-style: disc;
+		margin-left: 1em;
+	}
+
+	li {
+		text-indent: -0.6em;
+		margin-bottom: 0.5em;
+	}
+}
+
+.buy--btn {
+	padding: 1.5em 3.1em;
+	border: none;
+	border-radius: 7px;
+	font-size: 0.8em;
+	font-weight: 700;
+	letter-spacing: 1.3px;
+	color: rgb(207, 42, 42);
+	background-color: $color-highlight;
+	box-shadow: 2px 2px 25px -7px $color-primary;
+	cursor: pointer;
+
+	&:active {
+		transform: scale(0.97);
+	}
+}
+
+/* ----- Footer Section ----- */
+footer{
+        text-align: center;
+        align-items: center;
+        color: white;
+        font-size: 21px;
+        font-weight: bold;
+        text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.829);
+    }
+
+    </style>
+    </body>
+    <footer>
+        <br><br><br><br><br><br><br>
+        <p>Copyright © 2022-2023 Inventory Management System -  K Hitesh Manjunath, Kishanth K, Aravind S
+        </br>II B.Tech CSE (CYS)<br> Part of 20CYS202 - User Interface Design,</br>
+        Amrita Vishwa Vidyapeetham, Coimbatore</p>   
+    </footer>
+    </html>

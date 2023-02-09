@@ -1,0 +1,204 @@
+<!--
+Authors:K Hitesh Manjunath, Aravind S, Kishanth K 
+Created Date:  05 Dec 2022
+Updated Date: 19 Jan 2023
+Base Template: -
+Description: This is the camera page of inventory management system (KesarNET)-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+    </head>
+    <body>
+        <style>
+            html{
+                scroll-behavior: smooth;
+            }
+            body{
+                background-image: url('images/saffron.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            header {
+                width: 100%;
+                height: 5rem;
+                padding: -1rem 0rem;
+                background: transparent;
+            }
+            nav{
+                width: 100%;
+                padding: 15px 0;
+                display: flex;
+                justify-content: flex-end;
+            }
+            nav ul li{
+                display: inline-block;
+                list-style: none;
+                margin: -30px 30px;
+            }
+            nav ul li a{
+                text-decoration: none;
+                color: white;
+                text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.829);
+                font-size: 25px;
+            }
+            .intro{
+                text-align: center;
+                padding-top: 100px;
+            }
+            .intro h1{
+                font-size: 90px;
+                color: white;
+                text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.829);
+            }
+            .intro h3{
+                font-size: 30px;
+                color: white;
+                text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.829);
+                padding: 20px 10px;
+            }
+            .intro-div{
+                width: 950px;
+                border-top: 7px solid white;
+                border-bottom: 3px solid rgba(124, 123, 123, 0.712);
+            }
+            .underline{
+                text-decoration: none; 
+                transition: all 0.2s ease-in-out;
+            }
+            .underline:hover {
+                text-decoration: none;
+                text-shadow: none;
+                color: black;
+            }
+            img{
+                float:left;
+                border-radius: 20%;
+                height: 500px;
+                width: 650px;
+                padding-top: 20px;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 20px;
+            }
+            .cons{
+                padding-top: 20px;
+                font-size: 43px;
+                font-weight: 150;
+                color: white;
+                text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.829);
+            }
+            button {
+                border: none;
+                padding: 16px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 30px;
+                font-weight: bold;
+                margin: 4px 2px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+                box-shadow: 3px 2px 0px rgba(0, 0, 0, 0.829);
+            }
+            .button1 {
+                background-color: transparent; 
+                color: white; 
+                border: 4px solid white;
+                text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.829);
+            }
+            .button1:hover {
+                background-color: black;
+                color: white;
+                border: black;
+                text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.829);
+            }
+            footer{
+                text-align: center;
+                align-items: center;
+                color: white;
+                font-size: 21px;
+                font-weight: bold;
+                text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.829);
+            }
+        </style>
+        <header>
+            <nav>
+                <ul>
+                    <li><a class="underline" href="#consumer"><strong>Consumer</strong></a></li>
+                    <li><a class="underline" href="#retailer"><strong>Retailer</strong></a></li>
+                    <li><a class="underline" href="#farmer"><strong>Farmer</strong></a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="intro">
+            <h1>Hello There!</h1>
+            <hr class="intro-div">
+            <h3>Are you Interested to more about the <i><strong>Saffron</strong></i> in your hand?</h3>
+            <br>
+            <h3>&#8650 Then scroll below to find more!! &#8650</h3>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <a name="consumer"></a>
+        <div class="cons">
+            <img src="images/consumer.jpg" alt="consumer">
+            <p>Are you a customer looking to know more about the saffron you are going to buy??
+                <br>
+                <br>
+                Click the link in here and scan the QR code in your saffron packet to know more about it!!
+            </p>
+            <button class="button1"><a href="html/c_camera.html" style="text-decoration: none; color: white;">Click Me</a></button>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <a name="retailer"></a>
+        <div class="cons">
+            <img src="images/retailer.jpg" alt="retailer" style="float: right;">
+            <p>Are you a retailer looking to know more about the saffron shipment you received??
+                <br>
+                <br>
+                Click the link in here and scan the QR code in the box to know more about it!!
+            </p>
+            <button class="button1"><a href="html/r_camera.html" style="text-decoration: none; color: white;">Click Me</a></button>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <a name="farmer"></a>
+        <div class="cons">
+            <img src="images/farmer.png" alt="farmer">
+            <p>Are you a farmer looking to know more about the saffron shipment you just packed??
+                <br>
+                <br>
+                Click the link in here and scan the QR code in the box to know more about it!!
+            </p>
+            <button class="button1"><a href="html/signupin.html" style="text-decoration: none; color: white;">Click Me</a></button>
+            <br>
+            <br>
+            <br>
+            <br>    
+        </div>
+    </body> 
+    <footer>
+        <p>Copyright © 2022-2023 Inventory Management System -  K Hitesh Manjunath, Kishanth K, Aravind S
+        </br>II B.Tech CSE (CYS) <br>Part of 20CYS202 - User Interface Design,</br>
+        Amrita Vishwa Vidyapeetham, Coimbatore</p>   
+    </footer>
+</html>
