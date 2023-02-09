@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="..\image\logo.jpg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Wallet Registration</title>
+  <!-- link to Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- link to custom stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<style>
+footer .logo {
+    width: 45px;
+    float: center;
+    margin-bottom: 10px;
+
+    margin-left: 750px;
+}
+
+</style>
+    <header>
+            <img class="logo" src="..\image\R.png">
+            
+            <nav>
+                <li><a href="../index.html">Home</a></li>              
+                <li><a href="./team.html">About us</a></li>
+               
+                <li class="active"><a href="./register.html">Register</a></li>
+                <li><a href="./login.html">Login</a></li>            
+</nav>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center mb-5">E-Wallet Registration</h1>
+    <form id="registrationForm" onsubmit="return validateForm()">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="rollno">Roll Number</label>
+        <input type="text" class="form-control" id="rollno" name="rollno" required>
+      </div>
+      <div class="form-group">
+        <label for="collegeMail">College Mail</label>
+        <input type="email" class="form-control" id="collegeMail" name="collegeMail" required>
+      </div>
+      <div class="form-group">
+        <label for="dob">Date of Birth</label>
+        <input type="date" class="form-control" id="dob" name="dob" required>
+      </div>
+      <div class="form-group">
+        <label for="idCard">Upload ID Card</label>
+        <input type="file" class="form-control-file" id="idCard" name="idCard" required>
+      </div>
+      <div class="form-group">
+        <label for="mobileNumber">Mobile Number</label>
+        <input type="text" class="form-control" id="mobileNumber" name="mobileNumber" required>
+      </div>
+      <div class="form-group">
+        <label for="userName">Username</label>
+        <input type="text" class="form-control" id="userName" name="userName" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
+      </div>
+      <button type="
+submit" class="btn btn-primary">Register</button>
+</form>
+
+  </div>
+  <script>
+    function validateForm() {
+      // get form input values
+      let name = document.getElementById("name").value;
+      let rollno = document.getElementById("rollno").value;
+      let collegeMail = document.getElementById("collegeMail").value;
+      let dob = document.getElementById("dob").value;
+      let idCard = document.getElementById("idCard").value;
+      let mobileNumber = document.getElementById("mobileNumber").value;
+      let userName = document.getElementById("userName").value;
+      let password = document.getElementById("password").value;
+      let confirmPassword = document.getElementById("confirmPassword").value;
+  // check if any input is empty
+  if (name == "" || rollno == "" || collegeMail == "" || dob == "" || idCard == "" || mobileNumber == "" || userName == "" || password == "" || confirmPassword == "") {
+    alert("All fields are required!");
+    return false;
+  }
+
+  // check if mobile number is valid
+  if (isNaN(mobileNumber) || mobileNumber.length != 10) {
+    alert("Enter a valid mobile number!");
+    return false;
+  }
+
+  // check if passwords match
+  if (password != confirmPassword) {
+    alert("Passwords do not match!");
+    return false;
+  }
+
+  // check if college mail is valid
+  if (!collegeMail.endsWith("@college.edu")) {
+    alert("Enter a valid college email!");
+    return false;
+  }
+
+  // check if ID card is in a valid format
+  if (!idCard.endsWith(".jpg") && !idCard.endsWith(".jpeg") && !idCard.endsWith(".png")) {
+    alert("ID card must be in jpg, jpeg, or png format!");
+    return false;
+  }
+
+  // form is valid
+  return true;
+}
+  </script>
+ <footer>
+       <a href="">
+                <img class="logo" src="..\image\Amrita-University.jpg">
+            </a>
+           <p class="copyright">Copyright © 2022-23.E-WALLET<br>  Manoj Ram,kushal,pushpanth<br>
+ II B.Tech CSE (CYS) <br>
+Part of 20CYS202 - User Interface Design<br>
+Amrita Vishwa Vidyapeetham, Coimbatore</p>
+        </footer>
+</body>
+</HTML>

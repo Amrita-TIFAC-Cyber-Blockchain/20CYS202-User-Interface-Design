@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="..\image\logo.jpg">
+  <title>Transaction History</title>
+ <!-- link to Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- link to custom stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+ <!-- link to black theme stylesheet -->
+  <link rel="stylesheet" href="css/black-theme.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+  <style>
+    table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+#transaction-table {
+  margin: 20px 0;
+}
+
+#filter-options {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#filter-options label {
+  margin-right: 10px;
+}
+
+#filter-options input, #filter-options select {
+  margin-right: 10px;
+}
+
+#pdf-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+      /* Add CSS for home button */
+#home-button {
+    float: right;
+    padding: 0.5em;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+  </style>
+
+<body>
+  <!-- navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">E WALLET</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+<li class="nav-item">
+     
+        <a class="nav-link" href="./balance.html">Home</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="./add money.html">Addmoney</a>
+      </li>
+       
+      <li class="nav-item">
+        <a class="nav-link" href="./payment.html">Payments</a>
+      </li>
+<li class="nav-item active">
+        <a class="nav-link" href="./transaction.html">Transactions</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./analysis.html">Analysis</a>
+      </li>
+    </ul>
+  </div>
+  <!-- user icon and name -->
+  <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <img src="https://cdn-icons-png.flaticon.com/512/74/74472.png" alt="user icon" width="20" height="20"> Admin
+        </a>
+      </li>
+    </ul>
+      <a href="../index.html" id="home-button">Log out</a> 
+  </div>
+</nav>
+</head>
+<body>
+  <h1>Transaction History</h1>
+  <div id="filter-options">
+    <label for="start-date">Start Date:</label>
+    <input type="date" id="start-date" name="start-date">
+    <label for="end-date">End Date:</label>
+    <input type="date" id="end-date" name="end-date">
+    <select id="sort-by" name="sort-by">
+        <option value="id">ID</option>
+        <option value="date">Date</option>
+        <option value="amount">Amount</option>
+    </select>
+    <button id="filter-button" onclick="filterTransactions()">Filter</button>
+  </div>
+  <table id="transaction-table">
+    <tr>
+      <th>Transaction ID</th>
+      <th>Date</th>
+      <th>Amount</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>01/01/2022</td>
+      <td>Rs.50</td>
+      <td>Payment for groceries</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>01/02/2022</td>
+      <td>Rs.20</td>
+      <td>Payment for canteen</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>01/03/2022</td>
+      <td>Rs.100</td>
+      <td>Payment for mess</td>
+    </tr>
+  </table>
+  <button id="pdf-button" onclick="generatePDF()">Download as PDF</button>
+  <script>
+    // Fetch transaction data from server
+    fetch('/transactions')
+.then(response => response.json())
+.then(data => {
+// Get the transaction table element
+const table = document.getElementById("transaction-table");
+// Iterate over the transaction data
+for (const transaction of data) {
+// Create a new row element
+const row = table.insertRow();
+// Insert cells for the transaction data
+const idCell = row.insertCell(0);
+const dateCell = row.insertCell(1);
+const amountCell = row.insertCell(2);
+const descriptionCell = row.insertCell(3);
+// Insert the data into the cells
+idCell.innerHTML = transaction.id;
+dateCell.innerHTML = transaction.date;
+amountCell.innerHTML = transaction.amount;
+descriptionCell.innerHTML = transaction.description;
+}
+});
+function filterTransactions() {
+  // Get filter options
+  const startDate = document.getElementById("start-date").value;
+  const endDate = document.getElementById("end-date").value;
+  const sortBy = document.getElementById("sort-by").value;
+  // Filter and sort data
+  const filteredData = data.filter(transaction => {
+    return transaction.date >= startDate && transaction.date <= endDate;
+  }).sort((a, b) => {
+    if (sortBy === "id") {
+      return a.id - b.id;
+    } else if (sortBy === "date") {
+      return new Date(a.date) - new Date(b.date);
+    } else if (sortBy === "amount") {
+      return a.amount - b.amount;
+    }
+  });
+  // Clear table
+  while (table.rows.length > 1) {
+    table.deleteRow(1);
+  }
+  // Populate table with filtered data
+  for (const transaction of filteredData) {
+    // Create a new row element
+    const row = table.insertRow();
+    // Insert cells for the transaction data
+    const idCell = row.insert
+Cell(0);
+const dateCell = row.insertCell(1);
+const amountCell = row.insertCell(2);
+const descriptionCell = row.insertCell(3);
+// Insert the data into the cells
+idCell.innerHTML = transaction.id;
+dateCell.innerHTML = transaction.date;
+amountCell.innerHTML = transaction.amount;
+descriptionCell.innerHTML = transaction.description;
+}
+}
+
+function generatePDF() {
+  // Create a new pdf
+  const pdf = new jsPDF();
+
+  // Add HTML content to pdf
+  pdf.addHTML(document.getElementById("transaction-table"), function() {
+    // Save the pdf
+    pdf.save("transactions.pdf");
+  });
+}
+

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="..\image\logo.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* Add custom styles for circular profile images */
+        .profile-img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+    /* Add hover effect to card */
+    .profile:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+<header>
+            <img class="logo" src="..\image\R.png">
+            
+            <nav>
+                <li><a href="../index.html">Home</a></li>              
+                <li Class="active"><a href="./team.html">About us</a></li>
+               
+                <li><a href="./register.html">Register</a></li>
+                <li><a href="./login.html">Login</a></li>            
+</nav>
+        </header>
+    <div class="container mt-5">
+        <h1 class="text-center mb-5">Meet Our Team</h1>
+        <div class="row">
+            
+        <div class="col-4">
+            <div class="profile">
+                <img src="..\image\1.jpg" class="profile-img" alt="KUSHAL REDDY">
+                <div class="card-body">
+<h5 class="card-title" id="name2">KUSHAL REDDY</h5>
+<p class="card-text">TEAM MEMBER</p>
+</div>
+</div>
+</div>
+<div class="col-4">
+                <div class="profile">
+                    <img src="..\image\3.jpg" class="profile-img" alt="KAKARA MANOJ RAM">
+                    <div class="card-body">
+                        <h5 class="card-title" id="name1">KAKARA MANOJ RAM</h5>
+                    <p class="card-text">Team Leader</p>
+                </div>
+            </div>
+        </div>
+<div class="col-4">
+<div class="profile">
+<img src="..\image\2.jpg" class="profile-img" alt="PUSHPANTH REDDY">
+
+<div class="card-body">
+<h5 class="card-title" id="name3">PUSHPANTH REDDY</h5>
+<p class="card-text">TEAM MEMBER</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+// Add click event to each profile
+const profiles = document.querySelectorAll('.profile');
+profiles.forEach(profile => {
+profile.addEventListener('click', () => {
+// Get the name of the team member from the card title
+const name = profile.querySelector('.card-title').textContent;
+if(name === "KUSHAL REDDY")
+{
+    window.location.href = "https://kusha93810.github.io/20CYS202-UID/personal_website/";
+}
+else if(name === "KAKARA MANOJ RAM")
+{
+    window.location.href = "https://manojram8.github.io/20CYS202-UID/personal_website/";
+}
+else if(name === "PUSHPANTH REDDY")
+{
+    window.location.href = "https://pushpanth23.github.io/20CYS202-UID/personal_website/";
+}
+});
+});
+</script>
+<footer>
+   <a href="">
+                <img class="logo" src="..\image\Amrita-University.jpg">
+            </a>
+<p class="copyright">Copyright © 2022-23.E-WALLET<br>  Manoj Ram,kushal,pushpanth<br>
+ II B.Tech CSE (CYS) <br>
+Part of 20CYS202 - User Interface Design<br>
+Amrita Vishwa Vidyapeetham, Coimbatore</p>
+        </footer>
+</body>
+</html>

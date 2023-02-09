@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="..\image\logo.jpg">
+  <title>Payment Page</title>
+  <!-- link to Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- link to custom stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- link to black theme stylesheet -->
+  <link rel="stylesheet" href="css/black-theme.css">
+  <style>
+     /* Add CSS for payment page */
+  body {
+    background-color:white;
+    text-align: center;
+  }
+
+  /* Add style for the form */
+  form {
+    display: inline-block;
+    text-align: left;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px #999;
+  }
+/* Add CSS for login form */
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    /* other styles */
+}
+
+  /* Add style for the input text */
+  input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+
+  /* Add style for the button */
+  button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+/* Add CSS for home button */
+#home-button {
+    float: right;
+    padding: 0.5em;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+  </style>
+</head>
+<!-- navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">E-WALLET</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+<div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+     <li class="nav-item">
+        <a class="nav-link" href="./balance.html">Home</a>
+      </li>
+  <li class="nav-item">
+        <a class="nav-link" href="./add money.html">Addmoney</a>
+      </li>
+      
+      <li class="nav-item active"> 
+      
+        <a class="nav-link" href="./payment.html">Payments</a>
+      </li>
+<li class="nav-item">
+        <a class="nav-link" href="./transaction.html">Transactions</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./analysis.html">Analysis</a>
+      </li>
+    </ul>
+  </div>
+ <!-- user icon and name -->
+  <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <img src="https://cdn-icons-png.flaticon.com/512/74/74472.png" alt="user icon" width="20" height="20"> Admin
+        </a>
+      </li>
+    </ul>
+      <a href="../index.html" id="home-button">Log out</a>
+  </div>
+  </nav>
+<body>
+<form>
+  <label for="iD card-number">ID Card Number:</label>
+  <input type="text" id="IDcard-number" name="IDcard-number" required>
+  <br>
+  <label for="NAME">RECIPTENT NAME:</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="amount">Amount:</label>
+  <input type="text" id="amount" name="amount" required>
+  <br>
+  <br>
+  <label for="cvv">Message:</label>
+  <input type="text" id="cvv" name="cvv" required>
+  <br><br>
+  <button type="submit" onclick="alert('Payment Successful')">Pay</button>
+</form> 
+
+</body>
+</html>

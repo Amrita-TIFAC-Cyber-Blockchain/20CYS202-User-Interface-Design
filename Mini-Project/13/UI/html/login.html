@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="..\image\logo.jpg">
+  <title>E-Wallet</title>
+  <style>
+     /* Add CSS styles here */
+  /* Add CSS for login page */
+  body {
+    background-color: black;
+    text-align: center;
+  }
+/* Add CSS for header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Add CSS for home button */
+#home-button {
+    float: right;
+    padding: 0.5em;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+
+
+  /* Add style for the form */
+  form {
+    display: inline-block;
+    text-align: left;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px #999;
+  }
+/* Add CSS for login form */
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    /* other styles */
+}
+
+  /* Add style for the input text */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+
+  /* Add style for the button */
+  button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+/* Add CSS for footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+footer .logo {
+    width: 45px;
+    margin-bottom: 10px;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    
+    <h1>E-Wallet</h1>
+ <a href="../index.html" id="home-button">Home</a>
+  </header>
+  <form>
+    <label for="username">Username:(admin)</label>
+    <input type="text" id="username" name="username">
+    <br>
+    <label for="password">Password:(password)</label>
+    <input type="password" id="password" name="password">
+    <br><br>
+    <button type="button" onclick="login()">Login</button>
+  </form> 
+  
+  <script>
+    function login() {
+      // Get the values of the username and password fields
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      // Check if the username and password are correct
+      if (username === "admin" && password === "password") {
+        // Redirect to the welcome page
+        window.location.href = "balance.html";
+      } else {
+        alert("Incorrect username or password. Please try again.");
+      }
+    }
+  </script>
+</body>
+ <footer>
+           
+            <a href="">
+                <img class="logo" src="..\image\Amrita-University.jpg">
+            </a>
+            <p class="copyright">Copyright © 2022-23.E-WALLET<br>  Manoj Ram,kushal,pushpanth<br>
+ II B.Tech CSE (CYS) <br>
+Part of 20CYS202 - User Interface Design<br>
+Amrita Vishwa Vidyapeetham, Coimbatore</p>
+        </footer>
+</html>
