@@ -1,0 +1,647 @@
+
+/* ````````````````````````````````````````````````MENU BAR```````````````````````````````````````````````````````*/
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-image: url();
+    -webkit-background-size:cover;
+    background-size:cover;
+    background-position: center center;
+    height: 100vh;
+  }
+  .menu-area li a {
+    text-decoration: none;
+  }
+  
+  .menu-area li {
+    list-style-type: none;
+  }
+  
+  .custom-padding{
+    padding-top: 25px;
+  }
+  
+  nav {
+    
+    position: relative;
+    width: calc(100% - 60px);
+    margin: 0 auto;
+    padding: 10px 0;
+    background: #333;
+    z-index: 1;
+    text-align: right;
+    padding-right: 2%;
+  }
+  
+  .logo {
+    width: 15%;
+    float: left;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 25px;
+    padding-left: 2%;
+  }
+  
+  .menu-area li {
+    display: inline-block;
+  }
+  
+  .menu-area a {
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+    padding: 0 25px;
+    font-size: 14px;
+    line-height: 30px;
+    position: relative;
+    z-index: 1;
+
+  }
+  .menu-area a:hover {
+    background: tomato;
+    color: #fff;
+  }
+  
+  .menu-area a:hover:after {
+    transform: translateY(-50%) rotate(-35deg);
+  }
+  
+  nav:before {
+    position: absolute;
+    content: '';
+    border-top: 10px solid #333;
+    border-right: 10px solid #333;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    top: 100%;
+    left: 0;
+  }
+  
+  nav:after {
+    position: absolute;
+    content: '';
+    border-top: 10px solid #333;
+    border-left: 10px solid #333;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    top: 100%;
+    right: 0;
+  }
+
+
+  @import url("https://fonts.googleapis.com/css?family=Aboreto");
+
+
+  /* ``````````````````````````````````````````````SEARCH BOX`````````````````````````````````````````````````````````*/
+
+  
+
+body{
+    box-sizing: border-box;
+
+}
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+}
+.search-box input[type="text"] {
+    border: none;
+    background: none;
+    position: absolute;
+    top: 19px;
+    left: -15px;
+    z-index: 1;
+    width: 100px;
+    height: 50px;
+    transition: all 0.25s ease-in 0.25s;
+    color: transparent;
+    font-size: 1rem;
+    line-height: 25px;
+    text-align: left;
+}
+.search-box input[type="text"]:hover {
+    cursor: pointer;
+}
+.search-box input[type="text"]:hover:focus {
+    cursor: text;
+}
+.search-box input[type="text"]:hover + span {
+    background: rgba(255, 255, 255, 0.2);
+}
+.search-box input[type="text"]:focus {
+    width: 200px;
+    padding: 0 10px;
+    outline: none;
+    color: black;
+    background: none;
+    color: black;
+}
+.search-box input[type="text"]:focus + span {
+    width: 500px;
+    left: -183px;
+}
+.search-box input[type="text"]:focus + span::before {
+    width: 2px;
+    opacity: 0;
+    transition: all 0.25s ease-in;
+}
+.search-box input[type="text"] + span {
+    z-index: -1;
+    position: absolute;
+    border: 2px solid rgb(255, 0, 0);
+    top: 20px;
+    width: 50px;
+    height: 50px;
+    transition: all 0.25s ease-in 0.25s;
+    border-radius: 25px;
+    left: 0;
+}
+.search-box input[type="text"] + span::before {
+    transition: all 0.25s ease-in 0.5s;
+    transform-origin: left top;
+    content: '';
+    position: absolute;
+    top: 19px;
+    left: 23.5px;
+    width: 30px;
+    height: 10px;
+    border-radius: 50px;
+    background: red;
+    transform: rotate(45deg) translate(26px, -2px);
+}
+
+
+  
+
+
+
+/* `````````````````````````````````````````````FOOTER``````````````````````````````````````````````````````````*/
+
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight:300;
+  background-color:white;
+  color:#FFF;
+}
+section{
+  text-align:center;
+}
+.footer #button{
+	width:35px;
+	height:35px;
+	border: #727172 12px solid;
+	border-radius:35px;
+	margin:0 auto;
+	position:relative;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.footer #button:hover{
+	width:35px;
+	height:35px;
+	border: #333 12px solid;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	position:relative;
+}
+.footer {
+	bottom:0;
+	left:0;
+	position:fixed;
+    width: 100%;
+    height: 2em;
+    overflow:hidden;
+    margin:0 auto;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	z-index:999;
+}
+.footer:hover {
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	height: 13em;
+}
+.footer #container{
+	margin-top:5px;
+	width:100%;
+    height:100%;
+    position:relative;
+    top:0;
+    left:0;
+	background: #333;
+}
+.footer #cont{
+  position:relative;
+  top:-45px;
+  right:190px;
+	width:150px;
+	height:auto;
+	margin:0 auto;
+    color: black;
+}
+.footer_center{
+	width:500px;
+	float:left;
+    margin-left: -500px;
+}
+.footer h2{
+	font-family: 'Helvetica';
+	font-size: 20px;
+	font-weight: 100;
+	margin-top:70px;
+	margin-left:40px;
+    color:#FFF
+    
+}
+.footer h3{
+	font-family: 'Helvetica';
+	font-size: 20px;
+	font-weight: 100;
+	margin-top:70px;
+	margin-left:200px;
+    color:#FFF
+    
+}
+
+.footer h4{
+	font-family: 'Helvetica';
+	font-size: 20px;
+	font-weight: 100;
+	margin-top:70px;
+	margin-left:425px;
+    color:#FFF
+    
+}
+
+.footer h5{
+	font-family: 'Helvetica';
+	font-size: 20px;
+	font-weight: 100;
+	margin-top:70px;
+	margin-left:530px;
+    color:#FFF
+    
+}
+
+
+
+
+
+
+/* ```````````````````````````````````````````````````````````````````````````````````````````````````````*/
+
+
+
+
+p.one {
+    border-top: 3px groove;
+    border-color: #333;
+    position: absolute;
+    top: 600px;
+    left: 10px;
+    width: 1500px;
+    height: 100px;
+}
+p.two {
+  font-family: 'Helvetica';
+	font-size: 50px;
+	font-weight: 100;
+  color: black;
+  position: absolute;
+  top: 230px;
+  left: 100px;
+  width: 500px;
+  
+}
+p.three {
+  border-top: 3px groove;
+  border-color: #333;
+  position: absolute;
+  top: 200px;
+  left: 300px;
+  width: 900px;
+  height: 100px;
+  color: black;
+  font-family: 'Helvetica';
+	font-size: 35px;
+	font-weight: 100;
+  
+}
+
+
+.forms{
+
+  position: absolute;
+  top: 250px;
+  left: 350px;
+  color:black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 25px;
+}
+
+
+
+/* ```````````````````````````````````````````````````````````````````````````````````````````````````````*/
+
+body
+    {
+	    margin:0px;
+	    background-color:white;
+	    background-image:url("");
+	    color:black;
+	    font-family:Arial, Helvetica, sans-serif;
+    }
+    
+    #main{width:600px; height:auto; overflow:hidden; padding-bottom:40px; margin-left:auto; margin-right:auto; 
+    border-radius:5px; padding-left:10px; margin-top:30px; border-top:5px double black; 
+    border-bottom:5px double black; padding-top:40px;
+    }
+    
+    #main table{font-family:"Comic Sans MS", cursive; border-spacing: 10px;}
+    /* css code for textbox */
+    #main .tb{height:28px; width:230px; border:1px solid black; color:black; font-weight:bold ; opacity:0.9;}
+   
+    #main .tb::placeholder{position: absolute;
+      top: 50%;
+      left: 10px; 
+      transform: translateY(-50%);
+    }
+   
+      #main .tb:focus{height:28px; border:1px solid black; outline:none; border-left:1px }
+
+    /* css code for button*/
+    #main .btn{width:150px; height:32px; outline:none;  color:#f7f7f7; font-weight:bold; border:0px solid black; 
+    text-shadow: 0px 0.5px 0.5px #fff; border-radius: 2px; font-weight: 600; color: black; letter-spacing: 1px; 
+    font-size:14px; background-color:#f1f1f1; -webkit-transition: 1s; -moz-transition: 1s; transition: 1s;}
+  
+    #main .btn:hover{
+	background-color:#f26724; outline:none;  border-radius: 2px; color:#f1f1f1; border:1px solid #f1f1f1;
+    -webkit-transition: 1s; -moz-transition: 1s; transition: 1s; 
+    }
+    #main .desc{height:50px; width:230px; border:1px solid black; color:black; font-weight:bold; opacity:0.9;
+      
+    }
+    #main .desc::placeholder{
+      position: absolute;
+      top: 50%;
+      left: 10px; 
+      transform: translateY(-50%);
+    }
+    
+  /* ```````````````````````````````````````````````````````````````````````````````````````````````````````*/
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    p.four{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 17px;
+      font-weight: 100;
+      color: black;
+     }
+
+
+
+   
+    
+    
+
+    
+
+
+
+
+
+    
+    /* ```````````````````````````````````````````````````````````````````````````````````````````````````````*/
+    
+    /* RESET STYLES
+    –––––––––––––––––––––––––––––––––––––––––––––––––– */
+    
+    .chart-skills {
+      margin: 0 auto;
+      padding: 0;
+      list-style-type: none;
+    }
+    
+    .chart-skills *,
+    .chart-skills::before {
+      box-sizing: border-box;
+    }
+    
+    
+    /* CHART-SKILLS STYLES
+    –––––––––––––––––––––––––––––––––––––––––––––––––– */
+    
+    .chart-skills {
+      position: relative;
+      width: 350px;
+      height: 175px;
+      overflow: hidden;
+    }
+    
+    .chart-skills::before,
+    .chart-skills::after {
+      position: absolute;
+    }
+    
+    .chart-skills::before {
+      content: '';
+      width: inherit;
+      height: inherit;
+      border: 45px solid rgba(211, 211, 211, .3);
+      border-bottom: none;
+      border-top-left-radius: 175px;
+      border-top-right-radius: 175px;
+    }
+    
+    .chart-skills::after {
+      content: 'Crime Stats'; position: absolute; top:120px;
+      left: 50%;
+      bottom: 10px;
+      transform: translateX(-50%);
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: cadetblue;
+    }
+    
+    .chart-skills li {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: inherit;
+      height: inherit;
+      border: 45px solid;
+      border-top: none;
+      border-bottom-left-radius: 175px;
+      border-bottom-right-radius: 175px;
+      transform-origin: 50% 0;
+      transform-style: preserve-3d;
+      backface-visibility: hidden;
+      animation-fill-mode: forwards;
+      animation-duration: .4s;
+      animation-timing-function: linear;
+    }
+    
+    .chart-skills li:nth-child(1) {
+      z-index: 4;
+      border-color: green;
+      animation-name: rotate-one;
+    }
+    
+    .chart-skills li:nth-child(2) {
+      z-index: 3;
+      border-color: firebrick;
+      animation-name: rotate-two;
+      animation-delay: .4s;
+    }
+    
+    .chart-skills li:nth-child(3) {
+      z-index: 2;
+      border-color: steelblue;
+      animation-name: rotate-three;
+      animation-delay: .8s;
+    }
+    
+    .chart-skills li:nth-child(4) {
+      z-index: 1;
+      border-color: orange;
+      animation-name: rotate-four;
+      animation-delay: 1.2s;
+    }
+    
+    .chart-skills span {
+      position: absolute;
+      font-size: .85rem;
+      backface-visibility: hidden;
+      animation: fade-in .4s linear forwards;
+    }
+    
+    .chart-skills li:nth-child(1) span {
+      top: 5px;
+      left: 10px;
+      transform: rotate(-21.6deg);
+    }
+    
+    .chart-skills li:nth-child(2) span {
+      top: 20px;
+      left: 10px;
+      transform: rotate(-79.2deg);
+      animation-delay: .4s;
+    }
+    
+    .chart-skills li:nth-child(3) span {
+      top: 20px;
+      left: 10px;
+      transform: rotate(-140.4deg);
+      animation-delay: .8s;
+    }
+    
+    .chart-skills li:nth-child(4) span {
+      top: 10px;
+      left: 10px;
+      transform: rotate(-180deg);
+      animation-delay: 1.2s;
+    }
+    
+    
+    /* ANIMATIONS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– */
+    
+    @keyframes rotate-one {
+      100% {
+        transform: rotate(21.6deg);
+        /**
+         * 12% => 21.6deg
+         */
+      }
+    }
+    
+    @keyframes rotate-two {
+      0% {
+        transform: rotate(21.6deg);
+      }
+      100% {
+        transform: rotate(79.2deg);
+        /**
+         * 32% => 57.6deg 
+         * 57.6 + 21.6 => 79.2deg
+         */
+      }
+    }
+    
+    @keyframes rotate-three {
+      0% {
+        transform: rotate(79.2deg);
+      }
+      100% {
+        transform: rotate(140.4deg);
+        /**
+         * 34% => 61.2deg 
+         * 61.2 + 79.2 => 140.4deg
+         */
+      }
+    }
+    
+    @keyframes rotate-four {
+      0% {
+        transform: rotate(140.4deg);
+      }
+      100% {
+        transform: rotate(180deg);
+        /**
+         * 22% => 39.6deg  
+         * 140.4 + 39.6 => 180deg
+         */
+      }
+    }
+    
+    @keyframes fade-in {
+      0%,
+      90% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+/* ```````````````````````````````````````````````````````````````````````````````````````````````````````*/
+    /*vertical line*/
+    .vl {
+      position: absolute;
+      top: 100px;
+      left: 700px;
+      border-left: 1px solid black;
+      height: 500px;
+    }
+
+    
+
+
+
+
+
+
+/* ```````````````````````````````````````````````````````````````````````````````````````````````````````*/
+
+

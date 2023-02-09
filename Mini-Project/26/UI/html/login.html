@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    <link rel="icon" type="image/x-icon" href="../img/fav.png">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+  </style>
+  </head>
+  <body>
+    <div style="position:absolute; top:30px; left:50px;">
+    <a href="../index.html"><-- Return Home</a>
+    </div>
+    <div style="position:absolute; top: 250px; left: 650px;">
+  <h2>Login/Signup</h2>
+  
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+  <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Signup</button>
+
+  <div id="id01" class="modal">
+    
+    <form class="modal-content animate">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="../img/fav.png" alt="Avatar" class="avatar" width="5" height="250">>
+      </div>
+  
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </div>
+
+  <div id="id02" class="modal">
+    
+    <form class="modal-content animate">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="../img/fav.png" alt="Avatar" class="avatar"  width="5" height="250">
+      </div>
+  
+      <div class="container">
+        <label for="name"><b>Name</b></label>
+        <input type="text" placeholder="Enter Name" id = "name" name="name" required>
+
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" id = "uname" name="uname" required>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" id = "email" name="mail" required>
+
+        <label for="phone"><b>Phone no</b></label>
+        <input type="text" placeholder="Enter mobile number" id = "phone" name="phone" required>
+        
+        <label for="govid"><b>Government ID</b></label>
+        <input type="text" placeholder="Enter valid id" id ="govid" name="govid" required>
+
+        <label for="myFile"><b>Upload proof</b></label>
+        <input type="file" id="myFile" name="myFile" required><br><br>
+        
+        <label for="psw"><b>Password</b></label>
+        <input type="password" id = "psw" placeholder="Enter Password" name="psw" required>
+          
+        <label for="psw-repeat"><b>Confirm Password</b></label>
+        <input type="password" placeholder="Enter Password" id = "" name="psw-repeat" required>
+
+		<label for="type">Type: </label>
+			  <input type="radio" name="type" required> Volunteer
+              <input type="radio" name="type" required> Individual victim
+      <br><br>
+      <input id="terms" type="checkbox" name="file" required>
+      <label for="terms">I agree to the <a href="./terms.html">Terms and Conditions</a></label>
+			 
+	    <button type="submit" onclick = "validateVb()">Signup</button>
+		
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+  
+      <div class="container" style="background-color: #f1f1f1">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+        
+      </div>
+    </form>
+  </div>
+</div>
+  <script>
+  //validating the form
+  function validateVb() {
+
+	console.log("Validation Started");
+
+	var name = document.getElementById("name").value;
+     var username = document.getElementById("uname").value;
+     let phone = document.getElementById("contact").value;
+     let pwd = document.getElementById("psw").value;
+     var pass= "(?=.\d)(?=.[a-z])(?=.*[A-Z]).{8,}";
+     var maill = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+     var mail = document.getElementById("email").value;
+     var psw2 = document.getElementById("psw-repeat").value;
+     var this.files = document.getElementById("myFile");
+
+	if(name == null || name == " "){
+	alert("blank space-- Enter a name");
+	}
+		
+	if(uname.length<10){
+	alert("less than 10-- Enter a User Name");
+	}
+		 
+	   
+	if(!(phone.length==10)){
+	alert("Enter a valid phoneno");
+	}
+	 
+
+	if(!pwd.match(pass))
+	{
+	   alert("Enter a strong password");
+	}
+
+		
+	if (!mail.match(maill)) 
+	{
+			alert("Enter a valid email address");
+	}
+		
+	if (!psw2.match(pwd)) {
+	alert("Enter the same password in the retype password section");
+	}
+
+	 
+	if(this.files[0].size > 2097152){
+		   alert("File is too big!");
+		   this.value ="";
+	}
+
+}	
+  // Get the modal
+  var modal = document.getElementById('id01');
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+
+  var modal = document.getElementById('id02');
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  </script>
+  </body>
+  </html>

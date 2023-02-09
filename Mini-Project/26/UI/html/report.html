@@ -1,0 +1,184 @@
+<html>
+<head>
+    <title>C-Report</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="../img/fav.png">
+    <!-- nav bar -->
+<div class="custom-padding">
+    <nav>
+      <div class="logo">
+        <img src="../img/logo.png" class="logo">
+      </div>
+      
+      <ul class="menu-area a">
+        <li><a href="../index.html" style="right: 790px;">Home</a></li>
+        <li><a href="./stats.html" style="right: 800px;">Stats</a></li>
+        <li><a href="#" style="right: 800px;">Report</a></li>
+        <li><a href="./about.html" style="right: 800px;">About</a></li>
+        <li><a href="./login.html" style="right: 800px;">Login</a></li>
+        <li><a href="" style="right: 50px; "><img src="../img/prof.png" alt="profile" style="width: 30px; height:30px; position: absolute; top:-20px"></a></li>
+        <li><a href="" style="position:absolute; right: 150px; "><img src="../img/icons8-notification-32.png" alt="profile" style="width: 30px; height:30px; position: absolute; top:-20px"></a></li>
+      </ul>
+
+    
+    </nav>
+  </div>
+
+</head>
+
+<body>
+
+  <div style="position: absolute;
+  top:145px;
+  left: 450px;
+  font-family: 'Aboreto', sans-serif;
+  font-size: 25px;">
+    REPORT CRIME
+  </div>
+
+
+  <!-- <form class="forms"> -->
+  <div style="position:absolute; top:150px ;left: 450px">
+    <div id="main">
+    <form>
+      <div class="login">
+      <table cellspacing="2" align="center" cellpadding="8" border="0">
+      
+      <br>
+     
+      
+      
+      
+        <tr>
+          <td align="right">Nature of Crime: </td>
+          <td><select name="Nature"; id ="nat" class="tb">
+            <option selected="" value="Default">(Select type of Crime)</option>
+            <option value="SX">Sextortion</option>
+            <option value="NF">NFT</option>
+            <option value="BTC">Bitcoin</option>
+            <option value="GG">Gaming</option>
+            <option value="SD">Sugardaddy</option>
+            <option value="MIS">Miscellaneous</option>
+            </select></td>
+        </tr>
+
+        
+        <tr>
+          <td align="right">Reporter's bitcoin address :</td>
+          <td><input type="text" placeholder="Enter Address" class="tb" id="addr" required></td>
+          </tr>
+        
+          <tr>
+            <td align="right">Suspect's bitcoin address :</td>
+            <td><input type="text" placeholder="Enter Address" class="tb" id="addr" required></td>
+            </tr>
+
+        <tr>
+            <td align="right">Description :</td>
+            <td><input type="text" placeholder="Describe report in detail" class="desc" id="Dscrptn" required></td>
+            </tr>
+            
+            
+             <tr>
+        <td align="right">Date of the incident :</td>
+      <td>
+            <input type="date" id="dates" name="dates" required>
+      </td>
+      </tr> 
+	    
+		<tr>
+          <td align="right">Identity of the crime reporter :</td>
+          <td><select name="identity"; id ="identity" class="tb" required>
+            <option selected="" value="Default">(Select type of Crime reporter)</option>
+            <option value="anon">Anonymous</option>
+            <option value="idre">Identity revealed</option>
+            </tr>
+			
+			<tr>
+          <td align="right">Type :</td>
+          <td><select name="type"; id ="type" class="tb" required>
+            <option selected="" value="Default">(Select type of identity)</option>
+            <option value="vol">Volunteer</option>
+			<option value="idre">Indivdual</option>
+            </tr>
+      
+      <tr>
+        <td align="right"><label for="evidence">Upload Evidence :</label></td>
+            <td><input id="evidence" type="file" name="file" required>
+      </td></tr>
+    
+      <tr>
+        <td><input id="terms" type="checkbox" name="file" style="position: absolute; left: 250px; top:420px" required>
+        </td>
+        <td align="right"><label for="terms">I agree to the <a href="./terms.html">Terms and Conditions</a></label></td>
+            
+    </tr>
+      
+      </table>
+      </div>
+      <p style="margin-left: 200px; top:10px">
+        <input type="reset" value="Clear Form" id="res" class="btn" />
+        <input type="submit" value="Report" class="btn" onclick="validateVb()"/></p>
+    
+      </form>
+      <!-- create account box ending here.. -->
+      </div>
+ 
+
+
+
+<!--Footer-->
+<div class="footer">
+    <div id="button"></div>
+  <div id="container">
+  <div id="cont">
+    <div class="footer_center">
+        <h2>@2023 BF</h2>
+        <h3></h3>
+        <h2></h2> 
+    </div>
+    <div class="footer_center">
+     <h3>Terms & Conditions</a></h3> 
+    </div>
+    <div class="footer_center">
+      <h4>About</h4> 
+    </div>
+    <div class="footer_center">
+      <h5>Donate</h5> 
+    </div>
+    <div class="footer_center" style="text-align:center; margin-left: 0px; margin-top: 135px; color:#FFF; ">
+      <p>Copyright © 2022-2023. BF - Abinesh.G , Anu Priya.P
+         </br>II B.Tech CSE (CYS)</br> Part of 20CYS202 - User Interface Design</br>Amrita Vishwa Vidyapeetham, Coimbatore</p>
+    </div>
+  </div>
+  </div>
+  </div>
+  
+<script>
+
+//validating the form
+  function validateVb() {
+
+	console.log("Validation Started");
+
+	var addr = document.getElementById("addr").value;
+    var Dscrptn = document.getElementById("Dscrptn").value;
+    
+    var nat = document.getElementById("nat").value;
+    
+	if(addr == null || addr == " "){
+	window.alert("blank space-- Enter address");
+	}
+		
+	if(Dscrptn.length<10){
+	window.alert("less than 10-- Enter the Description of the crime");
+	}
+		 
+
+	if(nat == null || nat == " "){
+	window.alert("blank space-- Enter the Nature of the crime");
+	}
+
+</script>
+ </body>
+</html>
