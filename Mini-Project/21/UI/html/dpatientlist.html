@@ -1,0 +1,177 @@
+<!--
+Authors: Suvetha D P , Aishwarya G, Alagu Soundarya G
+Created Date:  01 Dec 2022
+Updated Date: 15 Jan 2023
+Base Template: NIL
+Description: This is the Doctor's patient list page of the ASA hospital.-->
+<html>
+<head>
+<title>Patient list</title>
+<link rel="icon" href="data:image/png;base64,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">
+<style>
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    }
+  td, th{
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 8px;
+    }
+  tr:nth-child(even) {
+    background-color: #fff9f9;
+    }
+  .logo1 {
+    transform: translate(-290%, 90%);
+    }
+  .logo2 {
+    transform: translate(290%, -110%);
+    }
+  .text {
+    font-size:50px;
+    }
+    body {
+         background-repeat: no-repeat;
+        background-attachment: fixed;
+         background-size: cover;
+        }
+</style>
+</head>
+<body background="../images/WhatsApp Image 2023-01-01 at 11.28.11 PM.jpeg">
+<div align="left">
+  <a href="../index.html">
+   <img  alt="Home" src="https://cdn-icons-png.flaticon.com/512/2/2144.png" width="50" height="50">
+  </a>
+  &nbsp
+  <a href="doctorshome.html">
+  <img alt="dhome" src="https://cdn-icons-png.flaticon.com/512/2875/2875035.png" width="50" height="50">
+  </a>
+</div>
+<center>
+  <img class="logo1" src="../images/WhatsApp Image 2023-01-01 at 11.32.32 PM.jpeg" alt="image" style="width:70px;height:60px;"> &nbsp &nbsp<div class="text">ASA Hospital</div> &nbsp &nbsp <img class="logo2" src="../images/WhatsApp Image 2023-01-01 at 11.32.32 PM.jpeg" alt="image" style="width:70px;height:60px;">
+  <center> 
+  <h1>Patient List</h1>
+  <table style="width: 70%;height: 60%">
+  <tr>
+    <th>Patient id</th>
+    <th>Name</th>
+    <th>Age</th>
+    <th>DOB</th>
+    <th>BMI</th>
+    <th>Latest visit</th>
+    <th>Visiting purpose</th>
+    <th>Prescribed medicines</th>   
+  </tr>
+  <tr>
+    <td>P001.</td>
+    <td>Aishwarya</td>
+    <td>18</td>
+    <td>1.01.2005</td>
+    <td>19</td>
+    <td>15.01.2023</td>
+    <td>Fever</td>
+    <td>Dolo650</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>P002.</td>
+    <td>Alagu Soundarya</td>
+    <td>19</td>
+    <td>2.02.2004</td>
+    <td>20</td>
+    <td>16.01.2023</td>
+    <td>Cold and cough</td>
+    <td>cetirizine</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>P003.</td>
+    <td>Suvetha D P</td>
+    <td>20</td>
+    <td>3.03.2003</td>
+    <td>22</td>
+    <td>17.01.2023</td>
+    <td>Headache</td>
+    <td>Aspirin</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+</center><br><br><br>
+<footer>
+  <center>
+  <p > Copyright © 2022-2023. <br> ASA Hospital <br>  Aishwarya G - Alagu Soundarya G - Suvetha D P<br>
+      II B.Tech CSE(CYS)<br>
+      Part of 20CYS202 - User Interface Design<br>
+      Amrita Vishwa Vidyapeetham, Coimbatore</p>
+  </center>
+</footer>
+</body>
+</html>
