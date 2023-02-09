@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="icon" href="images/alumni.png">
+    <title>Donations!</title>
+    <style>
+        input[type=button],
+        input[type=submit],
+        input[type=reset] {
+            background-color: #f0efde;
+            border: none;
+            color: #000;
+            padding: 14px 50px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+
+<body style="background-color: #f0efde; color:aliceblue; font-size:large;">
+    <a href="./home.html"><img style="margin-left: 1%;" src="../images/back.png"></a>
+    <br><br><br>
+    <div style="background-color: #584431; margin-left: 30%; margin-right: 30%; border-radius: 20px;">
+        <div style="text-align:center; font-family:cursive; font-size:40px;"> Donate</div><br>
+        <div style="text-align: left;margin-left:25%;">
+            <form>
+                <label for="name"> Name: </label>
+                <input type="text" id="na" name="name"><br><br>
+                <label for="email"> Email id </label>
+                <input type="email" id="email" name="email"><br><br>
+                <label> Select donation amount: </label><br>
+                <input id="pi_input" type="range" min="1000" max="50000" step="1000" />
+                <p>Value: <output id="value" ></output></p>
+                <label for="year">Choose Payment method:</label>
+                <select id="year" required>
+                    <option value="1">CARD</option>
+                    <option value="2">UPI</option>
+                    <option value="3">NET BANKING</option>
+                </select><br><br>
+                <input type="submit" onclick="pop()" value="Confirm Donate">
+                <br><br>
+                <script>
+                    const value = document.querySelector("#value")
+                    const input = document.querySelector("#pi_input")
+                    value.textContent = input.value
+                    input.addEventListener("input", (event) => {
+                      value.textContent = event.target.value
+                    })
+
+                    function pop() {
+                        alert("Will be redierected to payment page");
+                    }
+                </script>
+            </form>
+        </div>
+    </div>
+</body>
+
+<!--comments in here-->
+
+</html>
