@@ -1,0 +1,271 @@
+<!--
+Authors: Anuvarshini M K , Suhitha K , Sri Sai Tanvi Sonti>>
+Created Date:  12 Jan 2023
+Updated Date: 13 Jan 2023
+Base Template: None
+Description: signup page of Task Notifier
+-->
+<html>
+<head>
+
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Simple Login Page</title>
+
+</head> 
+<style>
+html, body {
+   height: 100%;
+}	
+
+	
+	
+#login-box {
+	width: 320px;
+	height: 420px;
+	background-color:rgb(217, 234, 244);
+	color:  rgb(9, 9, 9);
+	top: 50%;
+	left: 50%;
+	position: absolute;
+		
+	-webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+		
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 60px 30px; 
+}
+
+	
+#login-box h1 {
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px;
+}
+
+#login-box p {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+	
+#login-box input {
+	width: 100%;
+	margin-bottom: 20px;
+}
+	
+#login-box input[type="text"], input[type="password"] {
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+  height: 40px;
+	font-size: 16px;
+	color: black;
+}
+	
+#login-box input[type="text"]:focus, #login-box input[type="password"]:focus {
+	border-bottom: 1px solid royalblue;
+}
+
+::placeholder {
+	color: #8c8c8c;
+}
+
+#login-box a {
+	text-decoration: none;
+	font-size: 14px;
+	color: #fff;
+}
+	
+#login-box a:hover {
+	color: royalblue;
+}
+
+
+#login-box input[type="submit"] {
+	border: none;
+	outline: none;
+	height: 40px;
+	background-color: royalblue;
+	color: #fff;
+	font-size: 18px;
+    
+  -webkit-transition-property: background-color;
+	-webkit-transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease-in-out;
+	-moz-transition-property: background-color;
+	-moz-transition-duration: 0.3s;
+	-moz-transition-timing-function: ease-in-out;
+	-o-transition-property: background-color;
+	-o-transition-duration: 0.3s;
+	-o-transition-timing-function: ease-in-out;
+	-ms-transition-property: background-color;
+	-ms-transition-duration: 0.3s;
+	-ms-transition-timing-function: ease-in-out;
+	
+	transition-property: background-color;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
+}
+
+#login-box input[type="submit"]:hover {
+	cursor: pointer;
+	background-color: royalblue;
+}
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+body {
+	margin: 0;
+	background:white;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+    background-image: url(https://desk.zoho.com/galleryDocuments/edbsn957b10f7a1488e2577b7703e97595fba78e3038ae03cb7e292056bbbfdfc46b07151d79d80484d4855a0625ef8c37b15?inline=true) , url(https://img.freepik.com/free-vector/list-concept-illustration_114360-1346.jpg?w=1380&t=st=1673513110~exp=1673513710~hmac=d8c28086ad09c1505dc1629bbc617754080a430858e5f546221c768bdb1be8d4) , url(https://media.istockphoto.com/id/1295986573/vector/project-manager-sitting-on-the-table-in-office-workplace.jpg?s=612x612&w=0&k=20&c=4hOFelm0_B_F8pPpl-5BH5gYXZVMyRYF8CAtMu6ta9M=),url(https://media.istockphoto.com/id/1409417655/vector/young-woman-using-laptop-working-on-project-managing-tasks-organizing-scheduling-in-calendar.jpg?s=612x612&w=0&k=20&c=0AQSOhH1RNVbxWqKVJdVbdIwfT8fwdxLz1BYGLHzRpU=);
+    background-repeat: no-repeat , no-repeat , no-repeat,no-repeat;
+    background-size: 500px , 300px , 300px,400px;
+    background-position: left bottom , bottom right,0% 12%,100% 12%;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+  height: 8%;
+}
+
+header {
+  background: rgb(31, 86, 189);
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo{ 
+float: left;
+display: block; 
+margin-left: auto; 
+width:250px;
+height: 50px;
+height: auto; 
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color:white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: white;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: black;
+  color: white;
+}
+button {
+ border: 2px solid royalblue;
+ background-color: royalblue;
+ border-radius: 0.9em;
+ padding: 0.8em 1.2em 0.8em 1em;
+ transition: all ease-in-out 0.2s;
+ font-size: 16px;
+}
+
+button span {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: #fff;
+ font-weight: 600;
+}
+
+button:hover {
+ background-color: #0071e2;
+}
+</style> 
+	<body>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	  <header>      
+		  <div class="container">
+			<h3 class="logo">
+			</h3>
+	
+			<nav>
+			  <ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="premium.html">Premium</a></li>
+				<li><a href="singnuppage.html">Sign up</a></li>
+				<li><a href = "login.html">Login</a></li>
+			  </ul>
+			</nav>
+		  </div>
+		</header>
+
+	<div id="login-box">
+            <h1>Sign up for Task Notifier</h1>
+			<form>
+				<p>Username</p>
+				<input type="text" name="username" placeholder="Enter Username">
+                        <p>Email</p>
+				<input type="text" name="username" placeholder="Enter Email">
+				<p>Set Password</p>
+                        
+				<input type="password" name="password" placeholder="Enter Password">
+				<input type="submit" name="submit" value="Signup">
+			
+			</form>
+	</div>
+
+</body>
+<br> <br><br> <br> <br> <br><br><br><br><br><br><br><br><br><br><br><br><br> <br><br> <br> <br> <br><br><br><br><br><br><br><br><br><br><br><br> 
+  <footer style="background-color:royalblue">
+<p class="copyright">Copyright © 2022-2023-Task Now- Tanvi Sonti, Anuvarshini M K, Suhitha K.<br>
+          II B.Tech CSE (CYS)<br>
+          Part of 20CYS202 - User Interface Design<br>
+          Amrita Vishwa Vidyapeetham, Coimbatore</p>
+</html>

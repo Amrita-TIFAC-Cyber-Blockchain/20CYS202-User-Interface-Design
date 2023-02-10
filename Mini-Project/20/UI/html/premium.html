@@ -1,0 +1,343 @@
+<!--
+Authors: Anuvarshini M K , Suhitha K , Sri Sai Tanvi Sonti>>
+Created Date:  12 Jan 2023
+Updated Date: 13 Jan 2023
+Base Template: referred from codepen.io
+Description: premium page of task notifier
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Tiers</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
+    <link rel="stylesheet" href="app.css">
+</head>
+<style>
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html{
+	font-family:'Open Sans', sans-serif;
+	box-sizing:border-box;
+	}
+#firstpage{
+    background-color:rgb(217, 234, 244);
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	min-height :80px;;
+	/* vh means viewable height means full height of the page */
+}
+.panel{
+	background-color: white;
+	border-radius:5%;
+	padding:1.5rem 2.5rem;
+	width:100%;
+	max-width:960px;
+	display:flex;
+	flex-direction: column;
+	text-align:center;
+	text-transform:uppercase;
+
+}
+.pricing-plan{
+	border-bottom:1px solid #e1f1ff;
+}
+	.pricing-plan:last-child{
+	border-bottom:none;
+}
+.pricing-img{
+	margin-bottom:24px;
+	max-width:100%;
+}
+.pricing-header{
+	font-weight:600;
+	letter-spacing:1px;
+	color:black;
+}
+.pricing-features{
+	margin:50px 0 25px;
+	color:RoyalBlue;
+	
+}
+.pricing-features-item{
+	letter-spacing:1.5px;
+	font-weight:600;
+	font-size:14px;
+	padding:15px 0;
+	line-height:1.5;
+	border-top:1px solid #e1f1ff;
+}
+.pricing-features-item:last-child{
+	border-bottom:1px solid #e1f1ff;
+}
+.pricing-price{
+	font-size:32px;
+	font-weight:700;
+	color:royalblue;
+	display:block;
+	margin:10px 0;
+}
+.pricing-button{
+	border:1px solid #e1f1ff;
+	margin: 20px 0;
+	padding:20px 30px;
+	border-radius: 15px;
+	display:inline-block;
+	font-size:20px;
+	text-decoration: none;
+	color:skyblue;
+	transition: background-color 200ms ease-in-out;
+	align-items: baseline;
+}
+.pricing-button:hover {
+background-color:RoyalBlue;
+	color:white;
+	}
+.pricing-button:focus{
+	background-color:RoyalBlue;
+	color:white;
+}
+.pricing-button.is-featured{
+	background-color:RoyalBlue;
+	color:white;
+}
+.pricing-button.is-featured:hover { 
+	background-color: RoyalBlue;
+	color:white;
+}
+.pricing-button.is-featured:focus{
+background-color: RoyalBlue;
+	color:white;
+	}
+@media(min-width: 960px){
+	.panel{
+		flex-direction:row;
+	}
+	.pricing-plan{
+		border-bottom:none;
+		border-right:1px solid #e1f1ff;
+		padding:15px 30px;
+	}
+	.pricing-plan:last-child{
+		border-right:none;
+	}
+}
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+#secondpage{
+	margin: 0;
+	background:white;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+}
+
+.container1{
+	width: 80%;
+	margin: 0 auto;
+    height: 8%;
+}
+
+header {
+  background: rgb(31, 86, 189);
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo{ 
+float: left;
+display: block; 
+margin-left: auto; 
+width:250px;
+height: 50px;
+height: auto; 
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color:white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: white;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: white;
+  color: royalblue;
+}
+button {
+ border: 2px solid royalblue;
+ background-color: royalblue;
+ border-radius: 0.9em;
+ padding: 0.8em 1.2em 0.8em 1em;
+ transition: all ease-in-out 0.2s;
+ font-size: 16px;
+}
+
+button span {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: #fff;
+ font-weight: 600;
+}
+
+button:hover {
+ background-color: #0071e2;
+}
+</style>
+<body id = "secondpage">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <header>      
+      <div class="container1">
+        <h3 class="logo">
+        </h3>
+
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="premium.html">Premium</a></li>
+            <li><a href="singnuppage.html">Sign up</a></li>
+            <li><a href = "login.html">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+	</body>
+
+<body id = "firstpage">
+    <div class="panel">
+        <!-- this is a space seperated class means we can use the first word of the class in css to define the class and also use 
+            the other with the first one as a differenet class see ex in 2nd price button -->
+        <div class="pricing-plan">
+            <img src="https://cdn.dribbble.com/users/1961650/screenshots/5641178/dribbble_canvas__personal_loan_.gif" alt="" class="pricing-img">
+            <h2 class="pricing-header">Guest</h2>
+            <ul class="pricing-features">
+                <li class="pricing-features-item">Custom Category</li>
+                <li class="pricing-features-item">No remainder</li>
+            </ul>
+			<br>
+            <span class="pricing-price">Free</span>
+            <a href="../index.html" class="pricing-button is-featured">Try Now</a>
+        </div>
+
+        <div class="pricing-plan">
+            <img src="https://i.pinimg.com/originals/05/fc/1a/05fc1a5581e07dd34a41151b2afb1e81.gif" alt="" class="pricing-img">
+            <h2 class="pricing-header">Premium</h2>
+            <ul class="pricing-features">
+                <li class="pricing-features-item">Synchromization between devices</li>
+                <li class="pricing-features-item">Sync with Google Calendar</li>
+            </ul>
+            <span class="pricing-price">₹150</span>
+            <a href="#/" class="pricing-button is-featured">Pay now</a>
+        </div>
+
+        <div class="pricing-plan">
+            <img src="https://cdn.dribbble.com/users/1350622/screenshots/4408287/8.gif" alt="" class="pricing-img">
+            <h2 class="pricing-header">Business Premium</h2>
+            <ul class="pricing-features">
+                <li class="pricing-features-item">Dedicated</li>
+                <li class="pricing-features-item">Multiple workers for more powerful apps</li>
+            </ul>
+            <span class="pricing-price">₹400</span>
+            <a href="#/" class="pricing-button is-featured">Pay now</a>
+        </div>
+
+    </div>
+</body>
+ <br><br><br><br><br><br><br><br><br><br> <br>  <br> <br> <br>  <footer>
+      <p >Copyright © 2022-2023-Task Now- Tanvi Sonti, Anuvarshini M K, Suhitha K.<br>
+          II B.Tech CSE (CYS)<br>
+          Part of 20CYS202 - User Interface Design<br>
+          Amrita Vishwa Vidyapeetham, Coimbatore</P>
+  </footer>
+</html>

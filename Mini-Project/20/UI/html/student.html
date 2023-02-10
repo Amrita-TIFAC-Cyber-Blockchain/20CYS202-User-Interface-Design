@@ -1,0 +1,456 @@
+<!--
+Authors: Anuvarshini M K , Suhitha K , Sri Sai Tanvi Sonti>>
+Created Date:  12 Jan 2023
+Updated Date: 13 Jan 2023
+Base Template: None
+Description: Task Creation Page
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: lightblue;
+  
+}
+
+main {
+  width: 600px;
+  margin: auto;
+}
+
+main h1 {
+  margin-top: 5px;
+  text-align: center;
+  color: #1c7ed6;
+}
+
+section {
+  margin-top: 30px;
+}
+
+
+input,
+textarea,
+button {
+  padding: 20px;
+}
+
+form input,
+textarea {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px 0 lightgrey;
+  margin-top: 10px;
+}
+
+.formInput {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.todo-list {
+  margin-top: 20px;
+}
+
+.todo-list-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.task-counter {
+  margin-top: 10px;
+}
+
+.emoji {
+  font-size: 25px;
+}
+
+.todo-item {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 lightgrey;
+}
+
+.todo-item-main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo-item-info {
+  padding: 10px;
+}
+
+.todo-item-info p {
+  margin-top: 10px;
+}
+
+.hidden {
+  display: none;
+  transition: 300ms;
+}
+
+input.checkbox {
+  height: 30px;
+  width: 30px;
+}
+
+.itemTitle {
+  width: 60%;
+}
+
+.done {
+  opacity: 0.5;
+}
+
+.done .itemTitle {
+  text-decoration: line-through;
+}
+
+.addTodoBtn {
+  display: block;
+  margin: 30px auto 0 auto;
+  background-color: royalblue;
+  color: white;
+}
+
+.clear-task {
+  background-color: rgb(252, 63, 63);
+  color: white;
+}
+
+.edit {
+  background-color: royalblue;
+  color: white;
+}
+
+.delete {
+  background-color: rgb(252, 63, 63);
+  color: white;
+}
+
+button {
+  border: none;
+  border-radius: 4px;
+}
+
+button:hover {
+  opacity: 0.75;
+}
+
+button {
+  transition: 300ms;
+}
+
+input:focus,
+textarea:focus {
+  background-color: #d5e8f8;
+  transition: 300ms;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color:white;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color:white;
+  background-image: url(https://media.istockphoto.com/id/1409417655/vector/young-woman-using-laptop-working-on-project-managing-tasks-organizing-scheduling-in-calendar.jpg?s=612x612&w=0&k=20&c=0AQSOhH1RNVbxWqKVJdVbdIwfT8fwdxLz1BYGLHzRpU=); 
+  background-repeat: no-repeat ;
+    background-size:  350px;
+    background-position:  100% 100%;
+}
+
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+.btn {
+  background-color: RoyalBlue;
+  border: 20px;
+  color: white;
+  padding: 15px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+</style>
+  <body>
+     
+    <div class="split left">
+      
+      
+    <main class="app">
+     <h5 style="font-family: 'Times New Roman'; font-size: 50px; color: black;">⏰TaskNow</h5>
+      <br><br><br><br><h1 style="font-family: 'Times New Roman'; font-size: 50px; color: rgb(31, 86, 189);">Hello student!</h1>
+      <section class="addTodo">
+        <h3>Add new task</h>
+        <form id="new-todo-form" name="newTodo">
+          <div class="formInput">
+            <label for="title">Title</label>
+            <input
+              id="title-input"
+              type="text"
+              name="title"
+              placeholder="Title of the task"
+            />
+          </div>
+<div class="formInput">
+            <label for="category">Category</label>
+            <input
+              id="title-input"
+              type="text"
+              name="category"
+              placeholder="Category of the task"
+            />
+          </div>
+          <div class="formInput">
+            <label for="description">Notes:</label>
+            <textarea
+              id="description-input"
+              cols="10"
+              rows="2"
+              name="description"
+              placeholder="Write Notes"
+            ></textarea>
+          </div>
+          <div class="formInput">
+            <label for="deadline">Due</label>
+            <input id="date-input" type="datetime-local" name="deadline" />
+          </div>
+          <button class="addTodoBtn" type="submit">Add todo</button>
+        </form>
+      </div>
+      </section>
+
+      <div class="split right">
+        <a href = "../index.html"><button class="btn">Home</button></a>
+      <section class="todoList">
+        <br><br><br><br><h1>Todo list </h1>
+        <div class="todo-list-menu">
+          <div id="task-counter" class="task-counter">
+            5 Tasks remaining<span class="emoji">🙂</span>
+          </div>
+          <button id="clear-task" class="clear-task">
+            Clear completed tasks
+          </button>
+        </div>
+        <div class="todo-list" id="todo-list">
+          <!-- <div class="todo-item done">
+            <input type="checkbox" name="isCompleted" class="checkbox" />
+            <div class="itemTitle">Finish todo app</div>
+            <button class="edit">Edit</button>
+            <button class="delete">Delete</button>
+          </div>
+          <div class="todo-item">
+            <input type="checkbox" name="isCompleted" class="checkbox" />
+            <div class="itemTitle">Update the tasks</div>
+            <button class="edit">Edit</button>
+            <button class="delete">Delete</button>
+          </div> -->
+        </div>
+      </section>
+    </div>
+    </main>
+    <script>
+
+
+window.addEventListener("load", () => {
+  console.log("page loaded");
+
+  todos = JSON.parse(localStorage.getItem("todos")) || [];
+
+  const newTodoForm = document.querySelector("#new-todo-form");
+
+  newTodoForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const todo = {
+      title: event.target.elements.title.value,
+      description: event.target.elements.description.value,
+      deadline: event.target.elements.deadline.value,
+      category: event.target.elements.category.value,
+      done: false,
+    };
+
+    todos.push(todo);
+
+    localStorage.setItem("todos", JSON.stringify(todos));
+
+    event.target.reset();
+
+    displayTodos();
+  });
+  displayTodos();
+});
+
+function displayTodos() {
+  const taskCounter = document.querySelector("#task-counter");
+  let incompleteTasks = 0;
+  todos.forEach((todo) => {
+    if (todo.done == false) incompleteTasks += 1;
+  });
+  let emoji = null;
+  if (incompleteTasks == 0) emoji = "😊";
+  else if (incompleteTasks <= 2) emoji = "🙂";
+  else if (incompleteTasks <= 4) emoji = "😶";
+  else if (incompleteTasks <= 50) emoji = "🥵";
+  taskCounter.innerHTML =
+    incompleteTasks +
+    " tasks remaining " +
+    '<span class="emoji">' +
+    emoji +
+    "</span>";
+
+  const todoList = document.querySelector("#todo-list");
+  todoList.innerHTML = "";
+
+  todos.forEach((todo) => {
+    const todoItem = document.createElement("div");
+    todoItem.classList.add("todo-item");
+
+    const todoItemMain = document.createElement("div");
+    todoItemMain.classList.add("todo-item-main");
+
+    const todoItemInfo = document.createElement("div");
+    todoItemInfo.classList.add("todo-item-info");
+    todoItemInfo.classList.add("hidden");
+
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.classList.add("checkbox");
+    todoItemMain.appendChild(checkbox);
+
+    const title = document.createElement("div");
+    if (todo.title.length >= 25)
+      title.innerHTML = todo.title.slice(0, 22) + "...";
+    else title.innerHTML = todo.title;
+    title.classList.add("itemTitle");
+    todoItemMain.appendChild(title);
+
+    const editButton = document.createElement("button");
+    editButton.classList.add("edit");
+    editButton.innerHTML = "More";
+    todoItemMain.appendChild(editButton);
+
+    const deleteButton = document.createElement("button");
+    deleteButton.classList.add("delete");
+    deleteButton.innerHTML = "Delete";
+    todoItemMain.appendChild(deleteButton);
+
+    const description = document.createElement("p");
+    description.innerHTML = "Notes: " + todo.description;
+
+    const due = document.createElement("p");
+    due.innerHTML = "Deadline: " + todo.deadline;
+
+    const category = document.createElement("p");
+    category.innerHTML = "Category: " + todo.category;
+    
+    todoItemInfo.appendChild(category);
+    todoItemInfo.appendChild(description);
+    todoItemInfo.appendChild(due);
+    
+
+    todoItem.appendChild(todoItemMain);
+    todoItem.appendChild(todoItemInfo);
+
+    todoList.appendChild(todoItem);
+
+    if (todo.done) {
+      todoItem.classList.add("done");
+      checkbox.checked = true;
+    }
+
+    checkbox.addEventListener("change", (event) => {
+      todo.done = event.target.checked;
+
+      localStorage.setItem("todos", JSON.stringify(todos));
+
+      if (todo.done) todoItem.classList.add("done");
+      else todoItem.classList.remove("done");
+
+      // displayTodos();
+    });
+
+    editButton.addEventListener("click", (event) => {
+      console.log(todoItemInfo.classList);
+      if (todoItemInfo.classList.contains("hidden")) {
+        console.log("contains hidden");
+        todoItemInfo.classList.remove("hidden");
+        editButton.innerHTML = "Less";
+      } else {
+        console.log("does not contain hidden");
+        todoItemInfo.classList.add("hidden");
+        editButton.innerHTML = "More";
+      }
+
+      // displayTodos();
+    });
+
+    deleteButton.addEventListener("click", (event) => {
+      todos = todos.filter((t) => t != todo);
+      localStorage.setItem("todos", JSON.stringify(todos));
+      displayTodos();
+    });
+  });
+}
+
+const clearTaskBtn = document.querySelector("#clear-task");
+clearTaskBtn.addEventListener("click", (event) => {
+  todos = todos.filter((t) => t.done == false);
+  localStorage.setItem("todos", JSON.stringify(todos));
+  displayTodos();
+});
+</script>
+  </body>
+</html>

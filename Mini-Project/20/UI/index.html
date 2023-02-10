@@ -1,0 +1,155 @@
+<!--
+Authors: Anuvarshini M K , Suhitha K , Sri Sai Tanvi Sonti>>
+Created Date:  12 Jan 2023
+Updated Date: 13 Jan 2023
+Base Template: None
+Description: Home page of Task Notifier
+-->
+<html>
+<head>
+    <title>Task Notifier</title>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+body {
+	margin: 0;
+	background:white;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+    background-image: url(https://desk.zoho.com/galleryDocuments/edbsn957b10f7a1488e2577b7703e97595fba78e3038ae03cb7e292056bbbfdfc46b07151d79d80484d4855a0625ef8c37b15?inline=true) , url(https://img.freepik.com/free-vector/list-concept-illustration_114360-1346.jpg?w=1380&t=st=1673513110~exp=1673513710~hmac=d8c28086ad09c1505dc1629bbc617754080a430858e5f546221c768bdb1be8d4) , url(https://media.istockphoto.com/id/1295986573/vector/project-manager-sitting-on-the-table-in-office-workplace.jpg?s=612x612&w=0&k=20&c=4hOFelm0_B_F8pPpl-5BH5gYXZVMyRYF8CAtMu6ta9M=),url(https://media.istockphoto.com/id/1409417655/vector/young-woman-using-laptop-working-on-project-managing-tasks-organizing-scheduling-in-calendar.jpg?s=612x612&w=0&k=20&c=0AQSOhH1RNVbxWqKVJdVbdIwfT8fwdxLz1BYGLHzRpU=);
+    background-repeat: no-repeat , no-repeat , no-repeat,no-repeat;
+    background-size: 500px , 300px , 300px,400px;
+    background-position: 0% 75% , 100% 80%,0% 12%,100% 12%;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+  height: 8%;
+}
+
+header {
+  background: rgb(31, 86, 189);
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo{ 
+float: left;
+display: block; 
+margin-left: auto; 
+width:250px;
+height: 50px;
+height: auto; 
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color:white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: white;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: white;
+  color: royalblue;
+}
+button {
+ border: 2px solid royalblue;
+ background-color: royalblue;
+ border-radius: 0.9em;
+ padding: 0.8em 1.2em 0.8em 1em;
+ transition: all ease-in-out 0.2s;
+ font-size: 16px;
+}
+
+button span {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: #fff;
+ font-weight: 600;
+}
+
+button:hover {
+ background-color: #0071e2;
+}
+</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <header>      
+      <div class="container">
+        <h3 class="logo">
+        </h3>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="html/premium.html">Premium</a></li>
+            <li><a href="html/singnuppage.html">Sign up</a></li>
+            <li><a href = "html/login.html">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <body>
+      <br><br><br> <center><h1 style="font-family: 'Times New Roman'; font-size: 50px; color: rgb(31, 86, 189);"> TaskNow</h1></center>
+   <br><center><h2 style="font-family: Arial, Helvetica, sans-serif; font-size: 30px; color:black;">A better way to organise your tasks Now !</h2></center>
+    <br><br><center><a href="html/final.html"><button >
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"></path></svg> Create Tasks Now !
+      </span>
+    </button></a></center>
+    </body>
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> <br> <br> <br> <br><br> <br> <br> <br>  <footer>
+      <p >Copyright © 2022-2023-Task Now- Tanvi Sonti, Anuvarshini M K, Suhitha K.<br>
+          II B.Tech CSE (CYS)<br>
+          Part of 20CYS202 - User Interface Design<br>
+          Amrita Vishwa Vidyapeetham, Coimbatore</P>
+  </footer>
+</html>
