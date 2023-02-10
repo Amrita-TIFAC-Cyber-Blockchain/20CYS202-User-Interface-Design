@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" type="image/x-icon" href="../images/logo.png">
+	<link rel="stylesheet" href="login.css" />
+	<title>Login</title>
+</head>
+
+<body>
+	<div class="login">
+		<div class="login-screen">
+			<div class="app-title">
+				<h1>Login</h1>
+			</div>
+			<form name="login">
+				<div class="login-form">
+					<div class="control-group">
+						<input type="text" class="login-field" value="" placeholder="roll number" name="login-name"
+							id="login-name" required />
+						<label class="login-field-icon fui-user" for="login-name"></label>
+					</div>
+
+					<div class="control-group">
+						<input type="password" class="login-field" value="" placeholder="password" name="login-pass"
+							id="login-pass" required />
+						<label class="login-field-icon fui-lock" for="login-pass"></label>
+					</div>
+
+					<button class="btn btn-primary btn-large btn-block" type="submit" onclick="return validation()">
+						<a href="../index.html" style="text-decoration: none">login</a>
+					</button>
+					<a href="../index.html" class="btn btn-primary btn-large btn-block" style="margin-top: 8px;">Home</a>
+					<a class="login-link" href="#">Lost your password?</a>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+<script>
+	function validation() {
+		var uname = document.getElementById("login-name").value;
+		var password = document.getElementById("login-pass").value;
+		console.log(password);
+		if (goodUname(uname)) {
+			if (goodPassword(password)) {
+				goToPage();
+				return true;
+			}
+		}
+		return false;
+	}
+
+	function goodUname(uname) {
+		let regex = /^cben[\w][2|3|4|5][\w]{3}[\d]{5}/;
+		if (regex.test(uname)) {
+			return true;
+		} else {
+			window.alert("Enter proper roll number.");
+			return false;
+		}
+	}
+
+	function goodPassword(password) {
+		let len = password.length;
+		if (len >= 8 && length <= 20) {
+			goToPage();
+			return true;
+		} else {
+			window.alert("Enter password with length between 8 and 20.");
+			return false;
+		}
+	}
+
+	function goToPage() {
+		window.location.href = "../index.html";
+	}
+</script>
+
+</html>
