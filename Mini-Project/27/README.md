@@ -3,6 +3,7 @@
 ![](https://img.shields.io/badge/Category-BRIG-purple)
 
 ### UID-DBMS-27 - [Novel Neighbour](https://vivek-veera.github.io/20CYS202-UID/Mini-Project/)
+![](https://img.shields.io/badge/Template-Partial-silver) 
 
 #### Team Members
 - [M C Vivek Veera]()
