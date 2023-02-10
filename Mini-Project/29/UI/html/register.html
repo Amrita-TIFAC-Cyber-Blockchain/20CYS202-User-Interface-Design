@@ -1,0 +1,418 @@
+
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+ 
+  </head>
+  <body bgcolor="#ecf3f9">
+ 
+
+
+  
+    
+    <div class="topnav">
+      <img src="../images/rad.jpg" width="250" height="250" style="float:left">
+        <a style="font-family:Arial, Helvetica, sans-serif; font-size:x-large"  href="../html/terms_and_conditions.html">Terms and Conditions</a>
+        <a style="font-family:Arial, Helvetica, sans-serif; font-size:x-large"  href="../html/services.html">Services</a>
+               <a style="font-family:Arial, Helvetica, sans-serif; font-size:x-large"  class="active" href="../html/register.html">Registration</a>
+        <a style="font-family:Arial, Helvetica, sans-serif; font-size:x-large" href="../html/community_login.html">Community Login</a>
+        <a style="font-family:Arial, Helvetica, sans-serif; font-size:x-large"   href="../html/about_us.html">About</a>
+      <a style="font-family:Arial, Helvetica, sans-serif; font-size:x-large"  href="../index.html">Home</a>
+      
+   
+     
+     
+
+     
+  
+    </div>
+
+
+ <div>
+    <h1>
+        <p style="color:black;">
+   <b> Welcome to the Registration Page </b>
+        </p>
+    </h1>
+ </div>
+
+</div>
+<br>
+
+<div>
+    
+    
+                  <meta charset="utf-8">
+                  <title>Registration form</title>
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                  <link rel="stylesheet" href="style.css">
+                  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+                </head>
+   
+          
+            <center> <h2 style="color: brown;">
+             Note: Only citizens who are 18 and above are eligible for registration. <br>
+              Please upload a copy of proof of age for verification.<br><br>
+             </h2></center>
+              <!-- Main div code -->
+              <div id="main">
+              <div class="h-tag">
+              <h2 style="text-align:center;font-size:x-large">Create Your Account here</h2><br>
+              </div>
+              <!-- create account div -->
+              <div style="font-size:larger" class="login">
+              <table cellspacing="5px" align="center" cellpadding="25px" border="5px" style="border-color:black">
+              <tr>
+              <td style="font-size:larger" align="right">Enter your Name :</td>
+              <td><input type="text;" placeholder="Enter user here" id="t1" class="tb" style="width: 300px; height:40px" /></td>
+              </tr>
+              <tr>
+                <td style="font-size:larger" align="right">Enter your address :</td>
+                <td><input type="text" placeholder="Enter address here" id="t2" class="tb" style="width: 300px; height:40px" /></td>
+                </tr>
+
+                <tr>
+                  <td style="font-size:larger" align="right">Enter your Date Of Birth :</td>
+                  <td><input type="text" placeholder="Enter DOB" id="t3" class="tb" style="width: 300px; height:40px" /></td>
+                  </tr>
+
+                <tr>
+                  <td style="font-size:larger" align="right">Enter your age :</td>
+                  <td><input type="text" placeholder="Enter age here" id="t4" class="tb" style="width: 300px; height:40px" /></td>
+                  </tr>
+              <tr>
+              <td style="font-size:larger" align="right">Enter your Email ID :</td>
+              <td><input type="text" placeholder="Enter Email ID here" id="t5" class="tb" style="width: 300px; height:40px" /></td>
+              </tr>
+
+              <tr>
+                <td style="font-size:larger" align="right">Enter your mobile number:</td>
+                <td><input type="text" placeholder="Enter mobile number here" id="t6" class="tb" style="width: 300px; height:40px" /></td>
+                </tr>
+
+                <tr>
+                  <td style="font-size:larger" align="right">Enter your alternate mobile number:</td>
+                  <td><input type="text" placeholder="Enter alternate mobile number here" id="t7" class="tb" style="width: 300px; height:40px" /></td>
+                  </tr>
+
+              <tr>
+              <td style="font-size:larger" align="right">Enter a Username :</td>
+              <td><input type="text" placeholder="Enter Username here" id="t8" class="tb" style="width: 300px; height:40px" /></td>
+              </tr>
+              <tr>
+              <td style="font-size:larger" align="right">Enter a Password :</td>
+              <td><input type="password" placeholder="Enter Password here" id="t9" class="tb" style="width: 300px; height:40px" /></td>
+              </tr>
+              <tr>
+              <td style="font-size:larger" align="right">Enter Confirm Password :</td>
+              <td><input type="password" placeholder="Enter Password here" id="t10" class="tb" style="width: 300px; height:40px" /></td>
+              </tr>
+              <tr>
+                <td style="font-size:larger" align="right">Upload your photo :</td>
+                <td><input type="file" placeholder="Enter file" id="t11" class="tb" style="width: 300px; height:40px" /></td>
+                </tr>
+
+                <td style="font-size:larger" align="right">Upload your proof of age :</td>
+                <td><input type="file" placeholder="Enter file" id="t12" class="tb" style="width: 300px; height:40px" /></td>
+                </tr>
+
+              <tr>
+              <td></td>
+              <td>
+              <input type="reset" value="Clear Form" onclick="clearFunc()" id="res" class="btn" />
+              <input type="submit" value="Create Account" class="btn" onclick="registration()" /></td>
+              </tr>
+              
+              </table>
+              </div>
+              <!-- create account box ending here.. -->
+              </div>
+              <!-- Main div ending here... -->
+              <br>
+              <br>
+              <br>
+              
+        
+              </h3>
+              </body>
+             
+            <script>
+            
+                function registration()
+                {
+            
+                    var name= document.getElementById("t1").value;
+                    var address= document.getElementById("t2").value;
+                    var Date= document.getElementById("t3").value;
+                    var age= document.getElementById("t4").value;
+                    var email= document.getElementById("t5").value;
+                    var mobile= document.getElementById("t6").value;
+                    var alternate= document.getElementById("t7").value;			
+                    var uname= document.getElementById("t8").value;
+                    var pwd= document.getElementById("t9").value;
+                    var cpwd= document.getElementById("t10").value;
+                    var photo= document.getElementById("t11").value;
+                    var file= document.getElementById("t12").value;
+                   
+                    
+                    //email id expression code
+                    var pwd_expression = /^(?=.?[A-Z])(?=.?[a-z])(?=.?[0-9])(?=.?[#?!@$%^&*-])/;
+                    var letters = /^[A-Za-z]+$/;
+                    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            
+                    if(name=='')
+                    {
+                        alert('Please enter your name');
+                    }
+                    else if(!letters.test(name))
+                    {
+                        alert('Name field required only alphabet characters');
+                    }
+                    else if(address=='')
+                    {
+                        alert('Please enter your address');}
+                    else if(email=='')
+                    {
+                        alert('Please enter your user email id');
+                    }
+                    else if (!filter.test(email))
+                    {
+                        alert('Invalid email');
+                    }
+                    else if(uname=='')
+                    {
+                        alert('Please enter the user name.');
+                    }
+                    else if(!letters.test(uname))
+                    {
+                        alert('User name field required only alphabet characters');
+                    }
+                    else if(pwd=='')
+                    {
+                        alert('Please enter Password');
+                    }
+                    else if(cpwd=='')
+                    {
+                        alert('Enter Confirm Password');
+                    }
+                    else if(photo=='')
+                    {
+                        alert('Upload photo');
+                    }
+                    else if(!pwd_expression.test(pwd))
+                    {
+                        alert ('Upper case, Lower case, Special character and Numeric letter are required in Password filed');
+                    }
+                    else if(pwd != cpwd)
+                    {
+                        alert ('Password not Matched');
+                    }
+                    else if(document.getElementById("t5").value.length < 6)
+                    {
+                        alert ('Password minimum length is 6');
+                    }
+                    else if(document.getElementById("t5").value.length > 12)
+                    {
+                        alert ('Password max length is 12');
+                    }
+                                    
+                     
+                    
+
+                    else
+                    {				                            
+                           alert('Thank You for Login');
+                          
+                          
+                    }
+                }
+
+                function validateAge(age) {
+                  if (isNaN(age) || age < 0 || age > 150) {
+                    alert("Invalid age. Age should be a positive number between 0 and 150.");
+                    return false;
+                  }
+                  return true;
+                }
+
+                function clearFunc()
+                {
+                    document.getElementById("t1").value="";
+                    document.getElementById("t2").value="";
+                    document.getElementById("t3").value="";
+                    document.getElementById("t4").value="";
+                    document.getElementById("t5").value="";
+                
+                }
+            </script>
+            </head>
+    
+        </form>
+      
+        </footer>
+      </html>
+    
+</div>
+<div class="footer">
+<div class="links">
+  <h4>
+    <p style="color:white; font-family:cambria">SITE MAP</p><BR>
+    <a style="color:white; font-family:cambria" href="terms_and_conditions.html">Terms & Conditions</a><br>
+    <br>
+      <a style="color:white; font-family:cambria" href="services.html">Services</a><br>
+    <br>
+    <a style="color:white; font-family:cambria" href="register.html">Register</a><br>
+    <br>
+   <a style="color:white; font-family:cambria" href="about_us.html">About Us</a><br>
+   <br>
+   <a style="color:white; font-family:cambria" href="community_login.html">Login</a><br>
+   <br>
+    <a style="color:white; font-family:cambria" href="../index.html">Home</a>
+  </h4>
+</div>
+
+
+<div class="links">
+  <h4 style="color:white;">
+     <img src="../images/call.jpg" width="50" height="45" style="font-family:cambria"> +91 9626824740
+<br><br><br>
+<img src="../images/mail.jpg" width="50" height="45" style="font-family:cambria"> radiantservices@gmail.com
+<br>
+<br>
+
+  </h4>
+
+
+
+
+    <h4>
+        <a href="https://www.instagram.com/spero_hope7/"><img src="../images/instagram.png" width="50" height="50"></a>
+  
+  
+       
+       
+    </h4>
+  </div>
+
+
+<div class="links">
+  <h2 style="text-align:left">
+    <p style="color: white;">Any Queries?</p>
+  </h2>
+  <h5>
+    <p style="color:white;">Drop your messages here: </p>
+          <img src="../images/arrow.jpg" width="30" height="45">
+  </h5>
+  <form>
+        <input style="width: 10cm; height: 4cm; border-width: 0.1cm;border-color: black;bottom: 90% ;" type="text" placeholder="Type your message here">
+   <br>
+   <br>
+   <button type="submit" style="background-color:#f3f2ed; font-family:cambria;  padding: 10px 10px; width: 4cm; height:2cm; font-size: 0.5cm;justify-content: center;border-radius: 0.4cm;border-color:black;border-width: 0.1cm;color:black;font-family:'stencil' ;" >Submit</button> 
+</form>
+</div>
+</div>
+
+
+<br>
+<br>
+<div style="background-color:#333;text-align: center;">
+
+  <h3>
+    <p style="color: white;">Copyright © 2022 - 2023. Radiant Services- Swetha V, <br>
+        II B.Tech CSE (CYS)<br>
+        Part of 20CYS202 - User Interface Design<br>
+        Amrita Vishwa Vidyapeetham, <br>
+        Coimbatore</p>
+  </h3>
+</div>
+
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+ /* Add a black background color to the top navigation */
+.topnav {
+  background-color:#f2f2f2;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 30px 30px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color:dimgray;
+  color:aliceblue;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color:dimgray;
+  color:aliceblue;
+}
+  h1{
+   text-align: center;
+}
+.imageContainer {
+  
+   display:flex;
+   position: relative;
+   text-align: center;
+
+   
+}
+.caption{
+   font-size: 50px;
+   font-weight: bolder;
+   font-family:'rockwellextrabold';
+}
+.center {
+   position: absolute;
+   top: 80%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color:darkgrey;
+   font-style: oblique;
+   font-optical-sizing:inherit;
+   font-display:initial;
+   flex-wrap: wrap;   
+   font-family:'castellar' ;
+   text-decoration:underline;
+   text-shadow: 10cm;
+   font-weight: bolder;
+}
+a:link{
+    
+    font-family: 'forte';
+}
+
+.footer{
+    display:flex;
+    border:solid;
+    justify-content:space-evenly;
+    background-color:#333;
+    padding: -100px;
+font-size: 20px;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+  </style>
+  
+
+
+  </body>
+  </html>
+  
+

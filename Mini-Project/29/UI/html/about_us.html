@@ -1,0 +1,390 @@
+
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+   
+
+  </head>
+  <body bgcolor="#ecf3f9">
+ 
+
+
+  
+    
+    <div class="topnav">
+      <img src="../images/rad.jpg" width="250" height="250" style="float:left">
+
+
+        <a style="font-family:Arial, Helvetica, sans-serif; font-size:x-large"  href="../html/terms_and_conditions.html">Terms and Conditions</a>
+        <a  style="font-family:Arial, Helvetica, sans-serif; font-size:x-large" href="../html/services.html">Services</a>
+               <a style="font-family:Arial, Helvetica, sans-serif; font-size:x-large"  href="../html/register.html">Registration</a>
+        <a style="font-family:Arial, Helvetica, sans-serif; font-size:x-large"  href="../html/community_login.html">Community Login</a>
+        <a style="font-family:Arial, Helvetica, sans-serif; font-size:x-large"  class="active" href="../html/about_us.html">About </a>
+      <a style="font-family:Arial, Helvetica, sans-serif; font-size:x-large"  href="../index.html">Home</a>
+     
+     
+     
+     
+     
+    </div>
+
+
+ <div>
+    <h1>
+        <p style="color:#333;">
+            About Radiant Membership Services
+        </p>
+    </h1>
+ </div>
+
+ <div class="slideshow-container">
+
+  <div class="mySlides fade">
+    
+    <div style="font-size:x-large; font-family:cambria;color:black;" class="numbertext">1 / 3</div>
+    
+    <img src="../images/slides.png" width="1050" height="700"><br>
+    <br><br> <br><br><br> <br> <br> <br><div class="text" style="color:black; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br> <br> <br> <br> <br> <br> <br>
+      The membership service system is to collaborate with various organizations across the city to effectively manage their membership base and provides a more streamlined service system.<br> 
+      <br> <br>
+      Allows members to create and update their profiles, and the system stores information such as contact details, payment information, and membership status.<br><br><br>
+      Allows members to receive updates, newsletters, and promotional materials via mail, phone, or in-person.<br><br> <br>
+     
+      Members can connect with other like-minded individuals, expanding their network and potentially forming new business or personal connections.<br>
+    </div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div style="font-size:x-large; font-family:cambria;color:black;"" class="numbertext">2 / 3</div>
+    <img src="../images/slides.png" width="1050" height="700"><br>
+    <br><br><br><br>  <br> <br><br> <br> <br> <br> <br><div class="text" style="color:black; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"">
+      <br>
+      <br>
+      <br>
+      <br>
+
+      Support and resources: Community membership systems may provide members with support, resources, and information to help them achieve their goals and improve their skills.<br><br><br>
+      Access to exclusive content or events: Community membership systems may provide members with exclusive access to resources, such as webinars, workshops, or special content.<br><br><br>
+     Access to health-related services, such as wellness classes or health screenings, which can help individuals to maintain their health and wellness.<br><br> <br>
+      For senior citizens, who may have difficulty driving or using public transportation, an offline membership service may provide transportation assistance to events and activities.
+
+
+    </div>
+  </div>
+  
+  <div style="font-size:x-large; font-family:cambria;color:black;"" class="mySlides fade">
+    <div style="font-size:x-large;" class="numbertext">3 / 3</div>
+    <img src="../images/slides.png" width="1050" height="700"><br>
+    <br><br><br><br><br><br><br><br> <div class="text" style="color:black; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"">
+      <br>
+      <br>
+      <br>
+      <br>
+
+      For citizens who may have difficulty leaving their homes, grocery delivery can provide a way to maintain independence and continue to manage their own household needs.<br><br><br>
+      Online grocery delivery allows individuals to access a wider range of products than may be available in their local store, providing greater choice and variety.<br><br><br>
+      Boosts local economy: By partnering with local grocery stores and farmers, grocery delivery systems can support the local economy and help to sustain small businesses.<br><br><br>
+      Provides instant emergency services including  Medical arrangements, house repairement issues by connecting  with a network of professional house maintanence workers.
+    </div>
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+  
+  <script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+</div>
+<br><br><br><br>
+
+
+
+<div class="footer">
+<div class="links">
+  <h4>
+    <p style="color:white; font-family:cambria" >SITE MAP</p><BR>
+    <a style="color:white; font-family:cambria"  href="terms_and_conditions.html">Terms & Conditions</a><br>
+    <br>
+   
+    <a style="color:white; font-family:cambria" href="services.html">Services</a><br>
+       <br>
+    <a style="color:white; font-family:cambria"  href="register.html">Register</a><br>
+    <br>
+   <a style="color:white; font-family:cambria"  href="about_us.html">About Us</a><br>
+   <br>
+   <a style="color:white; font-family:cambria"  href="community_login.html">Login</a><br>
+   <br>
+    <a style="color:white; font-family:cambria"  href="../index.html">Home</a>
+  </h4>
+</div>
+
+<div class="links">
+  <h4 style="color:white;">
+     <img src="../images/call.jpg" width="50" height="45" style="font-family:cambria"> +91 9626824740
+<br><br><br>
+<img src="../images/mail.jpg" width="50" height="45" style="font-family:cambria"> radiantservices@gmail.com
+<br>
+<br>
+
+  </h4>
+
+
+
+
+    <h4>
+        <a href="https://www.instagram.com/spero_hope7/"><img src="../images/instagram.png" width="50" height="50"></a>
+  
+  
+       
+       
+    </h4>
+  </div>
+
+
+<div class="links">
+  <h2 style="text-align:left">
+    <p style="color: white;">Any Queries?</p>
+  </h2>
+  <h5>
+    <p style="color:white;">Drop your messages here: </p>
+          <img src="../images/arrow.jpg" width="30" height="45">
+  </h5>
+  <form>
+        <input style="width: 10cm; height: 4cm; border-width: 0.1cm;border-color: black;bottom: 90% ;" type="text" placeholder="Type your message here">
+   <br>
+   <br>
+    <button type="submit" style="background-color:#f3f2ed; font-family:cambria;  padding: 10px 10px; width: 4cm; height:2cm; font-size: 0.5cm;justify-content: center;border-radius: 0.4cm;border-color:black;border-width: 0.1cm;color:black;font-family:'stencil' ;" >Submit</button>  
+</form>
+</div>
+</div>
+
+
+<br>
+<br>
+<div style="background-color:#333;text-align: center;">
+ 
+  <h3>
+    <p style="color: white;">Copyright © 2022 - 2023. Radiant Services- Swetha V, <br>
+      II B.Tech CSE (CYS)<br>
+      Part of 20CYS202 - User Interface Design<br>
+      Amrita Vishwa Vidyapeetham, <br>
+      Coimbatore</p>
+  </h3>
+</div>
+
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+ /* Add a black background color to the top navigation */
+.topnav {
+  background-color:#f2f2f2;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 30px 30px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color:dimgray;
+  color:aliceblue;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: dimgray;
+  color:beige;
+}
+  h1{
+   text-align: center;
+}
+.imageContainer {
+  
+   display:flex;
+   position: relative;
+   text-align: center;
+
+   
+}
+.caption{
+   font-size: 50px;
+   font-weight: bolder;
+   font-family:'rockwellextrabold';
+}
+.center {
+   position: absolute;
+   top: 80%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color:darkgrey;
+   font-style: oblique;
+   font-optical-sizing:inherit;
+   font-display:initial;
+   flex-wrap: wrap;   
+   font-family:'castellar' ;
+   text-decoration:underline;
+   text-shadow: 10cm;
+   font-weight: bolder;
+}
+a:link{
+    
+    font-family: 'forte';
+}
+
+.footer{
+    display:flex;
+    border:solid;
+    justify-content:space-evenly;
+    background-color:#333;
+    padding: -100px;
+font-size: 20px;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 25px;
+  padding: 10px 14px;
+  position: absolute;
+  bottom: 300px;
+  width: 100%;
+  font-weight: bolder;
+  font-family: 'BahnschriftSemiBold';
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 10px 14px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+  </style>
+  
+
+
+  </body>
+  </html>
+  
+
