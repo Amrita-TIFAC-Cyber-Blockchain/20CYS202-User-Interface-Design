@@ -11,7 +11,8 @@
 
 ### Deliverable 
 - [User Analysis Document](UID-DBMS-27_UAD.pdf)
-- [ER Diagram](UID-DBMS-27_ER_Diagram.pdf)
+- [ER Diagram](UID-DBMS-27_ER_Diagram.png)
 - [User Interface](UI/)
 
-
+### Credentials
+- No **Login** 
