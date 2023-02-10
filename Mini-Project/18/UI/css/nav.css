@@ -1,0 +1,24 @@
+.bar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+}
+
+.nav-item a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+background-color: rgb(98, 98, 99);
+}
