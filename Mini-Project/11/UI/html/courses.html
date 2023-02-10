@@ -1,0 +1,433 @@
+<!--
+Authors: N VIHAL ROY
+Created Date:  01 Dec 2022
+Updated Date: 15 Jan 2023
+Base Template:  No
+Description: Courses page of Metaverse-->
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>Courses</title>
+	<link rel="icon" href="https://tse4.mm.bing.net/th?id=OIP.Mvo-gCwogXNre1qJwxLdHQHaFG&pid=Api&P=0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+background-image:url('https://images.wallpapersden.com/image/download/metaverse-hd_bWhsamiUmZqaraWkpJRmaWllrW5lZQ.jpg');
+}
+a{
+    text-decoration: none;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+
+    background-size: cover;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 100px;
+}
+.logo{
+    max-height: 60px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: #e9e9e9;
+    position: relative;
+    padding: 5px 0;
+}
+nav ul li a:hover{
+    color: #b098b6;
+}
+nav ul li a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #838996;
+    transition: .3s;
+    bottom: 0;
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+.btn{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 16px 40px;
+    border-radius: 500px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all .4s ease-in-out;
+    background-size: 152% 100%;
+    background: #9f36ad;
+    border: 2px solid #94254f;
+}
+.btn:hover{
+    background: transparent;
+    border-color: #2B7A78;
+    color: #2B7A78;
+}
+.content{
+    position: absolute;
+    top: 35%;
+    left: 8%;
+}
+.content .title{
+    color: #1f1f25;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: inline-block;
+    margin-bottom: 20px;
+    background: linear-gradient(120deg, #1c99fe 20.69%, #7644ff 50.19%,#fd4766 79.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.content h1{
+    color: #1f1f25;
+    font-size: 75px;
+    font-weight: 900;
+    line-height: 90px;
+    text-transform: inherit;
+    width: 70%;
+}
+.content h1 span{
+    color: #b3b3b3;
+}
+.content p{
+    width: 55%;
+    color: #17252A;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+</style>
+<style>
+    *  {
+         margin:0;
+         padding:0;
+         overflow-x: hidden;
+     }
+
+
+     :root {
+         --navbar-height: 59px;
+     }
+     .logo {
+         width: 20%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .logo img {
+         width: 33%;
+         border: 2px solid white;
+         border-radius: 50px;
+     }
+
+     .navbar {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         position: sticky;
+         top: 0;
+         cursor: pointer;
+     }
+
+     .nav-list {
+         width: 70%;
+         display: flex; 
+     }
+
+     .nav-list li {
+
+         list-style: none;
+         padding: 2px 6px;
+     }
+
+     .nav-list li a {
+
+         text-decoration: none;
+         color: white;
+     }
+
+     .nav-list li a:hover {
+         color: grey;
+     }
+
+     .rightNav {
+         width: 50;
+         text-align: right;
+     }
+
+     #search {
+         padding: 5px;
+         font-size: 17px;
+         border: 2px solid grey;
+         border-radius: 9px;
+     }
+
+     .background {
+         background: grey;
+         background-blend-mode: darken;
+         background-size: cover;
+     }
+
+     .firstsection {
+         height: 100vh;
+     }
+
+     .box-main {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         color: white;
+         max-width: 50%;
+         margin: auto;
+         height: 80%;
+     }
+
+     .firstHalf {
+         width: 75%;
+         display: flex;
+         flex-direction: column; 
+         justify-content: center
+     }
+
+     .firstHalf img {
+         display: flex;
+         border-radius: 9050px;
+     }
+
+     .text-big {
+         font-family: 'Piazzolla', serif;
+         font-weight: bold;
+         font-size: 41px;
+         text-align: center;
+     }
+
+     .text-small {
+         font-family: 'Sansita Swashed', cursive;
+         font-size: 18px;
+         text-align: center;
+     }
+
+     #service {
+         margin: 34px;
+         display: flex;
+     }
+
+     #service .box {
+         padding: 100px;
+         margin: 3px 6px;
+         border-radius: 28px;
+     }
+
+     #service .box img {
+         margin-top: 10px;
+         height: 150px;
+         margin: auto;
+         display: block;
+         border-radius: 200px;
+     }
+
+     #service .box p {
+
+         font-family: sans-serif;
+         text-align: center;
+     }
+
+     #services {
+         margin: 34px;
+         display: flex;
+     }
+
+     #services .box {
+
+         padding: 100px;
+         margin: 3px 6px;
+         border-radius: 28px;
+     }
+
+     #services .box img {
+         margin-top: 10px;
+         height: 150px;
+         margin: auto;
+         display: block;
+         border-radius: 100px;
+     }
+
+     #services .box p {
+
+         font-family: sans-serif;
+         text-align: center;
+     }
+
+     .btn {
+         padding: 8px 20px;
+         margin: 7px 0;
+         border: 2px solid white;
+         border-radius: 8px;
+         background: none;
+         color: white;
+         cursor: pointer;
+     }
+
+     .btn-sm {
+         padding: 6px 10px;
+         vertical-align: middle;
+     }
+
+     .center {
+         text-align: center;
+     }
+
+     .text-footer {
+         text-align: center;
+         padding: 10px 0;
+         font-family: 'Ubuntu', sans-serif;
+         display: flex;
+         justify-content: center;
+     }
+     @media screen and (max-width: 650px) {
+.column {
+ width: 100%;
+ display: block;
+}
+}
+.grad{
+  background-image: linear-gradient(rgb(255, 0, 255), rgb(0, 204, 255));
+}
+
+.grad1 {
+  background-image: linear-gradient(rgba(8, 231, 252, 0), rgb(242, 0, 255));
+}
+ </style>
+</head>
+
+<body>
+    <div style="background-color: black;">
+        <nav>
+            <img src="https://ontariotimeattack.ca/wp-content/uploads/2019/04/Team-VDG.png" class="logo">
+            <ul>
+				<li><a href="../index.html">Home</a></li>
+                <li><a href="../html/students.html">Students</a></li>
+				<li><a href="../html/courses.html">Courses</a></li>
+				<li><a href="../html/Schedule.html">Schedules</a></li>
+				<li><a href="../html/Fees.html">Fees</a></li>
+				<li><a href="../html/Duration.html">Duration</a></li>
+				<li><a href="../html/About.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+	<html>
+	<head><title>Courses</title></head>
+	<style>
+	body{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 1.7;
+	color: #c4c3ca;
+	background-color: #000000;
+	overflow-x: hidden;
+}
+.t1{
+	background-color: rgb(216, 219, 222);
+  color: rgb(0, 0, 0);
+  border: 50px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+.t2{
+	background-color: rgb(206, 204, 215);
+  color: rgb(0, 0, 0);
+  border: 50px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+.t3{
+	background-color: rgb(208, 218, 216);
+  color: rgb(0, 0, 0);
+  border: 50px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+.t4{
+	background-color: rgb(183, 181, 187);
+  color: rgb(9, 7, 7);
+  border: 50px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+.t5{
+	background-color: rgb(215, 216, 209);
+  color: rgb(0, 0, 0);
+  border: 50px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+	</style>
+<center><section>
+						
+			<h2 bgcolor=#D3D3D3><b>COURSE OUTLINE FOR WEB PAGE CREATORS</h2>
+				<p>Time to bring out your most artistic side: in the videogame production section you will learn to handle the creative software used by large and small studios at a professional level. From Autodesk 3Ds Max to Substance Painter, Marmoset, Zbrush, and Unreal Engine. Advanced knowledge of these programs will provide you with the keys to face the most creative side of any project.</p>
+		</section></center>
+				<center><div  class="t1"><section>
+							<a ><u><b>01 / Autodesk 3Ds Max Basic</b></u></a>
+					<div>Scene Organization.<br>Modeling with 2D shapes.<br>Modeling with primitives and deformers.<br>Modeling with editable polygons.<br>Inorganic modeling principles, hard surfaces.<br>Creation of UVs, part 1.<br>Materials and basic maps.</div>
+				</div>
+			</section>
+				</center>
+	
+		<center><div class="t2"><section >
+			<a><u><b>02 / Substance Painter</b></u></a>
+					<div>Work pipeline.<br>Baking of maps within Substance.<br>Creating material groups and Workflow with masks.<br>Creating layers.<br>Creating Materials and Smart Materials.<br>Editing Materials.<br>Exporting maps to different applications.<br></div>
+				</div>
+								</div>
+							</section>
+				</center>
+				<center><div class="t3"><section>
+					<a><u><b>03 / Substance Designer</b></u></a>
+					<div>Substance Files (.sbsar).<br>Tileable textures.<br>Materials.<br></div>
+				</div>
+		</section></center>
+		<center><section class="t4">
+			<a><u><b>04 / Marmoset</b></u></a>
+					<div>Importing and creating scenes in Marmoset.<br>Materials, environments and lights in Marmoset.<br>Export for Artstation and creation from a real-time Viewer.<br></div>
+				</div>
+				</section>
+		</center>
+				<center><div class="t5"><section>
+					<a><u><b>05 / Zbrush</b></u></a>
+					<div>Interface and navigation.<br>Scene organisation, Tools and subtools.<br>Primitives.<br>Import and export of models.</br>Masks.<br>Layers.<br>Clip, Trim and Slice tools.<br>Spheres.<br>Shadowbox and Dynamesh.<br>ZRemesher and retopology.<br>Projections.<br>Live Booleans.<br></div>
+		</section></center>
+		<div>
+			<p><center><b>THE ABOVE COURSES DIFFER TO ONE TO ONE PLAN.</b></center></p>
+		</div>
+<center><footer style="color:WHITE; " ><br>
+Copyright © 2022 - 2023.Metaverse for E-Learning<br>
+U K V DINESH REDDY, N VIHAL ROY,M K GANESH,<br>II B.Tech CSE (CYS)<br>
+Part of 20CYS202 - User Interface Design<br>
+Amrita Vishwa Vidyapeetham, Coimbatore<br>
+</footer></center></b>
+</html>

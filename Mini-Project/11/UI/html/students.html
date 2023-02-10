@@ -1,0 +1,561 @@
+<!--
+Authors: M K GANESH
+Created Date:  01 Dec 2022
+Updated Date: 15 Jan 2023
+Base Template:  No
+Description: Students page of Metaverse--><!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>Students</title>
+	<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2436/2436683.png">
+
+<link href="https://fonts.googleapis.com/css?family=Cinzel:400,700,900|Tangerine|Anton|Libre+Baskerville|Lobster" rel="stylesheet"  type="text/css">
+
+    <div style="background-color: black;">
+        <nav>
+            <img src="https://ontariotimeattack.ca/wp-content/uploads/2019/04/Team-VDG.png" class="logo">
+            <ul>
+				<li><a href="../index.html">Home</a></li>
+                <li><a href="../html/students.html">Students</a></li>
+				<li><a href="../html/courses.html">Courses</a></li>
+				<li><a href="../html/Schedule.html">Schedules</a></li>
+				<li><a href="../html/Fees.html">Fees</a></li>
+				<li><a href="../html/Duration.html">Duration</a></li>
+				<li><a href="../html/About.html">About</a></li>
+            </ul>
+        </nav>
+    </div><style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: url('https://www.telefonica.com/en/wp-content/uploads/sites/5/2022/12/investing-in-metaverse.jpg');
+    background-size: cover;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 100px;
+}
+.logo{
+    max-height: 60px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: #e9e9e9;
+    position: relative;
+    padding: 5px 0;
+}
+nav ul li a:hover{
+    color: #b098b6;
+}
+nav ul li a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #838996;
+    transition: .3s;
+    bottom: 0;
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+.btn{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 16px 40px;
+    border-radius: 500px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all .4s ease-in-out;
+    background-size: 152% 100%;
+    background: #9f36ad;
+    border: 2px solid #94254f;
+}
+.btn:hover{
+    background: transparent;
+    border-color: #2B7A78;
+    color: #2B7A78;
+}
+.content{
+    position: absolute;
+    top: 35%;
+    left: 8%;
+}
+.content .title{
+    color: #1f1f25;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: inline-block;
+    margin-bottom: 20px;
+    background: linear-gradient(120deg, #1c99fe 20.69%, #7644ff 50.19%,#fd4766 79.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.content h1{
+    color: #1f1f25;
+    font-size: 75px;
+    font-weight: 900;
+    line-height: 90px;
+    text-transform: inherit;
+    width: 70%;
+}
+.content h1 span{
+    color: #b3b3b3;
+}
+.content p{
+    width: 55%;
+    color: #17252A;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+</style>
+<style>
+    *  {
+         margin:0;
+         padding:0;
+         overflow-x: hidden;
+     }
+
+
+     :root {
+         --navbar-height: 59px;
+     }
+     .logo {
+         width: 20%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .logo img {
+         width: 33%;
+         border: 2px solid white;
+         border-radius: 50px;
+     }
+
+     .navbar {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         position: sticky;
+         top: 0;
+         cursor: pointer;
+     }
+
+     .nav-list {
+         width: 70%;
+         display: flex; 
+     }
+
+     .nav-list li {
+
+         list-style: none;
+         padding: 2px 6px;
+     }
+
+     .nav-list li a {
+
+         text-decoration: none;
+         color: white;
+     }
+
+     .nav-list li a:hover {
+         color: grey;
+     }
+
+     .rightNav {
+         width: 50;
+         text-align: right;
+     }
+
+     #search {
+         padding: 5px;
+         font-size: 17px;
+         border: 2px solid grey;
+         border-radius: 9px;
+     }
+
+     .background {
+         background: grey;
+         background-blend-mode: darken;
+         background-size: cover;
+     }
+
+     .firstsection {
+         height: 100vh;
+     }
+
+     .box-main {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         color: white;
+         max-width: 50%;
+         margin: auto;
+         height: 80%;
+     }
+
+     .firstHalf {
+         width: 75%;
+         display: flex;
+         flex-direction: column; 
+         justify-content: center
+     }
+
+     .firstHalf img {
+         display: flex;
+         border-radius: 9050px;
+     }
+
+     .text-big {
+         font-family: 'Piazzolla', serif;
+         font-weight: bold;
+         font-size: 41px;
+         text-align: center;
+     }
+
+     .text-small {
+         font-family: 'Sansita Swashed', cursive;
+         font-size: 18px;
+         text-align: center;
+     }
+
+     #service {
+         margin: 34px;
+         display: flex;
+     }
+
+     #service .box {
+         padding: 100px;
+         margin: 3px 6px;
+         border-radius: 28px;
+     }
+
+     #service .box img {
+         margin-top: 10px;
+         height: 150px;
+         margin: auto;
+         display: block;
+         border-radius: 200px;
+     }
+
+     #service .box p {
+
+         font-family: sans-serif;
+         text-align: center;
+     }
+
+     #services {
+         margin: 34px;
+         display: flex;
+     }
+
+     #services .box {
+
+         padding: 100px;
+         margin: 3px 6px;
+         border-radius: 28px;
+     }
+
+     #services .box img {
+         margin-top: 10px;
+         height: 150px;
+         margin: auto;
+         display: block;
+         border-radius: 100px;
+     }
+
+     #services .box p {
+
+         font-family: sans-serif;
+         text-align: center;
+     }
+
+     .btn {
+         padding: 8px 20px;
+         margin: 7px 0;
+         border: 2px solid white;
+         border-radius: 8px;
+         background: none;
+         color: white;
+         cursor: pointer;
+     }
+
+     .btn-sm {
+         padding: 6px 10px;
+         vertical-align: middle;
+     }
+
+     .center {
+         text-align: center;
+     }
+
+     .text-footer {
+         text-align: center;
+         padding: 10px 0;
+         font-family: 'Ubuntu', sans-serif;
+         display: flex;
+         justify-content: center;
+     }
+     @media screen and (max-width: 650px) {
+.column {
+ width: 100%;
+ display: block;
+}
+}
+.grad{
+  background-image: linear-gradient(rgb(255, 0, 255), rgb(0, 204, 255));
+}
+
+.grad1 {
+  background-image: linear-gradient(rgba(8, 231, 252, 0), rgb(242, 0, 255));
+}
+ </style>
+ </head>
+ <body class="bk">
+  <h1 class="green-text pstyle">
+    <p style ="color: #ddd;" align=center><b>
+        VDG groups E-learning platfrom</b>
+        <br>
+        It is for all you<br>
+          </p>
+  </h1> 
+<div class="topnav" id="myTopnav">
+  <a href="#About">About the College</a>
+  <a href="#Academics">Academics</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+
+</div>
+<br>
+<br>
+<div>
+  <p style="color:white;">
+  <b>STUDENTS bright future is our choise:</b><br>
+  There’s a lot of hype around metaverse from the last few years among businesses and users. The big step attracted people when Facebook changed its name to meta and declared to invest $10 billion in Metaverse which hyped metaverse lovers.
+  </p>
+  <br>
+  <br>
+  <br>
+  <p style="color:white;"> 
+  <b>STUDENTS can get much benifited:</b><br>
+  Well, after understanding briefly Metaverse and its potential, you might be interested to take it a little bit further and like to know how Metaverse can help in the upliftment of the E-learning sector.
+
+After the covid-19 situation, the classroom for students has completely changed and placed a negative impact on their learning side. From lack of one-on-one conversation to learning, it has affected tremendously in bringing down the academic performance of students.
+  </p>
+  <br>
+  <br>
+  <br>
+  <br>
+  </div>
+<div class="target">
+<div id="About">
+  <p style ="color: #ddd;"class="bl-text"><b>
+       We create a new world by using the METAVERSE.The metaverse refers to an online environment where Augmented Reality (AR) and Virtual Reality can coexist. It provides a fresh digital world to collaborate, solve problems, and practice in, with an interactive engagement method. The metaverse allows people to learn faster, retain information better, and manage their own learning experience. This environment simulates the physical world while incorporating digital tools and allowing learners to interact as avatars. Metaverse activities can replace real-world experiences, and with the development of the metaverse learners may have increasingly authentic experiences of being present in other realms.
+
+    <p></b>
+	<br>
+	<br>
+	<br>
+	<BR>
+</div>
+  
+ 
+    <div id="Academics">
+     
+           <ul class="ls-text">
+        <li style ="color: #ddd;"><b> Collaborative Virtual Expeditions</b></li><br>
+            
+          <li style ="color: #ddd;" style="margin-left:60px"  >
+            In Eduverse Expeditions, your students can experience amazing adventures together, just like they would on a real field trip! Students can work together in a virtual space as avatars and collaborate together on tasks as if they were actually there!
+        </li><br><br><br><br><br>
+        
+        <li style ="color: #ddd;"> <b>Supporting Information & Teacher Guides</b></li><br>
+            
+          <li style ="color: #ddd;" style="margin-left:60px"  >
+            Eduverse Expeditions combines VR & AR content with more traditional teaching resources, including student worksheets, quizzes and reference material. Mix cutting edge VR & AR content with supporting classroom resources for a truly blended learning experience.
+        </li><br><br><br><br><br>
+
+        <li style ="color: #ddd;"><b> Any Device, Anytime, Anywhere</b></li><br>
+            
+          <li  style ="color: #ddd;" style="margin-left:60px"  >
+            No apps to install, no specific devices needed, just click and go! Eduverse Expeditions really couldn’t be easier to use, inside or outside of the classroom. Students can use any device such as laptops, tablets, VR headsets and whiteboards!
+        </li><br><br><br><br><br>
+
+        <li style ="color: #ddd;"><b>Engaging VR & AR Content</b></li><br>
+             <li style ="color: #ddd;" style="margin-left:100px">
+                With Eduverse Expeditions, you’ll have access to hundreds of VR & AR resources, from 360 degree photos and videos, to detailed 3D models and special explorable scenes. Your students can engage with this immersive and exciting content in amazing new ways!
+             </li><br><br><br><br><br>
+             
+              </ul>
+      </p>
+          </div>
+
+  
+      </div>
+</body>
+<style>
+  .bk{  background-image: url('https://4kwallpapers.com/images/walls/thumbs_2t/9729.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+ .img-responsive{
+    
+  }
+.green-text{
+    font-family: Cinzel;
+    color: rgb(0, 0, 0);
+      }
+  .red-text {
+    color: red;
+    font-family:Anton;
+    text-align:justify;
+  }
+.pstyle
+{
+  font-size:28px;
+  }
+
+h2 {
+    font-family: Lobster, Monospace;
+  }
+
+.bl-text{
+  font-family:LibreBaskerville;
+  color:black;
+  font-size:20px;
+  text-align:justify;
+}
+.bul-text{
+  font-family:Tangerine;
+  color:rgb(254, 251, 251);
+  font-size=30px;
+  text-align:justify;
+}
+.ls-text{
+  list-style-image: url("http://bit.ly/2ApzHuw");
+  font-size:20px;
+  font-family="Lobster"
+  text-align="justify" 
+  }
+.d-text{
+  font-family:Lobster;
+  font-size:20px;
+  text-align:justify;
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav .icon {
+    display: none;
+}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+img:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.target{
+   font-family: Cinzel;
+  font-size:14px;
+    color: black;
+  text-align=justify;
+}
+.target >div{
+  display:none;
+}
+.target >div:target{
+display:block;  
+  }
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+</style>
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+<center><button><a href="../index.html">Go to Home</a></button></center>
+<footer style="color:white;"><center><b>
+<br>Copyright © 2022 - 2023.Metaverse for E-Learning<br>
+U K V DINESH REDDY, N VIHAL ROY,M K GANESH,<br>II B.Tech CSE (CYS)<br>
+Part of 20CYS202 - User Interface Design<br>
+Amrita Vishwa Vidyapeetham, Coimbatore<br></center></b>
+</footer>
+</html>

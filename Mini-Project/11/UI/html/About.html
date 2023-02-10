@@ -1,0 +1,633 @@
+<!--
+Authors:M K GANESH
+Created Date:  01 Dec 2022
+Updated Date: 15 Jan 2023
+Base Template:  No
+Description: About Us page of Metaverse-->
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>About</title>
+	<link rel="icon" href="https://tse4.explicit.bing.net/th?id=OIP.NsPdGGgydZ1SS-OfxGb1jQHaHW&pid=Api&P=0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+
+    background-size: cover;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 100px;
+}
+.logo{
+    max-height: 60px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: #e9e9e9;
+    position: relative;
+    padding: 5px 0;
+}
+nav ul li a:hover{
+    color: #b098b6;
+}
+nav ul li a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #838996;
+    transition: .3s;
+    bottom: 0;
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+.btn{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 16px 40px;
+    border-radius: 500px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all .4s ease-in-out;
+    background-size: 152% 100%;
+    background: #9f36ad;
+    border: 2px solid #94254f;
+}
+.btn:hover{
+    background: transparent;
+    border-color: #2B7A78;
+    color: #2B7A78;
+}
+.content{
+    position: absolute;
+    top: 35%;
+    left: 8%;
+}
+.content .title{
+    color: #1f1f25;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: inline-block;
+    margin-bottom: 20px;
+    background: linear-gradient(120deg, #1c99fe 20.69%, #7644ff 50.19%,#fd4766 79.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.content h1{
+    color: #1f1f25;
+    font-size: 75px;
+    font-weight: 900;
+    line-height: 90px;
+    text-transform: inherit;
+    width: 70%;
+}
+.content h1 span{
+    color: #b3b3b3;
+}
+.content p{
+    width: 55%;
+    color: #17252A;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+</style>
+<style>
+    *  {
+         margin:0;
+         padding:0;
+         overflow-x: hidden;
+     }
+
+
+     :root {
+         --navbar-height: 59px;
+     }
+     .logo {
+         width: 20%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .logo img {
+         width: 33%;
+         border: 2px solid white;
+         border-radius: 50px;
+     }
+
+     .navbar {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         position: sticky;
+         top: 0;
+         cursor: pointer;
+     }
+
+     .nav-list {
+         width: 70%;
+         display: flex; 
+     }
+
+     .nav-list li {
+
+         list-style: none;
+         padding: 2px 6px;
+     }
+
+     .nav-list li a {
+
+         text-decoration: none;
+         color: white;
+     }
+
+     .nav-list li a:hover {
+         color: grey;
+     }
+
+     .rightNav {
+         width: 50;
+         text-align: right;
+     }
+
+     #search {
+         padding: 5px;
+         font-size: 17px;
+         border: 2px solid grey;
+         border-radius: 9px;
+     }
+
+     .background {
+         background: grey;
+         background-blend-mode: darken;
+         background-size: cover;
+     }
+
+     .firstsection {
+         height: 100vh;
+     }
+
+     .box-main {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         color: white;
+         max-width: 50%;
+         margin: auto;
+         height: 80%;
+     }
+
+     .firstHalf {
+         width: 75%;
+         display: flex;
+         flex-direction: column; 
+         justify-content: center
+     }
+
+     .firstHalf img {
+         display: flex;
+         border-radius: 9050px;
+     }
+
+     .text-big {
+         font-family: 'Piazzolla', serif;
+         font-weight: bold;
+         font-size: 41px;
+         text-align: center;
+     }
+
+     .text-small {
+         font-family: 'Sansita Swashed', cursive;
+         font-size: 18px;
+         text-align: center;
+     }
+
+     #service {
+         margin: 34px;
+         display: flex;
+     }
+
+     #service .box {
+         padding: 100px;
+         margin: 3px 6px;
+         border-radius: 28px;
+     }
+
+     #service .box img {
+         margin-top: 10px;
+         height: 150px;
+         margin: auto;
+         display: block;
+         border-radius: 200px;
+     }
+
+     #service .box p {
+
+         font-family: sans-serif;
+         text-align: center;
+     }
+
+     #services {
+         margin: 34px;
+         display: flex;
+     }
+
+     #services .box {
+
+         padding: 100px;
+         margin: 3px 6px;
+         border-radius: 28px;
+     }
+
+     #services .box img {
+         margin-top: 10px;
+         height: 150px;
+         margin: auto;
+         display: block;
+         border-radius: 100px;
+     }
+
+     #services .box p {
+
+         font-family: sans-serif;
+         text-align: center;
+     }
+
+     .btn {
+         padding: 8px 20px;
+         margin: 7px 0;
+         border: 2px solid white;
+         border-radius: 8px;
+         background: none;
+         color: white;
+         cursor: pointer;
+     }
+
+     .btn-sm {
+         padding: 6px 10px;
+         vertical-align: middle;
+     }
+
+     .center {
+         text-align: center;
+     }
+
+     .text-footer {
+         text-align: center;
+         padding: 10px 0;
+         font-family: 'Ubuntu', sans-serif;
+         display: flex;
+         justify-content: center;
+     }
+     @media screen and (max-width: 650px) {
+.column {
+ width: 100%;
+ display: block;
+}
+}
+.grad{
+  background-image: linear-gradient(rgb(255, 0, 255), rgb(0, 204, 255));
+}
+
+.grad1 {
+  background-image: linear-gradient(rgba(8, 231, 252, 0), rgb(242, 0, 255));
+}
+ </style>
+</head>
+
+<body>
+    <div style="background-color: black;">
+        <nav>
+            <img src="https://ontariotimeattack.ca/wp-content/uploads/2019/04/Team-VDG.png" class="logo">
+            <ul>
+				<li><a href="../index.html">Home</a></li>
+                <li><a href="../html/students.html">Students</a></li>
+				<li><a href="../html/courses.html">Courses</a></li>
+				<li><a href="../html/Schedule.html">Schedules</a></li>
+				<li><a href="../html/Fees.html">Fees</a></li>
+				<li><a href="../html/Duration.html">Duration</a></li>
+				<li><a href="../html/About.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+    <style>
+       *  {
+            margin:0;
+            padding:0;
+            overflow-x: hidden;
+        }
+  
+        html {
+            scroll-behaviour: smooth;
+        }
+  
+        :root {
+            --navbar-height: 59px;
+        }
+        .logo {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+  
+        .logo img {
+            width: 33%;
+            border: 2px solid white;
+            border-radius: 50px;
+        }
+  
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            cursor: pointer;
+        }
+  
+        .nav-list {
+            width: 70%;
+            display: flex; 
+        }
+  
+        .nav-list li {
+  
+            list-style: none;
+            padding: 2px 6px;
+        }
+  
+        .nav-list li a {
+  
+            text-decoration: none;
+            color: white;
+        }
+  
+        .nav-list li a:hover {
+            color: grey;
+        }
+  
+        .rightNav {
+            width: 50;
+            text-align: right;
+        }
+  
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+        }
+  
+        .background {
+            background: grey;
+            background-blend-mode: darken;
+            background-size: cover;
+        }
+  
+        .firstsection {
+            height: 100vh;
+        }
+  
+        .box-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            max-width: 50%;
+            margin: auto;
+            height: 80%;
+        }
+  
+        .firstHalf {
+            width: 100%;
+            display: flex;
+            flex-direction: column; 
+            justify-content: center
+        }
+  
+        .firstHalf img {
+            display: flex;
+            border-radius: 9050px;
+        }
+  
+        .text-big {
+            font-family: 'Piazzolla', serif;
+            font-weight: bold;
+            font-size: 41px;
+            text-align: center;
+        }
+  
+        .text-small {
+            font-family: 'Sansita Swashed', cursive;
+            font-size: 18px;
+            text-align: center;
+        }
+  
+        #service {
+            margin: 34px;
+            display: flex;
+        }
+  
+        #service .box {
+            padding: 100px;
+            margin: 3px 6px;
+            border-radius: 28px;
+        }
+  
+        #service .box img {
+            margin-top: 10px;
+            height: 150px;
+            margin: auto;
+            display: block;
+            border-radius: 200px;
+        }
+  
+        #service .box p {
+  
+            font-family: sans-serif;
+            text-align: center;
+        }
+  
+        #services {
+            margin: 34px;
+            display: flex;
+        }
+  
+        #services .box {
+  
+            padding: 100px;
+            margin: 3px 6px;
+            border-radius: 35px;
+        }
+  
+        #services .box img {
+            margin-top: 10px;
+            height: 150px;
+            margin: auto;
+            display: block;
+            border-radius: 100px;
+        }
+  
+        #services .box p {
+  
+            font-family: sans-serif;
+            text-align: center;
+        }
+  
+        .btn {
+            padding: 8px 20px;
+            margin: 7px 0;
+            border: 2px solid white;
+            border-radius: 8px;
+            background: none;
+            color: white;
+            cursor: pointer;
+        }
+  
+        .btn-sm {
+            padding: 6px 10px;
+            vertical-align: middle;
+        }
+  
+        .center {
+            text-align: center;
+        }
+  
+        .text-footer {
+            text-align: center;
+            padding: 10px 0;
+            font-family: 'Ubuntu', sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+        @media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+    </style>
+  
+
+<body>
+
+    <section class="background firstsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <p class="text-big">About US</p><br>
+                  
+                <p class="text-small">
+	            <P><b><center> WHAT IS METAVERSE..</b></center><br></P>
+                    The metaverse is a vision of how the next generation of the internet will operate.
+
+A metaverse will be an improved digital environment where it is possible to move seamlessly between work, play, shopping, socializing and creativity in one digital landscape.
+
+What form that landscape will take is a subject of debate. </p>
+                <br>
+                <p class="center"><a href="#Order" 
+                   style="text-decoration:none;color:white;">
+                        But where as in our terms the METAVERSE is used as elearning platform.And we provied these topics in our <a href="../html/courses.html" style = "color:black"><b>courses.</b></a><br><br>
+                        <section>
+    
+
+                            
+                            <h3><center>360-degree Photos and Videos</center></h3>
+                            
+                            <p >Eduverse Expeditions includes hundreds of photos and videos where you and your students can travel to different cities, continents and countries, or even experience walking with polar bears, swimming with sharks and travel back in time to see what life was like in a World War One trench.</p>
+                            
+                            </section>
+                            <section>
+    
+
+                                
+                                <h3><center>3D Models</center></h3>
+                                
+                                <p>Eduverse Expeditions provides access to a range of 3D models where students can get up close to and examine abstract and complex concepts, such as a human cell or an entire planet.</p>
+                                
+                                </section></a>
+                </p>
+            </div>
+        </div>
+    </section>
+<section class="service">
+        <h1 class="h-primary center" style="margin-top:30px;text-align:center;color:white">
+            <b>Our Team</b>
+        </h1>
+    <div id="services">
+            <div class="box">
+                <img src="../Mini-Project/img/vihal.jpeg"
+                    alt="picture goes here">
+              
+                <p class="center">
+                    <a href="https://www.instagram.com/_vihal_roy_01/" style="text-decoration:none;color:white;
+        font-weight:bold;font-family: 'Langar', cursive;">
+                        N.VIHAL ROY
+                    </a>
+                </p>
+                <p style="font-family: sans-serif;color:white">CEO and the Founder</p>
+            </div>
+            <div class="box">
+                <img src="../Mini-Project/img/Dinesh.jpeg"
+                    alt="picture goes here">
+                  
+                <p class="center">
+                    <a href="https://www.instagram.com/dineshreddy.udumula/" style="text-decoration:none;color:white;
+        font-weight:bold;font-family: 'Langar', cursive;">
+                        U.K.V.DINESH REDDY
+                    </a>
+                </p>
+                  
+                <p style="font-family: sans-serif;color:white ">CEO and the Founder</p>
+                <p style="font-family: sans-serif "></p>
+            </div>
+            <div class="box">
+                <img src="../Mini-Project/img/Ganesh.jpeg"
+                    alt="picture goes here">
+                <br>
+                <p class="center">
+                    <a href="https://www.instagram.com/ganesh_.0904/" style="text-decoration:none;color:white;
+           font-weight:bold;font-family: 'Langar', cursive;">
+                        M.K.GANESH 
+                    </a>
+                </p>
+                <p style="font-family: sans-serif;color:white ">CEO and the Founder</p>
+  
+            </div>
+        </div>
+      
+    </section>
+<center> 
+<footer style="color:black;"><b>
+Copyright © 2022 - 2023.Metaverse for E-Learning<br>
+U K V DINESH REDDY, N VIHAL ROY,M K GANESH,<br>II B.Tech CSE (CYS)<br>
+Part of 20CYS202 - User Interface Design<br>
+Amrita Vishwa Vidyapeetham, Coimbatore<br>
+</footer></center></b>
+</body>
+</html>

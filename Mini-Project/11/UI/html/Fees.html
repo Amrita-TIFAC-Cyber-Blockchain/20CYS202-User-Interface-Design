@@ -1,0 +1,456 @@
+<!--
+Authors: N VIHAL ROY
+Created Date:  01 Dec 2022
+Updated Date: 15 Jan 2023
+Base Template:  No
+Description: Fees page of Metaverse--><!DOCTYPE html>
+<html>
+<head><title>Fees</title>
+<link rel="icon" href="https://tse1.mm.bing.net/th?id=OIP.7tiZCtNfu8TyuwkBIb8tywHaHa&pid=Api&rs=1&c=1&qlt=95&w=116&h=116">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 100px;
+}
+.logo{
+    max-height: 60px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: #e9e9e9;
+    position: relative;
+    padding: 5px 0;
+}
+nav ul li a:hover{
+    color: #b098b6;
+}
+nav ul li a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #838996;
+    transition: .3s;
+    bottom: 0;
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+.btn{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 16px 40px;
+    border-radius: 500px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all .4s ease-in-out;
+    background-size: 152% 100%;
+    background: #9f36ad;
+    border: 2px solid #94254f;
+}
+.btn:hover{
+    background: transparent;
+    border-color: #2B7A78;
+    color: #2B7A78;
+}
+.content{
+    position: absolute;
+    top: 35%;
+    left: 8%;
+}
+.content .title{
+    color: #1f1f25;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: inline-block;
+    margin-bottom: 20px;
+    background: linear-gradient(120deg, #1c99fe 20.69%, #7644ff 50.19%,#fd4766 79.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.content h1{
+    color: #1f1f25;
+    font-size: 75px;
+    font-weight: 900;
+    line-height: 90px;
+    text-transform: inherit;
+    width: 70%;
+}
+.content h1 span{
+    color: #b3b3b3;
+}
+.content p{
+    width: 55%;
+    color: #17252A;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+</style>
+<style>
+    *  {
+         margin:0;
+         padding:0;
+         overflow-x: hidden;
+     }
+
+
+     :root {
+         --navbar-height: 59px;
+     }
+     .logo {
+         width: 20%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .logo img {
+         width: 33%;
+         border: 2px solid white;
+         border-radius: 50px;
+     }
+
+     .navbar {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         position: sticky;
+         top: 0;
+         cursor: pointer;
+     }
+
+     .nav-list {
+         width: 70%;
+         display: flex; 
+     }
+
+     .nav-list li {
+
+         list-style: none;
+         padding: 2px 6px;
+     }
+
+     .nav-list li a {
+
+         text-decoration: none;
+         color: white;
+     }
+
+     .nav-list li a:hover {
+         color: grey;
+     }
+
+     .rightNav {
+         width: 50;
+         text-align: right;
+     }
+
+     #search {
+         padding: 5px;
+         font-size: 17px;
+         border: 2px solid grey;
+         border-radius: 9px;
+     }
+
+     .background {
+         background: grey;
+         background-blend-mode: darken;
+         background-size: cover;
+     }
+
+     .firstsection {
+         height: 100vh;
+     }
+
+     .box-main {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         color: white;
+         max-width: 50%;
+         margin: auto;
+         height: 80%;
+     }
+
+     .firstHalf {
+         width: 75%;
+         display: flex;
+         flex-direction: column; 
+         justify-content: center
+     }
+
+     .firstHalf img {
+         display: flex;
+         border-radius: 9050px;
+     }
+
+     .text-big {
+         font-family: 'Piazzolla', serif;
+         font-weight: bold;
+         font-size: 41px;
+         text-align: center;
+     }
+
+     .text-small {
+         font-family: 'Sansita Swashed', cursive;
+         font-size: 18px;
+         text-align: center;
+     }
+
+     #service {
+         margin: 34px;
+         display: flex;
+     }
+
+     #service .box {
+         padding: 100px;
+         margin: 3px 6px;
+         border-radius: 28px;
+     }
+
+     #service .box img {
+         margin-top: 10px;
+         height: 150px;
+         margin: auto;
+         display: block;
+         border-radius: 200px;
+     }
+
+     #service .box p {
+
+         font-family: sans-serif;
+         text-align: center;
+     }
+
+     #services {
+         margin: 34px;
+         display: flex;
+     }
+
+     #services .box {
+
+         padding: 100px;
+         margin: 3px 6px;
+         border-radius: 28px;
+     }
+
+     #services .box img {
+         margin-top: 10px;
+         height: 150px;
+         margin: auto;
+         display: block;
+         border-radius: 100px;
+     }
+
+     #services .box p {
+
+         font-family: sans-serif;
+         text-align: center;
+     }
+
+     .btn {
+         padding: 8px 20px;
+         margin: 7px 0;
+         border: 2px solid white;
+         border-radius: 8px;
+         background: none;
+         color: white;
+         cursor: pointer;
+     }
+
+     .btn-sm {
+         padding: 6px 10px;
+         vertical-align: middle;
+     }
+
+     .center {
+         text-align: center;
+     }
+
+     .text-footer {
+         text-align: center;
+         padding: 10px 0;
+         font-family: 'Ubuntu', sans-serif;
+         display: flex;
+         justify-content: center;
+     }
+     @media screen and (max-width: 650px) {
+.column {
+ width: 100%;
+ display: block;
+}
+}
+.grad{
+  background-image: linear-gradient(rgb(255, 0, 255), rgb(0, 204, 255));
+}
+
+.grad1 {
+  background-image: linear-gradient(rgba(8, 231, 252, 0), rgb(242, 0, 255));
+}
+ </style>
+
+
+<body>
+    <div style="background-color: black;">
+        <nav>
+            <img src="https://ontariotimeattack.ca/wp-content/uploads/2019/04/Team-VDG.png" class="logo">
+            <ul>
+				<li><a href="../index.html">Home</a></li>
+                <li><a href="../html/students.html">Students</a></li>
+				<li><a href="../html/courses.html">Courses</a></li>
+				<li><a href="../html/Schedule.html">Schedules</a></li>
+				<li><a href="../html/Fees.html">Fees</a></li>
+				<li><a href="../html/Duration.html">Duration</a></li>
+				<li><a href="../html/About.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.columns {
+  float: left;
+  width: 25%;
+  padding: 8px;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.button {
+  background-color: #00ffa2;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+</style>
+
+
+<h1 style="text-align:center">Fees Pricing Tables</h1>
+<p style="text-align:center">If you are a student you get 20% discount.</p>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:#92a315">free</li>
+    <li class="grey">$ 00.00 / 10 days(free trail)</li>
+    <li>10 days</li>
+    <li>free trail videos only</li>
+    <li>Can't download</li>
+    <li>If you want continue after 10 days update your plan</li>
+    <li class="grey"><a href="../html/Pay.html" class="button">Pay</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+    <ul class="price">
+      <li class="header" style="background-color:#0d6734">Basic</li>
+      <li class="grey">$ 9.99 / 3 months</li>
+      <li>3 Months plan</li>
+      <li>Applicable for 3 months and few videos</li>
+      <li>Can Download limited videos</li>
+      <li>After 3 months if you want to continue must update the plan</li>
+      <li class="grey"><a href="../html/Pay.html" class="button">Pay</a></li>
+    </ul>
+  </div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:#750606">Pro</li>
+    <li class="grey">$ 24.99 / 6 months</li>
+    <li>6 Months plan</li>
+    <li>Applicable for 6 months and most videos</li>
+    <li>Can Download any videos</li>
+    <li>After 6 months if you want to continue must update the plan</li>
+    <li class="grey"><a href="../html/Pay.html" class="button">Pay</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:#a5a2c2">Premium</li>
+    <li class="grey">$ 49.99 / year</li>
+    <li>One year plan</li>
+    <li>Applicable for 1 year and all videos</li>
+    <li>Can Download any videos</li>
+    <li>After 1 year we get 2 months free after that you must update the plan</li>
+    <li class="grey"><a href="../html/Pay.html" class="button">Pay</a></li>
+  </ul>
+</div>
+<DIV class="COLOUMNS">
+<center><footer style="color:black; margin-right:550PX; position:absolute" >
+<br>Copyright © 2022 - 2023.Metaverse for E-Learning<br>
+U K V DINESH REDDY, N VIHAL ROY,M K GANESH,<br>II B.Tech CSE (CYS)<br>
+Part of 20CYS202 - User Interface Design<br>
+Amrita Vishwa Vidyapeetham, Coimbatore<br>
+</footer></center></DIV>
+
+
+</body>
+
+</html>

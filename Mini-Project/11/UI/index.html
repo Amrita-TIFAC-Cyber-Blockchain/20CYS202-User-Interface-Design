@@ -1,0 +1,474 @@
+<!--
+Authors:  U K V DINESH REDDY,N VIHAL ROY,M K GANESH
+Created Date:  01 Dec 2022
+Updated Date: 15 Jan 2023
+Base Template:  No
+Description: Index page of Metaverse-->
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>Metaverse</title>
+	<link rel="icon" href="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/fdvaj5irat98h2gynodn">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: url('');
+    background-size: cover;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 100px;
+}
+.logo{
+    max-height: 60px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: #e9e9e9;
+    position: relative;
+    padding: 5px 0;
+}
+nav ul li a:hover{
+    color: #b098b6;
+}
+nav ul li a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #838996;
+    transition: .3s;
+    bottom: 0;
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+.btn{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 16px 40px;
+    border-radius: 500px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all .4s ease-in-out;
+    background-size: 152% 100%;
+    background: #9f36ad;
+    border: 2px solid #94254f;
+}
+.btn:hover{
+    background: transparent;
+    border-color: #2B7A78;
+    color: #2B7A78;
+}
+.content{
+    position: absolute;
+    top: 35%;
+    left: 8%;
+}
+.content .title{
+    color: #1f1f25;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: inline-block;
+    margin-bottom: 20px;
+    background: linear-gradient(120deg, #1c99fe 20.69%, #7644ff 50.19%,#fd4766 79.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.content h1{
+    color: #3AAFA9;
+    font-size: 75px;
+    font-weight: 900;
+    line-height: 90px;
+    text-transform: inherit;
+    width: 70%;
+}
+.content h1 span{
+    color: #b3b3b3;
+}
+.content p{
+    width: 55%;
+    color: #17252A;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+</style>
+<style>
+    *  {
+         margin:0;
+         padding:0;
+         overflow-x: hidden;
+     }
+
+
+     :root {
+         --navbar-height: 59px;
+     }
+     .logo {
+         width: 20%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .logo img {
+         width: 33%;
+         border: 2px solid white;
+         border-radius: 50px;
+     }
+
+     .navbar {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         position: sticky;
+         top: 0;
+         cursor: pointer;
+     }
+
+     .nav-list {
+         width: 70%;
+         display: flex; 
+     }
+
+     .nav-list li {
+
+         list-style: none;
+         padding: 2px 6px;
+     }
+
+     .nav-list li a {
+
+         text-decoration: none;
+         color: white;
+     }
+
+     .nav-list li a:hover {
+         color: grey;
+     }
+
+     .rightNav {
+         width: 50;
+         text-align: right;
+     }
+
+     #search {
+         padding: 5px;
+         font-size: 17px;
+         border: 2px solid grey;
+         border-radius: 9px;
+     }
+
+     .background {
+         background: grey;
+         background-blend-mode: darken;
+         background-size: cover;
+     }
+
+     .firstsection {
+         height: 100vh;
+     }
+
+     .box-main {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         color: white;
+         max-width: 50%;
+         margin: auto;
+         height: 80%;
+     }
+
+     .firstHalf {
+         width: 75%;
+         display: flex;
+         flex-direction: column; 
+         justify-content: center
+     }
+
+     .firstHalf img {
+         display: flex;
+         border-radius: 9050px;
+     }
+
+     .text-big {
+         font-family: 'Piazzolla', serif;
+         font-weight: bold;
+         font-size: 41px;
+         text-align: center;
+     }
+
+     .text-small {
+         font-family: 'Sansita Swashed', cursive;
+         font-size: 18px;
+         text-align: center;
+     }
+
+     #service {
+         margin: 34px;
+         display: flex;
+     }
+
+     #service .box {
+         padding: 100px;
+         margin: 3px 6px;
+         border-radius: 28px;
+     }
+
+     #service .box img {
+         margin-top: 10px;
+         height: 150px;
+         margin: auto;
+         display: block;
+         border-radius: 200px;
+     }
+
+     #service .box p {
+
+         font-family: sans-serif;
+         text-align: center;
+     }
+
+     #services {
+         margin: 34px;
+         display: flex;
+     }
+
+     #services .box {
+
+         padding: 100px;
+         margin: 3px 6px;
+         border-radius: 28px;
+     }
+
+     #services .box img {
+         margin-top: 10px;
+         height: 150px;
+         margin: auto;
+         display: block;
+         border-radius: 100px;
+     }
+
+     #services .box p {
+
+         font-family: sans-serif;
+         text-align: center;
+     }
+
+     .btn {
+         padding: 8px 20px;
+         margin: 7px 0;
+         border: 2px solid white;
+         border-radius: 8px;
+         background: none;
+         color: white;
+         cursor: pointer;
+     }
+
+     .btn-sm {
+         padding: 6px 10px;
+         vertical-align: middle;
+     }
+
+     .center {
+         text-align: center;
+     }
+
+     .text-footer {
+         text-align: center;
+         padding: 10px 0;
+         font-family: 'Ubuntu', sans-serif;
+         display: flex;
+         justify-content: center;
+     }
+     @media screen and (max-width: 650px) {
+.column {
+ width: 100%;
+ display: block;
+}
+}
+.grad{
+  background-image:url('https://img.freepik.com/free-photo/3d-abstract-space-background-with-wireframe-landscape_1048-10648.jpg?w=826&t=st=1673888733~exp=1673889333~hmac=864193f684552ae5c6b1c33dc24d668727ecaaabfcdb9951d1f0e5c80b20d4da');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.grad1 {
+  background-image: linear-gradient(rgba(8, 231, 252, 0), rgb(242, 0, 255));
+}
+ </style>
+</head>
+
+<body>
+    <div style="background-color: black;">
+        <nav>
+            <img src="https://ontariotimeattack.ca/wp-content/uploads/2019/04/Team-VDG.png" class="logo">
+            <ul>
+				<li><a href="index.html">Home</a></li>
+                <li><a href="html/students.html">Students</a></li>
+				<li><a href="html/courses.html">Courses</a></li>
+				<li><a href="html/Schedule.html">Schedules</a></li>
+				<li><a href="html/Fees.html">Fees</a></li>
+				<li><a href="html/Duration.html">Duration</a></li>
+				<li><a href="html/About.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="hero">
+        
+
+        <div class="content">
+
+            <span class="title">Metaverse For E-Learning</span>
+            <h1>Welcome To <span>Metaverse E-Learning</span></h1>
+            <p></p>
+			<a href="html/Login.html" target="_blank" class="btn">Register Now</a>
+
+		</div>
+    </div>
+
+
+    <div class="grad">
+<section class="service">
+        <h1 class="h-primary center" style="margin-top:30px;text-align:center;color:white">
+            <b>Our Team</b>
+        </h1>
+    <div id="services">
+            <div class="box">
+                <img src="../Mini-Project/img/vihal.jpeg"
+                    alt="picture goes here">
+              
+                <p class="center">
+                    <a href="https://www.instagram.com/_vihal_roy_01/" style="text-decoration:none;color:white;
+        font-weight:bold;font-family: 'Langar', cursive;">
+                        N.VIHAL ROY
+                    </a>
+                </p>
+                <p style="font-family: sans-serif;color:white">CEO and the Founder</p>
+            </div>
+            <div class="box">
+                <img src="../Mini-Project/img/Dinesh.jpeg"
+                    alt="picture goes here">
+                  
+                <p class="center">
+                    <a href="https://www.instagram.com/dineshreddy.udumula/" style="text-decoration:none;color:white;
+        font-weight:bold;font-family: 'Langar', cursive;">
+                        U.K.V.DINESH REDDY
+                    </a>
+                </p>
+                  
+                <p style="font-family: sans-serif;color:white ">CEO and the Founder</p>
+                <p style="font-family: sans-serif "></p>
+            </div>
+            <div class="box">
+                <img src="../Mini-Project/img/Ganesh.jpeg"
+                    alt="picture goes here">
+                <br>
+                <p class="center">
+                    <a href="https://www.instagram.com/ganesh_.0904/" style="text-decoration:none;color:white;
+           font-weight:bold;font-family: 'Langar', cursive;">
+                        M.K.GANESH 
+                    </a>
+                </p>
+                <p style="font-family: sans-serif;color:white ">CEO and the Founder</p>
+  
+            </div>
+        </div>
+      
+    </section>
+      
+    </div>
+
+    <div class="w3-container" style="padding:128px 16px" id="about">
+        <h3 class="w3-center" style="color: white;"><b>ABOUT THE METAVERSE E-LEARNING</b></h3>
+        <p class="w3-center w3-large" style="color: white;">Key features in joining US!</p>
+        <div class="w3-row-padding w3-center" style="margin-top:64px">
+          <div class="w3-quarter">
+            <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+            <p class="w3-large"><u style="color: white;">Responsive</u></p>
+            <p style="color: white;">You can create many own projects after listening to our coruses videos. And create many new designs without any help.</p>
+          </div>
+          <div class="w3-quarter">
+            <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+            <p class="w3-large"><u style="color: white;">Passion</u></p>
+            <p style="color: white;">If your passion is on web designing then your in a good platform. We can help you in your building up your passion.</p>
+          </div>
+          <div class="w3-quarter">
+            <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+            <p class="w3-large"><u style="color: white;">Design</u></p>
+            <p style="color: white;">We have given many beautiful designs for you that can be lernt by watching our videos. So our platform gives you a wonderful output.</p>
+          </div>
+          <div class="w3-quarter">
+            <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+            <p class="w3-large"><u style="color: white;">Support</u></p>
+            <p style="color: white;">We will support you in many assepts such as giving a wonderful and perfect courses output. And we will guide you everytime and help you in your projects.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="grad1">
+        <div class="w3-row-padding">
+          <div class="w3-col m6">
+            <h3 style="color: white;">Our Skills.</h3>
+            <p style="color: white;">Time to bring out your most artistic side: in the videogame production section you will learn to handle the creative software used by large and small studios at a professional level.</p>
+            <p style="color: white;"> From Autodesk 3Ds Max to Substance Painter, Marmoset, Zbrush, and Unreal Engine. Advanced knowledge of these programs will provide you with the keys to face the most creative side of any project.</p>
+          </div>
+          <br>
+          <div class="w3-col m6">
+            <p class="w3-wide" style="color: white;"><i class="fa fa-camera w3-margin-right"></i>UI classes</p>
+            <div class="w3-grey">
+              <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
+            </div>
+            <p class="w3-wide" style="color: white;"><i class="fa fa-desktop w3-margin-right"></i>Web Design</p>
+            <div class="w3-grey">
+              <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
+            </div>
+            <p class="w3-wide" style="color: white;"><i class="fa fa-photo w3-margin-right"></i>Teaching Metaverse</p>
+            <div class="w3-grey">
+              <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <style>
+            body {
+              background-image: url('https://www.sigeurope.fr/wp-content/uploads/2022/03/marques-dans-le-metaverse.png');
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: 100% 100%;
+            }
+            </style>
+      </div>
+</body>
+<footer style="color:white;"><center><b>
+Copyright © 2022 - 2023.Metaverse for E-Learning<br>
+U K V DINESH REDDY, N VIHAL ROY,M K GANESH,<br>II B.Tech CSE (CYS)<br>
+Part of 20CYS202 - User Interface Design<br>
+Amrita Vishwa Vidyapeetham, Coimbatore<br></center></b>
+</footer>
+</html>

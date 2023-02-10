@@ -1,0 +1,479 @@
+<!--
+Authors:  U K V DINESH REDDY
+Created Date:  01 Dec 2022
+Updated Date: 15 Jan 2023
+Base Template:  No
+Description: Login page of Metaverse-->
+ <!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login To Metaverse</title>
+	<link rel="icon" href="https://tse4.mm.bing.net/th?id=OIP.VNMTfzyMMW2gwWOanuyqwgAAAA&pid=Api&P=0">
+    
+    <!-- ===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="style.css">
+         
+    <!--<title>Login & Registration Form</title>-->
+</head>
+
+<body style=background-image:url('https://images.wallpapersden.com/image/download/metaverse-digital_bWhsammUmZqaraWkpJRmaWVlrW5lZQ.jpg');>
+    
+    <div class="container" >
+        <div class="forms">
+            <div class="form login">
+                <span class="title">Login</span>
+
+                <form action="#" name="inForm" onsubmit="return verify()">
+                    <div class="input-field">
+                        <input name="email" id="email" type="text" placeholder="Enter your email" name="Name" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Enter your password" required name="Name">
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck"  class="text">Remember me</label>
+                        </div>
+                        
+                        <a>Forgot password?</a>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="Submit" value="Login">
+                    </div>
+                
+
+                <div class="login-signup">
+                    <span class="text">Not a member?
+                        <a href="#" class="text signup-link">Signup Now</a>
+                    </span>
+                </div>
+				
+            </div>
+
+			</form>
+
+            <!-- Registration Form -->
+            <div class="form signup">
+                <span class="title">Registration</span>
+
+                <form action="#">
+                    <div class="input-field">
+						<input type="text" name="username" id="username" placeholder="Enter Your Name" minlength="5" maxlength="30" required></td>
+                        <i class="uil uil-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="email" name="email"required id="email" placeholder="Enter Your Email">
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+						<input type="password" name="password" required id="password" placeholder="Create a password">
+                        <i class="uil uil-lock icon"></i>
+                    </div>
+                    <div class="input-field">
+						<input type="password" name="password1" required id="password1" placeholder="Confirm a password">
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="termCon">
+                            <label for="termCon" class="text">I accepted all terms and conditions</label>
+                        </div>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="submit"  value="Signup">
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Already a member?
+                        <a href="#" class="text login-link">Login Now</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div><P><BR><BR><BR><BR><BR></P>
+	<center><button><a href="../index.html" onclick="alert('Are U Sure To Go Back To Home')">Previous Step</a></button></center>
+	<CENTER>
+<footer style="color:WHITE; margin-right:500PX; margin-top:500PX;" >
+<br>Copyright © 2022 - 2023.Metaverse for E-Learning<br>
+U K V DINESH REDDY, N VIHAL ROY,M K GANESH,<br>II B.Tech CSE (CYS)<br>
+Part of 20CYS202 - User Interface Design<br>
+Amrita Vishwa Vidyapeetham, Coimbatore<br>
+</footer></CENTER>
+
+    <!--<script src="script.js"></script>-->
+</body>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c4c3ca ;
+}
+
+.container{
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 0 20px;
+}
+
+.container .forms{
+    display: flex;
+    align-items: center;
+    height: 440px;
+    width: 200%;
+    transition: height 0.2s ease;
+}
+
+
+.container .form{
+    width: 50%;
+    padding: 30px;
+    background-color: #c4c3ca ;
+    transition: margin-left 0.18s ease;
+}
+
+.container.active .login{
+    margin-left: -50%;
+    opacity: 0;
+    transition: margin-left 0.18s ease, opacity 0.15s ease;
+}
+
+.container .signup{
+    opacity: 0;
+    transition: opacity 0.09s ease;
+}
+.container.active .signup{
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+.container.active .forms{
+    height: 600px;
+}
+.container .form .title{
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.form .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: black;
+    border-radius: 25px;
+}
+
+.form .input-field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.input-field input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid){
+    border-bottom-color: black;
+}
+
+.input-field i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 23px;
+    transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid) ~ i{
+    color: black;
+}
+
+.input-field i.icon{
+    left: 0;
+}
+.input-field i.showHidePw{
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.form .checkbox-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.checkbox-text .checkbox-content{
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-content input{
+    margin-right: 10px;
+    accent-color: black;
+}
+
+.form .text{
+    color: #333;
+    font-size: 14px;
+}
+
+.form a.text{
+    color: black;
+    text-decoration: none;
+}
+.form a:hover{
+    text-decoration: underline;
+}
+
+.form .button{
+    margin-top: 35px;
+}
+
+.form .button input{
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    background-color: black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button input:hover{
+    background-color: green ;
+}
+
+.form .login-signup{
+    margin-top: 30px;
+    text-align: center;
+}
+
+</style>
+<script>
+const container = document.querySelector(".container"),
+      pwShowHide = document.querySelectorAll(".showHidePw"),
+      pwFields = document.querySelectorAll(".password"),
+      signUp = document.querySelector(".signup-link"),
+      login = document.querySelector(".login-link");
+
+    //   js code to show/hide password and change icon
+    pwShowHide.forEach(eyeIcon =>{
+        eyeIcon.addEventListener("click", ()=>{
+            pwFields.forEach(pwField =>{
+                if(pwField.type ==="password"){
+                    pwField.type = "text";
+
+                    pwShowHide.forEach(icon =>{
+                        icon.classList.replace("uil-eye-slash", "uil-eye");
+                    })
+                }else{
+                    pwField.type = "password";
+
+                    pwShowHide.forEach(icon =>{
+                        icon.classList.replace("uil-eye", "uil-eye-slash");
+                    })
+                }
+            }) 
+        })
+    })
+
+    // js code to appear signup and login form
+    signUp.addEventListener("click", ( )=>{
+        container.classList.add("active");
+    });
+    login.addEventListener("click", ( )=>{
+        container.classList.remove("active");
+    });
+	var name = document.form1.name.value;
+	console.log("Welcome to Anokha-Fest regestration page. Please fill the application form.");
+  //document.write("Let's go!!");
+  
+  //let is only asscisible within the bolck whereas var is asscessible anywhere.
+  function validateName()
+  {
+  let nameLocal;
+  nameLocal=document.getElementById("username").value;
+  
+  console.log("Username: " + nameLocal);
+  }
+  function validateEmail()
+  {
+  let emailLocal;
+  emailLocal=document.getElementById("email").value;
+  if (emailLocal=="")
+  {
+   console.log("error didn't fill the email field.");
+   return false
+  }
+  else{
+  console.log("email: " + emailLocal);
+  return true
+  }
+  }
+  function validatePassword()
+  {
+  let password;
+  password=document.getElementById("password").value;
+  let password1;
+  password1=document.getElementById("password1").value;
+  if(password=="")
+  {
+  return false
+  }
+  if (password==password1)
+  {
+   return true
+  }
+  else{
+  alert("Your passwords are not the same. Check again.")
+  document.getElementById("password1").value="";
+  return false
+  }
+  }
+  
+  function validate(){
+  if (valsub1() && validateUniversityName() && validateEmail() && validatePassword())
+  {
+  alert("Your form is registered. Try logging in.");
+  return window.open("#");
+  }
+  }
+  function updateName()
+  {
+  let nameLocal1;
+  nameLocal1=document.getElementById("username").value;
+  console.log("updated Username: " + nameLocal1);
+  }
+  function updateUniversityName()
+  {
+  let universityNameLocal1;
+  universityNameLocal1=document.getElementById("universityname").value;
+  console.log("updated University name: " + universityNameLocal1);
+  }
+  function updateEmail()
+  {
+  let emailLocal1;
+  emailLocal1=document.getElementById("email").value;
+  console.log("updated email: " + emailLocal1);
+  }
+  let username = document.getElementById("username");
+  username.addEventListener("input", () => {
+    if (username.validity.tooLong || username.validity.tooShort || username.validity.valueMissing) {
+      username.setCustomValidity("Name must be 5-30 characters.");
+      username.reportValidity();
+    } 
+    else { username.setCustomValidity(""); }
+  });
+  let universityname = document.getElementById("universityname");
+  universityname.addEventListener("input", () => {
+    if (universityname.validity.tooLong || universityname.validity.tooShort || universityname.validity.valueMissing) {
+      universityname.setCustomValidity("University name should be 6-100 characters.");
+      universityname.reportValidity();
+    } else { universityname.setCustomValidity(""); }
+  });
+  let email = document.getElementById("email");
+  email.addEventListener("input", () => {
+    if (email.validity.tooLong || email.validity.tooShort || email.validity.valueMissing) {
+      email.setCustomValidity("Must fill valid university email.");
+      email.reportValidity();
+    } else { email.setCustomValidity(""); }
+  });
+
+function valsub1()
+{
+var x=0;
+var y=0;
+var z=0;
+let username = document.getElementById("username");
+username.addEventListener("input", () => {
+if (username.validity.tooLong || username.validity.tooShort || username.validity.valueMissing) {
+username.setCustomValidity("Name must be 5-30 characters.");
+username.reportValidity();
+} 
+else { username.setCustomValidity(""); }
+});
+let email = document.getElementById("email");
+email.addEventListener("input", () => {
+if (email.validity.tooLong || email.validity.tooShort || email.validity.valueMissing) {
+email.setCustomValidity("Must fill valid university email.");
+email.reportValidity();
+} else { email.setCustomValidity(""); }
+});
+return true}
+  function showPassword() {
+var x = document.getElementById("password");
+if (x.type === "password") {
+x.type = "text";
+document.getElementById("show1").value="hide";
+} else {
+x.type = "password";
+document.getElementById("show1").value="show";
+}
+}
+function showPassword1() {
+var x = document.getElementById("password1");
+if (x.type === "password") {
+x.type = "text";
+document.getElementById("show2").value="hide";
+} else {
+x.type = "password";
+document.getElementById("show2").value="show";
+}
+}
+</script>
+</html>
+
+
