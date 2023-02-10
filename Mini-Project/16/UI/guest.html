@@ -1,0 +1,224 @@
+<html>
+
+<head>
+    <title>
+        Search Page
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/Merit.png">
+</head>
+<style>
+    * {
+        font-family: 'Roboto Mono', monospace;
+        font-weight: bold;
+        padding: 0%;
+        margin: 0px;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    .underline {
+        display: inline-block;
+        position: relative;
+    }
+
+    .underline::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #6358DC;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+
+    .underline:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+        background-color: #6358DC;
+    }
+
+    .header {
+        margin-left: 50px;
+
+    }
+
+    .searchbar {
+        width: 900px;
+        min-height: 100vh;
+        padding: 5%;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -370px;
+        margin-left: 400px;
+    }
+
+    .searchbar1 {
+        width: 800px;
+        max-width: 400px;
+        background: rgba(194, 169, 169, 0.2);
+        display: flex;
+        align-items: center;
+        border-radius: 60px;
+        padding: 0px 10px;
+        margin-left: -470px;
+
+    }
+
+    .searchbar1 input {
+        background: transparent;
+        flex: 1;
+        border: 0;
+        outline: none;
+        padding: 24px 20px;
+        font-size: 20px;
+        color: #595963;
+    }
+
+    ::placeholder {
+        color: #818589;
+    }
+
+    .searchbar1 button img {
+        width: 25px;
+    }
+
+    .searchbar1 button {
+        border: 0;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        background: #babcc7;
+        cursor: pointer;
+    }
+
+    .box {
+
+        width: 1000px;
+        height: 400px;
+        border: 1px;
+        border: solid white;
+        margin: 0px auto;
+        margin-left: 300px;
+    }
+
+    .box1 {
+        width: 200px;
+        height: 250px;
+        float: left;
+        margin-left: px;
+        box-shadow: -15px -15px 15px rgba(96, 90, 90, 0.2),
+            15px 15px 15px rgba(73, 69, 69, 0.2);
+
+    }
+</style>
+
+<body>
+    <div class="header" style="margin-top: 50px;">
+        <img src="images/Frame 10149.png" alt="" style="width:200px;">
+        <ul style="margin-top:-55px;margin-left:990px;font-size:20px;">
+            <a style="text-decoration: none;" href="">
+                <li class="underline" style="color: #6358DC;font-size:17.5px;">HOME&nbsp;</li>
+            </a>
+            <a style="text-decoration: none;" href="html/about.html">
+                <li class="underline" style="color: #6358DC;font-size:17.5px;"> ABOUT&nbsp;</li>
+            </a>
+            <a style="text-decoration: none;" href="html/Premium.html">
+                <li class="underline" style="color: #6358DC;font-size:17.5px;">PRICING&nbsp </li>
+            </a>
+            <a style="text-decoration: none;" href="html/contact_1.html">
+                <li class="underline" style="color: #6358DC;font-size:17.5px;">LOGIN</li>
+            </a>
+
+        </ul>
+
+    </div>
+    <center><img src="images/Group.png" alt="" style="width:100px;margin-top:90px;margin-left: 40px;"></center>
+    <div class="searchbar">
+
+        <h2 style="margin-top:-130px;margin-left:-375px;">CHECK IF SOMEONE STOLE YOUR UNIQUENESS</h5><br><br>
+            <form action="" class="searchbar1">
+                <input type="text" placeholder="Crawl Here" name="b">
+                <button type="submit"><img src="images/icons8-magnifying-glass-64.png"></button>
+
+            </form>
+
+    </div>
+    <div class="box" style=" margin-top: -400px;">
+        <div class="box1" style="border-radius: 25px;margin-left:-20px;">
+
+            <h4 style="margin-left:30px;margin-top:36px;">Getting Started!</h4>
+            <img src="images/arcticons_pcstartshutdown.png" alt="" style="width:70px;margin-left:60px;">
+            <p style="font-size:90%;margin-left:8px;">This is a normal search bar for people that are using the free
+                version of the website</p>
+        </div>
+        <div class="box1" style="border-radius: 25px; margin-left:50px;">
+
+            <h4 style="margin-left:60px;margin-top:36px;">Web Crawl</h4>
+            <img src="images/mdi_search-web.png" alt="" style="width:70px;margin-left:65px;">
+            <p style="font-size:90%;margin-left:8px;">This is a normal search bar for people that are using the free
+                version of the website</p>
+
+        </div>
+        <div class="box1" style="border-radius: 25px; margin-left:50px;">
+
+            <h4 style="margin-left:45px;margin-top:36px">Dark Web Crawl</h4>
+            <img src="images/Vector.png" alt="" style="width:70px;margin-left:65px;">
+            <p style="font-size:90%;margin-left:8px">This is a normal search bar for people that are using the free
+                version of the website</p>
+
+        </div>
+        <div class="box1" style="border-radius: 25px;margin-left:50px;">
+            <h4 style="margin-left:20px;margin-top:36px;margin-top:36px">Social Media Crawl</h4>
+            <img src="images/foundation_social-myspace.png" alt="" style="width:70px;margin-left:60px;">
+
+            <p style="font-size:90%;margin-left:8px;">This is a normal search bar for people that are using the free
+                version of the website</p>
+
+        </div>
+
+    </div>
+    
+</body>
+<footer style="background-color:rgb(0,0,0,0.7);margin-top:14px;height: 400px;color:aliceblue">
+    <div>
+    <img src="images/Frame 10149.png" alt="" style="width:240px;margin-left:650px;padding-top:50px;">
+    
+    <p style="margin-left:50px;font-size: 22px;margin-top:0px;">Contact Us:</p>
+    <img src="images/icons8-composing-mail-24.png" style="margin-top:50px;margin-left:50px;"><br>
+        <img src="images/icons8-phone-24.png" style="margin-top:25px;margin-left:50px;">
+    <p style="margin-left:95px;font-size: 18px;margin-top:-73px;">projectmerit@gmail.com</p>
+    <p style="margin-left:95px;font-size: 18px;margin-top:27px;">044-4325 2342</p>
+    
+    <center style="margin-top:-70px;"> Copyright &copy; 2022 - 2023. <br />
+        Merit - G Manomithran, Kishore M, Vinayak R <br />
+        II B.Tech CSE (CYS) <br />
+        Part of 20CYS202 - User Interface Design <br /> 
+        Amrita Vishwa Vidyapeetham, Coimbatore.</center>
+        </div>
+        <div class="footer" style="margin-left:1100px;margin-top:-190px;">
+            <p style="margin-left:130px;font-size: 22px;margin-top:-150px;">Social Media</p>
+            <br><br>
+            <a href="" style="margin-left:120px;"><img src="images/icons8-github-30.png" alt="github"></a><p style="margin-left:165px;font-size:16px;margin-top:-25px;">Github</p><br><br>
+            <a href="" style="margin-left:120px;"><img src="images/icons8-linkedin-circled-30.png" alt="linkedin"></a><p style="margin-left:165px;font-size:16px;margin-top:-25px;">LinkedIn</p><br><br>
+            <a href="" style="margin-left:120px;"><img src="images/icons8-twitter-30.png" alt="twitter"></a><p style="margin-left:165px;font-size:16px;margin-top:-25px;">Twitter</p><br><br>
+            <a href="" style="margin-left:120px;"><img src="images/icons8-dropbox-30.png" alt="dropbox"></a><p style="margin-left:165px;font-size:16px;margin-top:-25px;">Dropbox</p><br><br>
+            
+    
+    
+        </div>
+</footer>
+
+</html>

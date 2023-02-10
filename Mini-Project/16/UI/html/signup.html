@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/Merit.png">
+    <style>
+      *{
+	  font-family: 'Roboto Mono', monospace;
+            font-weight: bold;
+	  }
+      .back{
+        background-color: #9932cc;
+        background-image: url("../images/abcd.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vp;  
+        background-attachment: fixed;
+      }
+      .box{
+        width: 400px;
+        height: 620px;
+        background: white;
+        background-color: white;
+        color: black;
+		margin-top: 50px;
+
+		float: left;
+		box-shadow: -15px -15px 15px rgba(96, 90, 90, 0.2),
+               15px 15px 15px rgba(73, 69, 69, 0.2);
+        padding: 30px;
+        text-align: center;
+        color: black;
+        align-items: center;
+        justify-content: center;
+        
+        margin-left: 530px;
+        border-radius: 10px;
+      }
+	  
+	  .input-field {
+	border: 0;
+	z-index: 1;
+	background-color: transparent;
+	border-bottom: 2px solid #eee; 
+	font: inherit;
+	font-size: 1.125rem;
+	padding: .25rem 0;
+	width: 300px;
+	
+}
+.button{
+ border: none;
+  border-radius: .25rem;
+  padding: .75rem 1rem;
+  border-color: black;
+  
+  background-color: #dcdcdc;
+  display: inline-block;
+
+}	
+
+
+nav
+{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+nav ul li
+{
+list-style-type: none;
+display: inline-block;
+padding: 10px 25px;
+margin-top: 35px;
+}
+nav ul li a
+{
+color: white;
+text-decoration: none;
+font-weight: bold;
+text-transform: capitalize;
+font-size: 20px;
+
+}
+nav ul li a:hover
+{
+color: #ff0066;
+
+}
+
+
+.logo
+{
+color : white;
+font-size: 50px;
+letter-spacing: 2px;
+margin-top: 45;
+padding-left: 80px;
+}
+.logo2{
+padding-right: 60px;
+}     
+
+input {
+  border: none;
+  border-radius: .25rem;
+  padding: .75rem 1rem;
+  
+  
+}
+.input-field{
+    width:400px;
+    max-width:280px;
+	height:45px;
+    background: rgba(194, 169, 169, 0.2);
+    display:flex;
+	font-size: 16px;
+    border-radius:5px;
+    padding :0px 10px ;
+	margin-left: 50px;
+    
+
+}
+.input-field input{
+    background: transparent;
+    flex: 1;
+    border:100;
+    outline: none;
+    padding:24px 20px;
+    font-size: 16px;
+    color: #595963;
+}
+.merit{
+
+width: 170px;
+margin-left:110px;
+}
+.subs{
+background-color: #9417E2;
+width:300px;
+}
+.subs:hover{
+color: white;
+}
+
+.sub{
+background-color: #3cb371;
+width:300px;
+}
+.sub:hover{
+color: white;
+}
+   </style>
+   </head>
+ 
+<header>
+
+<script>
+    function vali() {
+
+      let fnam = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+      let pwd = document.getElementById("pwd").value;
+      let pwwd = document.getElementById("pwd2").value;
+      
+      
+      let i = 0;
+      var mat = /^[a-zA-Z0-9]+@[a-zA-Z]+(\.[com])/;
+      if (fnam == "") {
+        alert("Enter your username!");
+        event.preventDefault();
+      }
+      else {
+        i += 1;
+      }
+      
+      if (!email.match(mat)) {
+        alert("Enter a valid email");
+
+      }
+      else {
+        i += 1;
+      }
+
+      if (pwd == "") {
+        alert("Enter your password");
+        event.preventDefault();
+      }
+      if (pwd.length < 8 || pwd.length > 24) {
+        alert("Password too long or too short");
+        event.preventDefault();
+
+      }
+      if(pwd!=pwwd){
+          alert("Passwords dont match!");
+          event.preventDefault();
+      }
+      else {
+        i += 1;
+      }
+      console.log(i);
+      if (i == 3) {
+        alert("Submission successful");
+      }
+    }
+
+</script>
+
+</header> 
+
+  <body class="back">
+    <div class="box">
+	<div style="margin-top: -20px;">
+	
+    <div style="padding-right: 260px; font-size:25px;">
+      <h2 style="padding-left:92px;">Welcome&nbsp;to</h2>
+      <img src="../images/Frame 10149.png" class="merit">
+      </div>
+	
+	
+
+<div style="font-size:20px;">
+<p>Signup here!</p>
+</div>
+</form>
+      <form>
+	  <input type="text" class="input-field" id="name" name="name" color="white" placeholder="Full Name"><br>
+	  <input type="text" class="input-field" id="email" name="email" color="white" placeholder="Email"><br>
+	  <input type="text" class="input-field" id="pwd" name="pwd" color="white" placeholder="Password"><br>
+	  <input type="password" class="input-field" id="pwd2" name="pwd2" placeholder="Confirm Password"><br>
+      <label>Already have an account!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="contact_1.html">Login</a></label><br><br>
+	  <input type="submit" value="SignUp" onclick="vali()" class="subs" ><br><br>
+	  <input type="submit" value="Login as Guest" class="sub" ><br>
+	  </form>
+  
+	</div>
+	</div>
+	</body>
+</html>
+
