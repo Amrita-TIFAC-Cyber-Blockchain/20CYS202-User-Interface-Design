@@ -1,0 +1,122 @@
+<!--
+Author : Manbendra Satpathy
+Created On : 06 October 2022
+Updated On : 07 January 2023
+Description : Doctor - Search List (doctor_search_list.html)
+-->
+<!DOCTYPE html>
+<html>
+   <style>
+      html, body {
+      width: 100%;
+      height:100%;
+      }
+      body {
+      background: linear-gradient(-45deg,#23d5ab,#23a6d5,#e73c7e, #ee7752);
+      background-size: 400% 400%;
+      animation: gradient 5s linear infinite;
+      }
+      @keyframes gradient {
+      0% {
+      background-position: 0% 50%;
+      }
+      50% {
+      background-position: 100% 50%;
+      }
+      100% {
+      background-position: 0% 50%;
+      }
+      }
+      .box-with-text {
+      white-space: nowrap;
+      text-align: center;
+      text-transform: capitalize;
+      font-size:100px;
+      font-family: Consolas;
+      color:white;
+      }
+      table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      }
+      td, th {
+      border: 1px solid #dddddd;
+      text-align: center;
+      padding: 8px;
+      }
+   </style>
+   <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>  
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+      <title>Doctor - Search List</title>
+      <link rel="stylesheet" href="../css/search_footer_style.css">
+      <link rel = "icon" href = "https://juststickers.in/wp-content/uploads/2017/06/doctor-symbol-b.png" type = "image">
+   </head>
+   <body>
+      <div class="container" style="width:1500px;">
+         <div class="box-with-text">
+            <b>Diamond Wing Hospital</b>
+            <br>
+            <b>
+               <h1 align="center">Doctor Data</h1>
+            </b>
+         </div>
+         <br>
+         <br>
+         <br>
+         <div align="center">  
+            <input type="text" name="search" id="search" class="form-control" placeholder="Search here...."/>
+         </div>
+         <br /><br />  
+         <div class="table-responsive" >
+            <table class="table table-bordered" id="patient_table" style="background-color: white;">
+               <tr>
+                  <th width="15%" style="text-align:center">Date of Joining</th>
+                  <th width="10%" style="text-align:center">Doctor ID</th>
+                  <th width="10%" style="text-align:center">Registration Number</th>
+                  <th width="10%" style="text-align:center">Registration Council</th>
+                  <th width="10%" style="text-align:center">Registration Year</th>
+                  <th width="10%" style="text-align:center">Qualification</th>
+                  <th width="20%" style="text-align:center">Doctor Name</th>
+                  <th width="10%" style="text-align:center">Gender</th>
+                  <th width="20%" style="text-align:center">Department</th>
+                  <th width="10%" style="text-align:center">Age</th>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <footer>
+         <div class="main-content">
+            <span style="font-family:Consolas;font-size:25px;color:white;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Created By <a href="../index.html" style="color:#6495ED;" target="_blank">Diamond Wings Hospital</a> | © Manbendra Satpathy @ Diamond Wing Hospital ™</span>
+         </div>
+      </footer>
+   </body>
+</html>
+<script>  
+   $(document).ready(function(){  
+        $('#search').keyup(function(){  
+             search_table($(this).val());  
+        });  
+        function search_table(value){  
+             $('#patient_table tr').each(function(){  
+                  var found = 'false';  
+                  $(this).each(function(){  
+                       if($(this).text().toLowerCase().indexOf(value.toLowerCase()) >= 0)  
+                       {  
+                            found = 'true';  
+                       }  
+                  });  
+                  if(found == 'true')  
+                  {  
+                       $(this).show();  
+                  }  
+                  else  
+                  {  
+                       $(this).hide();  
+                  }  
+             });  
+        }  
+   });  
+</script>

@@ -1,0 +1,116 @@
+/*
+Author : Manbendra Satpathy
+Created On : 06 October 2022
+Updated On : 07 January 2023
+Description : 1st - CSS for the Main Page
+*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	height: 125vh;
+	display: flex;
+	padding-bottom: 550px;
+	align-items: center;
+	justify-content: center;
+	background-image: url("https://static.vecteezy.com/system/resources/previews/005/351/636/original/shine-diamond-logo-design-template-vector.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+html {
+	display: grid;
+	height: 100%;
+	place-items: center;
+	background: white;
+	overflow: hidden;
+}
+
+button {
+	position: relative;
+	height: 60px;
+	width: 200px;
+	margin: 0 35px;
+	border-radius: 50px;
+	border: none;
+	outline: none;
+	background: white;
+	color: black;
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+button:first-child:hover {
+	background: linear-gradient(90deg, #03a9f4, #ffeb3b, #f5ce62, lightgreen, gold, white, white, gold, lightgreen, #f5ce62, #ffeb3b, #03a9f4);
+	background-size: 400%;
+	color: black;
+}
+
+button:nth-child(odd):hover {
+	background: linear-gradient(90deg, #03a9f4, #ffeb3b, #f5ce62, lightgreen, gold, white, white, gold, lightgreen, #f5ce62, #ffeb3b, #03a9f4);
+	background-size: 400%;
+	color: white;
+}
+
+button:nth-child(even):hover {
+	background: linear-gradient(90deg, #03a9f4, #ffeb3b, #f5ce62, lightgreen, gold, white, white, gold, lightgreen, #f5ce62, #ffeb3b, #03a9f4);
+	background-size: 400%;
+	color: white;
+}
+
+
+button:last-child:hover {
+	background: linear-gradient(90deg, #03a9f4, #ffeb3b, #f5ce62, lightgreen, gold, white, white, gold, lightgreen, #f5ce62, #ffeb3b, #03a9f4);
+	background-size: 400%;
+	color: white;
+}
+
+button:first-child:before,
+button:nth-child(odd):before,
+button:nth-child(even):before,
+button:last-child:before {
+	content: '';
+	position: absolute;
+	background: inherit;
+	top: -5px;
+	right: -5px;
+	bottom: -5px;
+	left: -5px;
+	border-radius: 50px;
+	filter: blur(20px);
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+button:first-child:before,
+button:nth-child(odd):before,
+button:nth-child(even):before,
+button:last-child:before {
+	opacity: 1;
+	z-index: -1;
+}
+
+button:hover {
+	z-index: 1;
+	animation: glow 8s alternate infinite;
+}
+
+@keyframes glow {
+	0% {
+		background-position: 0%;
+	}
+
+	100% {
+		background-position: 400%;
+	}
+}

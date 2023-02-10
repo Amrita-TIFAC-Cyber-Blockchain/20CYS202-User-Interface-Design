@@ -1,0 +1,38 @@
+/*
+Author : Manbendra Satpathy
+Created On : 06 October 2022
+Updated On : 07 January 2023
+Description : CSS for the footer of all the Search List Pages 
+*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+.content1 {
+	position: relative;
+	margin: 130px auto;
+	text-align: center;
+	padding: 0 20px;
+}
+
+.content1 .text {
+	font-size: 2.5rem;
+	font-weight: 600;
+	color: #202020;
+}
+
+.content1 .p {
+	font-size: 2.1875rem;
+	font-weight: 600;
+	color: #202020;
+}
+
+footer {
+	position: fixed;
+	bottom: 0px;
+	height: 5%;
+	width: 100%;
+	background: #111;
+}
+
+.main-content {
+	display: flex;
+}

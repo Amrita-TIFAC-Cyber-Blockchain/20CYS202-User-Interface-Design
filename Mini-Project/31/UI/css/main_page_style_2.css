@@ -1,0 +1,44 @@
+/*
+Author : Manbendra Satpathy
+Created On : 06 October 2022
+Updated On : 07 January 2023
+Description : 2nd - CSS for the Main Page
+*/
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:800');
+
+.box-with-text {
+	background-image: url('https://img.freepik.com/free-vector/vibrant-diagonal-lines-pattern-background_1017-12311.jpg?w=360');
+	background-position: 0 0;
+	background-size: 100% 50px;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-animation: stripes 2s linear infinite;
+	animation: stripes 2s linear infinite;
+}
+
+@-webkit-keyframes stripes {
+	100% {
+		background-position: 0 -50px;
+	}
+}
+
+@keyframes stripes {
+	100% {
+		background-position: 0 -50px;
+	}
+}
+
+.box-with-text {
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	white-space: nowrap;
+	text-align: center;
+	text-transform: capitalize;
+	font-size: 100px;
+	font: bold Open Sans, Impact;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}

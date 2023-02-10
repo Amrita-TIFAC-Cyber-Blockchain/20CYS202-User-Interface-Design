@@ -1,0 +1,26 @@
+/*
+Author : Manbendra Satpathy
+Created On : 06 October 2022
+Updated On : 07 January 2023
+Description : CSS for Clock shown in some pages
+*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.clock {
+	height: 120px;
+	text-align: center;
+	padding: 60px 10px;
+}
+
+.clock .display {
+	font-size: 40px;
+	color: black;
+	letter-spacing: 5px;
+	font-family: 'Consolas';
+}

@@ -1,0 +1,62 @@
+<!--
+Author : Manbendra Satpathy
+Created On : 06 October 2022
+Updated On : 07 January 2023
+Description : Main Page (main_page.html)
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Main - Diamond Wing Hospital</title>
+      <link rel="stylesheet" href="../css/main_page_style.css">
+      <link rel="stylesheet" href="../css/main_page_style_2.css">
+      <link rel="stylesheet" href="../css/clock_style.css">
+      <link rel = "icon" href = "https://static.vecteezy.com/system/resources/previews/005/351/636/original/shine-diamond-logo-design-template-vector.jpg" type = "image">
+   </head>
+   <body>
+      <div class="clock" style="position:absolute;bottom: 5px;left:5px;">
+         <div class="display"></div>
+      </div>
+      <script>
+         setInterval(function(){
+           const clock = document.querySelector(".display ");
+           let time = new Date();
+           let sec = time.getSeconds();
+           let min = time.getMinutes();
+           let hr = time.getHours();
+           let day = 'AM';
+           if(hr > 12 ){
+             day = 'PM';
+             hr = hr - 12;
+           }
+           if(hr == 12 ){
+             day = 'PM';
+           }
+           if(hr == 0){
+             day = 'AM';
+             hr = 12;
+           }
+           if(sec < 10){
+             sec = '0' + sec;
+           }
+           if(min < 10){
+             min = '0' + min;
+           }
+           if(hr < 10){
+             hr = '0' + hr;
+           }
+           clock.textContent = hr + ':' + min + ':' + sec + " " + day;
+         });
+      </script>
+      <div class="buttons">
+         <button type="button"><a href="../html/doctor.html" target="_blank" style="text-decoration: none;">For Doctors</button></a>
+         <button type="button"><a href="../html/patient.html" target="_blank" style="text-decoration: none;">For Patients</button></a>
+         <button type="button"><a href="../html/admin.html" target="_blank" style="text-decoration: none;">For Admins</button></a>
+         <button type="button"><a href="../html/staff.html" target="_blank" style="text-decoration: none;">For Staffs</button></a>
+      </div>
+      <div class="box-with-text">
+         Diamond Wing Hospital
+      </div>
+   </body>
+</html>

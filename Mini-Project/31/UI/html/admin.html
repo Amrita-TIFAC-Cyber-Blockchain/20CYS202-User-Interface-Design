@@ -1,0 +1,143 @@
+<!--
+Author : Manbendra Satpathy
+Created On : 06 October 2022
+Updated On : 07 January 2023
+Description : Admin - Login and Signup (admin.html)
+-->
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+      <link rel="stylesheet" href="../css/admin_style.css">
+      <link rel="stylesheet" href="../css/clock_style.css">
+      <link rel="stylesheet" href="../css/footer_style.css">
+      <title>Administation</title>
+      <link rel = "icon" href = "https://cdn5.vectorstock.com/i/thumb-large/43/39/admin-support-red-flat-design-long-shadow-glyph-vector-39924339.jpg" type = "image">
+   </head>
+   <body>
+      <div class="clock" style="position:absolute;bottom:680px;left:5px;">
+         <div class="display">
+         </div>
+      </div>
+      <script>
+         setInterval(function(){
+           const clock = document.querySelector(".display");
+           let time = new Date();
+           let sec = time.getSeconds();
+           let min = time.getMinutes();
+           let hr = time.getHours();
+           let day = 'AM';
+           if(hr > 12 ){
+           day = 'PM';
+           hr = hr - 12;
+         }
+         if(hr == 12 ){
+           day = 'PM';
+         }
+         if(hr == 0){
+           day = 'AM';
+           hr = 12;
+         }
+           if(sec < 10){
+             sec = '0' + sec;
+           }
+           if(min < 10){
+             min = '0' + min;
+           }
+           if(hr < 10){
+             hr = '0' + hr;
+           }
+           clock.textContent = hr + ':' + min + ':' + sec + " " + day;
+         });
+      </script>
+      <div class="container">
+         <div class="forms">
+            <div class="form login">
+               <span class="title">Admin Login</span>
+               <form action="#">
+                  <div class="input-field">
+                     <input type="text" placeholder="Enter your email" required>
+                     <i class="uil uil-envelope icon"></i>
+                  </div>
+                  <div class="input-field">
+                     <input type="password" class="password" placeholder="Enter your password" required>
+                     <i class="uil uil-lock icon"></i>
+                     <i class="uil uil-eye-slash showHidePw"></i>
+                  </div>
+                  <div class="checkbox-text">
+                     <div class="checkbox-content">
+                        <input type="checkbox" id="logCheck">
+                        <label for="logCheck" class="text">Remember me</label>
+                     </div>
+                     <a href="#" class="text">Forgot password?</a>
+                  </div>
+                  <div class="input-field button">
+                     <a href="./admin_homepage.html"><input type="button" value="Login"></a>
+                  </div>
+               </form>
+               <div class="login-signup">
+                  <span class="text">Not a member?
+                  <a href="#" class="text signup-link">Signup Now</a>
+                  </span>
+               </div>
+            </div>
+            <div class="form signup">
+               <span class="title">Admin Registration</span>
+               <form action="#">
+                  <div class="input-field">
+                     <input type="text" placeholder="Enter your name" required>
+                     <i class="uil uil-user"></i>
+                  </div>
+                  <div class="input-field">
+                     <input type="text" placeholder="Enter your gender (Male, Female, Non - Binary)" required>
+                     <i class="uil uil-user"></i>
+                  </div>
+                  <div class="input-field">
+                     <input type="text" placeholder="Enter your username" required>
+                     <i class="uil uil-user"></i>
+                  </div>
+                  <div class="input-field">
+                     <input type="text" placeholder="Enter your email - id" required>
+                     <i class="uil uil-envelope icon"></i>
+                  </div>
+                  <div class="input-field">
+                     <input type="tel" placeholder="Enter your phone number" required>
+                     <i class="uil uil-phone icon"></i>
+                  </div>
+                  <div class="input-field">
+                     <input type="password" class="password" placeholder="Confirm a password" required>
+                     <i class="uil uil-lock icon"></i>
+                     <i class="uil uil-eye-slash showHidePw"></i>
+                  </div>
+                  <div class="checkbox-text">
+                     <div class="checkbox-content">
+                        <input type="checkbox" id="termCon">
+                        <label for="termCon" class="text">I accepted all terms and conditions</label>
+                     </div>
+                  </div>
+                  <div class="input-field button">
+                     <input type="button" value="Signup">
+                  </div>
+               </form>
+               <div class="login-signup">
+                  <span class="text">Already a member?
+                  <a href="#" class="text login-link">Login Now</a>
+                  </span>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="../js/admin_script.js"></script>
+      <br>
+      <br>
+      <br>
+      <footer>
+         <div class="main-content">
+            <p style="font-family:Consolas;font-size:25px;color:white;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copyright © Manbendra Satpathy @ Diamond Wing Hospital ™</p>
+         </div>
+      </footer>
+   </body>
+</html>
