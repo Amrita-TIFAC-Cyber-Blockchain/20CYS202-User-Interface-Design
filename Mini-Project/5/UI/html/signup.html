@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Sign Up</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="../css/style-s.css">
+	<link rel="stylesheet" href="../css/footer-s.css">
+
+	<script>function validateform() {
+			var name = document.myform.name.value;
+			var password = document.myform.password.value;
+			var num = document.myform.phnumber.value;
+			var x = document.myform.email.value;
+			var atposition = x.indexOf("@");
+			var dotposition = x.lastIndexOf(".");
+			if (name == null || name == "") {
+				alert("Name can't be blank");
+				return false;
+			}
+
+			else if (atposition < 1 || dotposition < atposition + 2 || dotposition + 2 >= x.length) {
+				alert("Please enter a valid e-mail address \n atpostion:" + atposition + "\n dotposition:" + dotposition);
+				return false;
+			}
+			else if (isNaN(num)) {
+				document.getElementById("numloc").innerHTML = "Enter Numeric value only";
+				return false;
+			}
+
+			else if (password.length < 8) {
+				alert("Password must be at least 8 characters long.");
+				return false;
+			}
+
+			else {
+				alert("successfully registered");
+				return true;
+
+
+			}
+		}</script>
+
+</head>
+	<body>
+	<div class="container-login100" style="background-image: url('../images/bg-01.jpg');"></div>
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">Sign Up</h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-10">
+					<div class="wrap d-md-flex">
+						<div class="text-wrap p-4 p-lg-5 d-flex img d-flex align-items-end" style="background-image: url(../images/bg.jpg);">
+							<div class="text w-100">
+								<h2 class="mb-4">Welcome to signup form</h2>
+								<p>It has become appallingly obvious that our technology has exceeded our humanity.</p>
+							</div>
+			      </div>
+						<div class="login-wrap p-4 p-md-5">
+	      			<h3 class="mb-3">Create an account</h3>
+							<form action="#" class="signup-form" name="myform" onsubmit="return validateform()">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group d-flex align-items-center">
+					      			<label class="label" for="name">Full Name</label>
+					      			<input type="text" class="form-control" placeholder="Full Name" name="name">
+					      		</div>
+									</div>
+									<div class="col-md-12">
+										<div class="form-group d-flex align-items-center">
+					      			<label class="label" for="email">Email Address</label>
+					      			<input type="text" class="form-control" placeholder="johndoe@email.com" name="email">
+					      		</div>
+									</div>
+									<div class="col-md-12">
+										<div class="form-group d-flex align-items-center">
+					      			<label class="label" for="phone">Phone no.</label>
+					      			<input type="text" class="form-control" placeholder="+91" name="phnumber">
+					      		</div>
+									</div>
+									<div class="col-md-12">
+										<div class="form-group d-flex align-items-center">
+				            	<label class="label" for="password">Password</label>
+				              <input type="password" class="form-control" placeholder="Password" name="password">
+				            </div>
+									</div>
+									<div class="col-md-12">
+										<div class="form-group d-flex align-items-center">
+					      			
+					      		</div>
+									</div>
+									<div class="col-md-12 my-4">
+										<div class="form-group">
+				            	<div class="w-100">
+					            	<label class="checkbox-wrap checkbox-primary">I agree all statements in terms of service
+												  <input type="checkbox" checked>
+												  <span class="checkmark"></span>
+												</label>
+											</div>
+				            </div>
+									</div>
+									<div class="col-md-12">
+										<div class="form-group">
+				            	<button type="submit" class="btn btn-secondary submit p-3">Create an account</button>
+				            </div>
+									</div>
+								</div>
+
+		          </form>
+		         
+		          <div class="w-100 text-center">
+								<p class="mt-4">I'm already a member! <a href="signin.html">Sign In</a></p>
+		          </div>
+		        </div>
+		      </div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer-distributed">
+
+		<div class="footer-left">
+
+			<h3>Student Hub</h3>
+
+			<p class="footer-links">
+				<a href="../index.html" class="link-1">Home</a>
+				
+				<a href="../index.html">Dashboard</a>
+			
+				<a href="server.html" target="_blank">Server</a>
+			
+				<a href="gallery.html" target="_blank">Gallery</a>
+				
+				<a href="profile.html" target="_blank">Profile</a>
+				
+				<a href="#">Settings</a>
+			</p>
+
+			
+		</div>
+
+		<div class="footer-center">
+
+			<p>Copyright © 2022-2023 StudentHub.<br>
+				II B.Tech CSE (CYS)<br>
+				Part of 20CYS202 - User Interface Design<br>
+				Amrita Vishwa Vidyapeetham, Coimbatore
+				</p>
+
+		</div>
+
+		<div class="footer-right">
+
+			<p class="footer-company-about">
+				<span>Designed By:</span>
+				Nithin S.<br>
+				Nishanth S.<br>
+				Ram Surya<br>
+			</p>
+
+			
+
+		</div>
+
+	</footer>
+
+
+	<script src="../js/jquery.min.js"></script>
+  <script src="../js/popper.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/main.js"></script>
+
+	</body>
+</html>
+
