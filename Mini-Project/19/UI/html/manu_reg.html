@@ -1,0 +1,141 @@
+<!--
+Authors: Yaswanth G, Deepthi J, Aishwarya GS
+Created Date: 14 Dec 2022
+Updated Date: 15 Jan 2023
+Base Template: The Footer of the page is a template taken from codepen.io, refer: https://codepen.io/scanfcode/pen/MEZPNd 
+Description: Index page
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/signup.css">
+  <link rel="icon" href="../images/favicon.png">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <title>
+    Pharma Supply Chain
+  </title>
+  <script src="../js/validate.js"></script>
+</head>
+
+<body>
+
+  <div class="tail">
+    <div class="cavebar">
+      Amrita Pharma Supply chain
+      <ul class="davebar">
+        <li> <a href="../index.html#section1">Home</a> </li>
+        <li> <a href="../index.html#section2">About</a> </li>
+        <li> <a href="../index.html#section3">Team</a> </li>
+        <li> <a href="">Contact</a> </li>
+        <li> <a href="">Media</a> <img src="../images/up_arrow.png" class="arrow"> </li>
+      </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="login-form">
+    <form>
+      <h1> Manufacturer Register</h1>
+      <div class="content">
+        <div class="input-field">
+          <input type="text" id="name" placeholder="Cooperate name" onchange="validateName()" required>
+        </div>
+        <div class="input-field">
+          <input type="Name" id="cin" placeholder="CIN no" max=5 autocomplete="nope" onchange="validateCIN()" required>
+        </div>
+        <div class="input-field">
+          <input type="email" id="email" placeholder="Email" autocomplete="nope" onchange="validateEmail()" required>
+        </div>
+        <div class="input-field">
+          <input type="password" id="pwd" placeholder="Password" onchange="validatePassword()" required>
+        </div>
+        <div class="input-field">
+          <input type="password" id="pwd1" placeholder="Confirm Password" onchange="validateConfirmPwd()" required>
+        </div>
+        <div class="input-field">
+          <div class="move3"><label for="org"> <b>Upload your Govt. License</b></label></div>
+          <input id="org" type="file" name="org" required>
+        </div>
+        <br>
+        <a href="#" class="link">Forgot Your Password?</a>
+      </div>
+      <div class="action">
+        <button>Register</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="box1">
+    <div class="box1_border">
+      <h3>Have an account ?</h3>
+      <br>
+      <a href="manu_login.html"><button>Log in</button></a> <br><br><br>
+      <p> @copyright Amrita SupplyChain 2023 </p>
+    </div>
+  </div>
+
+  <br><br><br><br>
+
+  <div class="footer-dark">
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 item text">
+            <h3>Amrita Phrama SupplyChain</h3>
+            <p>Amrita Pharma Supply chain management (APSCM) refers to the process of overseeing and coordinating the
+              various tasks and activities involved in the production, handling, and distribution of goods
+              and services.
+            </p>
+          </div>
+          <div class="col-md-1 item text"></div>
+          <div class="col-sm-6 col-md-3 item">
+            <h3>Check it out!!</h3>
+            <ul>
+              <li><a href="https://amrita-tifac-cyber-blockchain.github.io/ArogyaChain/ArogyaChain-UI/index.html#"
+                  style="margin-left: -60px;">Arogya SupplyChain </a></li> <br>
+              <li><a href="#" style="margin-left: -60px;">Our Suppliers</a></li> <br>
+              <li><a href="#" style="margin-left: -60px;">Our Retailers</a></li> <br>
+              <li><a href="#" style="margin-left: -60px;">Customers</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-3 item">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#" style="margin-left: -60px;">How to make an order</a></li> <br>
+              <li><a href="#" style="margin-left: -60px;">Our pricing</a></li><br>
+              <li><a href="#" style="margin-left: -60px;">Support page</a></li><br>
+              <li><a href="#" style="margin-left: -60px;">Getting started</a></li>
+            </ul>
+          </div>
+          <div class="col item social">
+            <ul class="list-unstyled list-inline social text-center">
+              <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+              <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a>
+              </li>
+              <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-linkedin"></i></a>
+              </li>
+              <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i
+                    class="fa fa-envelope"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="copyright">Copyright &copy; 2022 - TIFAC-CORE in Cyber Security. <br />
+          Design by Yaswanth G, Deepthi J, Aishwarya GS II B.Tech CSE (CYS) <br />
+          Part of 20CYS202 - User Interface Design <br />
+          Amrita Vishwa Vidyapeetham, Coimbatore
+        </p>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>

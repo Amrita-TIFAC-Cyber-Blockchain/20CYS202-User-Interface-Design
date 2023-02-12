@@ -1,0 +1,458 @@
+<!--
+Authors: Yaswanth G, Deepthi J, Aishwarya GS
+Created Date: 14 Dec 2022
+Updated Date: 15 Jan 2023
+Base Template: The Footer of the page is a template taken from codepen.io, refer: https://codepen.io/scanfcode/pen/MEZPNd 
+Description: Index page
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Manufacturer - History</title>
+	<link rel="icon" href="../images/favicon.png">
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+</head>
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Hind:wght@300&family=Pacifico&family=Poor+Story&family=Roboto+Slab&display=swap');
+	@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+	@import url('https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600');
+	@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+	@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-font-smoothing: antialiased;
+		-moz-font-smoothing: antialiased;
+		-o-font-smoothing: antialiased;
+		/*font-smoothing: antialiased;*/
+		text-rendering: optimizeLegibility;
+	}
+
+	body {
+		font-family: "Open Sans", Helvetica, Arial, sans-serif;
+		font-weight: 300;
+		font-size: 12px;
+		line-height: 30px;
+		color: #777;
+		background: #0CF;
+		/* 		background-image: url('../images/background.jpg'); */
+		background-color: rgb(36, 32, 32);
+		background-repeat: no-repeat;
+		background-position: fixed;
+		background-size: cover;
+		height: 100vh;
+		margin: 0;
+		display: grid;
+		place-items: left;
+		font-family: 'Chakra Petch', sans-serif;
+		font-size: 40px;
+
+	}
+
+	.heading {
+		font-size: 20px;
+		color: white;
+		/* font-family: 'Roboto Slab', serif; */
+		padding: 0%;
+		margin-top: 1%;
+	}
+
+	.heading p {
+		position: absolute;
+		margin-top: 7px;
+	}
+
+	.s_profile {
+		height: 43px;
+		width: 43px;
+		margin-left: 2%;
+		transform: translate(0%, 40%);
+		border-radius: 30px;
+		margin-top: -4%;
+	}
+
+	.m_profile {
+		height: 240px;
+		width: 240px;
+		transform: translate(21%, 0%);
+		border-radius: 150px;
+		margin-left: -35px;
+	}
+
+	.nav-left {
+		margin-left: 98%;
+		height: 30px;
+		width: 30px;
+		transform: translate(-50%, 50%);
+	}
+
+	.txtprofile {
+		/* background-color: rgb(91, 86, 86); */
+		font-family: 'Nunito', sans-serif;
+		text-align: center;
+		font-size: 20px;
+		height: 35px;
+		width: 270px;
+		transform: translate(0%, -50%);
+		border-radius: 7%;
+	}
+
+	.txt1profile {
+
+		font-family: 'Nunito', sans-serif;
+		font-size: 25px;
+		color: white;
+		margin-top: 10%;
+		transform: translate(20%, -50%);
+	}
+
+	.nav-right {
+		margin-left: 6%;
+		font-family: 'Roboto Slab', serif;
+		font-size: 17px;
+
+	}
+
+	.nav-right a:hover {
+		color: rgba(29, 186, 173, 0.716);
+	}
+
+	.nav-right img {
+		width: 27px;
+		height: 27px;
+		margin-left: -50px;
+		transform: translate(-10%, -4%);
+
+	}
+
+	.nav-right input {
+		border-radius: 35px;
+		background: rgba(22, 225, 215, 0.627);
+		color: #ffffff;
+		width: 280px;
+		height: 47px;
+		border: 0;
+		outline: none;
+		padding-left: 15px;
+	}
+
+	.nav-right ::placeholder {
+		color: #FFFFFF;
+		font-size: 16px;
+	}
+
+	.inlinks {
+		text-decoration: none;
+		color: white;
+	}
+
+	.nav-right :hover {
+		text-decoration: none !important;
+	}
+
+	.module {
+		max-width: 440px !important;
+		padding: 2rem;
+		color: black;
+		border-width: 3px;
+		border-style: solid;
+		border-image:
+			linear-gradient(to bottom,
+				rgb(20, 193, 25),
+				rgba(0, 0, 0, 0)) 1 100%;
+		margin-left: 3%;
+		margin-top: 5%;
+		margin-bottom: 10%;
+	}
+
+
+	a.button2 {
+		display: inline-block;
+		padding: 0.5em 3em;
+		border: 0.16em solid #FFFFFF;
+		margin: 0 0.3em 0.3em 0;
+		box-sizing: border-box;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 400;
+		color: #FFFFFF;
+		text-align: center;
+		transition: all 0.15s;
+	}
+
+	a.button2:hover {
+		color: #DDDDDD;
+		border-color: #DDDDDD;
+	}
+
+	a.button2:active {
+		color: #BBBBBB;
+		border-color: #BBBBBB;
+	}
+
+
+	.footer-dark {
+		padding: 50px 0;
+		color: #f0f9ff;
+		background-color: #282d32;
+		font-family: 'Poppins', sans-serif !important;
+	}
+
+	.footer-dark .text {
+		padding: 0 15px;
+	}
+
+	.footer-dark h3 {
+		margin-top: 0;
+		margin-bottom: 12px;
+		font-weight: bold;
+		font-size: 16px;
+		border-left: 3px solid #eeeeee;
+		padding-left: 10px;
+	}
+
+	.footer-dark ul {
+		padding: 0;
+		list-style: none;
+		line-height: 1.6;
+		font-size: 14px;
+		margin-bottom: 0;
+	}
+
+	.footer-dark ul li {
+		padding: 0 0 .2em 1.0em;
+		font-size: 15px;
+	}
+
+	.footer-dark p {
+		font-size: 15px;
+	}
+
+	.footer-dark ul a {
+		color: white !important;
+		text-decoration: none;
+		opacity: 0.6;
+	}
+
+	.footer-dark ul a:hover {
+		opacity: 1.0;
+		font-size: 16px;
+		-webkit-transition: .5s all ease;
+		-moz-transition: .5s all ease;
+		transition: .5s all ease;
+	}
+
+	.footer-dark ul.social li {
+		padding: 3px 0;
+	}
+
+	.footer-dark ul.social li a i {
+		margin-right: 5px;
+		font-size: 25px;
+		-webkit-transition: .5s all ease;
+		-moz-transition: .5s all ease;
+		transition: .5s all ease;
+	}
+
+	.footer-dark ul.social li:hover a i {
+		font-size: 30px;
+		margin-top: -10px;
+	}
+
+	.footer-dark ul.social li a {
+		color: #ffffff;
+	}
+
+	.footer-dark ul.social li a:hover {
+		color: #eeeeee;
+	}
+
+	@media (max-width:767px) {
+		.footer-dark .item:not(.social) {
+			text-align: center;
+			padding-bottom: 20px;
+		}
+	}
+
+	.footer-dark .item.text {
+		margin-bottom: 36px;
+	}
+
+	@media (max-width:767px) {
+		.footer-dark .item.text {
+			margin-bottom: 0;
+		}
+	}
+
+	.footer-dark .item.text p {
+		opacity: 0.6;
+		margin-bottom: 0;
+	}
+
+	.footer-dark .item.social {
+		text-align: center;
+	}
+
+	@media (max-width:991px) {
+		.footer-dark .item.social {
+			text-align: center;
+			margin-top: 20px;
+		}
+	}
+
+	.footer-dark .item.social>a {
+		font-size: 20px;
+		width: 36px;
+		height: 36px;
+		line-height: 36px;
+		display: inline-block;
+		text-align: center;
+		border-radius: 50%;
+		box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+		margin: 0 8px;
+		color: #fff;
+		opacity: 0.75;
+	}
+
+	.footer-dark .item.social>a:hover {
+		opacity: 0.9;
+	}
+
+	.footer-dark .copyright {
+		text-align: center;
+		padding-top: 24px;
+		opacity: 0.3;
+		font-size: 15px;
+		margin-top: 2%;
+		margin-bottom: -1%;
+		line-height: 23px;
+	}
+
+	.hardcored {
+		border: whitesmoke;
+		border-style: dashed;
+		margin-left: 10%;
+		width: 15cm;
+		height: 15cm;
+		font-size: 15px;
+		margin-top: 4%;
+		padding: 10px;
+	}
+
+	.Summa {
+		display: inline-flex;
+		margin-bottom: 10%;
+	}
+</style>
+
+<body>
+	<div class="heading">
+		<div class="nav-right">
+			<p> &nbsp; <input type="search" placeholder="Search"> &nbsp;&nbsp;
+				<img src="../images/searchbar_search.png"> &nbsp;&nbsp;&nbsp;&nbsp;
+				<a class="inlinks" href="../index.html">HOME &nbsp;&nbsp;&nbsp;&nbsp;</a>
+				<a class="inlinks" href="contact.html">CONTACT </a>
+			</p>
+			<div class="nav-left">
+				<img src="../images/notification.png">
+			</div>
+		</div>
+
+		<div>
+			<img class="s_profile" src="../images/profile.jpg" />
+		</div>
+	</div>
+
+	<div class="Summa">
+		<div class="module">
+			<div>
+				<img class="m_profile" src="../images/profile.jpg" />
+			</div>
+			<div class="txt1profile">
+				<p>Manufacturer-01</p>
+			</div>
+			<div class="txtprofile">
+				<a href="" class="button2">Edit Profile</a>
+			</div>
+		</div>
+
+		<div class="hardcored">
+			Dummy Manufacturer history<br>
+			Medicine name: Festive-Dee Optic
+		</div>
+	</div>
+
+</body>
+
+<div class="footer-dark">
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5 item text">
+					<h3>Amrita Phrama SupplyChain</h3>
+					<p>Amrita Pharma Supply chain management (APSCM) refers to the process of overseeing and
+						coordinating the
+						various tasks and activities involved in the production, handling, and distribution of goods
+						and services.
+					</p>
+				</div>
+				<div class="col-md-1 item text"></div>
+				<div class="col-sm-6 col-md-3 item">
+					<h3>Check it out!!</h3>
+					<ul>
+						<li><a
+								href="https://amrita-tifac-cyber-blockchain.github.io/ArogyaChain/ArogyaChain-UI/index.html#">
+								Arogya
+								SupplyChain </a></li>
+						<li><a href="#">Our Suppliers</a></li>
+						<li><a href="#">Our Retailers</a></li>
+						<li><a href="#">Customers</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-6 col-md-3 item">
+					<h3>Quick Links</h3>
+					<ul>
+						<li><a href="#">How to make an order</a></li>
+						<li><a href="#">Our pricing</a></li>
+						<li><a href="#">Support page</a></li>
+						<li><a href="#">Getting started</a></li>
+					</ul>
+				</div>
+				<div class="col item social">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a>
+							&nbsp;&nbsp;&nbsp;&nbsp;
+						</li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+						&nbsp;&nbsp;&nbsp;&nbsp;
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a>
+						</li> &nbsp;&nbsp;&nbsp;&nbsp;
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-linkedin"></i></a>
+						</li> &nbsp;&nbsp;&nbsp;&nbsp;
+						<li class="list-inline-item"><a href="javascript:void();" target="_blank"><i
+									class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<p class="copyright">Copyright &copy; 2022 - TIFAC-CORE in Cyber Security. <br>
+				Design by Yaswanth G, Deepthi J, Aishwarya GS II B.Tech CSE (CYS) <br>
+				Part of 20CYS202 - User Interface Design <br>
+				Amrita Vishwa Vidyapeetham, Coimbatore
+			</p>
+		</div>
+	</footer>
+</div>
+
+</html>
