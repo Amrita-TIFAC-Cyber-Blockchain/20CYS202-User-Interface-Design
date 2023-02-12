@@ -1,0 +1,36 @@
+.card-grps{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 2fr;
+    grid-gap: 50px;
+    align-items:stretch;
+    margin-left: 30rem;
+    margin-top: 15rem;
+    }
+body{
+    background-image: url("http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcSuIt5HNuhOfr1FReHKBPKqbD3m7fhy4PsRY364HIhhs026Gk1FwuQZpEfrPbIeusdO");
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+}
+
+.card-grps{
+    margin-bottom: 20rem;
+}
+
+#navit{
+    margin-left: 45rem;
+    font-size: 25px;
+}
+.item-item:hover{
+
+    color:yellow;
+
+}
+
+.image{
+    width: 20rem;
+    position: relative;
+    margin-top: 5rem;
+    margin-left: 50rem;
+}
