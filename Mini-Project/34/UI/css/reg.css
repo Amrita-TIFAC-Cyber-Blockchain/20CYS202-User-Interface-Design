@@ -1,0 +1,245 @@
+/*****************************************************************
+ * Fonts
+ *****************************************************************/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+/*****************************************************************
+ * CSS Resets
+ *****************************************************************/
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/*****************************************************************
+ * Base Root styles
+ *****************************************************************/
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../images/background.png);
+  background-position: center;
+  background-size: cover
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing: border-box;
+  position: relative;
+  font-family: "Century Gothic", 'Lato', sans-serif;
+}
+
+.navbar{
+  width: 100%;
+  height: 15vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.logo{
+  width: 250px;
+  cursor: pointer;
+}
+.logo{
+  width: 180px;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 45px;
+  cursor: pointer;
+}
+.university{
+  width: 220px;
+  cursor: pointer;
+}
+.university{
+  width: 190px;
+  padding-left: 5%;
+  padding-right: 1%;
+  margin-top: 30px;
+  cursor: pointer;
+}
+nav{
+  flex: 1;
+  padding-left: 10;
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 0px 20px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #333;
+  font-family: "Century Gothic", 'Lato', sans-serif;
+}
+/*****************************************************************
+ * Typography
+ *****************************************************************/
+h2{
+  font-weight: bold;
+}
+
+input {
+  border-radius: 0;
+}
+
+/*****************************************************************
+ * login/registration page Styles
+ *****************************************************************/
+
+.account-container {
+  max-width: 750px;
+  background-color:blue;
+  margin: 0 auto;
+  margin-top: 7%;
+  margin-left:25%;
+  font-family: "Century Gothic", 'Lato', sans-serif;
+}
+
+.account-container h2{
+  font-size: 1.6em;
+  text-transform: uppercase;
+  margin: 5px 10px 10px;
+  
+}
+
+.account-container h2:after {
+  content: "";
+  display: block;
+  border-bottom: solid 0.1em #fff;
+  height: 10px;
+  
+}
+
+.account-login, .account-creation {
+  background-color: #a6e7ff;
+  border: solid 0.1em #fff;
+  width: 62%;
+  float: left;
+  padding: 60px;
+  min-height: 23em;
+  position: relative;
+}
+
+.email, .password, .checkbox, .rollno, .phone, .rad, .fname, .lname, .year {
+  display: inline-block;
+  font-size: 1em;
+  padding: 22px 0 5px;
+}
+
+.account-creation {
+  margin-left: 20px;
+}
+
+.account-creation p {
+  padding-top: 20px;
+  font-size: 1.2em;
+}
+
+button {
+  display: inline-block;
+  background: linear-gradient(45deg, #87adfe, #ff77cd);
+  border: solid 1px #fff;
+  line-height: 30px;
+  color: #fff;
+  min-width: 60%;
+  border-radius: 6px;
+  text-transform: uppercase;
+  outline: none;
+  position: absolute;
+  bottom: 28px;
+  left: 20px;
+}
+
+input {
+  height: 38px;
+  width:100%;
+}
+
+.checkbox input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee
+}
+
+@media only screen 
+  and (min-width: 0px) 
+  and (max-width: 936px)  { 
+
+
+  .account-creation {
+      margin-left: 0px;
+  }
+
+  .account-login, .account-creation {
+  background-color: #9bddff;
+  border: solid 0.1em #ccc;
+  width: 80%;
+  float: left;
+  margin: 20px;
+  min-height: 28em;
+  position: relative;
+}
+}
+.social-links{
+  transform: rotate(-90deg);
+  position: absolute;
+  left: -80px;
+  bottom: 180px;
+  font-family: "Century Gothic", 'Lato', sans-serif;
+}
+.social-links a{
+  text-decoration: none;
+  color: #6a7199;
+  padding-right: 20px;
+  font-size: 14px;
+}
+.terms{
+  color: #fff;
+  background-color: #232d60;
+  padding-left: 400px;
+  padding-top:20px;
+  padding-bottom: 15px;
+}

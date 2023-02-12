@@ -1,0 +1,165 @@
+<!--
+Authors:  Roshni Venkatesan
+Created Date:  28 Dec 2022
+Updated Date: 10 Jan 2023
+Base Template:  Customized and Curated from web resources
+Description: University Cycling Mesh - Student Page
+-->
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<title>UniCyme |FAQs</title>
+	<link rel="stylesheet" href="../css/faq.css">
+	<link rel="icon" type="image/x-icon" href="../images/next-arrow.png">
+</head>
+<body>
+	<div class="container">
+		<div class="navbar">
+			<img src="../images/logo.png" class="logo">
+			<nav>
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="whyunicyme.html">Why UniCyme</a></li>
+					<li><a href="howitworks.html">How It Works</a></li>
+					<li><a href="register.html">Sign Up!</a></li>
+					<li><a href="faq.html">FAQs</a></li>
+				</ul>
+			</nav>
+			<img src="../images/logo1.png" class="university">
+		</div>
+	</div>
+
+
+<div class="faqs-container">
+	<div class="faq">
+		<h3 class="faq-title">
+			How to enroll oneself?
+		</h3>
+		<p class="faq-text">
+			Check out the monthly and yearly subscription, and corresponing payment plans from the UniCyme-How It Works page.
+		</p>
+		<button class="faq-toggle">
+			<i class="fas fa-chevron-down"></i>
+			<i class="fas fa-times"></i>
+		</button>
+	</div>
+	
+	<div class="faq">
+		<h3 class="faq-title">
+			Is it post paid or prepaid?
+		</h3>
+		<p class="faq-text">
+			UniCyme is prepaid-based on the amount of cash in your Amrita CMS E-Wallet.
+		</p>
+		<button class="faq-toggle">
+			<i class="fas fa-chevron-down"></i>
+			<i class="fas fa-times"></i>
+		</button>
+	</div>
+	
+	<div class="faq">
+		<h3 class="faq-title">
+			How can I check for Empty UniCyme Decks to park?
+		</h3>
+		<p class="faq-text">
+			Use the Statistics button in the Home Page, to view cycle availability in respective hotspots, user leaderboard. 
+		</p>
+		<button class="faq-toggle">
+			<i class="fas fa-chevron-down"></i>
+			<i class="fas fa-times"></i>
+		</button>
+	</div>
+	
+	<div class="faq">
+		<h3 class="faq-title">
+			How to connect with UniCyme Community?
+		</h3>
+		<p class="faq-text">
+			We are working on creating a chat bar, nonetheless you have the Instagram Handle on the page.
+		</p>
+		<button class="faq-toggle">
+			<i class="fas fa-chevron-down"></i>
+			<i class="fas fa-times"></i>
+		</button>
+	</div>
+	
+	<div class="faq">
+		<h3 class="faq-title">
+			Are there any events conducted from UniCyme?
+		</h3>
+		<p class="faq-text">
+			Yes! We have 2 seasons with different challenge leveled events.
+		</p>
+		<button class="faq-toggle">
+			<i class="fas fa-chevron-down"></i>
+			<i class="fas fa-times"></i>
+		</button>
+	</div>
+
+	<div class="faq">
+		<h3 class="faq-title">
+			Are Cycles allowed out of campus?
+		</h3>
+		<p class="faq-text">
+			No UniCyme doesn't support that.
+		</p>
+		<button class="faq-toggle">
+			<i class="fas fa-chevron-down"></i>
+			<i class="fas fa-times"></i>
+		</button>
+	</div>
+
+	<div class="faq">
+		<h3 class="faq-title">
+			Who should I approach more queries?
+		</h3>
+		<p class="faq-text">
+			The query bar in the future might help. For now you can approach Accounts Department AB1 for guidance.
+		</p>
+		<button class="faq-toggle">
+			<i class="fas fa-chevron-down"></i>
+			<i class="fas fa-times"></i>
+		</button>
+	</div>
+</div>
+
+<div class="social-links">
+			<a href="https://open.spotify.com/show/3cVGV68FJ1s8su3rfCUa6B?utm_medium=share&utm_source=linktree">Spotify</a>
+			<a href="https://www.instagram.com/ruffaut.cycling.system/">Instagram</a>
+			<a href="https://www.youtube.com/channel/UCW7AnG4x7RRKJpKUYaw89zQ">Youtube</a>
+</div>
+
+<script>
+	const toggles = document.querySelectorAll('.faq-toggle');
+
+toggles.forEach(toggle => {
+	toggle.addEventListener('click', () => {
+		toggle.parentNode.classList.toggle('active');
+	});
+});
+
+// SOCIAL PANEL JS
+const floating_btn = document.querySelector('.floating-btn');
+const close_btn = document.querySelector('.close-btn');
+const social_panel_container = document.querySelector('.social-panel-container');
+
+floating_btn.addEventListener('click', () => {
+	social_panel_container.classList.toggle('visible')
+});
+
+close_btn.addEventListener('click', () => {
+	social_panel_container.classList.remove('visible')
+});
+</script>
+<footer>
+	<div id="terms" class="terms">
+		 <p>
+   Copyright &#xA9; 2022-2023. UniCyme - <a href="roshnivenkatesan04.com">Roshni</a><br>
+   II year B.Tech CSE(CYS)</br>
+   Part of 20CYS202 - User Interface Design</br>
+   Amrita Vishwa Vidyapeetham, Coimbatore
+  </p>
+	</div>
+</footer>
+</body>
+</html>
