@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <title>Snipcart</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link rel="icon" type="image/x-icon" href="../images/letter-s.png">
+      <link rel="stylesheet" href="../css/bootstrap.min.css">
+      <link rel="stylesheet" href="../css/style.css">
+      <link rel="stylesheet" href="../css/responsive.css">
+      <link rel="icon" href="../images/fevicon.png" type="image/gif" />
+      <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.min.css">
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+  
+</head>
+
+<body>
+<div class="signup-container">
+    <h1 class="title">Create Your Account</h1>
+    <form>
+      <input type="text" placeholder="Email" class="email-input" id="email-input">
+      <input type="password" placeholder="Password" class="password-input" id="password-input">
+      <input type="password" placeholder="Confirm Password" class="confirm-password-input" id="confirm-password-input">
+      <input type="button" class="signup-btn" value="submit" onclick="vali()">
+    </form>
+    <p class="forgot-password">Already have an account?<a href="login.html">  Login</a></p>
+    <p class="forgot-password">Go back Home.<a href="../index.html">  Home</a></p>
+    <br>
+</div>
+<style>
+body {
+  background-color: #183661;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.signup-container {
+  width: 400px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  text-align: center;
+  margin-left: 400px;
+  height: 595px;
+}
+
+.title {
+  color: #183661;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.email-input,
+.password-input,
+.confirm-password-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.signup-btn {
+  width: 100%;
+  background-color: #f2c119;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.forgot-password {
+  color: #183661;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.forgot-password a {
+  color: #f2c119;
+}
+
+.signup {
+  color: #183661;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.signup a {
+  color: #f2c119;
+}
+</style>
+<script>
+    function vali() {
+
+      let email = document.getElementById("email-input").value;
+      let pwd = document.getElementById("password-input").value;
+      let pwwd = document.getElementById("confirm-password-input").value;
+
+
+      let i = 0;
+      var mat = /^[a-zA-Z0-9]+@[a-zA-Z]+(.[com])/;
+
+      if (!email || !pwd || !pwwd) {
+      alert("All fields are required!");
+      return false;}
+
+      if (!email.match(mat)) {
+        alert("Enter a valid email");
+      }
+      else {
+        i += 1;
+      }
+
+      if (pwd == "") {
+        alert("Enter your password");
+        event.preventDefault();
+      }
+      if (pwd.length < 8 || pwd.length > 24) {
+        alert("Password too long or too short");
+        event.preventDefault();
+
+      }
+
+      if(pwd!=pwwd){
+          alert("Passwords dont match!");
+          event.preventDefault();
+      }
+      else {
+        i += 1;
+      }
+      console.log(i);
+      if (i == 2) {
+        alert("account successfully created")
+        window.open("success.html");
+      }
+    }
+</script>
+</body>  
