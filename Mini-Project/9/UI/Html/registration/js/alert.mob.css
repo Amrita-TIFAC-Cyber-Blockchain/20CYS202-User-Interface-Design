@@ -1,0 +1,87 @@
+.alert_overlay {
+    background: rgba(0, 0, 0, 0.1);
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.alert_msg {
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    border: 1px solid rgb(204, 204, 204);
+    animation: alertshow 0.2s;
+    border-image: none;
+    left: 50%;
+    top: 20%;
+    width: 280px;
+    margin-left: -140px;
+    position: fixed;
+    z-index: 1000;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.alert_content {
+    padding: 20px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.alert_buttons {
+    text-align: center;
+    border-top-color: rgb(204, 204, 204);
+    border-top-width: 1px;
+    border-top-style: solid;
+    -webkit-user-select: none;
+}
+
+.alert_buttons .alert_btn {
+    background: rgb(255, 255, 255);
+    outline: 0px;
+    border-radius: 0px 0px 4px 4px;
+    border: currentColor;
+    border-image: none;
+    width: 50%;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    display: inline-block;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.alert_buttons :only-child.alert_btn {
+    width: 100%;
+}
+
+.alert_buttons :first-child.alert_btn+.alert_btn {
+    border-radius: 0px 0px 4px;
+    border-left-color: rgb(204, 204, 204);
+    border-left-width: 1px;
+    border-left-style: solid;
+}
+
+.alert_tips {
+    top: 55%;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    z-index: 10176523;
+    pointer-events: none;
+}
+
+.alert_tips div {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    animation: tipsshow 3s 0.01s;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    min-width: 50px;
+    max-width: 230px;
+    opacity: 0;
+    box-siziong: border-box;
+}

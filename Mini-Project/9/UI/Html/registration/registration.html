@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Patient Registration Form | Global Health Hospitals</title>
+<script language="JavaScript" src="js/ajax.js"></script> 
+<script language="JavaScript" src="js/validation.js"></script>
+<script src="calender-touch/jquery-1.10.2.js"></script> 
+<script src="calender-touch/jquery-ui.js"></script> 
+<link rel="stylesheet" href="calender-touch/jquery-ui.css">
+<link rel="stylesheet" href="calender-touch/style.css">
+<script src="js/alert.mob.js"></script>
+<link rel="stylesheet" href="js/alert.mob.css"/>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+
+
+<!-- Bootstrap CSS -->
+
+<link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+
+<!-- Owl Carousel CSS -->
+
+<link rel="stylesheet" href="../../assets/css/owl.carousel.min.css">
+
+<link rel="stylesheet" href="../../assets/css/owl.theme.default.min.css">
+
+<!-- Meanmenu CSS -->
+
+<link rel="stylesheet" href="../../assets/css/meanmenu.css">
+
+<!-- Icofonts CSS -->
+
+<link rel="stylesheet" href="../../assets/css/icofont.min.css">
+
+<!-- Slick Slider CSS -->
+
+<link rel="stylesheet" href="../../assets/css/slick.min.css">
+
+<link rel="stylesheet" href="../../assets/css/slick-theme.css">
+
+<!-- Magnific Popup -->
+
+<link rel="stylesheet" href="../../assets/css/magnific-popup.css">
+
+<!-- Wow CSS -->
+
+<link rel="stylesheet" href="../../assets/css/animate.css">
+
+<!-- Style CSS -->
+
+<link rel="stylesheet" href="../../assets/css/style.css">
+
+<!-- Responsive CSS -->
+
+<link rel="stylesheet" href="../../assets/css/responsive.css">
+
+
+
+<link rel="stylesheet" href="../../assets/css/custom.css">
+
+
+
+
+
+
+
+
+
+ <link rel="icon" type="image/png" href="../../assets/img/icon/fav.png">
+
+
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha256-t9UJPrESBeG2ojKTIcFLPGF7nHi2vEc7f5A2KpH/UBU=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+<script>
+	$(function() {
+		$( "#dob" ).datepicker({
+			changeMonth: true,
+			changeYear: true,
+			maxDate: '0',
+			yearRange: "-100:+0",
+			onSelect: function(dateText) {
+			  getAge(dateText);
+			}
+		});
+        
+        $( "#dom" ).datepicker({
+			changeMonth: true,
+			changeYear: true,
+			maxDate: '0',
+			yearRange: "-100:+0"
+		});
+	});
+    
+	$(document).ready(function(){
+	 var keyCodes = [61, 107, 173, 109, 187, 189];
+	
+	 $(document).keydown(function(event) {   
+	   if (event.ctrlKey==true && (keyCodes.indexOf(event.which) != -1)) {
+		 alert('disabling zooming'); 
+		 event.preventDefault();
+		}
+	 });
+	
+	 $(window).bind('mousewheel DOMMouseScroll', function (event) {
+		if (event.ctrlKey == true) {
+		  alert('disabling zooming'); 
+		  event.preventDefault();
+		}
+	  });
+	});
+	
+	window.addEventListener('keydown',function(e){if(e.keyIdentifier=='U+000A'||e.keyIdentifier=='Enter'||e.keyCode==13){if(e.target.nodeName=='INPUT'&&e.target.type=='text'){e.preventDefault();return false;}}},true);
+	
+	history.pushState(null, null, 'index.php');
+	window.addEventListener('popstate', function(event) {
+	  history.pushState(null, null, 'index.php');
+	});
+    
+    var loadFile = function(event) {
+        var output = document.getElementById('ptnIcon');
+        output.src = URL.createObjectURL(event.target.files[0]);
+        output.onload = function() {
+            URL.revokeObjectURL(output.src) // free memory
+        }
+    };
+    
+    function readdata(val)
+    {
+        if(val == 'Single')
+        {
+            document.getElementById('dom').value = '';
+            document.getElementById('bmname').value = '';
+            document.getElementById('dom').readOnly = 'true';
+            document.getElementById('bmname').readOnly = 'true';
+        } else
+        {
+            document.getElementById('dom').readOnly = '';
+            document.getElementById('bmname').readOnly = '';
+            document.getElementById('dom').value = '';
+            document.getElementById('bmname').value = '';
+        }
+    }
+    function showField(val)
+    {
+        if(val == 2)
+            $("#divMarried1,#divMarried2").show();
+        else
+            $("#divMarried1,#divMarried2").hide();
+    }
+</script>
+<style>
+    #loader { border: 12px solid #f3f3f3; border-radius: 50%; border-top: 12px solid #444444; width: 70px; height: 70px; animation: spin 1s linear infinite; }
+    @keyframes spin { 100% { transform: rotate(360deg); } }
+    .center {/*position: absolute;*/ top: 0; bottom: 0; left: 0; right: 0; margin: auto; }
+</style>
+<title>Registration Form</title>
+</head>
+
+
+
+
+<body>
+  <div class="header-top">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-sm-9 col-lg-9">
+          <div class="header-top-item">
+            <div class="header-top-left">
+              <ul>
+                <li> <a href="tel:+07554332322"> <i class="icofont-ui-call"></i> Call : 0422-123456 </a> </li>
+                <li> <a href="mailto:Global Healthhospitals2004@gmail.com"> <i class="icofont-ui-message"></i>globalhealthhospitals2003@gmail.com </a> </li>
+                <li> <i class="icofont-iphone"></i>8438845903</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-lg-3">
+          <div class="header-top-item">
+            <div class="header-top-right">
+              <ul class="d-none">
+                <li> <a href="../../index.html#"> <i class="icofont-facebook"></i> </a> </li>
+                <li> <a href="../../index.html#"> <i class="icofont-twitter"></i> </a> </li>
+                <li> <a href="../../index.html#"> <i class="icofont-pinterest"></i> </a> </li>
+              </ul>
+              <a class="pink-btn btn-pd" href="../login/PatientPortal/login.html" target="_blank">
+        Login/Register</a> 
+			</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Header Top -->
+  <!-- Start Navbar Area -->
+  <div class="navbar-area sticky-top">
+    <!-- Menu For Mobile Device -->
+    <div class="mobile-nav"> <a href="../../index.html" class="logo"> <img src="../../assets/img/logo/logo.png" alt="Logo"> </a> </div>
+    <!-- Menu For Desktop Device -->
+    <div class="main-nav">
+      <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light"> <a class="navbar-brand" href="../../index.html"> <img src="../../assets/img/logo/logo.png" alt="Logo"> </a>
+          <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item"> <a href="../../index.html" class="nav-link">Home</a> </li>
+              <li class="nav-item"> <a href="#" class="nav-link dropdown-toggle">About</a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item"> <a href="../overview.html" class="nav-link">Overview</a> </li>
+                  <li class="nav-item"> <a href="../vision-mission.html" class="nav-link">Vision & Mission</a> </li>
+                  <li class="nav-item"> <a href="../management.html" class="nav-link">Management</a> </li>
+                  <li class="nav-item"> <a href="../doctors.html" class="nav-link">Doctors</a> </li>
+                  <li class="nav-item"> <a href="../consultation-time.html" class="nav-link">Doctor consultant Times</a> </li>
+                  <li class="nav-item"> <a href="../testimonials.html" class="nav-link">Testimonials</a> </li>
+                  <li class="nav-item"> <a href="../career.html" class="nav-link">Career</a> </li>
+                </ul>
+              </li>
+              <li class="nav-item"> <a href="#" class="nav-link dropdown-toggle">Specialities</a>
+                <ul class="dropdown-menu half-menu">
+                  <li class="nav-item"> <a href="../accident-emergency.html" class="nav-link">Accident & Emergency Medicine</a> </li>
+                  <li class="nav-item"> <a href="../anaesthesia.html" class="nav-link">Anaesthesia</a> </li>
+                  <li class="nav-item"> <a href="../blood-bank.html" class="nav-link">Blood Bank</a> </li>
+                  <li class="nav-item"> <a href="../cardiology.html" class="nav-link">Cardiology</a> </li>
+                  <li class="nav-item"> <a href="../dental.html" class="nav-link">Dental</a> </li>
+                  <li class="nav-item"> <a href="../ent.html" class="nav-link">ENT</a> </li>
+                  <li class="nav-item"> <a href="../pharmacy.html" class="nav-link">Pharmacy & Diagnostic Centre</a> </li>
+                  <li class="nav-item"> <a href="../neurosurgery.html" class="nav-link">Neurosurgery</a> </li>
+                  <li class="nav-item"> <a href="../pathology.html" class="nav-link">Pathology</a> </li>
+                  <li class="nav-item"> <a href="../radiodiagnosis.html" class="nav-link">Radio Diagnosis & Advanced Imaging</a> </li>
+                  <li class="nav-item"> <a href="../pediatrician.html" class="nav-link">Pediatrician</a> </li>
+                </ul>
+              </li>
+              <li class="nav-item"> <a href="../insurance.html" class="nav-link">Insurance</a> </li>
+              <li class="nav-item"> <a href="#" class="nav-link dropdown-toggle">Updates</a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item"> <a href="../gallery.html" class="nav-link">Gallery</a> </li>
+                  <li class="nav-item"> <a href="../news-and-events.html" class="nav-link">News & Events</a> </li>
+                  <li class="nav-item"> <a href="../videos.html" class="nav-link">Videos</a> </li>
+                  <li class="nav-item"> <a href="../patient-satisfaction.html" class="nav-link">Patients Satisfaction</a> </li>
+                  </ul>
+              </li>
+              <li class="nav-item"> <a href="../contact-us.html" class="nav-link">Contact Us</a> </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- End Navbar Area -->
+  
+</body>  
+
+
+
+
+
+
+
+<body class="bg-light" oncontextmenu="return false;" onLoad="getState('', '', '', '', ''); getCity('', '', '', '', ''); p_getState('', '', '', '', ''); p_getCity('', '', '', '', '');">
+
+<div class="container">
+  <div class="py-5 text-center"> <img class="d-block mx-auto mb-4" src="logo.png" alt="" width="72">
+    <h1>Patient Registration Form</h1>
+    <input type="hidden" id="vm" value="">
+  </div>
+</div>
+
+<div class="container">
+    <div class="row">
+    <div class="col-md-12">
+      <form enctype="multipart/form-data" name="form" id="form" method="post" action="index.php" onSubmit="return validateForm(event,this);" >
+        <div class="form-group">
+          <label for="exampleInputEmail1">Registration is a process by which patient is enrolled into the records of the hospital. This is required to provide seamless hospital services to the patient and to keep track of various services that are availed by the patient. This is also the first step to generate a medical record of the patient in which all medical details of the patient are documented.</label>
+          <span style="color:darkmagenta; font-size:22px">This facility is to be used only by patient coming first time to this hospital.</span> </div>
+        <h4 class="mb-3">Patient Particulars</h4>
+        <!--<div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="country">Title</label>
+                        <select class="custom-select d-block w-100" name="title" id="title" onChange="selGender(this.value);" required>
+              <option value="">-- Select --</option>
+                            <option value="1"  >Mr.</option>
+                            <option value="2"  >Miss.</option>
+                            <option value="3"  >Mrs.</option>
+                            <option value="4"  >Ms.</option>
+                            <option value="5"  >Prof.</option>
+                            <option value="6"  >Dr.</option>
+                            <option value="7"  >Sr.</option>
+                            <option value="8"  >B/O </option>
+                            <option value="9"  >Col.</option>
+                            <option value="10"  >MB/O </option>
+                            <option value="11"  >FB/O </option>
+                            <option value="12"  >M/s</option>
+                            <option value="13"  >Smt.</option>
+                            <option value="14"  >Mast </option>
+                            <option value="15"  >Fetus Of. </option>
+                            <option value="16"  >Mx.</option>
+                            <option value="17"  >Major </option>
+                          </select>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="state">Last Name</label>
+            <input type="text" class="form-control" id="lname" name="lname" value="" style="text-transform:uppercase" required>
+          </div>
+        </div>
+		  
+        <div class="row">
+          <div class="col-md-6 mb-3">
+			  <label for="state">First Name</label>
+			  <input type="text" class="form-control" name="fname" id="fname" value="" style="text-transform:uppercase" required>
+			</div>
+          <div class="col-md-6 mb-3">
+            <label for="state">Middle Name</label>
+            <input type="text" class="form-control" name="mname" id="mname" value="" style="text-transform:uppercase">
+          </div>
+        </div>-->
+        <div class="row">
+           <div class="col-md-2 mb-3" align="center">
+               <label for="state">Patient Image</label>
+               <img src="images/no_image.png" style="width: 110px; height: 130px; display: block; padding-bottom: 5px" id="ptnIcon">
+               <input type="file" accept="image/*" id="ptnPhoto" name="ptnPhoto" style="color: transparent !important;width:100px;"  required/>
+           </div>
+           <div class="col-md-10 mb-3">
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="country">Title</label>
+                                        <select class="custom-select d-block w-100" name="title" id="title" onChange="selGender(this.value);" required>
+                      <option value="">-- Select --</option>
+                                            <option value="1"  >Mr.</option>
+                                            <option value="2"  >Miss.</option>
+                                            <option value="3"  >Mrs.</option>
+                                            <option value="4"  >Ms.</option>
+                                            <option value="5"  >Prof.</option>
+                                            <option value="6"  >Dr.</option>
+                                            <option value="7"  >Sr.</option>
+                                            <option value="8"  >B/O </option>
+                                            <option value="9"  >Col.</option>
+                                            <option value="10"  >MB/O </option>
+                                            <option value="11"  >FB/O </option>
+                                            <option value="12"  >M/s</option>
+                                            <option value="13"  >Smt.</option>
+                                            <option value="14"  >Mast </option>
+                                            <option value="15"  >Fetus Of. </option>
+                                            <option value="16"  >Mx.</option>
+                                            <option value="17"  >Major </option>
+                                          </select>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="state">Last Name</label>
+                    <input type="text" class="form-control" id="lname" name="lname" value="" style="text-transform:uppercase" required>
+                  </div>
+                </div>
+               
+               <div class="row">
+                  <div class="col-md-6 mb-3">
+                      <label for="state">First Name</label>
+                      <input type="text" class="form-control" name="fname" id="fname" value="" style="text-transform:uppercase" required>
+                    </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="state">Middle Name</label>
+                    <input type="text" class="form-control" name="mname" id="mname" value="" style="text-transform:uppercase">
+                  </div>
+                </div>
+           </div>
+        </div>
+		  
+		<div class="row">
+			<div class="col-md-6 mb-3">
+			  <label for="state">PAN Card No</label>
+			  <input type="text" class="form-control" id="pan_no" name="pan_no" value="" maxlength="10" style="text-transform:uppercase">
+			</div>
+          <div class="col-md-6 mb-3">
+            <label for="state">Aadhar Number</label>
+            <input type="text" class="form-control" id="aadhar_no" name="aadhar_no" value="" maxlength="12">
+          </div>
+        </div>
+		
+		<div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="country">Gender</label>
+             			<select class="custom-select d-block w-100" name="gender" id="gender" onChange="showField(this.value);" required>
+			  <option value="">-- Select --</option>
+			  			  <option value="1"  >Male</option>
+			  			  <option value="2"  >Female</option>
+			  			  <option value="3"  >Unisex</option>
+			  			  <option value="4"  >Other</option>
+			  			  <option value="5"  >Foetus</option>
+			  			</select>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="state">Father/Husband Name</label>
+            <input type="text" class="form-control" id="father" name="father" value="">
+          </div>
+        </div>
+		  
+		<div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="country">Date of Birth</label>
+			<input class="form-control" size="10" name="dob" id="dob" type="text" value="" onFocus="getAge(this.value);" onBlur="getAge(this.value);" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="state" style="display: block">Age </label>
+            <input type="text" size="5" class="form-control" id="age" name="age" value="" onChange="setDOB();" style="width: 49%; display: inline">&nbsp;
+			<select class="custom-select" name="ageUnit" id="ageUnit" onChange="setDOB();" style="width: 49%; display:inline; position: absolute">
+			  <option selected="" value="0" selected>Years</option>
+			  <option value="1" >Months</option>
+			  <option value="2" >Days</option>
+			  <option value="3" >Weeks</option>
+			</select> 
+			<input type="hidden" id="approx_dob" name="approx_dob" value="0">
+          </div>
+        </div>
+		
+		<div class="row" id="divMarried1" style="display: none">
+          <div class="col-md-6 mb-3">
+            <label for="state" style="display: block">Marital Status</label>
+            <select class="custom-select" name="marital_status" id="marital_status" onChange="readdata(this.value)">
+			  <option value="">Select</option>
+			  <option value="Single" >Single</option>
+			  <option value="Married" >Married</option>
+              <option value="Divorced" >Divorced</option>
+              <option value="Widowed" >Widowed</option>
+			</select>
+          </div>
+          <div class="col-md-6 mb-3">
+        	<label for="exampleInputEmail1">Date Of Marriage</label>
+			<input class="form-control" size="10" name="dom" id="dom" type="text" value="">
+      	  </div>
+        </div>
+          
+        <div class="row">
+          <div class="col-md-6 mb-3" id="divMarried2" style="display: none">
+        	<label for="exampleInputEmail1">Before Marriage Name</label>
+			<input type="text" class="form-control" id="bmname" name="bmname" value="" placeholder="Last First  Name">
+      	  </div>
+          <div class="col-md-6 mb-3">
+        	<label for="exampleInputEmail1">Monthly Income Rs. (Approx)</label>
+			<input type="text" class="form-control" id="patient_income" name="patient_income" value="" maxlength="10">
+      	  </div>
+        </div>
+		  
+		<h4 class="mb-3">Local Address</h4>
+		
+		<div class="row">
+          <div class="col-md-6 mb-3">
+        	<label for="exampleInputEmail1">House Name/Appt.No</label>
+			<input type="text" size="30" class="form-control" id="address1" name="address1" value="" required>
+      	  </div>
+		  <div class="col-md-6 mb-3">
+        	<label for="exampleInputEmail1">Address2</label>
+			<input type="text" size="20" class="form-control" id="address2" name="address2" value="">
+      	  </div>	
+        </div>
+		  
+		<div class="row">
+          <div class="col-md-6 mb-3">
+        	<label for="exampleInputEmail1">PostOffice/Town</label>
+			<input type="text" class="form-control" id="post_office" name="post_office" value="">
+      	  </div>
+		  <div class="col-md-6 mb-3">
+        	<label for="exampleInputEmail1">Country</label>
+						<select class="custom-select d-block w-100" name="country" id="country" onChange="getState(this.value,'', '', '', '');" required>
+			<option value="">-- Select --</option>
+					    <option value="109"  >Afganisthan</option>
+					    <option value="1"  >Albania</option>
+					    <option value="2"  >Andorra</option>
+					    <option value="3"  >Argentina</option>
+					    <option value="4"  >Armenia</option>
+					    <option value="100"  >Australia</option>
+					    <option value="5"  >Austria</option>
+					    <option value="6"  >Azerbaijan</option>
+					    <option value="7"  >Bahamas</option>
+					    <option value="95"  >Bahrain</option>
+					    <option value="8"  >Bangladesh</option>
+					    <option value="9"  >Barbados</option>
+					    <option value="10"  >Belarus</option>
+					    <option value="11"  >Belgium</option>
+					    <option value="12"  >Bosnia & Herzegovina</option>
+					    <option value="13"  >Brunei</option>
+					    <option value="14"  >Bulgaria</option>
+					    <option value="96"  >Burundi</option>
+					    <option value="15"  >Canada</option>
+					    <option value="16"  >Chile</option>
+					    <option value="17"  >China</option>
+					    <option value="18"  >Colombia</option>
+					    <option value="104"  >Congo (East Africa)</option>
+					    <option value="19"  >Costa Rica</option>
+					    <option value="20"  >Croatia</option>
+					    <option value="21"  >Cyprus</option>
+					    <option value="22"  >Czech Republic</option>
+					    <option value="23"  >Denmark</option>
+					    <option value="24"  >Dominica</option>
+					    <option value="25"  >El Salvador</option>
+					    <option value="26"  >Estonia</option>
+					    <option value="27"  >Faeroe Islands</option>
+					    <option value="28"  >Finland</option>
+					    <option value="29"  >France</option>
+					    <option value="30"  >Germany</option>
+					    <option value="31"  >Gibraltar</option>
+					    <option value="32"  >Greece</option>
+					    <option value="33"  >Guatemala</option>
+					    <option value="35"  >Honduras</option>
+					    <option value="111"  >HongKong</option>
+					    <option value="36"  >Hungary</option>
+					    <option value="37"  >Iceland</option>
+					    <option value="38" selected >India</option>
+					    <option value="106"  >Indonesia</option>
+					    <option value="39"  >Iran</option>
+					    <option value="110"  >IRAQ</option>
+					    <option value="40"  >Ireland</option>
+					    <option value="41"  >Israel</option>
+					    <option value="42"  >Italy</option>
+					    <option value="88"  >Japan</option>
+					    <option value="91"  >Kenya</option>
+					    <option value="44"  >Kuwait</option>
+					    <option value="45"  >Latvia</option>
+					    <option value="46"  >Lesotho</option>
+					    <option value="47"  >Liechtenstein</option>
+					    <option value="48"  >Lithuania</option>
+					    <option value="49"  >Luxembourg</option>
+					    <option value="50"  >Malaysia</option>
+					    <option value="89"  >Maldievs</option>
+					    <option value="51"  >Malta</option>
+					    <option value="52"  >Mauritius</option>
+					    <option value="53"  >Mexico</option>
+					    <option value="54"  >Moldova</option>
+					    <option value="55"  >Monaco</option>
+					    <option value="112"  >Mozambia</option>
+					    <option value="94"  >Nepal</option>
+					    <option value="56"  >Netherlands</option>
+					    <option value="57"  >New Zealand</option>
+					    <option value="108"  >Nigeria</option>
+					    <option value="59"  >Norway</option>
+					    <option value="90"  >Oman</option>
+					    <option value="114"  >OTHER</option>
+					    <option value="60"  >Pakistan</option>
+					    <option value="61"  >Peru</option>
+					    <option value="115"  >PHILIPINES</option>
+					    <option value="62"  >Poland</option>
+					    <option value="63"  >Portugal</option>
+					    <option value="64"  >Republic of Georgia</option>
+					    <option value="65"  >Republic of Macedonia</option>
+					    <option value="66"  >Romania</option>
+					    <option value="67"  >Russia</option>
+					    <option value="105"  >Rwanda</option>
+					    <option value="68"  >San Marino</option>
+					    <option value="87"  >Saudi Arabia</option>
+					    <option value="69"  >Serbia & Montenegro</option>
+					    <option value="113"  >SIERRA LEONEAN</option>
+					    <option value="70"  >Singapore</option>
+					    <option value="71"  >Slovakia</option>
+					    <option value="72"  >Slovenia</option>
+					    <option value="98"  >South Africa</option>
+					    <option value="73"  >Spain</option>
+					    <option value="93"  >SriLanka</option>
+					    <option value="103"  >Sudan</option>
+					    <option value="74"  >Surinam</option>
+					    <option value="75"  >Svalbard</option>
+					    <option value="76"  >Sweden</option>
+					    <option value="77"  >Switzerland</option>
+					    <option value="78"  >Syria</option>
+					    <option value="97"  >Tanzania</option>
+					    <option value="79"  >Tunisia</option>
+					    <option value="80"  >Turkey</option>
+					    <option value="81"  >U.S.A</option>
+					    <option value="101"  >Uganda</option>
+					    <option value="82"  >Ukraine</option>
+					    <option value="92"  >United Arab Emirates</option>
+					    <option value="83"  >United Kingdom</option>
+					    <option value="84"  >Uruguay</option>
+					    <option value="85"  >Vatican City</option>
+					    <option value="102"  >Vietnam</option>
+					    <option value="107"  >Yemen</option>
+					    <option value="86"  >Yugoslavia</option>
+					    <option value="99"  >Zambia</option>
+						</select>
+      	  </div>	
+        </div>
+		  
+		<div class="row">
+          <div class="col-md-6 mb-3">
+        	<label for="exampleInputEmail1">State</label>
+			<div id="statediv"><select class="custom-select d-block w-100" name="state" id="state" required>
+			<option value="">Tamil Nadu</option>
+			<option value="">Kerala</option>
+			<option value="">Andhra Pradesh</option>
+			<option value="">Karnataka</option>
+			<option value="">Telengana</option>
+			<option value="">Madhya Pradesh </option>
+			<option value="">Haryana</option>
+			
+			
+			
+			
+			
+			
+			</select>
+			
+			</div>
+      	  </div>
+		  <div class="col-md-6 mb-3">
+        	<label for="exampleInputEmail1">District/City</label>
+			<div id="citydiv"><select class="custom-select d-block w-100" name="city" id="city">
+			<option value="">Coimbatore</option>
+			<option value="">Chennai</option>
+			<option value="">Tiripur</option>
+			<option value="">Erode</option>
+			<option value="">Salem</option>
+			<option value="">Trichy</option>	
+			</select></div>
+      	  </div>	
+        </div>
+		
+		<div class="row">
+          <div class="col-md-6 mb-3">
+        	<label for="exampleInputEmail1">Pincode</label>
+			<input type="text" class="form-control" id="pincode" name="pincode" value="" >
+      	  </div>
+		  <div class="col-md-6 mb-3">
+        	<label for="exampleInputEmail1">Phone</label>
+			<input type="text" class="form-control" id="phone" name="phone" value="">
+      	  </div>	
+        </div> 
+		
+		<div class="row">
+          <div class="col-md-6 mb-3">
+        	<label for="exampleInputEmail1">Office Phone</label>
+			<input type="text" class="form-control" id="office_phone" name="office_phone" value="" >
+      	  </div>
+		  <div class="col-md-6 mb-3">
+        	<label for="exampleInputEmail1">Cell Phone</label>
+			<input type="text" class="form-control" id="cell_phone" name="cell_phone" value="">
+      	  </div>	
+        </div>
+		  
+		<div class="row">
+          <div class="col-md-6 mb-3">
+        	<label for="exampleInputEmail1">Email</label>
+			<input type="text" class="form-control" id="email" name="email" value="" style="text-transform:lowercase" required>
+            <small id="emailHelp" class="form-text text-muted">Confirmation email will be send on this email id</small>
+      	  </div>
+		  <div class="col-md-6 mb-3">
+        	<input style="width: 25px; height:25px; margin-top: 40px" type="checkbox" id="copy" name="copy" value="copy" onClick="FillBilling(this.form)"  >&nbsp;&nbsp;&nbsp;Copy to Permanent Address
+      	  </div>	
+        </div>
+		
+		<h4 class="mb-3">Permanent  Address</h4>
+		  
+		<div class="row">
+          <div class="col-md-6 mb-3">
+        	<label for="exampleInputEmail1">House Name/Appt.No</label>
+			<input type="text" size="30" class="form-control" id="p_address1" name="p_address1" value="" >   
+      	  </div>
+		  <div class="col-md-6 mb-3">
+			<label for="exampleInputEmail1">Address2</label>
+        	<input type="text" class="form-control" id="p_address2" name="p_address2" value="">
+      	  </div>	
+        </div>
+          
+        <div class="row">
+          <div class="col-md-6 mb-3">
+        	<label for="exampleInputEmail1">PostOffice/Town</label>
+			<input type="text" class="form-control" id="p_post_office" name="p_post_office" value="" >
+      	  </div>
+		  <div class="col-md-6 mb-3">
+			<label for="exampleInputEmail1">Country</label>
+        	            <select class="custom-select d-block w-100" name="p_country" id="p_country" onChange="p_getState(this.value, '', '', '', '');" required>
+            <option value="">-- Select --</option>
+                        <option value="109"  >Afganisthan</option>
+                        <option value="1"  >Albania</option>
+                        <option value="2"  >Andorra</option>
+                        <option value="3"  >Argentina</option>
+                        <option value="4"  >Armenia</option>
+                        <option value="100"  >Australia</option>
+                        <option value="5"  >Austria</option>
+                        <option value="6"  >Azerbaijan</option>
+                        <option value="7"  >Bahamas</option>
+                        <option value="95"  >Bahrain</option>
+                        <option value="8"  >Bangladesh</option>
+                        <option value="9"  >Barbados</option>
+                        <option value="10"  >Belarus</option>
+                        <option value="11"  >Belgium</option>
+                        <option value="12"  >Bosnia & Herzegovina</option>
+                        <option value="13"  >Brunei</option>
+                        <option value="14"  >Bulgaria</option>
+                        <option value="96"  >Burundi</option>
+                        <option value="15"  >Canada</option>
+                        <option value="16"  >Chile</option>
+                        <option value="17"  >China</option>
+                        <option value="18"  >Colombia</option>
+                        <option value="104"  >Congo (East Africa)</option>
+                        <option value="19"  >Costa Rica</option>
+                        <option value="20"  >Croatia</option>
+                        <option value="21"  >Cyprus</option>
+                        <option value="22"  >Czech Republic</option>
+                        <option value="23"  >Denmark</option>
+                        <option value="24"  >Dominica</option>
+                        <option value="25"  >El Salvador</option>
+                        <option value="26"  >Estonia</option>
+                        <option value="27"  >Faeroe Islands</option>
+                        <option value="28"  >Finland</option>
+                        <option value="29"  >France</option>
+                        <option value="30"  >Germany</option>
+                        <option value="31"  >Gibraltar</option>
+                        <option value="32"  >Greece</option>
+                        <option value="33"  >Guatemala</option>
+                        <option value="35"  >Honduras</option>
+                        <option value="111"  >HongKong</option>
+                        <option value="36"  >Hungary</option>
+                        <option value="37"  >Iceland</option>
+                        <option value="38" selected >India</option>
+                        <option value="106"  >Indonesia</option>
+                        <option value="39"  >Iran</option>
+                        <option value="110"  >IRAQ</option>
+                        <option value="40"  >Ireland</option>
+                        <option value="41"  >Israel</option>
+                        <option value="42"  >Italy</option>
+                        <option value="88"  >Japan</option>
+                        <option value="91"  >Kenya</option>
+                        <option value="44"  >Kuwait</option>
+                        <option value="45"  >Latvia</option>
+                        <option value="46"  >Lesotho</option>
+                        <option value="47"  >Liechtenstein</option>
+                        <option value="48"  >Lithuania</option>
+                        <option value="49"  >Luxembourg</option>
+                        <option value="50"  >Malaysia</option>
+                        <option value="89"  >Maldievs</option>
+                        <option value="51"  >Malta</option>
+                        <option value="52"  >Mauritius</option>
+                        <option value="53"  >Mexico</option>
+                        <option value="54"  >Moldova</option>
+                        <option value="55"  >Monaco</option>
+                        <option value="112"  >Mozambia</option>
+                        <option value="94"  >Nepal</option>
+                        <option value="56"  >Netherlands</option>
+                        <option value="57"  >New Zealand</option>
+                        <option value="108"  >Nigeria</option>
+                        <option value="59"  >Norway</option>
+                        <option value="90"  >Oman</option>
+                        <option value="114"  >OTHER</option>
+                        <option value="60"  >Pakistan</option>
+                        <option value="61"  >Peru</option>
+                        <option value="115"  >PHILIPINES</option>
+                        <option value="62"  >Poland</option>
+                        <option value="63"  >Portugal</option>
+                        <option value="64"  >Republic of Georgia</option>
+                        <option value="65"  >Republic of Macedonia</option>
+                        <option value="66"  >Romania</option>
+                        <option value="67"  >Russia</option>
+                        <option value="105"  >Rwanda</option>
+                        <option value="68"  >San Marino</option>
+                        <option value="87"  >Saudi Arabia</option>
+                        <option value="69"  >Serbia & Montenegro</option>
+                        <option value="113"  >SIERRA LEONEAN</option>
+                        <option value="70"  >Singapore</option>
+                        <option value="71"  >Slovakia</option>
+                        <option value="72"  >Slovenia</option>
+                        <option value="98"  >South Africa</option>
+                        <option value="73"  >Spain</option>
+                        <option value="93"  >SriLanka</option>
+                        <option value="103"  >Sudan</option>
+                        <option value="74"  >Surinam</option>
+                        <option value="75"  >Svalbard</option>
+                        <option value="76"  >Sweden</option>
+                        <option value="77"  >Switzerland</option>
+                        <option value="78"  >Syria</option>
+                        <option value="97"  >Tanzania</option>
+                        <option value="79"  >Tunisia</option>
+                        <option value="80"  >Turkey</option>
+                        <option value="81"  >U.S.A</option>
+                        <option value="101"  >Uganda</option>
+                        <option value="82"  >Ukraine</option>
+                        <option value="92"  >United Arab Emirates</option>
+                        <option value="83"  >United Kingdom</option>
+                        <option value="84"  >Uruguay</option>
+                        <option value="85"  >Vatican City</option>
+                        <option value="102"  >Vietnam</option>
+                        <option value="107"  >Yemen</option>
+                        <option value="86"  >Yugoslavia</option>
+                        <option value="99"  >Zambia</option>
+                        </select>
+      	  </div>	
+        </div>
+          
+        <div class="row">
+          <div class="col-md-6 mb-3">
+        	<label for="exampleInputEmail1">State</label>
+			<div id="p_statediv"><input type="text" class="form-control" id="p_state" name="p_state" value="" required></div>
+      	  </div>
+		  <div class="col-md-6 mb-3">
+			<label for="exampleInputEmail1">District/City</label>
+        	<div id="p_citydiv"><input type="text" class="form-control" id="p_city" name="p_city" value="" required></div>
+      	  </div>	
+        </div>
+          
+        <div class="row">
+          <div class="col-md-6 mb-3">
+        	<label for="exampleInputEmail1">Pincode</label>
+			<input type="text" class="form-control" id="p_pincode" name="p_pincode" value="" >
+      	  </div>
+		  <div class="col-md-6 mb-3">
+			<label for="exampleInputEmail1">Phone</label>
+        	<input type="text" class="form-control" id="p_phone" name="p_phone" value="">
+      	  </div>	
+        </div>
+		
+        <h4 class="mb-3">Emergency Contact</h4>
+          
+        <div class="row">
+          <div class="col-md-3 mb-3">
+			<label for="exampleInputEmail1">Emergency Contact Person</label>
+      	  </div>
+		  <div class="col-md-3 mb-3">
+        	<input placeholder="Last Name" type="text" class="form-control" id="emg_person" name="emg_person" value="" required>
+      	  </div>
+          <div class="col-md-3 mb-3">
+        	<input placeholder="First Name" type="text" class="form-control" id="emg_person1" name="emg_person1" value="" required>
+      	  </div>
+          <div class="col-md-3 mb-3">
+			<input placeholder="Middle Name" type="text" class="form-control" id="emg_person2" name="emg_person2" value="">
+      	  </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-md-6 mb-3">
+        	<label for="exampleInputEmail1">Relation</label>
+			            <select class="custom-select d-block w-100" name="relation" id="relation" required>
+              <option value="">-- Select --</option>
+                            <option value="2"  >Spouse</option>
+                            <option value="3"  >Brother</option>
+                            <option value="4"  >Sister</option>
+                            <option value="5"  >Friend</option>
+                            <option value="6"  >Father</option>
+                            <option value="7"  >Mother</option>
+                            <option value="8"  >Relative</option>
+                            <option value="9"  >Son</option>
+                            <option value="10"  >Daughter</option>
+                            <option value="11"  >Father in law</option>
+                            <option value="12"  >Grand father</option>
+                            <option value="13"  >Grand mother</option>
+                            <option value="14"  >Husband</option>
+                            <option value="15"  >Mother in law</option>
+                            <option value="16"  >Wife</option>
+                            <option value="17"  >Uncle</option>
+                            <option value="18"  >Aunty</option>
+                            <option value="19"  >Brother In Law</option>
+                            <option value="20"  >Sister In Law</option>
+                            <option value="21"  >Nephew</option>
+                            <option value="22"  >Niece</option>
+                            <option value="23"  >Son In Law</option>
+                            <option value="24"  >Daughter In Law</option>
+                            <option value="25"  >Grand Daughter</option>
+                            <option value="26"  >Grand Son</option>
+                            <option value="27"  >Major Brother</option>
+                            <option value="28"  >Major Sister</option>
+                            <option value="29"  >Major Son</option>
+                            <option value="30"  >Major Daughter</option>
+                          </select> 
+      	  </div>
+		  <div class="col-md-6 mb-3">
+			<label for="exampleInputEmail1">Emergency Contact No</label>
+        	<input type="text" class="form-control" id="emg_no" name="emg_no" value="" required>
+      	  </div>	
+        </div>
+          
+        <div class="row">
+          <div class="col-md-6 mb-3">
+        	<label for="exampleInputEmail1">Name of the Representative</label>
+            <input size="30" type="text" class="form-control" id="re_persone" name="re_persone" value="" required>
+      	  </div>
+		  <div class="col-md-6 mb-3">
+			<label for="exampleInputEmail1">Representative Relation to Patient</label>
+        	            <select class="custom-select d-block w-100" name="re_relation" id="re_relation" required>
+              <option value="">-- Select --</option>
+                            <option value="1"  >Self</option>
+                            <option value="2"  >Spouse</option>
+                            <option value="3"  >Brother</option>
+                            <option value="4"  >Sister</option>
+                            <option value="5"  >Friend</option>
+                            <option value="6"  >Father</option>
+                            <option value="7"  >Mother</option>
+                            <option value="8"  >Relative</option>
+                            <option value="9"  >Son</option>
+                            <option value="10"  >Daughter</option>
+                            <option value="11"  >Father in law</option>
+                            <option value="12"  >Grand father</option>
+                            <option value="13"  >Grand mother</option>
+                            <option value="14"  >Husband</option>
+                            <option value="15"  >Mother in law</option>
+                            <option value="16"  >Wife</option>
+                            <option value="17"  >Uncle</option>
+                            <option value="18"  >Aunty</option>
+                            <option value="19"  >Brother In Law</option>
+                            <option value="20"  >Sister In Law</option>
+                            <option value="21"  >Nephew</option>
+                            <option value="22"  >Niece</option>
+                            <option value="23"  >Son In Law</option>
+                            <option value="24"  >Daughter In Law</option>
+                            <option value="25"  >Grand Daughter</option>
+                            <option value="26"  >Grand Son</option>
+                            <option value="27"  >Major Brother</option>
+                            <option value="28"  >Major Sister</option>
+                            <option value="29"  >Major Son</option>
+                            <option value="30"  >Major Daughter</option>
+                          </select>
+      	  </div>	
+        </div>
+          
+        <div class="row">
+          <div class="col-md-6 mb-3">
+			<label for="exampleInputFile">Patient Document Type</label>
+                        <select class="custom-select d-block w-100" name="doc_type" id="doc_type" required>
+            <option value="">-- Select --</option>
+                        <option value="539"  >Driver's License Frontside</option>
+                        <option value="540"  >Driver's License Backside</option>
+                        <option value="573"  >Passport Book</option>
+                        <option value="1570"  >Aadhar card</option>
+                        <option value="1571"  >Election card</option>
+                        <option value="1572"  >Pan card</option>
+                        <option value="1573"  >Birth certificate</option>
+                        <option value="1576"  >Affidavit</option>
+                        <option value="1578"  >Marriage certificate</option>
+                        <option value="1636"  >Visa Details</option>
+            </select>
+      	  </div> 
+		  <div class="col-md-6 mb-3">
+			<label for="exampleInputFile">File Name</label>
+            <input type="file" name="id_file" id="id_file" accept="image/jpeg,image/gif,image/png,application/pdf,image/jpg" class="form-control" style="padding: 0.18rem 0.1rem;" required/>
+      	  </div>	
+        </div>
+        <div id="loader" class="center" style="display: none"></div> 
+        <hr class="mb-4"> 
+        <div class="row">
+          <div class="col-md-6 mb-3">
+        	            <input type="submit" class="btn btn-success btn-lg btn-block" value="Save" name="Save" id="SaveData">
+            <input type="hidden" value="Save" name="SaveDB" id="SaveDB">
+                  	  </div>
+		  <div class="col-md-6 mb-3">
+			<input onClick="window.location.href='registration.html';" type="button" class="btn btn-primary btn-lg btn-block" value="Clear" name="Clear">
+      	  </div>	
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg btn-block" onclick="message()">Submit</button></br>
+      </form>
+    </div>
+  </div>
+
+
+
+  
+  
+<script>
+function message(){
+	alert("Sucessfully Registered");
+</script>
+     
+  <script src="js/jquery.min.js"></script> 
+  <script src="js/jquery-image-upload-resizer.js"></script> 
+  <script>
+    var v = $.noConflict(true);
+    v('#ptnPhoto').imageUploadResizer({
+        //max_width: 900, // Defaults 1000
+        //max_height: 600, // Defaults 1000
+        quality: 0.8, // Defaults 1
+        do_not_resize: ['gif', 'svg'], // Defaults []
+    });
+    v('#id_file').imageUploadResizer({
+        //max_width: 900, // Defaults 1000
+        //max_height: 600, // Defaults 1000
+        quality: 0.8, // Defaults 1
+        do_not_resize: ['gif', 'svg'], // Defaults []
+    });
+  </script>
+    
+</div>
+
+
+<footer class="pb-70">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="container">
+
+
+
+      <div class="row">
+
+
+
+          <div class="col-sm-6 col-lg-5">
+
+
+
+              <div class="footer-item">
+
+
+
+                  <div class="footer-contact">
+
+
+
+                      <h3>Contact Us</h3>
+
+
+
+                      <ul>
+
+
+
+                          <li>
+
+
+
+                              <i class="icofont-ui-message"></i>
+
+
+
+                              <a href="mailto:globalhealthhospitals2003@gmail.com">globalhealthhospitals2003@gmail.com</a>
+
+
+
+                              
+
+
+
+                          </li>
+
+
+
+                          <li>
+
+
+
+                              <i class="icofont-stock-mobile"></i>
+
+
+
+                              <a href="tel:+0422-123 456">Call: 0422-123 456</a>
+
+
+
+                              <a href="tel:+8438845903">Mobile: 8438845903 , 9791989598</a>
+
+
+
+
+
+
+
+                            
+
+
+
+
+
+
+                          </li>
+
+
+
+                          <li>
+
+
+
+                              <i class="icofont-location-pin"></i>
+
+
+
+                              99, Avanashi Road, Coimbatore,Tamil Nadu-641014
+
+
+
+
+
+
+
+                          </li>
+
+
+
+                      </ul>
+
+
+
+                  </div>
+
+
+
+              </div>
+
+
+
+          </div>
+
+
+
+          <div class="col-sm-6 col-lg-2">
+
+
+
+              <div class="footer-item">
+
+
+
+                  <div class="footer-quick">
+
+
+
+                      <h3>Quick Links</h3>
+
+
+
+                      <ul>
+
+
+
+                          <li>
+
+
+
+                              <a href="../../index.html">Home</a>
+
+
+
+                          </li>
+
+
+
+                          <li>
+
+
+
+                              <a href="../overview.html">Overview</a>
+
+
+
+                          </li>
+
+
+
+                          <li>
+
+
+
+                              <a href="../management.html">Management</a>
+
+
+
+                          </li>
+
+
+
+                          <li>
+
+
+
+                              <a href="../doctors.html">Doctors</a>
+
+
+
+                          </li>
+
+
+
+                          <li>
+
+
+
+                              <a href="../insurance.html">Insurance</a>
+
+
+
+                          </li>
+
+
+
+                          <li>
+
+
+
+                              <a href="../testimonials.html">Testimonials</a>
+
+
+
+                          </li>
+
+
+
+                      </ul>
+
+
+
+                  </div>
+
+
+
+              </div>
+
+
+
+          </div>
+
+
+
+          <div class="col-sm-6 col-lg-2">
+
+
+
+              <div class="footer-item">
+
+
+
+                  <div class="footer-quick">
+
+
+
+                      <h3>Updates</h3>
+
+
+
+                      <ul>
+
+
+
+                          <li>
+
+
+
+                              <a href="../gallery.html">Gallery</a>
+
+
+
+                          </li>
+
+
+
+                          <li>
+
+
+
+                              <a href="../news-and-events.html">News and Events</a>
+
+
+
+                          </li>
+
+
+
+                          <li>
+
+
+
+                              <a href="../videos.html">Videos</a>
+
+
+
+                          </li>
+
+
+
+                          <li>
+
+
+
+                              <a href="../patient-satisfaction.html">Patient Satisfaction</a>
+
+
+
+                          </li>
+
+
+
+                          
+
+                      </ul>
+
+
+
+                  </div>
+
+
+
+              </div>
+
+
+
+          </div>
+
+
+
+          <div class="col-sm-6 col-lg-3">
+
+
+
+              <div class="footer-item">
+
+
+
+                  <div class="footer-feedback social-media-icon">
+
+
+
+                      <h3>Social Media</h3>
+
+
+
+                      <ul class="">
+
+                          
+
+                          <li>
+
+
+
+                              <a href="https://www.facebook.com/Global HealthHospitals/" target="_blank">
+
+
+
+                                  <i class="icofont-facebook"></i>
+
+
+
+                              </a>
+
+
+
+                          </li>
+
+
+
+                          <li>
+
+
+
+                              <a href="https://twitter.com/"" target="_blank">
+
+
+
+                                  <i class="icofont-twitter"></i>
+
+
+
+                              </a>
+
+
+
+                          </li> 
+
+
+
+                          <li>
+
+
+
+                              <a href="https://www.youtube.com" target="_blank">
+
+
+
+                                  <i class="icofont-youtube"></i>
+
+
+
+                              </a>
+
+
+
+                          </li>
+
+                      </ul>
+
+
+
+                      
+
+                  </div>
+
+
+
+              </div>
+
+
+
+          </div>
+
+
+
+      </div>
+
+
+
+  </div>
+
+
+
+</footer>
+
+<div class="copyright-area">
+
+
+
+        <div class="container">
+
+
+
+            <div class="copyright-item">
+
+
+
+                <<p>© Copyrights 2022-2023<br> 
+			   <a href="index.html" target="_blank" style="color: #289f88;">Global Hospitals</a>- Iniyan Niran Pranav S R <br>
+			II B.Tech CSE (CYS) <br> Part of 20CYS202 - User Interface Design <br> Amrita Vishwa Vidyapeetham, Coimbatore</p>
+
+
+                    </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+</body>
+</html>
