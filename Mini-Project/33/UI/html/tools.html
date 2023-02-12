@@ -1,0 +1,527 @@
+<!--
+Authors:  Ruthwik Krishna Bandreddy
+Created Date:  01 Dec 2022
+Updated Date: 07 Jan 2023
+Base Template: NIL;
+Description:This page contains the compilation  top 10 tools used by the blockchain security professionals-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <title>ABC-VT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: antiquewhite;
+}
+.hero {
+  width: 100%;
+  height: 100vh;
+  
+  background-image: url("../images/nasa-Q1p7bh3SHj8-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 100px;
+}
+.logo {
+  max-height: 100px;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+nav ul li a {
+  color: #7c8dff;
+  position: relative;
+  padding: 5px 0;
+}
+nav ul li a:hover {
+  color: #fd4766;
+}
+nav ul li a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #fd4766;
+  transition: 0.3s;
+  bottom: 0;
+}
+nav ul li a:hover:after {
+  width: 100%;
+}
+.btn {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 16px 40px;
+  border-radius: 500px;
+  display: inline-block;
+  font-weight: 500;
+  transition: all 0.4s ease-in-out;
+  background-size: 152% 100%;
+  background: #fd4766;
+  border: 2px solid #fd4766;
+}
+.btn:hover {
+  background: transparent;
+  border-color: #fd4766;
+  color: #fd4766;
+}
+.target-1-icon {
+    position: absolute;
+    top: 220px;
+    left: 130px;
+    border-radius: 2px;
+    width: 324px;
+    height: 312px;
+    object-fit: cover;
+  }
+
+
+footer{
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  background: rgb(39, 4, 23);
+}
+footer .content{
+  max-width: 1350px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .content .box{
+  width: 33%;
+  transition: all 0.4s ease;
+}
+footer .content .topic{
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 16px;
+
+}
+footer .content p{
+  text-align: justify;
+  color:rgb(255, 255, 255);
+}
+footer .content .lower .topic{
+  margin: 24px 0 5px 0;
+}
+footer .content .lower i{
+  padding-right: 16px;
+}
+footer .content .middle{
+  padding-left: 80px;
+}
+footer .content .middle a{
+  line-height: 32px;
+}
+footer .content .right input[type="text"]{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  color: #d9d9d9;
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 2px solid #222222;
+}
+footer .content .right input[type="submit"]{
+  height: 42px;
+  width: 100%;
+  font-size: 18px;
+  color: #d9d9d9;
+  background: #eb2f06;
+  outline: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 12px;
+  border: 2px solid #eb2f06;
+  transition: all 0.3s ease-in-out;
+}
+.content .right input[type="submit"]:hover{
+  background: none;
+  color:  #eb2f06;
+}
+footer .content .media-icons a{
+  font-size: 16px;
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  text-align: center;
+  line-height: 43px;
+  border-radius: 5px;
+  border: 2px solid #eaeaea;
+  margin: 30px 5px 0 0;
+  transition: all 0.3s ease;
+}
+.content .media-icons a:hover{
+  border-color: #eb2f06;
+}
+footer .bottom{
+  width: 100%;
+  text-align: center;
+  color: #d9d9d9;
+  padding: 0 40px 5px 0;
+}
+footer .bottom a{
+  color: #eb2f06;
+}
+footer a{
+  transition: all 0.3s ease;
+}
+footer a:hover{
+  color: #eb2f06;
+}
+@media (max-width:1100px) {
+  footer .content .middle{
+    padding-left: 50px;
+  }
+}
+@media (max-width:950px){
+  footer .content .box{
+    width: 50%;
+  }
+  .content .right{
+    margin-top: 40px;
+  }
+}
+@media (max-width:560px){
+  footer{
+    position: relative;
+  }
+  footer .content .box{
+    width: 100%;
+    margin-top: 30px;
+  }
+  footer .content .middle{
+    padding-left: 0;
+  }
+}
+
+table{
+
+  position: relative;
+  width: 100%;
+  margin: 0;
+  z-index: 1;
+  border-collapse: collapse;
+  border: 1px;
+padding: 0px;
+
+}
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  width: 100%;
+  background-color: #080808;
+  border: 8px solid rgb(4, 4, 4);
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+  background:#212529;
+  color:rgb(231 66 99);
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color:#fdd600;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+  width: 1px;
+}
+
+table tr {
+  display: block;
+  margin-bottom: .625em;
+}
+
+table td {
+  border-bottom: 1px solid #eb2f06;
+  display: block;
+  font-size: .8em;
+  text-align: right;
+}
+
+table td::before {
+  content: attr(data-label);
+  float: left;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+table td:last-child {
+  border-bottom: 0;
+}
+}
+
+.yellow{
+  color:#fdd600;
+}
+.tablebuton{
+  color:rgb(253 214 0);
+  border:1px solid rgb(38, 41, 47);
+  background-color:transparent;
+  padding:8px 10px;
+  font-size:14px;
+  text-align: center;
+}
+.amrita-brings-you-vulnerability {
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(45deg, #ffffff,#ee0bfe);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+
+
+.target-1-icon {
+    position: absolute;
+    top: 220px;
+    left: 130px;
+    border-radius: 2px;
+    width: 324px;
+    height: 312px;
+    object-fit: cover;
+  }
+  .amrita-brings-you-vulnerability,
+  .home-b2 {
+   min-height: 100%;
+    position: absolute;
+    display: inline-block;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .amrita-brings-you-vulnerability {
+    top: 250px;
+    left: 830px;
+    font-size: 25px;
+    width: 561px;
+    height: 209px;
+  }
+</style>
+
+
+</style>
+</head>
+<body>
+    <div class="hero">
+      <nav>
+        <img src="../images/abc-vt-high-resolution-logo-white-on-transparent-background.png" alt="target-1-icon" class="logo" />
+        <ul>
+          <li><a href='../index.html'>Home</a></li>
+          <li><a href="vulnerabilities.html">Vulnerabilities</a></li>
+          <li><a href="tools.html">Tools</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="#">Publications</a></li>
+          <li><a href="News.html">News</a></li>
+          <li><a href="report.html">Report</a></li>
+        </ul>
+      </nav>
+      </div>
+
+        <div class="desktop-1">
+          <img class="target-1-icon" alt="" src="../images/computer.png" ></div>
+    
+        
+    <div class="amrita-brings-you-vulnerability">
+        <b style="color: lineargradient">
+          Blockchain security tools are software applications or platforms
+          that are designed to protect blockchain systems and networks from security
+          threats and vulnerabilities. These tools can be used to secure the data on the blockchain, 
+          protect against unauthorized access, and ensure the integrity of the blockchain</b>
+      </div>
+   
+        
+
+        <div class="table">
+          
+            <table>
+              <tr>
+                <th>Ranking</th>
+                <th>Tool Name</th>
+                <th>Status</th>
+                <th>Type</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td><a1 class="tool-link" href="google">Etheno</a1></td>
+                <td>Live</td>
+                <td>Dynamic (CLI/Web)</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td><a1 class="tool-link" href="google">Mythril</a1></td>
+                <td>Live</td>
+                <td>static(CLI)</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td><a1 class="tool-link" href="google">Mythx</a1></td>
+                <td>Live</td>
+                <td>(CLI/Web)</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td><a1 class="tool-link" href="google">Tenderly</a1></td>
+                <td>Live</td>
+                <td>Dynamic (CLI/Web)</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td><a1 class="tool-link" href="google">Manticore</a1></td>
+                <td>Live</td>
+                <td>CLI</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td><a1 class="tool-link" href="google">Slither</a1></td>
+                <td>Live</td>
+                <td>Static CLI</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td><a1 class="tool-link" href="google">Piet</a1></td>
+                <td>Live</td>
+                <td>Visualizer(web)</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td><a1 class="tool-link" href="google">Smart Check</a1></td>
+                <td>Live</td>
+                <td>Static(web)</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td><a1 class="tool-link" href="google">Vertigo</a1></td>
+                <td>Live</td>
+                <td>Static(web)</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td><a1 class="tool-link" href="google">Solidity Visual Auditor</a1></td>
+                <td>Live</td>
+                <td>Lint (Desktop-UI)</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td><a1 class="tool-link" href="google">Solgraph</a1></td>
+                <td> </td>
+                <td>Visualizer(CLI)</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td><a1 class="tool-link" href="google">Mpro</a1></td>
+                <td>NoT in Use</td>
+                <td>Static</td>
+              </tr>
+            
+            </table>
+          
+          
+            <footer>
+              <div class="content">
+                  <div class="left box">
+                    <div class="upper">
+                      <div class="topic">About us</div>
+                      <p>Amrita Vishwa Vidyapeetham is a NAAC accredited A grade, multi-campus, multi-disciplinary teaching and research institution.
+                      </p>
+                    </div>
+                    <div class="lower">
+                      <div class="topic">Contact us</div>
+                      <div class="phone">
+                        <a href="#"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
+                      </div>
+                      <div class="email">
+                        <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="middle box">
+                    <div class="topic">About Amrita</div>
+                    <div><a href="https://www.amrita.edu/rankings/">Rankings</a></div>
+                    <div><a href="https://www.amrita.edu/about/awards-accreditations/">Accreditation</a></div>
+                    <div><a href="https://www.amrita.edu/about/leadership/">leadership</a></div>
+                    <div><a href="https://www.amrita.edu/international/international-newsletter/">Newsletter</a></div>
+                    <div><a href="https://www.amrita.edu/press-media/">Press Media</a></div>
+                    <div><a href="https://amrita.edu/governance/?page=1">Governance</a></div>
+                  </div>
+                  <div class="right box">
+                    <div class="topic">Subscribe us</div>
+                    <form action="#">
+                      <input type="text" placeholder="Enter email address">
+                      <input type="submit" name="media-icons" value="Send">
+                      <div class="media-icons">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="bottom">
+                  <p>Copyright © 2022-2023 Anokha - <a href="#">Ruthwik Krishna.</a> </br>II B.Tech CSE (CYS)</br> Part of 20CYS202 - User Interface Design</br>Amrita Vishwa Vidyapeetham, Coimbatore</p>
+                </div>
+            </footer>
+</html>
