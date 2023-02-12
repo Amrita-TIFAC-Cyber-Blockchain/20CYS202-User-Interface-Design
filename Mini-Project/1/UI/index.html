@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Portal</title>
+
+    <!-------------------------- Google Fonts ------------------------>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans:wght@500&family=Lora&family=Oswald:wght@300;400;500&family=Oxygen:wght@300;400;700&family=Playfair+Display&family=Quicksand:wght@600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Chelsea+Market&family=Lobster&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
+    
+
+    <!-- Custom css file -->
+    <link href="css/main.css" rel="stylesheet">
+
+
+
+    <!----------------- Bootstrap css files --------------->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
+
+    
+<!------------------- Font Awesome javascript -------------------->
+    <script src="https://kit.fontawesome.com/d733855d1a.js" crossorigin="anonymous"></script>
+
+    <!-- Custom Style Tag -->
+    <style>
+        .navbar-drop a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .dropdown-div {
+        float: left;
+        /* overflow: hidden; */
+        }
+
+        .dropdown-div .dropbtn {
+        font-size: 16px;  
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+        }
+
+        .navbar-drop a:hover, .dropdown-div:hover .dropbtn {
+        background-color: red;
+        }
+
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        }
+
+        .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        }
+
+        .dropdown-content a:hover {
+        background-color: #ddd;
+        }
+
+        .dropdown-div:hover .dropdown-content {
+        display: block;
+        } 
+        .dropdown-content{
+            left: -90px;
+            top: 63px;
+        } 
+    </style>
+
+    <!------------------------------------------ OWL CARROUSEL PLUGIN ----------------------------------------->
+    <link rel="stylesheet" href="css/owl.carousel.css">    
+    <link rel="stylesheet" href="css/owl.theme.default.min.css"> 
+    <style type="text/css"> 
+        *{
+            margin:0;
+            padding:0;
+        }
+        .carousell .owl-carousel .img-fluid{
+            max-width:100%;
+            height:100%;
+            display:block;
+        }
+    </style>
+    <!------------------------- Owl Carousel END ------------------------>
+
+</head>
+<body>
+    <header>
+        <nav id="header-nav" class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="#" class="logo pull-left">
+                        <div id="logo-img" alt="Logo image"></div>
+                    </a>
+                    <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div id="collapsable-nav" class="collapse navbar-collapse">
+                    <ul id="nav-list" class="nav navbar-nav navbar-right text-center">
+                        <li class="visible-xs">
+                            <a href="#Home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#Events">Events</a>
+                        </li>
+                        <li>
+                            <a href="#News">News</a>
+                        </li>
+                        <li>
+                            <a href="#Management">Management</a>
+                        </li>
+                        <li>
+                            <a href="#Alumni">Alumni</a>
+                        </li>
+                        <li>
+                            <a href="#Contact">Contact</a>
+                        </li>
+                        <li>
+                            <a href="html/login.html">Login/Register</a>
+                        </li>
+
+                        </li>
+                    </ul><!-- #nav-list -->
+                </div><!-- .collapse .navbar-collapse -->
+            </div>
+        </nav> 
+    </header>
+    <div class="slide-container visible-sm visible-md visible-lg">
+        <span id="slider-image1"></span>
+        <span id="slider-image2"></span>
+        <span id="slider-image3"></span>
+        <span id="slider-image4"></span>
+        <div class="image-container">
+            <img src="images/homepage_images/Slide1.webp" alt="" class="slider-image">
+            <img src="images/homepage_images/Slide2.jpg" alt="" class="slider-image">
+            <img src="images/homepage_images/Slide3.jpg" alt="" class="slider-image">
+            <img src="images/homepage_images/Slide4.jpg" alt="" class="slider-image">
+        </div>
+        <!-- <figcaption class="cap"><p>Alumni <span>Management System</span><p></figcaption> -->
+            <figcaption class="cap"><p>Alumni Portal</p</figcaption>
+            <div class="button-container">
+            <a href="#slider-image1" class="slider-button"></a>
+            <a href="#slider-image2" class="slider-button"></a>
+            <a href="#slider-image3" class="slider-button"></a>
+            <a href="#slider-image4" class="slider-button"></a>
+        </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <div class="single-line container-fluid" id="Events" style="padding:100;padding-bottom: 10%;">
+
+
+            <div class="align-center">
+                <div class="Events-div">
+                    <br>
+                    <h1 style="font-size: 400%;padding-left:11%;padding: auto;">Events</h1>
+                    <br><br>
+                    <div class="event-gallery">
+                        <figure class="gallery__item gallery__item--1">
+                          <img src="images/homepage_images/event1.jpeg" class="gallery__img" alt="Image 1">
+                        </figure>
+                        <figure class="gallery__item gallery__item--2">
+                          <img src="images/homepage_images/event2.webp" class="gallery__img" alt="Image 2">
+                        </figure>
+                        <figure class="gallery__item gallery__item--3">
+                          <img src="images/homepage_images/event3.jpg" class="gallery__img" alt="Image 3">
+                        </figure>
+                        <figure class="gallery__item gallery__item--4">
+                          <img src="images/homepage_images/event4.jpg" class="gallery__img" alt="Image 4">
+                        </figure>
+                      </div>
+                </div>
+            </div>
+    </div>
+            
+
+        <div class="single-line container-fluid" id="News" style="padding:100;">
+            <div class="align-center">
+                <br><br>
+            <div class="Announcement-div col-lg-12 col-xs-12">
+                <h1>CAMPUS NEWS </h1>
+                <h1>GLIMPSE OF <span style="color:rgb(255,0, 140)">RECENT HAPPENINGS</span></h1>
+                <div class="one">
+                    <h3><i class="fas fa-calendar-week"></i> APRIL 30, 2020</h3>
+                    <h1>Gokulashtami Celebrations at Amrita</h1>
+                    <p>In the time of crises, students of Amrita University are helping by doing Thermal checking at entry point of Sector-40, Coimbatore</p>
+                </div>
+                <hr>
+                <div class="one">
+                    <h3><i class="fas fa-calendar-week"></i> April 20, 2020</h3>
+                    <h1>COVID-19 Warriors Scholarship</h1>
+                    <p>Amrita University announces Rs.5 Crore Scholarship for COVID-19 Warriors</p>
+                </div>
+                <hr>
+                <div class="one">
+                    <h3><i class="fas fa-calendar-week"></i> APRIL 16, 2020</h3>
+                    <h1>Amid crises situation due to COVID-19</h1>
+                    <p>Amrita University has stood-up to offer community services such as distribution of free sanitizers, face masks, stand-by medical facilities to its staff members, residents of 6 adopted villages.</p>
+                </div>
+                <hr>
+                <div class="one">
+                    <h3><i class="fas fa-calendar-week"></i> APRIL 16, 2020</h3>
+                    <h1>Amrita University "CU-AID" campaign kicks off in Tricity; Staff and Management donates one day salary for COVID-19 crises</h1>
+                    <p>Amrita University comes up with Special Serving Trolley to maintain social distancing</p>
+                </div>
+                <hr>
+                <div class="one">
+                    <h3><i class="fas fa-calendar-week"></i> APRIL 16, 2020</h3>
+                    <h1>Amrita University announces Dhyan Chand Sports Scholarship for players</h1>
+                    <p>Tamilnadu Government honors sports achievers of Amrita University.<br>Amrita University announces Dhyan Chand Sports Scholarship worth 2 crores for players.</p>
+                </div>
+                <hr>
+                <div class="one">
+                    <h3><i class="fas fa-calendar-week"></i> APRIL 08, 2020</h3>
+                    <h1>COVID-19 Isolation Facility at CU</h1>
+                    <p>Tamilnadu's Largest COVID-19 Isolation Facility established at Gharuan by CU and District Administration Coimbatore.</p>
+                </div>
+                <hr>
+                <div class="one">
+                    <h3><i class="fas fa-calendar-week"></i> MARCH 30, 2020</h3>
+                    <h1>Amrita University distributes food to neighbouring villages</h1>
+                    <p>The distribution drive started from the first day of the lockdown and will be continued throughout the 21 days period.</p>
+                </div>
+                <hr>
+                <div class="one">
+                    <h3><i class="fas fa-calendar-week"></i> January 16, 2020</h3>
+                    <h1>Amrita University students invent ‘Queen Belt’ with GPS, distress calling for women’s safety</h1>
+                    <p>The belt is equipped with an electronic circuit, which has a Global Positioning System (GPS) and a mobile SIM card. It can be wear after applying a conductive tape inside the cloth and can only be opened with a four-digit pin.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+
+    <div class="section" id="Management">
+        <img src="images/homepage_images/university-pic.jpg" alt="University-pic" style="height: 170%;">
+        <h1 class="a d-flex justify-content-center"> 14 Chapters <span style="color:#333">Worldwide</span></h1>
+        <div class="about">
+            <br><br>
+            <h1 class="a" style="width:90%;">Know About Us <i class="fas fa-university" style="color:rgb(0, 0, 0)"></i></h1>
+            <div class="Faculty container-fluid">
+                <div class="row managing col-lg-12" style="margin:0;">
+                    <div class="part col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                        <div class="VC common col-lg-11 col-md-11 col-sm-9 col-xs-12">
+                            <div><img src="images/homepage_images/Anandbro.jpeg"></div>
+                            <h2>Ashwin Anand<br><span style="color:black;">CB.EN.U4CYS21012</span></h2>
+                        </div>
+                    </div>
+                    <div class="part col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                        <div class="VC common col-lg-11 col-md-11 col-sm-9 col-xs-12">
+                            <div><img src="images/homepage_images/dyanesh.jpg"></div>
+                            <h2>Dyanesh<br><span style="color:black;">CB.EN.U4CYS21015</span></h2>
+                        </div>
+                    </div>
+                    <div class="part col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                        <div class="VC common col-lg-11 col-md-11 col-sm-9 col-xs-12">
+                            <div><img src="images/homepage_images/Prasad.jpeg"></div>
+                            <h2>Rajendraprasad<br><span style="color:black;">CB.EN.U4CYS21064</span></h2>
+                        </div>
+                    </div>
+                    <div class="part col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                        <div class="VC common col-lg-11 col-md-11 col-sm-9 col-xs-12">
+                            <div><img src="images/homepage_images/Ramaguru-Radhakrishnan.jpg"></div>
+                            <h2>Ramaguru R<br><span style="color:black;">Mentor</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="image" id="Project">
+            <div class="container">
+                <h1>About the Project <br class="visible-xs">( <span>Overview</span> )</h1>
+                <p>The project is an <span>Alumni Management system</span> wherein the passed out Alumni's can view their graduation progress information like batch, projects undertaken, their details, etc.
+                    It is a complete database where by logging in you can access your full details of graduation. The project contains different logins : College, Student, Alumni.
+                    Here the alumni can edit there information like name of company currently working in. Also they can get latest updates regarding the Alumni Meet or the events going on in the college.
+                    They can also have chat with the admin for if any queries. They can access some information of the fellow alumnis. They can also send messages to their batchmates which will land in their mail.
+                </p>
+
+            </div>
+
+        </div>
+        <div class="alumni" id="Alumni">
+            <h1><span>| </span> NOTABLE ALUMNI <span> |</span></h1>
+            <hr>
+
+            <div class="align-center">
+                <div>
+                    <div class="alumni-gallery">
+                        <figure class="alumni__item alumni__item--1">
+                          <img src="images/homepage_images/alumnipics/Madan-Gowri-7.jpg" class="alumni__img" alt="Image 1">
+                        </figure>
+                        <figure class="alumni__item alumni__item--2">
+                          <img src="images/homepage_images/alumnipics/kailash.jpeg" class="alumni__img" alt="Image 2">
+                        </figure>
+                        <figure class="alumni__item alumni__item--3">
+                          <img src="images/homepage_images/alumnipics/sanjoi rejinold.jpg" class="alumni__img" alt="Image 3">
+                        </figure>
+                        <figure class="alumni__item alumni__item--4">
+                          <img src="images/homepage_images/alumnipics/rjbalaji.jpeg" class="alumni__img" alt="Image 4">
+                        </figure>
+                        <figure class="alumni__item alumni__item--5">
+                            <img src="images/homepage_images/alumnipics/Muhammed_Muhsin.jpg" class="alumni__img" alt="Image 4">
+                          </figure>
+                          <figure class="alumni__item alumni__item--6">
+                            <img src="images/homepage_images/alumnipics/Lijomol-Jose.webp" class="alumni__img" alt="Image 4">
+                          </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- </div> -->
+
+            <div class="contact" id="Contact">
+                <h1>Contact US</h1>
+                <p style="color:rgb(78, 73, 73)">Drop a message and we will get in touch with you soon</p><hr>
+                <div class="info">
+                    <h1 class="visible-lg visible-md visible-sm">CONTACT</h1>
+                    <div class="x1 xs"><i class="fas fa-phone-square"></i>
+                    <p class="clear"><span style="color:black;font-weight:500">Phone</span><br>0172-4000000</p></div>
+                    <div class="x2 xs"><i class="far fa-paper-plane"></i>
+                    <p class="clear"><span style="color:black;font-weight:500">Email</span><br>amrita_alumni@cb.amrita.edu</p></div>
+                    <div class="x3 xs"><i class="fas fa-home"></i>
+                    <p class="clear"><span style="color:black;font-weight:500">Address</span><br>Amritanagar, Ettimadai, Tamil Nadu 641112</p></div>
+                </div>
+                <form class="message" id="contact-form" method="post">
+                    <h1>DROP YOUR MESSAGE HERE  <i class="fas fa-level-down-alt" style="color:red;"></i></h1>
+                    <label for="fname"  >First Name :</label>
+                    <input type="text" id="i5" class="form-control" placeholder="Enter your first name" name="fname" onchange="validateFname()" required>
+                    <label for="lname">Last Name : </label>
+                    <input type="text"id="i6" class="form-control" placeholder="Enter your last name" name="lname" onchange="validateLname()" required>
+                    <label for="email">Email Address : </label>
+                    <input type="email" id="i1" class="form-control" placeholder="For ex. something@gmail.com" name="email" onchange="validateContactEmail()" required>
+                    <label for="message">Message : </label>
+                    <textarea type="text" id="description-input" class="form-control" placeholder="Drop your message or queries here..." name="message" required></textarea>
+                    <button type="submit" onClick="submitToAPI(event)">Submit</button>
+                </form>
+            </div>
+            <div class="footer" style="width:100%;height:100px;position:relative;top:150px;color:rgba(255, 255, 255, 0.959); text-align: center;">
+                <footer style="text-align: center;">
+                    Copyright ©
+                    UID-DBMS-01, II B.Tech CSE (CYS)<br>
+                    Part of 20CYS202 - User Interface Design<br>
+                    Amrita Vishwa Vidyapeetham, Coimbatore
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="javascript-files/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="javascript-files/bootstrap.js"></script>
+    <script src="javascript-files/owl.carousel.js"></script>
+    <script src="js/js1.js"></script>
+
+    <!------------------- Script for Owl-carousel -------------------->
+    <script type="text/javascript">
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:10,
+                nav:true,
+                onsive:{
+                    0:{
+                        items:5
+                    },
+                    600:{
+                        items:6
+                    },
+                    768:{
+                        items:5
+                    },
+                    992:{
+                        items:6
+                    }
+                }
+            })
+    </script>
+
+    <!------------------- Script for Contact form :- pop ups for alert and confirm ------------------->
+    <script>
+        function popup(){
+            let field = document.querySelectorAll("form.message input, form.message textarea");
+            let i,j=0;
+            for(i=0;i<4;i++){
+                if(field[i].value.length == 0){
+                    j=1;
+                    break;
+                }
+            }
+            if(j==0){
+                let value = confirm("Do you want to submit ?");
+                console.log(value);
+                if(value==true){
+                    alert("Submission Successful");
+                }
+                else{
+                    alert("Submission Unsuccessful");
+                }
+            }  
+        }
+    </script>
+    <!--------------------------  END  -------------------------->
+    
+
+    <!--------- Scripts for PARTICLE ANIMATION ----------->
+    <script src="javascript-files/particles.js"></script>
+    <script src="javascript-files/apps.js"></script>
+    <script src="javascript-files/package.json"></script>
+    <script src="javascript-files/js.js"></script>
+    <!-- End of scripts for particle animation -->
+
+    <!------------- Scripts for Nav bar collapse when focus id not there ---------->
+    <script src="javascript-files/jquery-2.1.4.min.js"></script>
+    <script src="javascript-files/bootstrap.min.js"></script>
+    <script src="javascript-files/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+/*
+Team 1
+UID LAB EVALUATION 3
+Amrita Alumni Website
+
+RAJENDRAPRASAD S 
+CB.EN.U4CYS21064 
+
+NO TEMPLATE USED
+*/
+
+.navbar {
+    width: 100%;
+    background-color: #b10f56;
+    overflow: auto;
+  }
+  
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .navbar a:hover {
+    background-color: #ff0077;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+body {
+    background: rgb(99, 39, 120)
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #BA68C8
+}
+
+.profile-button {
+    background: rgb(99, 39, 120);
+    box-shadow: none;
+    border: none
+}
+
+.profile-button:hover {
+    background: #682773
+}
+
+.profile-button:focus {
+    background: #682773;
+    box-shadow: none
+}
+
+.profile-button:active {
+    background: #682773;
+    box-shadow: none
+}
+
+.back:hover {
+    color: #682773;
+    cursor: pointer
+}
+
+.labels {
+    font-size: 11px
+}
+
+.add-experience:hover {
+    background: #BA68C8;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px #BA68C8
+}
+
+footer {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background-color: #b10f56;
+}
+
+.btn btnn{
+  color: #b10f56;
+  background-color: #b10f56;
+}

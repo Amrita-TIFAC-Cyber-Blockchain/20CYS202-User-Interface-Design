@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<!-- 
+Team 1
+UID LAB EVALUATION 3
+Amrita Alumni Website
+
+RAJENDRAPRASAD S 
+CB.EN.U4CYS21064 
+
+NO TEMPLATE USED
+-->
+<html>
+    <head> 
+        <title>Profile</title>
+        <link rel="stylesheet" href="../css/profile_css/style1.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="../js/js1.js"></script>
+    </head>
+
+    <body style="background-image: linear-gradient(rgb(255, 0, 140),rgba(252, 252, 252, 0.8))">
+        <div class="navbar">
+            <img src="../images/profile_images/logo.svg">
+            <a href="#"><h1>Alumni Dashboard</h1></a>
+            <a href="../home.html"><i class="fa fa-fw fa-home"></i> Home</a>
+        </div>
+        <div class="container rounded bg-white mt-5 mb-5">
+            <div class="row">
+                <div class="col-md-3 border-right">
+                    <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"><span class="font-weight-bold">Dyanesh S</span><span class="text-black-50">dyanesh003@gmail.com</span><span> </span></div>
+                    <div class="col-md-6"><label class="labels">Name</label><input type="text" id = "i2" onchange="validateText2();" class="form-control" placeholder="Name" value="Dyanesh S"></div><br>
+                    <div class="col-md-12"><label class="labels">Mobile Number</label><input type="number" id="i4" onchange="validateNumber();" class="form-control" placeholder="enter phone number" value="9274028483"></div><br>
+                    <div class="col-md-12"><label class="labels">Address</label><input type="text" class="form-control" placeholder="" value="Chennai"></div>
+                    <div class="col-md-6"><label class="labels">State/Region</label><input type="text" id = "i3" onchange="validateText3();" class="form-control" value="Tamil Nadu" placeholder=""></div>
+                    <div class="col-md-6"><label class="labels">Country</label><input type="text" class="form-control" placeholder="country" value="India"></div><br>
+                    <div class="col-md-12"><label class="labels">Email ID</label><input id="i1" onchange="validateEmail();" type="text" class="form-control" placeholder="enter email id" value="dyanesh003@gmail.com" ></div>
+                    <div class="col-md-6"><label class="labels">Blood Group</label><input type="text" class="form-control" placeholder="" value="O+"></div><br>
+                    <div class="col-md-6"><label class="labels">DOB</label><input type="date" class="form-control"></div><br>
+                </div>
+                
+                <div class="col-md-5 border-right">
+                    <div class="p-3 py-5">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h4 class="text-right">Professional details</h4>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-6"><label class="labels">First Name</label><input type="text" id = "i5" onchange="validateText5();" class="form-control" placeholder="" value="Dyanesh"></div>
+                            <div class="col-md-6"><label class="labels">Last Name</label><input type="text" id = "i6" onchange="validateText6();" class="form-control" value="S" placeholder=""></div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-12"><label class="labels">Mobile Number</label><input type="number" class="form-control" placeholder="enter phone number" value="9274028483"></div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-12"><label class="labels">Roll Number</label><input type="text" class="form-control" placeholder="" value="CB.EN.U4CYS21015"></div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-12"><label class="labels">Degree Enrolled</label><input type="text" class="form-control" placeholder="" value="B.Tech CSE(CYS)"></div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-12"><label class="labels">Course started on</label><input type="date" class="form-control"></div>
+                            <div class="col-md-12"><label class="labels">Course completed on</label><input type="date" class="form-control"></div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-12"><label class="labels">CGPA</label><input type="text" class="form-control" placeholder="" value="6.9"></div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-12"><label class="labels">Course completion status</label><input type="text" class="form-control" placeholder="" value="Completed"></div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-12"><label class="labels">Placed through campus</label><input type="text" class="form-control" placeholder="" value="No"></div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-12"><label class="labels">Company</label><input type="text" class="form-control" placeholder="" value="Goldman Sachs"></div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-12"><label class="labels">Designation</label><input type="text" class="form-control" placeholder="" value="SDE 2"></div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-12"><label class="labels">Associated Alumni Chapter</label><input type="text" class="form-control" placeholder="" value="Mumbai"></div>
+                        </div>
+                        <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button" onclick="alert('Updated Successfully');">Update Profile</button></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-3 py-5">
+                        <div class="d-flex justify-content-between align-items-center experience"><span><h4>Socials</h4></span></div><br>
+                        <div class="col-md-12"><label class="labels">Linkedin</label><input type="text" class="form-control" placeholder="" value=""></div> <br>
+                        <div class="col-md-12"><label class="labels">Facebook</label><input type="text" class="form-control" placeholder="" value=""></div> <br>
+                        <div class="col-md-12"><label class="labels">Instagram</label><input type="text" class="form-control" placeholder="" value=""></div> <br>
+                        <div class="col-md-12"><label class="labels">Twitter</label><input type="text" class="form-control" placeholder="" value=""></div> <br>
+                        <div class="col-md-12"><label class="labels">Github</label><input type="text" class="form-control" placeholder="" value=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <footer>
+            Copyright ©
+            UID-DBMS-01, II B.Tech CSE (CYS)<br>
+            Part of 20CYS202 - User Interface Design<br>
+            Amrita Vishwa Vidyapeetham, Coimbatore
+        </footer>
+    </body>
+</html>

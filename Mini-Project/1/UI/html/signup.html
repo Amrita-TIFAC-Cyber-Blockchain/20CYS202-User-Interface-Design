@@ -1,0 +1,166 @@
+<!--Team 1
+UID LAB EVALUATION 3
+Amrita Alumni Website
+
+Ashwin Anand
+CB.EN.U4CYS21012 
+
+NO TEMPLATE USED-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up | Alumni Portal</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="../css/signup_css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Main css -->
+    <link rel="stylesheet" href="../css/signup_css/navbar.css">
+    <link rel="stylesheet" href="../css/signup_css/style.css">
+    <!-- Main js -->
+    <script src="../js/js1.js"></script>
+</head>
+<body style="background-image: linear-gradient(rgb(255, 0, 140),rgba(252, 252, 252, 0.8))">
+    <div class="navbar">
+        <a href="../index.html"><img src="https://dt19wmazj2dns.cloudfront.net/wp-content/themes/amrita/images/logo.svg"></a>
+        <a href="../index.html" style="float: right;"><i class="fa fa-fw fa-home"></i> Home</a>
+    </div>
+    <!-- <a href="index.html"><img src="https://dt19wmazj2dns.cloudfront.net/wp-content/themes/amrita/images/logo-colored.svg"></a> -->
+    <div class="main" style="margin-bottom: 0%;">        <!-- <h1>Alumni Portal</h1> -->
+        <!-- Sign up form -->
+        <section class="signup">
+            <!-- <h1>Alumni Portal</h1> -->
+            <div class="container">
+                <!-- <h1>Alumni Portal</h1> -->
+                <div class="signup-content">
+                    <div class="signup-form">
+                        <h2 class="form-title"><u>Sign up</u></h2>
+                        <form method="#" class="register-form" id="register-form">
+                            <h3><u>Primary details</u></h3>
+                            <div class="form-group">
+                                <label for="roll"><i class="zmdi zmdi-label"></i></label>
+                                <input type="text" name="roll" id="roll" placeholder="Your Roll Number * " onchange="validateRollNo();">
+                            </div>
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="name" id="i2" placeholder="Your Name * " onchange="validateText2();">
+                            </div>
+                            <div class="form-group">
+                                <!-- <div class="input-group"> -->
+                                <label for="dob"><i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i></label>
+                                <input class="input" type="text" name="birthday" placeholder="Date of Birth" onfocus="(this.type='date')" onblur="(this.type='text')">
+                                <!-- </div> -->
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="zmdi zmdi-email"></i></label>
+                                <input type="email" name="email" id="i1" placeholder="Your Email * " onchange="validateEmail();">
+                            </div>
+                            <div class="form-group">
+                                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="pass" id="pass" placeholder="Password * " onchange="document.getElementById('re_pass').disabled = !(document.getElementById('pass').value).length">
+                            </div>
+                            <div class="form-group">
+                                <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
+                                <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password * " onchange="validatePass();" disabled/>
+                            </div>
+                            <!-- <div class="form-group">
+                                <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                                <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                            </div> -->
+                            <br>
+                            <h3><u>Secondary details</u></h3>
+                            <div class="form-group">
+                                <label for="img"><i class="zmdi zmdi-floppy"></i></label>
+                                <input type="text" name="img" id="img" placeholder="Upload your image" onfocus="(this.type='file')" onchange="validateFile();" >
+                            </div>
+                            <div class="form-group">
+                                <label for="blood"><i class="zmdi zmdi-plaster"></i></label>
+                                <input type = "text" name="blood" id="blood" placeholder="Blood Group">
+                            </div>
+                            <div class="form-group">
+                                <label for="add1"><i class="zmdi zmdi-account-box-mail"></i></label>
+                                <input type = "text" name="add1" id="add1" placeholder="Address line 1">
+                            </div>
+                            <div class="form-group">
+                                <label for="add2"><i class="zmdi zmdi-account-box-mail"></i></label>
+                                <input type = "text" name="add2" id="add2" placeholder="Address line 2">
+                            </div>
+                            <!-- <div class="form-group">
+                                <label>
+                                    <input type="checkbox" name="mode" value="Volunteer" onchange="document.getElementById('register').disabled = !this.checked";>Do you accept the terms and conditions?
+                                </label>
+                            </div> -->
+                        </form>
+                        <div class="form-group form-button">
+                            <!-- <input type="submit" name="signup" id="signup" class="form-submit" value="Register"/> -->
+                            <button class="form-submit" id="register" onclick="redirect();">Register</button>
+                        </div>
+                    </div>
+                    <div class="signup-image">
+                        <figure><img src="../images/signup_images/signup-image.jpg" alt="sign up image"></figure>
+                        <a href="login.html" class="signup-image-link">I am already member</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sing in  Form
+        <section class="sign-in">
+            <div class="container">
+                <div class="signin-content">
+                    <div class="signin-image">
+                        <figure><img src="images/signin-image.jpg" alt="sing up image"></figure>
+                        <a href="#" class="signup-image-link">Create an account</a>
+                    </div>
+
+                    <div class="signin-form">
+                        <h2 class="form-title">Login</h2>
+                        <form method="POST" class="register-form" id="login-form">
+                            <div class="form-group">
+                                <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="your_name" id="your_name" placeholder="Your Name"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="your_pass" id="your_pass" placeholder="Password"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
+                                <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
+                            </div>
+                            <div class="form-group form-button">
+                                <input type="submit" name="signin" id="signin" class="form-submit" value="Log in"/>
+                            </div>
+                        </form>
+                        <div class="social-login">
+                            <span class="social-label">Or login with</span>
+                            <ul class="socials">
+                                <li><a href="#"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
+                                <li><a href="#"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
+                                <li><a href="#"><i class="display-flex-center zmdi zmdi-google"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    -->
+    </div>
+
+    <body>
+        <footer>
+            Copyright ©
+            UID-DBMS-01, II B.Tech CSE (CYS)<br>
+            Part of 20CYS202 - User Interface Design<br>
+            Amrita Vishwa Vidyapeetham, Coimbatore
+        </footer>
+    </body>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
