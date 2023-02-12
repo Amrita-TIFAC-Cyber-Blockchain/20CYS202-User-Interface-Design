@@ -1,0 +1,806 @@
+ .u-section-1 {
+  background-image: url("../images/images.jpg");
+  background-position: 50% 50%;
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 1001px;
+}
+
+.u-section-1 .u-custom-html-1 {
+  margin: 68px 0 0 51px;
+}
+
+.u-section-1 .u-group-1 {
+  width: 528px;
+  min-height: 278px;
+  height: auto;
+  box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.4);
+  margin: 0 auto 0 0;
+}
+
+.u-section-1 .u-container-layout-1 {
+  padding: 17px 50px 15px;
+}
+
+.u-section-1 .u-text-1 {
+  font-weight: 700;
+  font-size: 1.875rem;
+  margin: 0 auto;
+}
+
+.u-section-1 .u-text-2 {
+  font-size: 1.25rem;
+  font-weight: 300;
+  transition-duration: 0.5s;
+  margin: 20px 0 0;
+}
+
+.u-section-1 .u-btn-1 {
+  background-image: none;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  letter-spacing: 2px;
+  height: 50px;
+  margin: 30px auto 0;
+  padding: 11px 24px 11px 23px;
+}
+
+.u-section-1 .u-list-1 {
+  width: 550px;
+  margin: -278px 20px 0 auto;
+}
+
+.u-section-1 .u-repeater-1 {
+  grid-template-columns: 100%;
+  min-height: 278px;
+  grid-gap: 30px 30px;
+}
+
+.u-section-1 .u-list-item-1 {
+  background-image: none;
+  box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.4);
+}
+
+.u-section-1 .u-container-layout-2 {
+  padding: 20px 0 14px;
+}
+
+.u-section-1 .u-icon-1 {
+  width: 70px;
+  height: 70px;
+  background-image: none;
+  margin: 0 auto 0 20px;
+  padding: 13px;
+}
+
+.u-section-1 .u-text-3 {
+  font-weight: 700;
+  margin: -53px 0 0 107px;
+}
+
+.u-section-1 .u-table-1 {
+  width: 419px;
+  margin: -198px 57px 0 auto;
+}
+
+.u-section-1 .u-table-header-1 {
+  font-weight: 700;
+  background-image: none;
+}
+
+.u-section-1 .u-table-cell-5 {
+  font-weight: 700;
+}
+
+.u-section-1 .u-table-cell-6 {
+  font-weight: 700;
+}
+
+.u-section-1 .u-table-cell-8 {
+  font-weight: 700;
+}
+
+.u-section-1 .u-table-cell-9 {
+  font-weight: 700;
+}
+
+.u-section-1 .u-table-cell-11 {
+  font-weight: 700;
+}
+
+.u-section-1 .u-table-cell-12 {
+  font-weight: 700;
+}
+
+.u-section-1 .u-text-4 {
+  font-weight: 700;
+  margin: 74px auto 0 130px;
+}
+
+.u-section-1 .u-table-2 {
+  width: 880px;
+  margin: 17px auto 0;
+}
+
+.u-section-1 .u-table-header-2 {
+  font-weight: 700;
+  background-image: none;
+}
+
+.u-section-1 .u-icon-2 {
+  width: 29px;
+  height: 29px;
+  margin: -96px 206px 0 auto;
+  padding: 0;
+}
+
+.u-section-1 .u-icon-3 {
+  width: 29px;
+  height: 29px;
+  margin: -29px 151px 0 auto;
+  padding: 0;
+}
+
+.u-section-1 .u-icon-4 {
+  width: 29px;
+  height: 29px;
+  margin: 25px 206px 0 auto;
+  padding: 0;
+}
+
+.u-section-1 .u-icon-5 {
+  width: 29px;
+  height: 29px;
+  margin: -29px 151px 0 auto;
+  padding: 0;
+}
+
+.u-section-1 .u-text-5 {
+  font-weight: 700;
+  margin: 81px auto 0 130px;
+}
+
+.u-section-1 .u-table-3 {
+  width: 880px;
+  margin: 8px auto 0;
+}
+
+.u-section-1 .u-table-header-3 {
+  font-weight: 700;
+  background-image: none;
+}
+
+.u-section-1 .u-icon-6 {
+  width: 29px;
+  height: 29px;
+  margin: -97px 206px 0 auto;
+  padding: 0;
+}
+
+.u-section-1 .u-icon-7 {
+  width: 29px;
+  height: 29px;
+  margin: -29px 151px 0 auto;
+  padding: 0;
+}
+
+.u-section-1 .u-icon-8 {
+  width: 29px;
+  height: 29px;
+  margin: 26px 206px 0 auto;
+  padding: 0;
+}
+
+.u-section-1 .u-icon-9 {
+  width: 29px;
+  height: 29px;
+  margin: -30px 151px 60px auto;
+  padding: 0;
+}
+
+@media (max-width: 1199px) {
+   .u-section-1 {
+    min-height: 879px;
+  }
+
+  .u-section-1 .u-sheet-1 {
+    min-height: 825px;
+  }
+
+  .u-section-1 .u-custom-html-1 {
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-group-1 {
+    height: auto;
+  }
+}
+
+@media (max-width: 991px) {
+   .u-section-1 {
+    min-height: 673px;
+  }
+
+  .u-section-1 .u-sheet-1 {
+    min-height: 632px;
+  }
+
+  .u-section-1 .u-container-layout-1 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .u-section-1 .u-table-2 {
+    width: 720px;
+  }
+
+  .u-section-1 .u-table-3 {
+    width: 720px;
+  }
+}
+
+@media (max-width: 767px) {
+   .u-section-1 {
+    min-height: 505px;
+  }
+
+  .u-section-1 .u-sheet-1 {
+    min-height: 474px;
+  }
+
+  .u-section-1 .u-container-layout-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-1 .u-list-1 {
+    width: 540px;
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-text-3 {
+    margin-left: 97px;
+  }
+
+  .u-section-1 .u-table-2 {
+    width: 540px;
+  }
+
+  .u-section-1 .u-icon-2 {
+    margin-right: 155px;
+  }
+
+  .u-section-1 .u-icon-4 {
+    margin-right: 155px;
+  }
+
+  .u-section-1 .u-table-3 {
+    width: 540px;
+  }
+
+  .u-section-1 .u-icon-6 {
+    margin-right: 155px;
+  }
+
+  .u-section-1 .u-icon-8 {
+    margin-right: 155px;
+  }
+}
+
+@media (max-width: 575px) {
+   .u-section-1 {
+    min-height: 318px;
+  }
+
+  .u-section-1 .u-sheet-1 {
+    min-height: 298px;
+  }
+
+  .u-section-1 .u-group-1 {
+    width: 340px;
+  }
+
+  .u-section-1 .u-list-1 {
+    width: 340px;
+  }
+
+  .u-section-1 .u-text-3 {
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-table-1 {
+    width: 340px;
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-text-4 {
+    margin-left: 82px;
+  }
+
+  .u-section-1 .u-table-2 {
+    width: 340px;
+  }
+
+  .u-section-1 .u-icon-2 {
+    margin-right: 98px;
+  }
+
+  .u-section-1 .u-icon-3 {
+    margin-right: 95px;
+  }
+
+  .u-section-1 .u-icon-4 {
+    margin-right: 98px;
+  }
+
+  .u-section-1 .u-icon-5 {
+    margin-right: 95px;
+  }
+
+  .u-section-1 .u-text-5 {
+    margin-left: 82px;
+  }
+
+  .u-section-1 .u-table-3 {
+    width: 340px;
+  }
+
+  .u-section-1 .u-icon-6 {
+    margin-right: 98px;
+  }
+
+  .u-section-1 .u-icon-7 {
+    margin-right: 95px;
+  }
+
+  .u-section-1 .u-icon-8 {
+    margin-right: 98px;
+  }
+
+  .u-section-1 .u-icon-9 {
+    margin-right: 95px;
+  }
+}
+
+.u-section-1 .u-text-2,
+.u-section-1 .u-text-2:before,
+.u-section-1 .u-text-2 > .u-container-layout:before {
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+}
+
+.u-section-1 .u-container-layout:hover .u-text-2 {
+  transform: rotate(0deg) scale(1) translateX(0px) translateY(0px) !important;
+  opacity: 1 !important;
+}
+
+.u-container-layout.hover .u-section-1 .u-text-2 {
+  transform: rotate(0deg) scale(1) translateX(0px) translateY(0px) !important;
+  opacity: 1 !important;
+}
+
+/* CSS for publish pop up*/ 
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: opacity 1;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup {
+  margin: 70px auto;
+  margin-left: 130px;
+  margin-top: 170px;
+  padding: 20px;
+  background: rgb(38, 255, 0);
+  border-radius: 10px;
+  width: 25%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+.popup .close:hover {
+  color: black;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+
+
+
+/* CSS for publish pop up for notifications*/ 
+.overlay2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: opacity 1;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay2:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.popup2 {
+  margin: 20px auto;
+  margin-left: 900px;
+  margin-top: 20px;
+  padding: 20px;
+  background: rgb(38, 255, 0);
+  border-radius: 10px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup2 h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup2 .close {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+.popup2 .close:hover {
+  color: black;
+}
+.popup2 .content {
+  max-height: 30%;
+  overflow: auto;
+} 
+
+
+
+ 
+/*For popup3*/
+.overlay1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay1:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup1 {
+  margin: 180px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 70%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup1 h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup1 .close {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+.popup1 .close:hover {
+  color: black;
+}
+.popup1 .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+
+
+/* CSS for publish pop up for leave notifications*/ 
+.overlay4 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: opacity 0.9;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay4:target {
+  visibility: visible;
+  opacity: 0.9;
+}
+
+
+.popup4 {
+  margin: 70px auto;
+  margin-left: 800px;
+  margin-top: 490px;
+  padding: 20px;
+  background: rgb(38, 255, 0);
+  border-radius: 10px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup4 h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup4 .close {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+.popup4 .close:hover {
+  color: black;
+}
+.popup4 .content {
+  max-height: 30%;
+  overflow: auto;
+} 
+
+/* CSS for publish pop up for leave notifications (reject)*/ 
+.overlay5 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: opacity 0.9;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay5:target {
+  visibility: visible;
+  opacity: 0.9;
+}
+
+
+.popup5 {
+  margin: 70px auto;
+  margin-left: 800px;
+  margin-top: 490px;
+  padding: 20px;
+  background: #f44437;
+  border-radius: 10px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup5 h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup5 .close {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+.popup5 .close:hover {
+  color: black;
+}
+.popup5 .content {
+  max-height: 30%;
+  overflow: auto;
+} 
+
+/*Alert popup*/
+.overlay6 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: opacity 0.9;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay6:target {
+  visibility: visible;
+  opacity: 0.9;
+}
+
+
+.popup6 {
+  margin: 70px auto;
+  margin-left: 790px;
+  margin-top: 470px;
+  padding: 20px;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup6 h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup6 .close {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+.popup6 .close:hover {
+  color: black;
+}
+.popup6 .content {
+  max-height: 30%;
+  overflow: auto;
+} 
+
+
+
+
+/* CSS */
+.button-3 {
+  appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-3:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.button-3:hover {
+  background-color: #2c974b;
+}
+
+.button-3:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+.button-3:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+.button-3:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+
+
+/*css button*/
+
+.button-4 {
+  appearance: none;
+  background-color: #df2525;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-4:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.button-4:hover {
+  background-color: #df2525;
+}
+
+.button-4:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+.button-4:disabled {
+  background-color: #df2525;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+.button-4:active {
+  background-color: #df2525;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
