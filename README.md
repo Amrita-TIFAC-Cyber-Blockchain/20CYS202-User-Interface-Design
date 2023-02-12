@@ -7,7 +7,7 @@
 #### :teacher: Course Instructor:  Ramaguru R, Assistant Professor, TIFAC-CORE in Cyber Security.
 
 <p align="center">
-  <img src="image/UID-Class.jpeg" width="600">
+  <img src="image/UID_Class.jpeg" width="800">
 </p>
 
 ### :books: Course Outcome
