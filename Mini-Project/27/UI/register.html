@@ -1,0 +1,193 @@
+<!--
+Author : Ashwatha Prasad & Vivek Veera
+Created On : 26 October 2022
+Updated On : 17 January 2023
+Description : Contact Page of Novel Neibor(contact.html)
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  display: flex;
+  height: 100vh;
+	width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-image: url(bdrop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+	background-position: center;
+}
+
+
+
+
+.login-form{
+  position: relative;
+  width: 500px;
+  height: 710px;
+  background: hsla(360, 100%, 100%, 0.24);
+  padding: 40px 35px 60px;
+  box-sizing: border-box;
+  
+  border-radius: 30px;
+  
+}
+.text{
+  font-size: 30px;
+  color: #D19C97;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+form{
+  margin-top: 40px;
+}
+form .field{
+  margin-top: 20px;
+  display: flex;
+}
+.field .fas{
+  height: 50px;
+  width: 60px;
+  color: #D19C97;
+  font-size: 20px;
+  line-height: 50px;
+  border: 1px solid#444;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+  background: linear-gradient(#333,#222);
+}
+.field input,form button{
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 19px;
+  color: #D19C97;
+  padding: 0 15px;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid #444;
+  
+}
+
+button{
+  margin-top: 30px;
+  border-radius: 5px!important;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  color: #D19C97;
+}
+
+.link{
+  margin-top: 25px;
+  color: #868686;
+}
+.link a{
+  color: #D19C97;
+  text-decoration: none;
+}
+
+</style>
+<script>
+$("input:checkbox").click(function() {
+    var bol = $("input:checkbox:checked").length > 8;     
+    $("input:checkbox").not(":checked").attr("disabled",bol);
+    });
+
+    function ValidateEmail() {
+        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        var x = document.getElementById("email").value;
+        if (!x.match(mailformat)) {
+            alert("You have entered an invalid email address.Please enter a valid email address.");
+            document.getElementById("email").focus()
+        }
+    }
+
+    function PhoneNumberCheck() {
+
+        var x = document.getElementById("phonenumber").value;
+        console.log(x)
+        if (!(x.toString().length == 10)) {
+            alert("You have entered an invalid phone number. Please enter a valid phone number.")
+            document.getElementById("phonenumber").focus()
+        }
+    }
+
+    function NameCheck() {
+        var x = document.getElementById("name").value;
+        var y = x.split("")
+        let sp = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', '\\', ']', '^', '_', '`', '{', '|', '}', '~'];
+        var arrLen = sp.length;
+        for (var i = 0; i < arrLen; i++) {
+            if (y.includes(sp[i])) {
+                alert("You have entered an invalid name.Special characters are present in the name.Please remove the special characters and enter a valid name.")
+                document.getElementById("Name").focus()
+                break
+            }
+        }
+    
+    
+    }
+
+    function Success() {
+      alert("You have Successfully Registered!")
+    }
+
+</script>
+   <head>
+      <meta charset="utf-8">
+      <title>Anokha|Register</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <link rel="icon" type="image/x-icon" href="logo.png">
+      
+   </head>
+   <body>
+    
+      <div class="login-form">
+         <div class="text">
+            Registration
+         </div>
+         <form name='registration' >
+            <div class="field">
+            
+            <input type="text" id="name" onchange="NameCheck()" placeholder="First Name">
+            </div>
+            <div class="field">
+            
+            <input type="text" id="name" onchange="NameCheck()" placeholder="Last Name">
+            </div>
+            <div class="field">
+           
+            <input type="text" id="name" onchange="NameCheck()" placeholder="Address">
+            </div>
+            <div class="field">
+            
+        
+            
+            <input type="tel" id="phonenumber" onchange="PhoneNumberCheck()" placeholder="Phone Number">
+            </div>
+            <div class="field">
+            
+            <input type="text" id="email" onchange="ValidateEmail()" placeholder="Email">
+            </div>
+          
+            <a href="./login.html" target="_blank" onclick="Success()"><button>REGISTER</button></a>
+            <div class="link">
+               Back to
+               <a href="./index.html" target="_blank">Home</a>
+            </div>
+            
+         </form>
+      </div>
+      
+
+      
+   </body>
+</html>
