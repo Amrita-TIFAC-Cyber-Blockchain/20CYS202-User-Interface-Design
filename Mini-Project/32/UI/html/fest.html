@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<script>
+
+function validateform(){  
+var name=document.myform.name.value;  
+var ID=document.myform.ID.value;  
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(ID.length<6){  
+  alert("ID must be at least 6 characters long.");  
+  return false;  
+  }  
+}  
+</script> 
+<script>
+function myFunction() {
+  var x = document.getElementById("tech").required;
+  document.getElementById("tech").innerHTML = x;
+}
+</script>
+
+
+<body>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+ 
+  color: white;
+}
+</style>
+</head>
+
+<style>
+
+body {
+  background-image: url('1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+
+<body>
+
+<div class="topnav">
+  <a class="active" href="../index.html" target="_self">Home</a>
+  <a href="signup.html" target="_self">Signin</a>
+  <a href="signup.html" target="_self">Signup</a>
+  <a href="fest.html">KYC</a>
+  <a href="contact.html">Contact Us</a>
+  <a href="privacy.html">Privacy Policy</a>
+</div>
+
+<div style="padding-left:16px">
+  <h2>CYS FORUM</h2>
+
+</div>
+
+
+
+
+<center>
+<h1>CYS FORUM KYC</h1>
+</center>
+<center>
+<b >welcome to the official KYC page for the CYS FORUM. Please enter the valid details and upload valid documents to complete KYC process.  </b><br><br><br>
+</center>
+<title>KYC</title>
+  <link rel="icon" type="image/x-icon" href="img_avatar2.png">
+</body>
+</html>
+
+<style>
+body {
+  background-image: url('../img/1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+<center>
+</style>
+</style>
+ 
+<body>  
+<form name="myform" method="post" action="" onsubmit="return validateform()" >  
+Full Name: <input type="text" name="name"><br/>  
+ID Number: <input type="ID" name="ID"><br/>  
+
+
+
+    
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Student
+	  
+    </label>
+	<br>
+	 <label for="birthday">Date Of Birth:</label>
+  <input type="date" id="birthday" name="birthday">
+  </label>
+
+  <br>
+  <p>Please select your plan:</p>
+  <input type="radio" id="tech" name="technology" value="HTML">
+  <label for="html">premium</label><br>
+  <input type="radio" id="culture" name="clutural" value="CSS">
+  <label for="css">plus</label><br>
+  <input type="radio" id="art" name="art" value="JavaScript">
+  <label for="javascript">basic</label>
+  
+ <h3>Please upload a valid govt approved document:</h3>
+<form action="/action_page.php">
+  <label for="myfile">Select a file:</label>
+  <input type="file" id="myfile" name="myfile"><br><br>
+  </div>
+
+  <div class="container">
+    <button type="button" class="cancelbtn">Cancel</button><br>
+ 
+	
+	<label for="cars">Please selecct the document you have uploaded from the options</label>
+  <select name="day" id="day">
+    <option value="volvo">aadhar</option>
+    <option value="saab">DL</option>
+    <option value="opel">Birth Certificate</option>
+    <option value="audi">PAN</option>
+  </select>
+  <br><br>
+
+
+  <p><label for="w3review">Post your querries below if any to get a reply from us. KYC Process usually takes about 3 days to complete.<label></p>
+  <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+  <br>
+<input type="submit" value="submit"> 
+	
+  </div>
+</form>
+</center><br>
+<center>
+<address>
+© 2022 - 2023. CYS FORUM-Sourabh S<br>
+II Year B.Tech CSE(CYS)<br>
+Part of 20CYS202 - User Interface Design<br>
+Amrita Vishva Vidyapeetham, Coimbatore<br>
+</address>
+</center>
+</body>
+</html>
