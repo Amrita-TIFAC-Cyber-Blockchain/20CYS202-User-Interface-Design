@@ -11,7 +11,10 @@
 
 ### Deliverable 
 - [User Analysis Document](UID-DBMS-01_UAD.pdf)
-- [ER Diagram](UID-DBMS-01_ER_Diagram.pdf)
+- [ER Diagram](UID-DBMS-01_ER_Diagram.png)
 - [User Interface](UI/)
+
+### Deliverable
+- No **Login**
 
 
