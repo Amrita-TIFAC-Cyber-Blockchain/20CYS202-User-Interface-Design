@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="images/favi.png" type="image/x-icon">
+</head>
+<style>
+    html{
+        background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)) , url(IMAGES/akbar-babu-rTEs8IdSg7U-unsplash.jpg) no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .number {
+        padding: .3em;
+        text-align: center;
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        background-color: seashell;
+        border-radius: 50%;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 1em;
+        font-size: 2.5em;
+        text-shadow: 2px 2px 3px grey;
+    }
+
+    .whole_bit {
+        width: 1000px;
+        height:940px;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: row;
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+        color: white;
+        margin: 0 auto 2em;
+        border-radius: 1em;
+        padding: 1em 0;
+        padding-left: 100px;
+        justify-content: space-around;
+    }
+    .whole_bit img{
+        width: 100px;
+    }
+td{
+    
+    padding-right: 100px;
+}
+    .whole_bit:hover{
+        background: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65));
+    }
+    input,
+    textarea {
+        border: none;
+        padding: .5em;
+        border-radius: .25em;
+    }
+
+    input:focus,
+    input:hover,
+    textarea:focus,
+    textarea:hover {
+        background: seashell;
+        border-bottom: 2px solid purple;
+        outline: none;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+        margin-right: .25em;
+        width: 1em;
+        height: 1em;
+    }
+
+    fieldset {
+        border: none;
+        margin: .5em;
+    }
+
+    legend {
+        
+        font-size: 1.4em;
+        font-weight: bold;
+        padding-bottom: .5em;
+    }
+
+    label,
+    .button {
+        font-family: 'Baloo Chettan 2', cursive;
+    }
+
+    .button {
+        box-shadow: 1px 1px 3px black;
+        border: none;
+        background-color: #DFDBE5;
+
+        font-size: 1em;
+        align-self: center;
+        padding: .7em;
+        color: black;
+    }
+
+    .button:hover {
+        cursor: pointer;
+        background-color: orange;
+        color: white;
+    }
+
+    #name,
+    #age,
+    #mail,
+    #phone,
+    #state,
+    #noofvisitors,
+    #passesprice,
+    textarea {
+        margin: .5em 0;
+        box-shadow: 1px 1px 2px grey;
+    }
+.number{
+    color: black;
+}
+    .order {
+        display: none;
+        text-align: center;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .error {
+        color: red;
+        font-size: small;
+    }
+</style>
+<script>
+    const submitForm = () => {
+        document.querySelector(".main").style.display = "none";
+        document.querySelector(".order").style.display = "block";
+    };
+
+    function validate() {
+
+        var i = 0;
+        if (document.myform.user_name.value == "") {
+            document.getElementById("name-err").innerHTML = "Please Enter your name";
+            i++;
+        }
+        else {
+            document.getElementById("name-err").innerHTML = "";
+        }
+        if (document.myform.user_name.value == "") {
+            document.getElementById("age-err").innerHTML = "Please Enter your age";
+            i++;
+        }
+        else {
+            document.getElementById("age-err").innerHTML = "";
+        }
+        if (document.myform.user_email.value == "") {
+            document.getElementById("mail-err").innerHTML = "Please Enter your Email";
+            i++;
+        }
+        else {
+            document.getElementById("mail-err").innerHTML = "";
+        }
+        if (document.myform.user_tel.value == "") {
+            document.getElementById("phone-err").innerHTML = "Please Enter your Phone Number";
+            i++;
+        }
+        else {
+            document.getElementById("phone-err").innerHTML = "";
+        }
+        if (document.myform.user_name.value == "") {
+            document.getElementById("add-err").innerHTML = "Please enter your address";
+            i++;
+        }
+        else {
+            document.getElementById("add-err").innerHTML = "";
+        }
+        if (document.myform.user_state.value == "") {
+            document.getElementById("state-err").innerHTML = "Please Enter your state";
+            i++;
+        }
+        else {
+            document.getElementById("state-err").innerHTML = "";
+        }
+        if (document.myform.user_name.value == "") {
+            document.getElementById("visitors-err").innerHTML = "no of visitors";
+            i++;
+        }
+        else {
+            document.getElementById("visitors-err").innerHTML = "";
+        }
+        if (document.myform.user_name.value == "") {
+            document.getElementById("passesprice-err").innerHTML = "passes price";
+            i++;
+        }
+        else {
+            document.getElementById("passesprice-err").innerHTML = "";
+        }
+
+        if (document.myform.filling.value == "") {
+            document.getElementById("pay-err").innerHTML = "Choose your option";
+            i++;
+        }
+        else {
+            document.getElementById("pay-err").innerHTML = "";
+        }
+        
+        if (i == 0) {
+            window.location.href="thnakyou.html";
+        }
+    }
+
+</script>
+
+<body>
+    <center>
+    <div class="main">
+        <h1 style="color: rgb(239, 137, 111);">WELCOME! TO ANOKHA REGISTRATION FORM</h1>
+<div class="whole_bit">
+    <div class="form_sub">
+        <form name="myform" onsubmit=" validate()" action="javascript:void(0);">
+            <fieldset>
+                <table>
+                    <tr>
+                        <td>
+                            <legend>
+                                <div class="number">1</div> Your Info:
+                            </legend>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="name">Name:</label><br></td>
+                        <td style="padding-top:10px ;padding-left:20px;"><input type="text" id="name"
+                                name="user_name"><br>
+                            <div id="name-err" class="error"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="name">age</label>:</label><br></td>
+                        <td style="padding-top:10px ;padding-left:20px;"><input type="text" id="age"
+                                name="age"><br>
+                            <div id="age-err" class="error"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="mail">Email:</label><br></td>
+                        <td style="padding-top:10px ;padding-left:20px;"><input type="text" id="mail"
+                                name="user_email"><br>
+                            <div id="mail-err" class="error"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone">Phone:</label><br></td>
+                        <td style="padding-top:10px ;padding-left:20px;"><input type="tel" id="phone"
+                                name="user_tel"><br>
+                            <div id="phone-err" class="error"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="text">Address:</label><br></td>
+                        <td style="padding-top:10px ;padding-left:20px;"><textarea cols="25" rows="10" name="text"
+                                placeholder="enter your address "></textarea>
+                            <div id="add-err" class="error" name="user_add"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="state">state</label>:</label><br></td>
+                    
+                            <div id="state-err" class="error"></div>
+                            <td style="padding-top:10px ;padding-left:20px;"><select name="state" id="t7"class="tb">
+                                <option value="" selected="selected">select state</option>
+                                <option>ANDHRA PRADESH</option>
+                                          <option>TAMIL NADU</option>
+                                          <option>KERALA</option>
+                                          <option>KARNATAKA</option>
+                                          <option>jAMMU AND KASHMIR </option>
+                                </select></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-top:10px ;padding-left:1px;" ><label for="name">no of visitors</label>:</label><br></td>
+                            <div id="visitors-err" class="error"></div>
+                            <td style="padding-top:10px ;padding-left:20px;">  <select name="visitors" id="t7"class="tb">
+			  <option value="" selected="selected">no of visitors</option>
+			  <option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+			  </select></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="name">passes price</label>:</label><br></td>
+                    
+                            <div id="passesprice-err" class="error"></div>
+                            <td style="padding-top:10px ;padding-left:20px;">  <select name="passes price" id="t7"class="tb">
+                                <option value="" selected="selected">select category</option>
+                                <option>gold-700</option>
+                                          <option>silver-400</option>
+                                </select></td>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td><label for="filling">
+                                <legend>
+                                    <div class="number">2</div>PAYMENT METHOD
+                                </legend>
+                            </label></td>
+                        <td style="padding-top:10px ;padding-left:20px;">
+                            <input type="radio" id="NET BANKING" name="filling"><label>NET BANKING</label><br>
+                            <input type="radio" id="UPI" name="filling"><label>UPI</label><br>
+                            <input type="radio" id="CASH ON DELIVERY" name="filling"><label>CASH ON DELIVERY</label>
+                            <div class="error" id="pay-err"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="how you know about this event">
+                                <legend>
+                                    <div class="number">3</div>how you know about this event
+                                </legend>
+                            </label></td>
+                        <td style="padding-top:30px ;padding-left:20px;">
+                            <input type="radio" id="FRIENDS" name="filling"><label>FRIENDS</label><br>
+                        
+                            <input type="radio" id="NEWSPAPER" name="filling"><label>NEWSPAPER</label><br>
+                            <input type="radio" id="SOCIAL MEDIA" name="filling"><label>SOCIAL MEDIA</label>
+                            <div class="error" id="pay-err"></div>
+                        </td>
+                    </tr>
+                   
+                   
+                    <tr>
+                        <td colspan="3">
+                            <center><input style="margin-top: 60px;" class="button" type="submit" onclick="" value="Register" ></center>
+                        </td>
+                    </tr>
+                </table>
+                </fieldset>
+        </form>
+    </div>
+    
+    </div>
+
+</div>
+</center>
+
+</body>
+
+</html>
