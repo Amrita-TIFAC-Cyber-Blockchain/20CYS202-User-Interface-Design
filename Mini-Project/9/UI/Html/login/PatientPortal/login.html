@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+					<head>
+						<meta charset="utf-8">
+						<meta http-equiv="X-UA-Compatible" content="IE=edge">
+						<meta name="viewport" content="width=device-width, initial-scale=1">
+						<meta name="description" content="">
+						<meta name="author" content="">
+						<title>Global Health - Patient Portal</title>
+
+
+
+							<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha256-t9UJPrESBeG2ojKTIcFLPGF7nHi2vEc7f5A2KpH/UBU=" crossorigin="anonymous"></script>
+
+
+							 <link rel="icon" type="image/png" href="../../../assets/img/icon/fav.png">
+						
+						
+						
+						
+							<!-- Bootstrap Core CSS -->
+							<link href="../Content/bootstrap.min1.css" rel="stylesheet" />
+							<link href="../assets/plugins/bootstrap-extension/css/bootstrap-extension.css" rel="stylesheet">
+							<link href="../Content/font-awesome.min.css" rel="stylesheet" />
+							<!-- animation CSS -->
+							<link href="../assets/css/animate1.css" rel="stylesheet">
+							<!-- Custom CSS -->
+							<link href="../assets/css/custom1.css" rel="stylesheet">
+							<!--Bootstrap Icon -->
+							<link href="../assets/css/icons/boostrapicon/font/bootstrap-icons.css" rel="stylesheet" />
+					</head>
+
+
+<body class="">
+    <section id="wrapper" class="m-t-10">
+        <div class="container py-3 center" id="main-content">
+            <div class="row  rounded shadow">
+                <div class=" col-lg col-md-12 col-sm-12 portal-side">
+                    <p class="text-center py-lg-5 h1 text-white mt-5">
+                        PatientPortal
+                    </p>
+                    <div class="col-lg  px-lg-5 py-5">
+                        <div class="portal-sub">
+
+                            <div class="d-flex">
+                                <div class="svg-bg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-people-fill" viewBox="0 0 16 16">
+                                        <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                        <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z" />
+                                        <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
+                                    </svg>
+                                </div>
+                                <h6>
+                                    Entire family’s health records under one credential
+
+                                </h6>
+                            </div>
+
+                        </div>
+                        <div class="portal-sub">
+
+                            <div class="d-flex">
+                                <div class="svg-bg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-alarm-fill" viewBox="0 0 16 16">
+                                        <path d="M6 .5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H9v1.07a7.001 7.001 0 0 1 3.274 12.474l.601.602a.5.5 0 0 1-.707.708l-.746-.746A6.97 6.97 0 0 1 8 16a6.97 6.97 0 0 1-3.422-.892l-.746.746a.5.5 0 0 1-.707-.708l.602-.602A7.001 7.001 0 0 1 7 2.07V1h-.5A.5.5 0 0 1 6 .5zm2.5 5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5zM.86 5.387A2.5 2.5 0 1 1 4.387 1.86 8.035 8.035 0 0 0 .86 5.387zM11.613 1.86a2.5 2.5 0 1 1 3.527 3.527 8.035 8.035 0 0 0-3.527-3.527z" />
+                                    </svg>
+                                </div>
+                                <h6>
+                                    Reminders for next follow up visits
+
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="portal-sub">
+
+                            <div class="d-flex">
+                                <div class="svg-bg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-camera-video-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5z" />
+                                    </svg>
+                                </div>
+                                <h6>
+                                    Virtual doctor consultation
+
+                                </h6>
+                            </div>
+                        </div>
+
+                        <div class="portal-sub">
+
+                            <div class="d-flex">
+                                <div class="svg-bg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                                    </svg>
+                                </div>
+                                <h6>
+                                    Healthy patient-hospital relationship
+
+
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-end">
+                            <div class="d-flex">
+
+                                <a href="../../registration/registration.html">
+                                    <button class="py-3 px-4 border createacc-btn btn-info">Register</button>
+                                </a>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="login-box login-sidebar col-lg col-md-12 col-sm-12  py-lg-4">
+
+                    <div class="white-box">
+
+                        <form class="floating-labels" id="loginform" action="../../../index.html">
+                            <div class="logo-wrapper">
+                                <a href="javascript:void(0)" class="text-center db" id="siteurl">
+                                    <img class="img-logo m-t-10 m-b-5" src="../../../assets/img/logo/logo.png" width="200px" height="200px" align="centre" alt="Home" />
+                                </a>
+                            </div>
+                            <h3 class="box-title m-t-10 m-b-10 text-center">Login</h3>
+                            <div class="form-group m-t-20 m-b-20">
+                                <div class="col-xs-12">
+                                    <input type="text" class="form-control" id="username" required><span class="highlight"></span>
+                                    <label for="username">User Name</label>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="form-group m-b-20 m-t-20">
+                                <div class="col-xs-12">
+                                    <input type="password" class="form-control" id="password" required><span class="highlight"></span>
+                                    <label for="password">Password</label>
+
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="form-group">
+                                <div class="col-xs-12">
+                                    <div class="checkbox checkbox-info p-t-0">
+                                        <input type="checkbox" id="checkrememberpwd" />
+                                        <label for="checkbox-login" class="f-12"> Remember me </label>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="clearfix"></div>
+
+
+
+                          
+
+                            <div class="form-group ">
+
+                                <div class="col-md-12 text-center mt-4">
+                                    <button type="submit" class="btn btn-info btn-block text-uppercase waves-effect waves-light w-50" id="btnlogin" onclick="Login()" type="button">Login</button>
+                                </div>
+
+                            </div>
+
+                            <div class="clearfix"></div>
+                            <div class="m-t-20 m-b-20 text-center d-block">
+                                <a href="#">
+                                    <h5 class="font-weight-bold float-lg-right text-primary">Forget Password?</h5>
+                                </a>
+                                <a href="#">
+                                    <h5 class="font-weight-bold float-lg-left text-primary">Forget Username?</h5>
+                                </a>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+	
+	 
+
+
+
+
+
+       
+
+
+
+        <link rel="icon" type="image/png" href="../../assets/img/icon/fav.png">
+
+
+
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css">
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha256-t9UJPrESBeG2ojKTIcFLPGF7nHi2vEc7f5A2KpH/UBU=" crossorigin="anonymous"></script>
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+    <!-- jQuery -->
+    <script src="../Scripts/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../Scripts/bootstrap.bundle.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+    <script src="../Scripts/popper.min.js"></script>
+    <script src="../assets/plugins/bootstrap-extension/js/bootstrap-extension.min.js"></script>
+    <!--Wave Effects -->
+    <script src="../assets/js/waves.js"></script>
+    <!-- Custom Theme JavaScript -->
+    
+	
+	
+	  
+	
+	
+	<script src="../assets/js/custom.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            if (window.matchMedia('(max-width: 767px)').matches) {
+                $('#main-content').removeClass('center')
+            }
+
+        });
+        jQuery(document).ready(function() {
+            //alert(9)
+            //var dtttt= "[{\"iUser_id\":432,\"cDisplay_Name\":\"kavitha\",\"cLogin\":\"kavitha\",\"cPassword\":\"\",\"cPasswordEnc\"?232,33,119,39,248,80,32,95],\"cMobile\":\"8973535456\",\"cMobile_Code\":\"190593\",\"cMobile_VCode\":\"190593\",\"iMobile_Verfy\":1,\"cEMail\":\"lkavithatrichy@gmail.com\",\"cEmail_Code\":\"150170\",\"cEmail_VCode\":\"150170\",\"iEmail_Verfy\":1,\"iEmp_id\":null,\"bActive\":1,\"dInActive_dt\":null,\"dCreate_dt\":\"\\/Date(1461128497867)\\/\",\"dUpdate_Date\":\"\\/Date(1461128497867)\\/\",\"dLLogin_Date\":null,\"cLastIpAddr\":\"::1\",\"cUser_Photo_Path\":\"img/avatars/avatar3.jpg\",\"imgUser_Photo\":null,\"isVerfied\":1,\"iAgency_id\":null,\"iUser_Type\":0}]"
+
+            //alert(dtttt)
+            //dtttt.replace("\", "")
+            //alert(dtttt)
+
+            $("#username").focus();
+            LoadIp();
+            IndexURL();
+            localStorage.removeItem("username");
+            localStorage.removeItem("userid");
+            localStorage.removeItem("regno");
+            localStorage.removeItem("password");
+            localStorage.removeItem("imagepath");
+            localStorage.removeItem("ppusernameschedule");
+            localStorage.removeItem("ppPasswordschedule");
+
+            //CHECK LIFE INSURANCE LOGIN
+            var ppusername = 'un' + localStorage.ppinsuranceusername;
+            var pppassword = 'pw' + localStorage.ppinsurancepassword;
+            if ((localStorage.ppinsuranceusername != "" && ppusername != "unundefined") && (localStorage.ppinsurancepassword != "" && pppassword != "pwundefined")) {
+                document.getElementById("username").value = localStorage.ppinsuranceusername;
+                document.getElementById("password").value = localStorage.ppinsurancepassword;
+                var username = localStorage.ppinsuranceusername
+                var password = localStorage.ppinsurancepassword
+                Loadselectedcombo(username, password)
+
+                localStorage.ppinsuranceusername = "";
+                localStorage.ppinsurancepassword = "";
+            } else {}
+
+
+            var remppusername = 'un' + localStorage.pprememberusername;
+            var rempppassword = 'pw' + localStorage.pprememberpassword;
+
+            if ((localStorage.pprememberusername != "" && remppusername != "unundefined") && (localStorage.pprememberpassword != "" && rempppassword != "pwundefined")) {
+                document.getElementById("username").value = localStorage.pprememberusername;
+                document.getElementById("password").value = localStorage.pprememberpassword;
+                var username = localStorage.pprememberusername
+                var password = localStorage.pprememberpassword
+                //Loadselectedcombo(username, password)
+
+                //localStorage.pprememberusername = "";
+                //localStorage.pprememberpassword = "";
+            } else {}
+            localStorage.regno = "0";
+
+        });
+    </script>
+
+    <script>
+        //GET IP ADDRESS
+        function LoadIp() {
+            $.ajax({
+                type: "Get",
+                url: '../api/IpAddress/GetIpAddress',
+                success: function(response) {
+                    $("#spnGetdet").html(response.d);
+                    var combo = eval(response);
+                    var html = "";
+                    var trHTML = '';
+                    if (combo == null) {
+                        document.getElementById("ipaddress").value = "";
+                    } else {
+                        document.getElementById("ipaddress").value = combo;
+                    }
+                },
+                failure: function(msg) {
+                    alert(msg);
+                }
+            });
+        }
+
+        //LOGIN
+        function Login() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            //Loadselectedcombo(document.getElementById("username").value, document.getElementById("password").value)
+            var strQuery = "exec User_loginregister @opt=49,@username=\'" + username + "\'";
+            var strCon = "BBOnline";
+            CheckUserName(strQuery, strCon)
+        }
+
+        //CHECH USER NAME
+        function CheckUserName(strQuery, strCon) {
+            $.ajax({
+                //type: "GET",
+                //url: 'http://localhost/PatientPortals/api/Getlocal/Getlocaldata?strQuery=' + strQuery + '&strCon=' + strCon + '',
+                //url: '../api/Getlocal/Getlocaldata?strQuery=' + strQuery + '&strCon=' + strCon + '',
+                url: '../api/Getlocal',
+                type: 'POST',
+                data: {
+                    strQuery: strQuery,
+                    strCon: strCon
+                },
+                dataType: 'json',
+                error: function(jqXHR, textStatus, errorThrown) {
+                    console.log(jqXHR.responseText, errorThrown);
+                },
+                success: function(response) {
+                    //$("#spnGetdet").html(response.d);
+                    var combo = eval(response)
+                    var html = "";
+                    if (response == "") {
+                        alert("Username does not exist")
+                    } else {
+                        var username = document.getElementById("username").value;
+                        var password = document.getElementById("password").value;
+                        Loadselectedcombo(document.getElementById("username").value, document.getElementById("password").value)
+                    }
+                },
+                failure: function(msg) {
+                    alert(msg);
+                }
+            });
+        }
+
+
+        //Check whether exists
+        var wrongcount = 1;
+        var recount = 1;
+
+        function Loadselectedcombo(username, password) {
+            console.log("login function")
+            $.ajax({
+                //type: "GET",
+                //url: '../api/login/GetfnLogin?username=' + username + '&password=' + password + '',
+                url: '../api/login',
+                type: 'POST',
+                data: {
+                    username: username,
+                    password: password
+                },
+                dataType: 'json',
+                error: function(xhr, status, error) {
+                    var errorMessage = xhr.status + ': ' + xhr.statusText
+                    console.log('Error - ' + errorMessage);
+                },
+                success: function(response) {
+                    //$("#spnGetdet").html(response.d);
+                    var combo = eval(response);
+                    //console.log(response)
+                    var html = "";
+                    if (response != 0) {
+                        $.each(combo, function(index, item) {
+                            document.getElementById("hdnUserVerify").value = item.iUser_id;
+                            localStorage.portalusername = "" + item.cDisplay_Name + "";
+                            localStorage.portaluserid = "" + item.iUser_id + "";
+                            localStorage.imagepath = "" + item.cUser_Photo_Path + "";
+                            document.getElementById("hdnMobile").value = "" + item.cMobile + "";
+                            document.getElementById("hdnEmail").value = "" + item.cEMail + "";
+                            localStorage.password = document.getElementById("password").value;
+                            localStorage.ppusernameschedule = document.getElementById("username").value;
+                            localStorage.ppPasswordschedule = document.getElementById("password").value;
+
+                            localStorage.ppapiloginusername = document.getElementById("username").value;
+                            localStorage.ppapiloginpassword = document.getElementById("password").value;
+                            //document.getElementById("uname").innerHTML = item.cLogin;
+
+                            if (item.iEmail_Verfy == "1" && item.iMobile_Verfy == "1") {
+                                var remarks = "Login-Page" + "/ Username :" + document.getElementById("username").value + " " + "- Login Successful";
+                                var response = "Successful";
+                                var strQuery5 = "exec User_loginregister @opt=26,@userid=\'" + item.iUser_id + "\',@confno=0,@regno=0,@LastIpAddr=\'" + document.getElementById("ipaddress").value + "\',  @response=\'" + response + "\', @remarks=\'" + remarks + "\'";
+                                var strCon = "BBOnline";
+                                saveLogActivity(strQuery5, strCon);
+                                var strQuery4 = "exec User_loginregister @opt=25,@userid=\'" + item.iUser_id + "\'";
+                                CheckUserExistInLog(strQuery4, strCon, item.iUser_id);
+                            } else if (item.iEmail_Verfy == "1" && item.iMobile_Verfy == "0") {
+                                alert("Mobile Number is not verified");
+                                divOTPMobile.style.display = "";
+                                divOTPEmail.style.display = "none";
+                                divIconEmail.style.display = "";
+                                divIconMobile.style.display = "none";
+                            } else if (item.iEmail_Verfy == "0" && item.iMobile_Verfy == "1") {
+                                if (confirm("Your Email id is not verified.Do you wish to login without verifying?")) {
+                                    var remarks = "Login-Page" + "/ Username :" + document.getElementById("username").value + " " + "- Login Successful";
+                                    var response = "Successful";
+                                    var strQuery5 = "exec User_loginregister @opt=26,@userid=\'" + item.iUser_id + "\',@confno=0,@regno=0,@LastIpAddr=\'" + document.getElementById("ipaddress").value + "\',  @response=\'" + response + "\', @remarks=\'" + remarks + "\'";
+                                    var strCon = "BBOnline";
+                                    saveLogActivity(strQuery5, strCon);
+                                    var strQuery4 = "exec User_loginregister @opt=25,@userid=\'" + item.iUser_id + "\'";
+                                    CheckUserExistInLog(strQuery4, strCon, item.iUser_id);
+                                } else {
+                                    divOTPEmail.style.display = "";
+                                    divOTPMobile.style.display = "none";
+                                    divIconEmail.style.display = "none";
+                                    divIconMobile.style.display = "";
+                                    return false;
+                                }
+                            } else if (item.iEmail_Verfy == "0" && item.iMobile_Verfy == "0") {
+                                alert("Both Mobile or Email id is not verified");
+                                divOTPEmail.style.display = "";
+                                divOTPMobile.style.display = "";
+                            }
+                        });
+                    } else {
+                        localStorage.removeItem("username");
+                        localStorage.removeItem("userid");
+                        localStorage.removeItem("password");
+                        localStorage.removeItem("imagepath");
+                        var remarks = "Login-Page" + "/ Username :" + document.getElementById("username").value + "  " + "Password :" + document.getElementById("password").value + "- Login UnSuccessful";
+                        var response = "UnSuccessful";
+                        var strQuery4 = "exec User_loginregister @opt=26,@userid=1,@confno=0,@regno=0,@LastIpAddr=\'" + document.getElementById("ipaddress").value + "\',  @response=\'" + response + "\', @remarks=\'" + remarks + "\'";
+                        var strCon = "BBOnline";
+
+                        saveLogActivity(strQuery4, strCon);
+
+
+                        // alert("Username or Password does not exist");
+                        alert("That username and password combination is incorrect. Please try again.");
+
+                        recount = wrongcount++
+
+                            if (recount == 3) {
+                                jQuery('.visible').removeClass('visible animated fadeInUp');
+                                jQuery('#forgot').addClass('visible animated fadeInUp');
+
+                                wrongcount = 1;
+                                recount = 1;
+                            }
+                        else {}
+                    }
+                },
+                failure: function(msg) {
+                    alert(msg);
+                }
+            });
+        }
+
+        function CheckUserExistInLog(strQuery, strCon, userid) {
+            $.ajax({
+                //type: "GET",
+                //url: '../api/Getlocal/Getlocaldata?strQuery=' + strQuery + '&strCon=' + strCon + '',
+                url: '../api/Getlocal',
+                type: 'POST',
+                data: {
+                    strQuery: strQuery,
+                    strCon: strCon
+                },
+                dataType: 'json',
+                success: function(response) {
+                    //$("#spnGetdet").html(response.d);
+                    var combo = eval(response);
+                    var html = "";
+                    var trHTML = '';
+                    if (response != "") {
+                        $.each(combo, function(i, item) {
+                            var strQuery4 = "exec User_loginregister @opt=5,@userid=\'" + userid + "\'";
+                            var strCon = "BBOnline";
+                            saveLogTable(strQuery4, strCon);
+                        });
+                    } else {
+                        var strQuery4 = "exec User_loginregister @opt=3,@userid=\'" + userid + "\',@LoginSuccess=1";
+                        var strCon = "BBOnline";
+                        saveLogTable(strQuery4, strCon);
+                    }
+                },
+                failure: function(msg) {
+                    alert(msg);
+                }
+            });
+        }
+
+        function saveLogTable(strQuery, strCon) {
+            $.ajax({
+                //type: "GET",
+                //url: '../api/Getlocal/Getlocaldata?strQuery=' + strQuery + '&strCon=' + strCon + '',
+                url: '../api/Getlocal',
+                type: 'POST',
+                data: {
+                    strQuery: strQuery,
+                    strCon: strCon
+                },
+                dataType: 'json',
+                success: function(response) {
+                    //$("#spnGetdet").html(response);
+                    var combo = eval(response);
+                    var html = "";
+                    var trHTML = '';
+                    localStorage.initialload = "1";
+                    localStorage.VideoChat = "1";
+
+                    if (document.getElementById("checkrememberpwd").checked == true) {
+                        localStorage.pprememberusername = "";
+                        localStorage.pprememberpassword = "";
+                        localStorage.pprememberusername = document.getElementById("username").value;
+                        localStorage.pprememberpassword = document.getElementById("password").value;
+                    } else {}
+                    window.location = 'index.html';
+                },
+                failure: function(msg) {
+                    alert(msg);
+                }
+            });
+        }
+
+        function saveLogActivity(strQuery, strCon) {
+            $.ajax({
+                //type: "GET",
+                //url: '../api/Getlocal/Getlocaldata?strQuery=' + strQuery + '&strCon=' + strCon + '',
+                url: '../api/Getlocal',
+                type: 'POST',
+                data: {
+                    strQuery: strQuery,
+                    strCon: strCon
+                },
+                dataType: 'json',
+                success: function(response) {
+                    //$("#spnGetdet").html(response.d);
+                    var combo = eval(response);
+                    var html = "";
+                    var trHTML = '';
+                },
+                failure: function(msg) {
+                    alert(msg);
+                }
+            });
+        }
+
+
+        //RESEND MOBILE OTP
+        function resendPhone() {
+            //Metronic.blockUI();
+            var opt = 40;
+            SaveUserAddToMyList(opt, localStorage.portaluserid, document.getElementById("username").value, document.getElementById("hdnMobile").value, document.getElementById("hdnEmail").value);
+        }
+
+        //RESEND EMAIL
+        function resendEmail() {
+            //Metronic.blockUI();
+            var opt = 41;
+            SaveUserAddToMyList(opt, localStorage.portaluserid, document.getElementById("username").value, document.getElementById("hdnMobile").value, document.getElementById("hdnEmail").value);
+        }
+
+        //SAVE ACTIVITY
+        function SaveUserAddToMyList(opt, userid, dispname, phone, email) {
+            $.ajax({
+                //type: "GET",
+                //url: '../api/Resend/GetfnResend?opt=' + opt + '&dispname=' + dispname + '&phone=' + phone + '&email=' + email + '&userid=' + userid + '',
+                url: '../api/Resend',
+                type: 'POST',
+                data: {
+                    opt: opt,
+                    dispname: dispname,
+                    phone: phone,
+                    email: email,
+                    userid: userid
+                },
+                dataType: 'json',
+                success: function(response) {
+                    //$("#spnGetdet").html(response.d);
+                    var combo = eval(response);
+                    var html = "";
+                    //window.setTimeout(function () {
+                    //    Metronic.unblockUI();
+                    //}, 1000);
+                    alert("OTP sent Successfully")
+                    $.each(combo, function(index, item) {});
+                },
+                failure: function(msg) {
+                    alert(msg);
+                }
+            });
+        }
+
+        //CONFIRM MOBILE OTP
+        function ConfirmOTPMobile() {
+            var strQuery = "";
+            if (document.getElementById("MobileVerify").value == "") {
+                alert("Enter Mobile verification code");
+            } else {
+                strQuery = "exec User_loginregister @opt=28,@mobileverifycode=\'" + document.getElementById("MobileVerify").value + "\',@userid=" + document.getElementById("hdnUserVerify").value + "";
+            }
+            var strCon = "BBOnline";
+            $.ajax({
+                //type: "GET",
+                //url: '../api/Getlocal/Getlocaldata?strQuery=' + strQuery + '&strCon=' + strCon + '',
+                url: '../api/Getlocal',
+                type: 'POST',
+                data: {
+                    strQuery: strQuery,
+                    strCon: strCon
+                },
+                dataType: 'json',
+                success: function(response) {
+                    //$("#spnGetdet").html(response.d);
+                    var combo = eval(response);
+                    var html = "";
+                    $.each(combo, function(i, item) {
+                        if (item.status == 1) {
+                            if (confirm("Mobile Verified Successfully.Do you wish to login without verifying Email?")) {
+                                window.location = "dashboard.html";
+                            } else {
+                                divOTPMobile.style.display = "none";
+                                document.getElementById("MobileVerify").value = "";
+                                divIconMobile.style.display = "";
+                                return false;
+                            }
+                        }
+                        if (item.status == 2) {
+                            alert(item.result)
+                            divOTPMobile.style.display = "";
+                            divIconMobile.style.display = "none";
+                            document.getElementById("MobileVerify").value = "";
+                        }
+                        if (item.iEmail_Verfy == 1 && item.iMobile_Verfy == 1) {
+                            divIconEmail.style.display = "";
+                            divIconMobile.style.display = "";
+                            Loadselectedcombo(document.getElementById("username").value, document.getElementById("password").value)
+                        }
+                    });
+                },
+                failure: function(msg) {
+                    alert(msg);
+                }
+            });
+        }
+
+        //CONFIRM EMAIL OTP
+        function ConfirmOTPEmail() {
+            var strQuery = "";
+            if (document.getElementById("EmailVerify").value == "") {
+                alert("Enter Email verification code");
+            } else {
+                strQuery = "exec User_loginregister @opt=27,@emailverifycode=\'" + document.getElementById("EmailVerify").value + "\',@userid=" + document.getElementById("hdnUserVerify").value + "";
+            }
+            var strCon = "BBOnline";
+            $.ajax({
+                //type: "GET",
+                //url: '../api/Getlocal/Getlocaldata?strQuery=' + strQuery + '&strCon=' + strCon + '',
+                url: '../api/Getlocal',
+                type: 'POST',
+                data: {
+                    strQuery: strQuery,
+                    strCon: strCon
+                },
+                dataType: 'json',
+                success: function(response) {
+                    //$("#spnGetdet").html(response.d);
+                    var combo = eval(response);
+                    var html = "";
+                    $.each(combo, function(i, item) {
+                        if (item.status == 1) {
+                            //  alert(item.result)
+                            divOTPEmail.style.display = "none";
+                            divIconEmail.style.display = "";
+                            document.getElementById("EmailVerify").value = "";
+                        }
+                        if (item.status == 2) {
+                            alert(item.result)
+                            divOTPEmail.style.display = "";
+                            divIconEmail.style.display = "none";
+                            document.getElementById("EmailVerify").value = "";
+                        }
+                        if (item.iEmail_Verfy == 1 && item.iMobile_Verfy == 1) {
+                            //  alert("Both Email and Mobile Verified Successfully.")
+                            divIconEmail.style.display = "";
+                            divIconMobile.style.display = "";
+                            Loadselectedcombo(document.getElementById("username").value, document.getElementById("password").value)
+                        }
+                    });
+                },
+                failure: function(msg) {
+                    alert(msg);
+                }
+            });
+        }
+
+        //Get INDEX URL
+        function IndexURL() {
+            $.ajax({
+                type: "Get",
+                url: '../api/Docappointmenturl/GetDoctorAppointmentURL',
+                success: function(response) {
+                    $("#spnGetdet").html(response.d);
+                    var combo = eval(response)
+                    var combourl = combo.split("~");
+                    var Indexurl = combourl[1];
+                    document.getElementById("siteurl").href = Indexurl;
+                },
+                failure: function(msg) {
+                    alert(msg);
+                }
+            });
+        }
+
+        ////test
+        //function fntest() {
+        //	var strQuery = 'BBUA_Icon_Master @opt=6';
+        //	var strCon = 'BB_CONSTR';
+        //	$.ajax({
+        //		url: '../api/Getlocal',
+        //		type: 'POST',
+        //		data: { strQuery: strQuery, strCon: strCon },
+        //		dataType: 'json',
+        //		success: function (data) {
+        //			alert(88)
+        //			alert(data)
+        //			var combo = eval(data);
+        //			$.each(combo, function (index, item) {
+        //				//alert(item.cIcon_Name)
+        //			});
+        //		}
+        //	});
+        //}
+    </script>
+    <input type="hidden" id="hdnUserVerify" value="0" />
+    <input type="hidden" id="hdnMobile" value="" />
+    <input type="hidden" id="hdnEmail" value="" />
+    <input type="hidden" name="ipaddress" id="ipaddress" />
+    <!--<button type="button" class="btn btn-red" onclick="fntest()">test</button>-->
+</body>
+
+</html>
