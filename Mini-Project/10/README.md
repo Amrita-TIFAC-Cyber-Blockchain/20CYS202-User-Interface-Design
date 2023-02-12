@@ -16,6 +16,27 @@
 - [User Interface](UI/)
 
 ### Credentials
+- **Admin**
+  - **Username:** admin 
+  - **Password:** root
+- **HOD** 
+  - **Username:** sethumadhavan 
+  - **Password:** 123456789
+- **Faculty**
+  - **Username:** ramaguru 
+  - **Password:** 123abc 
+- **Student - 1**
+  - **Username:** pavan 
+  - **Password:** cys080
+- **Student - 2**
+  - **Username:** rohith 
+  - **Password:** cys013
+- **Student - 3**
+  - **Username:** sudipt 
+  - **Password:** cys075
+
+
+
 
 
 
