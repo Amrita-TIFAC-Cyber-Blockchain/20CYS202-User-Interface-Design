@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/design4.css">
+    <link rel="icon" href="../images/afh1l-1419f-001.ico">
+    <title>Counsellor-Registration</title>
+    <script>
+           function success(){
+            var Name = document.forms.Reg.Name.value;
+            var email = document.forms.Reg.email.value;
+            var experience = document.forms.Reg.exp.value;
+            var fees = document.forms.Reg.fees.value;
+            var aadhar = document.forms.Reg.aadhar.value;
+            let password = document.forms.Reg.pass.value;
+
+
+            if(Name==""){
+              alert("Please fill your correct Name");
+              return false;
+            }
+            if(!validateEmail(email)){
+              alert("Please fill your correct email address");
+              return false;
+            }
+            if(!validateNumber(experience)){
+              alert("Please share your experience in years");
+              return false;
+            }
+
+            if(!validateNumber(fees)){
+              alert("Please inform us about your fees per hour");
+              return false;
+            }
+
+            if(!validatePassword(password)){
+              alert("Password must contain atleast eight character containing one small character, one capital character,\n one number and with one symbol");
+              return false;
+            }
+            
+            if(!validateNumber(aadhar)){
+              alert("Please submit your correct Aadhar No!");
+              return false;
+            }
+            return window.open("./Home.html");
+          
+
+           }
+
+           function validateEmail(email) {
+      const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(String(email).toLowerCase());
+    }
+    function validateNumber(input) {
+      const re = /^\d+$/;
+      return re.test(input);
+    }
+
+    function validatePassword(password) {
+      const re = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/;
+      return re.test(password);
+    }
+    </script>
+</head>
+<body class="m2">
+    <header>
+      <center>
+        <a href="../index.html">
+        <img src="../images/WhatsApp Image 2022-12-22 at 21.42.46.jpg" alt="" class="logo" height="60px" width="170px">
+        </a>
+        </center>
+    </header>
+    <div class="re">
+
+    </div>
+    <div class="le">
+    <fieldset class="box">
+        <center>COUNSELLOR - REGISTRATION</center>
+        <div class="entry">
+          <div>
+          <form method="post"  name="Reg" onsubmit="return success()">
+        <p>
+          Name : <input type="text" class="inp" name="Name">  
+        </p>
+        <p class="abc">
+            E mail : <input type="email" size="21" class="inp" name="email">
+        </p>
+        <p>
+            Gender : 
+            <select name="gen" id="gen" class="inp" name="gender">
+              <option value="">--Select--</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </p>
+          <p>
+            Experience : <input type="text" name="exp" id="">
+          </p>
+          <p>
+            Fees : <input type="number" name="fees" id="">
+          </p>
+          <p>
+            Password : <input type="password" class="inp" name="pass">
+          </p>
+          <p>
+            Aadhar No : <input type="number" name="aadhar">
+          </p>
+          <label for="">
+            Image : &nbsp; &nbsp;<input type="file" name="myImage" accept="image/png, image/jpeg" />
+          </label>
+          <br><br>
+          <input type="submit" value="REGISTER" class="but"> 
+        </form>
+        </div>
+        <br>
+        <br>
+        <a href="./counselor_login.html"><button class="bton">COUNSELLOR-LOGIN</button></a>
+        </div>
+      </fieldset>
+      <br>
+    </div>
+</body>
+<footer style="background-color: aliceblue;" class="foot">
+  <center>
+  <a href="../HTML/Contact_Us.html" class="no-underline">CONTACT US</a>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+  <a href="../HTML/feedback.html" class="no-underline">FEEDBACK</a>
+  <br>
+    <p class="copy">&#169 &nbsp;SharmaShreeOm 2022 &nbsp; &nbsp;
+      <br> II YEAR CYS <br> 20CYS202 UID Project
+    </p>
+    <br>
+    </center>
+    
+  </footer>
+    
+</body>
+</html>

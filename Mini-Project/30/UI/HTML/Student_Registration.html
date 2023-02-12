@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAREER GUIDE-REGISTRATION</title>
+  <link rel="icon" href="../images/afh1l-1419f-001.ico">
+  <link rel="stylesheet" href="../CSS/design3.css">
+  <script>
+    function register(){
+      var Name = document.reg.Name.value;
+      let age = document.forms.reg.age.value;
+      let email = document.forms.reg.email.value;
+      var password = document.forms.reg.pass.value;
+
+      
+      if(Name==""){
+        alert("Please fill your correct name");
+        return false;
+      }
+      if(!validateNumber(age)){
+        alert("Please fill your age correctly");
+        return false;
+      }
+      if(!validateEmail(email)){
+        alert("Please give a correct main");
+        return false;
+      }
+      if(!validatePassword(password)){
+        alert("Password must contain atleast eight character containing one small character, one capital character,\n one number and with one symbol");
+        return false;
+      }
+      
+      return window.open("./Home.html") 
+    }
+
+    function validateEmail(email) {
+      const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(String(email).toLowerCase());
+    }
+
+    function validateNumber(input) {
+      const re = /^\d+$/;
+      return re.test(input);
+    }
+
+    function validatePassword(password) {
+      const re = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/;
+      return re.test(password);
+    }
+  </script>
+</head>
+
+<body class="m1">
+  <header class="logo">
+    <center>
+    <a href="../index.html">
+      <img src="../images/WhatsApp Image 2022-12-22 at 21.42.46.jpg" alt="Career Guide" height="60px" width="170px">
+    </a>
+    </center>
+  </header>
+
+  <main>
+    <div class="re">
+
+    </div>
+    <div class="le">
+      <h2 class="ti">Welcome to Career Guide</h2>
+      <fieldset class="box">
+          <center>STUDENT - REGISTRATION</center>
+          <div class="entry">
+            <form name="reg" method="post" onsubmit="return register()">
+            <p>
+              Name : <input type="text" class="inp" name="Name">
+            </p>
+            <p>
+              Age : &nbsp; <input type="number" class="inp" name="age">
+            </p>
+            <p class="abc">
+              E mail : <input type="email" size="21" class="inp" name="email">
+            </p>
+            <p>
+              Gender :
+              <select name="gen" id="gen" class="inp" name="gender">
+                <option value="">--Select--</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+            </p>
+            <p>
+              Password : <input type="password" class="inp" name="pass">
+            </p>
+            <input type="submit" class="xyz">
+        </form>
+        <br>
+        <br>
+        <a href="../index.html"><button class="bton">USER-LOGIN</button></a>
+    </div>
+    </fieldset>
+    <br>
+    </div>
+    
+  </main>
+  <footer style="background-color: aliceblue;" class="foot">
+    <center>
+    <a href="./HTML/Contact_Us.html" class="no-underline">CONTACT US</a>
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    <a href="./HTML/feedback.html" class="no-underline">FEEDBACK</a>
+    <br>
+      <p class="copy">&#169 &nbsp;SharmaShreeOm 2022 &nbsp; &nbsp;
+        <br> II YEAR CYS <br> 20CYS202 UID Project
+      </p>
+      <br>
+      </center>
+      
+    </footer>
+</body>
+
+</html>

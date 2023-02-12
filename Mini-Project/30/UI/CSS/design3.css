@@ -1,0 +1,106 @@
+.m1{
+        background-image: url('../images/istockphoto-1301533980-170667a.jpg');
+        background-size: cover;
+}
+
+.logo{
+    padding: 2px;
+}
+
+.ti{
+    text-align: center;
+  }
+  
+  .box {
+      background-color: azure;
+      height: 320px;
+      margin-left: 25px;
+    }
+  
+  .re{
+  
+     float: right;
+     width: 60%;
+  }
+  
+  .le{
+      float: left;
+      width:40%;
+  }
+  
+  .entry{
+      margin-left: 17%;
+      margin-top: 1%;
+  }
+  .but{
+      margin-left:25%;
+  }
+  .btn{
+      position: absolute;
+      margin-left: 180px;
+      background-color: rgb(206, 65, 206);
+    border: none;
+    color:rgb(7, 6, 6);
+    font-size: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+      
+    }
+    .btn:hover {
+      background-color:rgb(234, 234, 229);
+    }
+    
+    .btn:active {
+      background-color: rgb(235, 235, 230);
+    }
+  
+    .bton{
+      position: absolute;
+      margin-left: 73px;
+      background-color: rgb(206, 65, 206);
+    border: none;
+    color:rgb(7, 6, 6);
+    font-size: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+      
+    }
+    .bton:hover {
+      background-color:rgb(204, 204, 34);
+    }
+    
+    .xyz{
+      margin-left: 95px;
+    }
+    .bton:active {
+      background-color: rgb(230, 230, 27);
+    }
+   
+  
+    .foot{
+      position: relative;
+      bottom: 0%;
+      left: 0%;
+      right: 0%;
+      margin-top: 38%;
+    }
+    
+    .no-underline {
+      text-decoration: none;
+    }
+    
+    .page-wrap {
+      position: relative;
+      min-height: 100vh; /* or 100% if you know the height of your header */
+    }
+    
+    .site-footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+    
+
+  

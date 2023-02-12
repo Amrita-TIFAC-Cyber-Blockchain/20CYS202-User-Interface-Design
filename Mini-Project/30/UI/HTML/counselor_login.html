@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Guide-Login</title>
+    <link rel="stylesheet" href="../CSS/design2.css">
+    <link rel="icon" href="../images/afh1l-1419f-001.ico">
+    <script>
+      function succesfull(){
+       var name = document.forms.Slogin.uname.value;
+       var password = document.forms.Slogin.pass.value;
+       if(!validateEmail(name)){
+        alert("Please enter correct username");
+        return false;
+       }
+
+       if(!validatePassword(password)){
+        alert("Please enter correct password");
+        return false;
+       }
+       return window.open("../HTML/Home.html");
+      }
+
+      function validateEmail(email) {
+           const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+           return re.test(String(email).toLowerCase());
+        }
+
+        function validateNumber(input) {
+         const re = /^\d+$/;
+          return re.test(input);
+        }
+
+        function validatePassword(password) {
+           const re = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/;
+           return re.test(password);
+        }
+    </script>
+</head>
+<body class="main">
+    <header class="logo">
+      <center>
+      <a href="../index.html">
+       <img src="../images/WhatsApp Image 2022-12-22 at 21.42.46.jpg" alt="Career Guide" height="60px" width="170px">
+       </a>
+       </center>
+    </header>
+    <body>
+        <div class="re">
+
+        </div>
+        <div class="le">
+        <h2 class="ti">Welcome to Career Guide</h2>
+        <fieldset class="box">
+            <center>COUNSELLOR - LOGIN</center>
+            <div class="entry">
+              <form method="post" name="Slogin" onsubmit="return succesfull()">
+            <p>
+              UserName : <input type="text" name="uname">  
+            </p>
+            <p class="abc">
+                Password : <input type="password" size="21" name="pass">
+            </p>
+            <input type="submit" class="but" value="LOGIN">
+            </form>
+            <br>
+            <br>
+            <a href="../HTML/counselor_registration.html"><button class="bton">Register</button></a>
+            </div>
+          </fieldset>
+          <br>
+          <a href="../index.html"><button class="btn">User Login</button></a>
+        </div>
+    </body>
+    <br>
+    <br>
+    <footer style="background-color: aliceblue;" class="foot">
+        <center>
+        <a href="../HTML/Contact_Us.html" class="no-underline">CONTACT US</a>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="../HTML/feedback.html" class="no-underline">FEEDBACK</a>
+        <br>
+          <p class="copy">&#169 &nbsp;SharmaShreeOm 2022 &nbsp; &nbsp;
+            <br> II YEAR CYS <br> 20CYS202 UID Project
+          </p>
+          <br>
+          </center>
+          
+        </footer>
+
+    
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Guide-Login</title>
+    <link rel="stylesheet" href="./CSS/designxx.css">
+    <link rel="icon" href="./images/afh1l-1419f-001.ico">
+    <script>
+      function success(){
+         var name = document.forms.LOGIN.Uname.value;
+         var password = document.forms.LOGIN.Pass.value;
+         if(!validateEmail(name)){
+          alert("Please fill correct username");
+          return false;
+         }
+         if(!validatePassword(password)){
+          alert("Please fill your correct Password");
+          return false;
+         }
+
+         return window.open("./HTML/Home.html")
+
+      }
+
+      function validateEmail(email) {
+           const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+           return re.test(String(email).toLowerCase());
+        }
+
+        function validatePassword(password) {
+           const re = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/;
+           return re.test(password);
+        }
+    </script>
+</head>
+<body class="main">
+    <header class="logo">
+      <center>
+       <img src="./images/WhatsApp Image 2022-12-22 at 21.42.46.jpg" alt="Career Guide" height="60px" width="170px">
+       </center>
+    </header>
+    <body>
+        <div class="re">
+
+        </div>
+        <div class="le">
+        <h2 class="ti">Welcome to Career Guide</h2>
+        <fieldset class="box">
+            <center>USER - LOGIN</center>
+            <div class="entry">
+              <div>
+              <form name="LOGIN" method="post">
+            <p>
+              UserName : <input type="text"  name="Uname">  
+            </p>
+            <p class="abc">
+                Password : <input type="password" size="21" name="Pass">
+            </p>
+            <input type="submit" class="but" value="LOGIN" onclick="return success()">
+          </form>
+          </div>
+            <br>
+            <br>
+            <a href="./HTML/Student_Registration.html"><button class="bton">Register</button></a>
+            </div>
+          </fieldset>
+          <br>
+          <a href="./HTML/counselor_login.html"><button class="btn">Counsellor's Login</button></a>
+        </div>
+    </body>
+    <footer style="background-color: aliceblue;" class="foot">
+      <center>
+      <a href="./HTML/Contact_Us.html" class="no-underline">CONTACT US</a>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      <a href="./HTML/feedback.html" class="no-underline">FEEDBACK</a>
+      <br>
+        <p class="copy">&#169 &nbsp;SharmaShreeOm 2022 &nbsp; &nbsp;
+          <br> II YEAR CYS <br> 20CYS202 UID Project
+        </p>
+        <br>
+        </center>
+        
+      </footer>
+
+    
+</body>
+</html>
