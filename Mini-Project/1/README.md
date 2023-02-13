@@ -1,8 +1,9 @@
-# 20CYS202 - User Interface Design ![](https://img.shields.io/badge/-Completed-darkgreen)
+# 20CYS202 - User Interface Design ![](https://img.shields.io/badge/-Completed-darkgreen) ![](https://img.shields.io/badge/-Evaluated-gold)
 ![](https://img.shields.io/badge/Batch-21CYS-lightgreen) ![](https://img.shields.io/badge/UG-blue) ![](https://img.shields.io/badge/Subject-UID-blue) <br/>
 ![](https://img.shields.io/badge/Category-Dept-blue)
 
 ### UID-DBMS-01 - [Alumni Portal](https://ashuvwxyz.github.io/20CYS202-UID/Mini-Project/)
+![](https://img.shields.io/badge/Template-Own-gold)
 
 #### Team Members
 - [Ashwin Anand]()
@@ -14,7 +15,8 @@
 - [ER Diagram](UID-DBMS-01_ER_Diagram.png)
 - [User Interface](UI/)
 
-### Deliverable
-- No **Login**
+### Credential
+- Any **username (email id)** and **password** 
+
 
 
