@@ -1,8 +1,9 @@
-# 20CYS202 - User Interface Design ![](https://img.shields.io/badge/-Live-green)
+# 20CYS202 - User Interface Design ![](https://img.shields.io/badge/-Live-green) ![](https://img.shields.io/badge/-Evaluated-gold)
 ![](https://img.shields.io/badge/Batch-21CYS-lightgreen) ![](https://img.shields.io/badge/UG-blue) ![](https://img.shields.io/badge/Subject-UID-blue) <br/>
 ![](https://img.shields.io/badge/Category-Univ-darkblue)
 
 ### UID-DBMS-06 - [Flight Ticket Booking System](https://arjun013h.github.io/20CYS202-UID/Mini-Project)
+![](https://img.shields.io/badge/Template-Template-brown)
 
 #### Team Members
 - [Arjun C Santhosh]()
@@ -14,5 +15,8 @@
 - [ER Diagram](UID-DBMS-06_ER_Diagram.png)
 - [SQL WorkBench](UID-DBMS-06_SQL.png)
 - [User Interface](UI/)
+
+### Credential
+- No **Login** required 
 
 
