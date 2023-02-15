@@ -1,4 +1,4 @@
-# 20CYS202 - User Interface Design ![](https://img.shields.io/badge/-Completed-darkgreen)
+# 20CYS202 - User Interface Design ![](https://img.shields.io/badge/-Completed-darkgreen) ![](https://img.shields.io/badge/-Evaluated-gold)
 ![](https://img.shields.io/badge/Batch-21CYS-lightgreen) ![](https://img.shields.io/badge/UG-blue) ![](https://img.shields.io/badge/Subject-UID-blue) <br/>
 ![](https://img.shields.io/badge/Category-BRIG-purple)
 
@@ -13,4 +13,6 @@
 - [ER Diagram](UID-DBMS-34_ER_Diagram.pdf)
 - [User Interface](UI/)
 
+### Credential
+- No **Login**
 
